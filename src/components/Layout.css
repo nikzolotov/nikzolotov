@@ -1,18 +1,34 @@
 :root {
     --gap: 50px;
-    --text-opacity-1: 90%;
-    --text-opacity-2: 50%;
+    --text-opacity-1: .9;
+    --text-opacity-2: .5;
 
     --white-rgb: 255, 255, 255;
     --green: #9FBE96;
     --red: #FF7E7E;
     }
 
+@font-face {
+    font-family: ApercuRegular;
+    src: url(../../static/fonts/apercupro/ApercuPro.eot);
+    src: url(../../static/fonts/apercupro/ApercuPro.eot?#iefix) format("embedded-opentype"), url(../../static/fonts/apercupro/ApercuPro.woff) format("woff"), url(../../static/fonts/apercupro/ApercuPro.ttf) format("truetype"), url(../../static/fonts/apercupro/ApercuPro.svg) format("svg")
+    }
+@font-face {
+    font-family: ApercuBold;
+    src: url(../../static/fonts/apercupro/ApercuPro-Bold.eot);
+    src: url(../../static/fonts/apercupro/ApercuPro-Bold.eot?#iefix) format("embedded-opentype"), url(../../static/fonts/apercupro/ApercuPro-Bold.woff) format("woff"), url(../../static/fonts/apercupro/ApercuPro-Bold.ttf) format("truetype"), url(../../static/fonts/apercupro/ApercuPro-Bold.svg) format("svg")
+    }
+/* @font-face {
+    font-family: ApercuLight;
+    src: url(../../static/fonts/apercupro/ApercuPro-Light.eot);
+    src: url(../../static/fonts/apercupro/ApercuPro-Light.eot?#iefix) format("embedded-opentype"), url(../../static/fonts/apercupro/ApercuPro-Light.woff) format("woff"), url(../../static/fonts/apercupro/ApercuPro-Light.ttf) format("truetype"), url(../../static/fonts/apercupro/ApercuPro-Light.svg) format("svg")
+    } */
+
 body {
     margin: 0;
     padding: 0;
     background: #262626;
-    font: 18px/28px Helvetica, Arial, sans-serif;
+    font: 18px/28px ApercuRegular, Helvetica, Arial, sans-serif;
     color: rgba(var(--white-rgb), var(--text-opacity-1));
     }
 a {

@@ -7,7 +7,7 @@ import Intro from "../components/Intro";
 
 export default () => {
   return (
-    <Layout>
+    <Layout index>
       <Intro>
         <p>
           Hi, I’m Nikita Zolotov, a product designer and developer based in

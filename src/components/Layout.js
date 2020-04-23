@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "gatsby";
 import { css } from "@emotion/core";
 
+import Menu from "../components/Menu";
 import "./Layout.css";
 
-export default ({ children }) => {
+export default (props) => {
   return (
     <div
       css={css`
@@ -12,14 +13,21 @@ export default ({ children }) => {
         margin: 30px 50px;
       `}
     >
-      <Header />
-      <main>{children}</main>
+      <Header index={props.index} />
+      <main>{props.children}</main>
       <Footer />
     </div>
   );
 };
 
-function Header() {
+function Header(props) {
+  const menuItems = [
+    { key: "projects", link: "/projects/", name: "Projects" },
+    { key: "datavis", link: "/datavis/", name: "Visualisations" },
+    { key: "blog", link: "/blog/", name: "Blog" },
+    { key: "about", link: "/about/", name: "About" },
+  ];
+
   return (
     <nav
       css={css`
@@ -43,35 +51,16 @@ function Header() {
           margin-right: var(--gap);
         `}
       >
-        <MainMenu />
+        <Menu items={menuItems} invert={props.index} />
       </div>
       <div
         css={css`
           width: calc((100% * 1 / 6) - (var(--gap) * 5 / 6));
         `}
       >
-        Langs
+        {/* Langs go here */}
       </div>
     </nav>
-  );
-}
-
-function MainMenu() {
-  return (
-    <ul>
-      <MainMenuItem link={`/projects/`} name="Projects" />
-      <MainMenuItem link={`/datavis/`} name="Visualisations" />
-      <MainMenuItem link={`/blog/`} name="Blog" />
-      <MainMenuItem link={`/about/`} name="About" />
-    </ul>
-  );
-}
-
-function MainMenuItem(props) {
-  return (
-    <li>
-      <Link to={props.link}>{props.name}</Link>
-    </li>
   );
 }
 
