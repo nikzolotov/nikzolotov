@@ -17,21 +17,18 @@ export default (props) => {
         }
       `}
     >
-      {props.items.map(({ key, link, title, year, type, image }) => (
-        <ProjectListItem
-          key={key}
-          link={link}
-          title={title}
-          year={year}
-          type={type}
-          image={image}
-        />
+      {props.items.map((props) => (
+        <ProjectListItem {...props} />
       ))}
     </div>
   );
 };
 
 function ProjectListItem(props) {
+  const width = `width: calc((100% * ${props.cols * 2} / 6) - (var(--gap) * ${
+    6 - props.cols * 2
+  } / 6));`;
+
   const Frame = styled.div`
     height: 540px;
     text-align: center;
@@ -48,15 +45,20 @@ function ProjectListItem(props) {
       }
     }
   `;
+
+  const StyledImg = styled((props) => <Img {...props} />)`
+    margin-top: 54px;
+  `;
+
   return (
     <div
       css={css`
-        width: calc((100% * 2 / 6) - (var(--gap) * 4 / 6));
+        ${width}
       `}
     >
       <StyledLink to={`/projects/gas-stations/`}>
         <Frame>
-          <Img fixed={props.image} />
+          <StyledImg fixed={props.image} />
         </Frame>
         <h3
           css={css`

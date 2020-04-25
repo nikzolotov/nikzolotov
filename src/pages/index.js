@@ -13,13 +13,15 @@ export default ({ data }) => {
       year: 2018,
       type: "App",
       image: data.file.childImageSharp.fixed,
+      cols: 1,
     },
     {
-      key: "gas-stations",
+      key: "yandex-sports",
       title: "Sports on Yandex",
       year: 2018,
       type: "Web",
       image: data.file.childImageSharp.fixed,
+      cols: 2,
     },
     {
       key: "gas-stations",
@@ -27,6 +29,7 @@ export default ({ data }) => {
       year: 2018,
       type: "Web",
       image: data.file.childImageSharp.fixed,
+      cols: 1,
     },
     {
       key: "gas-stations",
@@ -34,6 +37,7 @@ export default ({ data }) => {
       year: 2018,
       type: "Web",
       image: data.file.childImageSharp.fixed,
+      cols: 1,
     },
     {
       key: "gas-stations",
@@ -41,6 +45,7 @@ export default ({ data }) => {
       year: 2018,
       type: "Web",
       image: data.file.childImageSharp.fixed,
+      cols: 1,
     },
   ];
   return (
@@ -58,7 +63,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "images/projects/gas-stations/test.png" }) {
+    file(relativePath: { eq: "images/projects/gas-stations/cover.png" }) {
       childImageSharp {
         fixed(width: 256, height: 460) {
           ...GatsbyImageSharpFixed

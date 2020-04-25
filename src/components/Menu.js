@@ -4,6 +4,10 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
 export default (props) => {
+  const invert = props.invert,
+    inline = props.inline,
+    external = props.external;
+
   return (
     <ul
       css={css`
@@ -11,14 +15,12 @@ export default (props) => {
         padding: 0;
       `}
     >
-      {props.items.map(({ key, link, name }) => (
+      {props.items.map((props) => (
         <MenuItem
-          key={key}
-          link={link}
-          name={name}
-          invert={props.invert}
-          inline={props.inline}
-          external={props.external}
+          invert={invert}
+          inline={inline}
+          external={external}
+          {...props}
         />
       ))}
     </ul>
