@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
+import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
 import Menu from "../components/Menu";
@@ -28,6 +31,18 @@ function Header(props) {
     { key: "about", link: "/about/", name: "About" },
   ];
 
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "images/avatar.jpg" }) {
+        childImageSharp {
+          fixed(width: 80, height: 80) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <nav
       css={css`
@@ -43,7 +58,7 @@ function Header(props) {
           margin-right: var(--gap);
         `}
       >
-        <Link to={`/`}>Морда</Link>
+        <Avatar image={data.file.childImageSharp.fixed} />
       </div>
       <div
         css={css`
@@ -61,6 +76,17 @@ function Header(props) {
         {/* Langs go here */}
       </div>
     </nav>
+  );
+}
+
+function Avatar(props) {
+  const StyledImg = styled((props) => <Img {...props} />)`
+    border-radius: 40px;
+  `;
+  return (
+    <Link to={`/`}>
+      <StyledImg fixed={props.image} />
+    </Link>
   );
 }
 
@@ -95,13 +121,7 @@ function Footer() {
         padding-top: var(--spacing-x-large);
       `}
     >
-      {/* <ul>
-        <li>
-          <a href="mailto:nikzolotov@gmail.com">nikzolotov@gmail.com</a>
-        </li>
-      </ul> */}
       <Menu items={menuItems} inline external />
-      {/* nikzolotov@gmail.com LinkedIn Facebook Instagram */}
     </footer>
   );
 }
