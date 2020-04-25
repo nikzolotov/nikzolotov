@@ -10,7 +10,7 @@ export default (props) => {
     <div
       css={css`
         position: relative;
-        margin: 30px 50px;
+        margin: var(--spacing-base) var(--spacing-large);
       `}
     >
       <Header index={props.index} />
@@ -65,13 +65,43 @@ function Header(props) {
 }
 
 function Footer() {
+  const menuItems = [
+    {
+      key: "email",
+      link: "mailto:nikzolotov@gmail.com",
+      name: "nikzolotov@gmail.com",
+    },
+    {
+      key: "linked",
+      link: "https://www.linkedin.com/in/nikita-zolotov/",
+      name: "LinkedIn",
+    },
+    {
+      key: "fb",
+      link: "https://www.facebook.com/nikzolotov",
+      name: "Facebook",
+    },
+    {
+      key: "insta",
+      link: "https://www.instagram.com/papricakorps/",
+      name: "Instagram",
+    },
+  ];
+
   return (
     <footer
       css={css`
         margin-left: calc((100% * 1 / 6) - (var(--gap) * 5 / 6) + var(--gap));
+        padding-top: var(--spacing-x-large);
       `}
     >
-      nikzolotov@gmail.com LinkedIn Facebook Instagram
+      {/* <ul>
+        <li>
+          <a href="mailto:nikzolotov@gmail.com">nikzolotov@gmail.com</a>
+        </li>
+      </ul> */}
+      <Menu items={menuItems} inline external />
+      {/* nikzolotov@gmail.com LinkedIn Facebook Instagram */}
     </footer>
   );
 }
