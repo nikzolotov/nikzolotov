@@ -31,7 +31,7 @@ function Header(props) {
     { key: "about", link: "/about/", name: "About" },
   ];
 
-  const data = useStaticQuery(graphql`
+  const image = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "images/avatar.jpg" }) {
         childImageSharp {
@@ -50,20 +50,19 @@ function Header(props) {
         width: 100%;
         height: 0;
         display: flex;
+        justify-content: space-between;
       `}
     >
       <div
         css={css`
           width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
-          margin-right: var(--gap);
         `}
       >
-        <Avatar image={data.file.childImageSharp.fixed} />
+        <Avatar image={image.file.childImageSharp.fixed} />
       </div>
       <div
         css={css`
           width: calc((100% * 1 / 6) - (var(--gap) * 5 / 6));
-          margin-right: var(--gap);
         `}
       >
         <Menu items={menuItems} invert={props.index} />
