@@ -5,8 +5,8 @@ import Img from "gatsby-image";
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
-import Menu from "../components/Menu";
-import "./Layout.css";
+import Menu from "../Menu";
+import "./style.css";
 
 export default (props) => {
   return (
@@ -33,7 +33,7 @@ function Header(props) {
 
   const image = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "images/avatar.jpg" }) {
+      file(relativePath: { eq: "components/Layout/avatar.jpg" }) {
         childImageSharp {
           fixed(width: 80, height: 80) {
             ...GatsbyImageSharpFixed
