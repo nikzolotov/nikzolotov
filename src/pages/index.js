@@ -56,14 +56,18 @@ export default ({ data }) => {
           Moscow. Here’re some projects that I’ve done in recent time.
         </p>
       </Intro>
-      <ProjectList items={projects} />
+      {/* <ProjectList items={projects} /> */}
     </Layout>
   );
 };
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "images/projects/gas-stations/cover.png" }) {
+    file(
+      relativePath: {
+        eq: "pages/projects/yandex-touch/yandex-touch-onboarding.png"
+      }
+    ) {
       childImageSharp {
         fixed(width: 256, height: 460) {
           ...GatsbyImageSharpFixed

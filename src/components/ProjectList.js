@@ -25,10 +25,6 @@ export default (props) => {
 };
 
 function ProjectListItem(props) {
-  const width = `width: calc((100% * ${props.cols * 2} / 6) - (var(--gap) * ${
-    6 - props.cols * 2
-  } / 6));`;
-
   const Frame = styled.div`
     height: 540px;
     text-align: center;
@@ -52,11 +48,15 @@ function ProjectListItem(props) {
 
   return (
     <div
+      key={props.id}
       css={css`
-        ${width}
+        width: calc(
+          (100% * ${props.cols * 2} / 6) -
+            (var(--gap) * ${6 - props.cols * 2} / 6)
+        );
       `}
     >
-      <StyledLink to={`/projects/gas-stations/`}>
+      <StyledLink to={`/projects/${props.id}/`}>
         <Frame>
           <StyledImg fixed={props.image} />
         </Frame>

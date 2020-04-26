@@ -15,9 +15,10 @@ export default ({ children }) => {
     >
       <div
         css={css`
-          width: calc((100% * 3 / 6) - (var(--gap) * 3 / 6));
+          width: calc(
+            (100% * 3 / 6) - (var(--gap) * 3 / 6) - calc(var(--gap) * 3)
+          );
           margin-left: calc((100% * 1 / 6) - (var(--gap) * 5 / 6) + var(--gap));
-          margin-right: var(--gap);
         `}
       >
         {children}
