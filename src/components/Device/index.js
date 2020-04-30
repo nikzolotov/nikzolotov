@@ -7,6 +7,9 @@ import imageHtc from "./htc.png";
 import imageIpad from "./ipad.png";
 
 export default (props) => {
+  const margin = props.framed
+    ? "0 var(--spacing-base)"
+    : "0 0 var(--spacing-base) 0";
   return (
     <div
       className={props.model}
@@ -16,6 +19,7 @@ export default (props) => {
         &.abstract-mobile {
           max-width: 280px;
         }
+        margin: ${margin};
       `}
     >
       <div

@@ -12,6 +12,7 @@
     --spacing-base: 30px;
     --spacing-large: 50px;
     --spacing-x-large: 80px;
+    --spacing-xx-large: 120px;
     }
 
 @font-face {
@@ -31,6 +32,7 @@
     } */
 
 body {
+    min-width: 960px;
     margin: 0;
     padding: 0;
     background: #262626;
