@@ -4,6 +4,8 @@ import Img from "gatsby-image";
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
+import Device from "./Device";
+
 export default (props) => {
   return (
     <div
@@ -25,11 +27,17 @@ export default (props) => {
 };
 
 function ProjectListItem(props) {
+  const frameFlex = !props.deviceWidth
+    ? "display: flex; justify-content: center; align-items: center;"
+    : "";
+
   const Frame = styled.div`
-    height: 540px;
-    text-align: center;
+    ${frameFlex}
+    height: 440px;
+    padding: var(--spacing-large);
     background: rgba(var(--white-rgb), 0.05);
     transition: background 0.5s;
+    overflow: hidden;
   `;
 
   const StyledLink = styled((props) => <Link {...props} />)`
@@ -40,10 +48,6 @@ function ProjectListItem(props) {
         background: rgba(var(--white-rgb), 0.1);
       }
     }
-  `;
-
-  const StyledImg = styled((props) => <Img {...props} />)`
-    margin-top: 54px;
   `;
 
   return (
@@ -58,7 +62,13 @@ function ProjectListItem(props) {
     >
       <StyledLink to={`/projects/${props.id}/`}>
         <Frame>
-          <StyledImg fixed={props.image} />
+          <Device
+            image={props.image}
+            model={props.device}
+            maxWidth={props.deviceMaxWidth}
+            width={props.deviceWidth}
+            margin="0"
+          />
         </Frame>
         <h3
           css={css`

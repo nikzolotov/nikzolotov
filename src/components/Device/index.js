@@ -7,29 +7,41 @@ import imageHtc from "./htc.png";
 import imageIpad from "./ipad.png";
 
 export default (props) => {
-  const margin = props.framed
-    ? "0 var(--spacing-base)"
-    : "0 0 var(--spacing-base) 0";
+  const margin = props.margin ? props.margin : "0 0 var(--spacing-base) 0",
+    width = props.width ? props.width : "100%";
+
+  let maxWidth = "900px";
+  if (props.model == "htc") maxWidth = "280px";
+  if (props.maxWidth) maxWidth = props.maxWidth;
+
   return (
     <div
       className={props.model}
       css={css`
         position: relative;
-        &.htc,
-        &.abstract-mobile {
-          max-width: 280px;
-        }
+        max-width: ${maxWidth};
         margin: ${margin};
+        ${width && "width: " + width + ";"}
       `}
     >
       <div
         css={css`
           position: absolute;
           overflow: hidden;
-          top: 9.87%;
-          left: 3.38%;
-          width: 92.7%;
-          height: 79%;
+
+          .safari & {
+            position: static;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3),
+              0 0 0 1px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+          }
+
+          .htc & {
+            top: 9.87%;
+            left: 3.38%;
+            width: 92.7%;
+            height: 79%;
+          }
 
           .ipad & {
             top: 6.36%;
@@ -53,26 +65,28 @@ export default (props) => {
       >
         <Img fluid={props.image} />
       </div>
-      <img
-        css={css`
-          position: relative;
-          display: block;
-          width: 100%;
-        `}
-        src={(() => {
-          switch (props.model) {
-            case "ipad":
-              return imageIpad;
-            case "green":
-              return "#00FF00";
-            case "blue":
-              return "#0000FF";
-            default:
-              return imageHtc;
-          }
-        })()}
-        alt=""
-      />
+      {props.model != "safari" && (
+        <img
+          css={css`
+            position: relative;
+            display: block;
+            width: 100%;
+          `}
+          src={(() => {
+            switch (props.model) {
+              case "ipad":
+                return imageIpad;
+              case "green":
+                return "#00FF00";
+              case "blue":
+                return "#0000FF";
+              default:
+                return imageHtc;
+            }
+          })()}
+          alt=""
+        />
+      )}
     </div>
   );
 };

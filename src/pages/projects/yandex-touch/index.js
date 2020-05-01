@@ -23,41 +23,41 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "yandex-touch-hockey")}
           model="htc"
-          framed
+          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "yandex-touch-onboarding")}
           model="htc"
-          framed
+          margin="0 var(--spacing-base)"
         />
       </Frame>
       <Frame label="Music and radio widgets">
         <Device
           image={filterImage(images, "yandex-touch-music")}
           model="htc"
-          framed
+          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "yandex-touch-radio")}
           model="htc"
-          framed
+          margin="0 var(--spacing-base)"
         />
       </Frame>
       <Frame label="Other stuff">
         <Device
           image={filterImage(images, "serp-biathlon")}
           model="htc"
-          framed
+          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "yandex-touch-metro")}
           model="htc"
-          framed
+          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "yandex-touch-ticket")}
           model="htc"
-          framed
+          margin="0 var(--spacing-base)"
         />
       </Frame>
     </Layout>
@@ -65,7 +65,7 @@ export default ({ data }) => {
 };
 
 const filterImage = function (i, name) {
-  return i.filter((item) => item.node.name == name)[0].node.childImageSharp
+  return i.filter((item) => item.node.name === name)[0].node.childImageSharp
     .fluid;
 };
 
