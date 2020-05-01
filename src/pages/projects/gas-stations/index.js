@@ -3,13 +3,19 @@ import { css } from "@emotion/core";
 
 import Layout from "../../../components/Layout";
 import LayoutColumn from "../../../components/LayoutColumn";
+import ArticleTitle from "../../../components/ArticleTitle";
+import Frame from "../../../components/Frame";
 import Device from "../../../components/Device";
 
 export default ({ data }) => {
+  const images = data.allFile.edges;
   return (
     <Layout>
       <LayoutColumn>
-        <h1>Gas Stations in Navigator</h1>
+        <ArticleTitle
+          title="Gas Stations in&nbsp;Navigator"
+          meta="2018 · App"
+        />
         <p>
           Yandex Navigator helps drivers drive. The app makes the fastest route,
           shows you alternatives, and helps you turn by turn. In 2018 the team
@@ -21,29 +27,18 @@ export default ({ data }) => {
           started to work on this project.
         </p>
       </LayoutColumn>
-      <div
-        css={css`
-          margin: var(--spacing-large) 0;
-        `}
-      >
-        <div
-          css={css`
-            text-align: center;
-            background: rgba(var(--white-rgb), 0.05);
-          `}
-        >
-          <Device image={data.file.childImageSharp.fluid} />
-          <Device image={data.file.childImageSharp.fluid} />
-        </div>
-        <p
-          css={css`
-            margin: var(--spacing-small) 0 0 0;
-            color: rgba(var(--white-rgb), var(--text-opacity-2));
-          `}
-        >
-          Navigator shows you an offer when you’re close to the gas station
-        </p>
-      </div>
+      <Frame label="Navigator shows you an offer when you’re close to the gas station">
+        <Device
+          image={filterImage(images, "gas-stations-invitation")}
+          model="abstract-phone"
+          margin="0 var(--spacing-base)"
+        />
+        <Device
+          image={filterImage(images, "gas-stations-main")}
+          model="abstract-phone"
+          margin="0 var(--spacing-base)"
+        />
+      </Frame>
       <LayoutColumn>
         <p>
           The main challenge was to meet this deadline and get the result in one
@@ -63,18 +58,55 @@ export default ({ data }) => {
           challenging projects. Although it looks pretty simple.
         </p>
       </LayoutColumn>
+      <Frame label="After choosing the amount of gas user sees clear instructions of what to do next">
+        <Device
+          image={filterImage(images, "gas-stations-instruction")}
+          model="abstract-phone"
+          margin="0 var(--spacing-base)"
+        />
+        <Device
+          image={filterImage(images, "gas-stations-filling")}
+          model="abstract-phone"
+          margin="0 var(--spacing-base)"
+        />
+      </Frame>
+      <Frame label="Daylight theme">
+        <Device
+          image={filterImage(images, "gas-stations-main-white")}
+          model="abstract-phone"
+          margin="0 var(--spacing-base)"
+        />
+        <Device
+          image={filterImage(images, "gas-stations-instruction-white")}
+          model="abstract-phone"
+          margin="0 var(--spacing-base)"
+        />
+      </Frame>
     </Layout>
   );
 };
 
+const filterImage = function (i, name) {
+  return i.filter((item) => item.node.name === name)[0].node.childImageSharp
+    .fluid;
+};
+
 export const query = graphql`
   query {
-    file(
-      relativePath: { eq: "pages/projects/gas-stations/yandex-touch-4.png" }
+    allFile(
+      filter: {
+        relativeDirectory: { eq: "pages/projects/gas-stations" }
+        extension: { regex: "/png|jpg/" }
+      }
     ) {
-      childImageSharp {
-        fluid(maxWidth: 256) {
-          ...GatsbyImageSharpFluid
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid(maxWidth: 256) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }

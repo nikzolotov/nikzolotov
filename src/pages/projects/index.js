@@ -8,23 +8,23 @@ import ProjectList from "../../components/ProjectList";
 export default ({ data }) => {
   const images = data.allFile.edges;
   const projects = [
-    {
-      id: "gas-stations",
-      title: "Neftmagistral Gas Stations Terminal",
-      year: 2020,
-      type: "Kiosk",
-      image: filterImage(images, "gas-stations-main"),
-      device: "htc",
-      deviceMaxWidth: "184px",
-      cols: 1,
-    },
+    // {
+    //   id: "gas-stations",
+    //   title: "Neftmagistral Gas Stations Terminal",
+    //   year: 2020,
+    //   type: "Kiosk",
+    //   image: filterImage(images, "gas-stations-main"),
+    //   device: "htc",
+    //   deviceMaxWidth: "184px",
+    //   cols: 1,
+    // },
     {
       id: "gas-stations",
       title: "Gas Stations in Navigator",
       year: 2018,
       type: "App",
       image: filterImage(images, "gas-stations-main"),
-      device: "htc",
+      device: "abstract-phone",
       deviceMaxWidth: "184px",
       cols: 1,
     },
@@ -35,8 +35,8 @@ export default ({ data }) => {
       type: "Web",
       image: filterImage(images, "yandex-sports-wc18"),
       device: "safari",
-      deviceWidth: "590px",
-      cols: 1,
+      deviceMaxWidth: "590px",
+      cols: 2,
     },
     {
       id: "gulfstream-b2b",
@@ -103,8 +103,8 @@ export default ({ data }) => {
     <Layout>
       <Intro>
         <p>
-          I’ve designed and built product experiences for Yandex, Škoda,
-          Volkswagen, Audi, Megafon. I did web & app design.
+          I’ve designed and built product experiences for&nbsp;Yandex, Škoda,
+          Volkswagen, Audi, Megafon. I&nbsp;did both web and app design.
         </p>
       </Intro>
       <ProjectList items={projects} />
