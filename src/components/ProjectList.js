@@ -58,6 +58,7 @@ function ProjectListItem(props) {
           (100% * ${props.cols * 2} / 6) -
             (var(--gap) * ${6 - props.cols * 2} / 6)
         );
+        margin-bottom: var(--spacing-x-large);
       `}
     >
       <StyledLink to={`/projects/${props.id}/`}>
@@ -80,6 +81,7 @@ function ProjectListItem(props) {
         </h3>
         <p
           css={css`
+            margin: 0;
             color: rgba(var(--white-rgb), var(--text-opacity-2));
           `}
         >
