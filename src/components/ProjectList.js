@@ -76,9 +76,8 @@ function ProjectListItem(props) {
             margin: var(--spacing-small) 0 0 0;
             font-family: ApercuRegular, Helvetica, Arial, sans-serif;
           `}
-        >
-          {props.title}
-        </h3>
+          dangerouslySetInnerHTML={{ __html: props.title }}
+        />
         <p
           css={css`
             margin: 0;

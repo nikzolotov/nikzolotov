@@ -2,6 +2,7 @@
     --gap: 30px;
     --text-opacity-1: .9;
     --text-opacity-2: .5;
+    --text-opacity-3: .2;
 
     --white-rgb: 255, 255, 255;
     --green: #9FBE96;
@@ -69,3 +70,8 @@ ul {
     li {
         margin: 0 0 var(--spacing-small) 0;
         }
+abbr {
+    letter-spacing: .06em;
+    margin-right: -.06em;
+    text-decoration: none;
+    }

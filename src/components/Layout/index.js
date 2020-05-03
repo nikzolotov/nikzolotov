@@ -117,7 +117,7 @@ function Footer() {
     <footer
       css={css`
         margin-left: calc((100% * 1 / 6) - (var(--gap) * 5 / 6) + var(--gap));
-        padding-top: var(--spacing-x-large);
+        padding-top: var(--spacing-xx-large);
       `}
     >
       <Menu items={menuItems} inline external />
