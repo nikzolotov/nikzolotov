@@ -5,6 +5,8 @@ import { css } from "@emotion/core";
 
 import imageHtc from "./htc.png";
 import imageIpad from "./ipad.png";
+import imageTV from "./tv.png";
+import imageKiosk from "./kiosk.png";
 
 export default (props) => {
   const margin = props.margin ? props.margin : "0 0 var(--spacing-base) 0",
@@ -91,10 +93,10 @@ export default (props) => {
             switch (props.model) {
               case "ipad":
                 return imageIpad;
-              case "green":
-                return "#00FF00";
-              case "blue":
-                return "#0000FF";
+              case "tv":
+                return imageTV;
+              case "kiosk":
+                return imageKiosk;
               default:
                 return imageHtc;
             }
