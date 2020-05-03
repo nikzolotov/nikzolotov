@@ -29,12 +29,12 @@ export default (props) => {
 
 function MenuItem(props) {
   const linkColor = props.invert
-    ? "rgba(var(--white-rgb), var(--text-opacity-1))"
-    : "rgba(var(--white-rgb), var(--text-opacity-2))";
+    ? "var(--text-color-1);"
+    : "var(--text-color-2);";
 
   const hoverColor = props.invert
-    ? "rgba(var(--white-rgb), var(--text-opacity-2))"
-    : "rgba(var(--white-rgb), var(--text-opacity-1))";
+    ? "var(--text-color-2);"
+    : "var(--text-color-1);";
 
   const StyledLink = styled((props) => <Link {...props} />)`
     color: ${linkColor};

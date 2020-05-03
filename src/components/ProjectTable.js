@@ -21,15 +21,15 @@ export default (props) => {
 function ProjectTableItem(props) {
   const rowStyle = css`
     display: table-row;
-    color: rgba(var(--white-rgb), var(--text-opacity-2));
+    color: var(--text-color-2);
   `;
   const StyledLink = styled((props) => <Link {...props} />)`
     ${rowStyle};
     &:hover {
-      color: rgba(var(--white-rgb), var(--text-opacity-1));
+      color: var(--text-color-1);
     }
     & .title {
-      color: rgba(var(--white-rgb), var(--text-opacity-1));
+      color: var(--text-color-1);
     }
   `;
   return (
@@ -57,7 +57,7 @@ function ProjectTableItemData(props) {
       padding-left: 0;
     }
     .nda & {
-      color: rgba(var(--white-rgb), var(--text-opacity-3));
+      color: var(--text-color-3);
     }
   `;
   return (

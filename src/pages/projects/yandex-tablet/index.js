@@ -33,7 +33,7 @@ export default ({ data }) => {
         <p
           css={css`
             margin: var(--spacing-small) 0 0 0;
-            color: rgba(var(--white-rgb), var(--text-opacity-2));
+            color: var(--text-color-2);
           `}
         >
           Navigator shows you an offer when you’re close to the gas station

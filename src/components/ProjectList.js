@@ -41,7 +41,7 @@ function ProjectListItem(props) {
   `;
 
   const StyledLink = styled((props) => <Link {...props} />)`
-    color: rgba(var(--white-rgb), var(--text-opacity-1));
+    color: var(--text-color-1);
     &:hover {
       color: inherit;
       ${Frame} {
@@ -81,7 +81,7 @@ function ProjectListItem(props) {
         <p
           css={css`
             margin: 0;
-            color: rgba(var(--white-rgb), var(--text-opacity-2));
+            color: var(--text-color-2);
           `}
         >
           {props.year} · {props.type}

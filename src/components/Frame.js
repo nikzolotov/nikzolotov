@@ -25,7 +25,7 @@ export default (props) => {
       <p
         css={css`
           margin: var(--spacing-small) 0 0 0;
-          color: rgba(var(--white-rgb), var(--text-opacity-2));
+          color: var(--text-color-2);
         `}
       >
         {props.label}

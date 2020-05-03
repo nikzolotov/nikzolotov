@@ -1,13 +1,12 @@
 :root {
-    --gap: 30px;
-    --text-opacity-1: .9;
-    --text-opacity-2: .5;
-    --text-opacity-3: .2;
-
-    --white-rgb: 255, 255, 255;
     --green: #9FBE96;
     --red: #FF7E7E;
+    --white-rgb: 255, 255, 255;
+    --text-color-1: rgba(var(--white-rgb), 0.9);
+    --text-color-2: rgba(var(--white-rgb), 0.4);
+    --text-color-3: rgba(var(--white-rgb), 0.2);
 
+    --gap: 30px;
     --spacing-tiny: 5px;
     --spacing-small: 15px;
     --spacing-base: 30px;
@@ -39,7 +38,7 @@ body {
     padding: 0;
     background: #262626;
     font: 18px/28px ApercuRegular, Helvetica, Arial, sans-serif;
-    color: rgba(var(--white-rgb), var(--text-opacity-1));
+    color: var(--text-color-1);
     }
 a {
     text-decoration: none;

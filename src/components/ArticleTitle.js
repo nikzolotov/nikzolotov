@@ -19,7 +19,7 @@ export default ({ title, meta }) => {
         <div
           css={css`
             margin-bottom: var(--spacing-base);
-            color: rgba(var(--white-rgb), var(--text-opacity-2));
+            color: var(--text-color-2);
           `}
         >
           {meta}
