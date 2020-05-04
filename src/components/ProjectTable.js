@@ -9,6 +9,8 @@ export default (props) => {
       css={css`
         display: table;
         width: 100%;
+        margin: var(--spacing-base) 0 0 0;
+        border-top: 1px solid rgba(var(--white-rgb), 0.1);
       `}
     >
       {props.items.map((props) => (

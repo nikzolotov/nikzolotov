@@ -11,27 +11,34 @@ export default ({ data }) => {
   return (
     <Layout>
       <LayoutColumn>
-        <ArticleTitle title="Yandex for tablets" meta="2015 · Web" />
-        <p>
-          Here in Yandex, we designed the main page for tablets with media
-          informers. Our main goal was to increase the time that people spend on
-          the main page. So we made bigger versions of standard informers and
-          added new ones. Using people's interests we show certain movies,
-          videos, announcements.
-        </p>
+        <ArticleTitle title="Azbuka Vkusa Self-checkout" meta="2013 · Kiosk" />
+        <p>Description</p>
       </LayoutColumn>
-      <Frame label="First screen still conveys picture of the day">
+      <Frame label="1">
         <Device
-          image={filterImage(images, "yandex-tablet-morda")}
-          model="ipad"
+          image={filterImage(images, "av-selfcheckout-welcome")}
+          model="kiosk"
           margin="0"
         />
       </Frame>
-      <Frame label="Yandex for tablets">
+      <Frame label="2">
         <Device
-          image={filterImage(images, "yandex-tablet-full")}
-          model="safari"
-          maxWidth="750px"
+          image={filterImage(images, "av-selfcheckout-next")}
+          model="kiosk"
+          margin="0"
+        />
+      </Frame>
+      <Frame label="3">
+        <Device
+          image={filterImage(images, "av-selfcheckout-put")}
+          model="kiosk"
+          margin="0"
+        />
+      </Frame>
+      <Frame label="4">
+        <Device
+          image={filterImage(images, "av-selfcheckout-bye")}
+          model="kiosk"
           margin="0"
         />
       </Frame>
@@ -48,7 +55,7 @@ export const query = graphql`
   query {
     allFile(
       filter: {
-        relativeDirectory: { eq: "pages/projects/yandex-tablet" }
+        relativeDirectory: { eq: "pages/projects/av-selfcheckout" }
         extension: { regex: "/png|jpg/" }
       }
     ) {
@@ -56,7 +63,7 @@ export const query = graphql`
         node {
           name
           childImageSharp {
-            fluid(maxWidth: 900, jpegQuality: 80) {
+            fluid(maxWidth: 900) {
               ...GatsbyImageSharpFluid
             }
           }

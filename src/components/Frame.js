@@ -25,11 +25,11 @@ export default (props) => {
       <p
         css={css`
           margin: var(--spacing-small) 0 0 0;
+          margin-right: calc((100% * 2 / 6) - (var(--gap) * 4 / 6));
           color: var(--text-color-2);
         `}
-      >
-        {props.label}
-      </p>
+        dangerouslySetInnerHTML={{ __html: props.label }}
+      />
     </div>
   );
 };

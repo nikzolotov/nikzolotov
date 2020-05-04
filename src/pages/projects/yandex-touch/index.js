@@ -1,5 +1,4 @@
 import React from "react";
-import { css } from "@emotion/core";
 
 import Layout from "../../../components/Layout";
 import LayoutColumn from "../../../components/LayoutColumn";
@@ -12,10 +11,13 @@ export default ({ data }) => {
   return (
     <Layout>
       <LayoutColumn>
-        <ArticleTitle title="Mobile version of&nbsp;Yandex" meta="2015 · Web" />
+        <ArticleTitle
+          title="The Mobile Version of&nbsp;Yandex"
+          meta="2015 · Web"
+        />
         <p>
-          Mobile version was redesigned after desktop Yandex. Here
-          I&nbsp;designed widgets, onboarding, settings, additional services
+          The Mobile version was redesigned after desktop Yandex. Here
+          I've&nbsp;designed widgets, onboarding, settings, additional services,
           and&nbsp;so&nbsp;on.
         </p>
       </LayoutColumn>

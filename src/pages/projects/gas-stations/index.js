@@ -1,5 +1,4 @@
 import React from "react";
-import { css } from "@emotion/core";
 
 import Layout from "../../../components/Layout";
 import LayoutColumn from "../../../components/LayoutColumn";
@@ -39,25 +38,6 @@ export default ({ data }) => {
           margin="0 var(--spacing-base)"
         />
       </Frame>
-      <LayoutColumn>
-        <p>
-          The main challenge was to meet this deadline and get the result in one
-          week. The second week was for refinement. I had all the data and
-          research from my colleague. After a few iterations, we get the first
-          prototype that met both team and business expectations. With the help
-          of our UX-team, we made some quick tests. The results were pretty
-          good. We made some fixes and started to roll out the experiment on
-          Yandex employees. But after gathering feedback from a broader
-          audience, it became clear that we need to change some instructions for
-          drivers. They were still unclear and drivers were forced to leave the
-          car to ask questions from personnel.
-        </p>
-        <p>
-          The project was finished in time and both team and business were
-          satisfied. It was one of the most interesting, fast-paced and
-          challenging projects. Although it looks pretty simple.
-        </p>
-      </LayoutColumn>
       <Frame label="After choosing the amount of gas user sees clear instructions of what to do next">
         <Device
           image={filterImage(images, "gas-stations-instruction")}
@@ -82,6 +62,25 @@ export default ({ data }) => {
           margin="0 var(--spacing-base)"
         />
       </Frame>
+      <LayoutColumn>
+        <p>
+          The main challenge was to meet this deadline and get the result in one
+          week. The second week was for refinement. I had all the data and
+          research from my colleague. After a few iterations, we get the first
+          prototype that met both team and business expectations. With the help
+          of our UX-team, we made some quick tests. The results were pretty
+          good. We made some fixes and started to roll out the experiment on
+          Yandex employees. But after gathering feedback from a broader
+          audience, it became clear that we need to change some instructions for
+          drivers. They were still unclear and drivers were forced to leave the
+          car to ask questions from personnel.
+        </p>
+        <p>
+          The project was finished in time and both team and business were
+          satisfied. It was one of the most interesting, fast-paced and
+          challenging projects. Although it looks pretty simple.
+        </p>
+      </LayoutColumn>
     </Layout>
   );
 };

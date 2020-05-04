@@ -12,9 +12,8 @@ export default ({ title, meta }) => {
         css={css`
           margin-bottom: var(--spacing-tiny);
         `}
-      >
-        {title}
-      </h1>
+        dangerouslySetInnerHTML={{ __html: title }}
+      />
       {meta && (
         <div
           css={css`
