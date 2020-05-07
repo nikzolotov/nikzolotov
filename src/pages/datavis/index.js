@@ -10,18 +10,20 @@ export default () => {
     <Layout>
       <Intro>
         <p>
-          Data visualisation is one of my favorite things. Sometime I design
-          them and then code with D3.js.
+          Data visualization is one of my favorites.
+          Sometimes&nbsp;I&nbsp;design some bar charts and bring them to life
+          with D3.js
         </p>
+        <p>In progress...</p>
       </Intro>
-      <div
+      {/* <div
         css={css`
           height: 500px;
           background: rgba(var(--white-rgb), 0.05);
         `}
       >
         <Link to={`/datavis/clouds/`}>Облака</Link>
-      </div>
+      </div> */}
     </Layout>
   );
 };

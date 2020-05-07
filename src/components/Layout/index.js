@@ -26,8 +26,8 @@ export default (props) => {
 function Header(props) {
   const menuItems = [
     { key: "projects", link: "/projects/", name: "Projects" },
-    { key: "datavis", link: "/datavis/", name: "Visualisations" },
-    { key: "blog", link: "/blog/", name: "Blog" },
+    { key: "datavis", link: "/datavis/", name: "Visualizations" },
+    // { key: "blog", link: "/blog/", name: "Blog" },
     { key: "about", link: "/about/", name: "About" },
   ];
 
@@ -108,7 +108,7 @@ function Footer() {
     },
     {
       key: "insta",
-      link: "https://www.instagram.com/papricakorps/",
+      link: "https://www.instagram.com/nikzolotovs/",
       name: "Instagram",
     },
   ];

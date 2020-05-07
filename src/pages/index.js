@@ -1,51 +1,35 @@
 import React from "react";
-import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import Intro from "../components/Intro";
 import ProjectList from "../components/ProjectList";
 
 export default ({ data }) => {
+  const images = data.allFile.edges;
   const projects = [
     {
-      key: "gas-stations",
+      id: "gas-stations",
       title: "Gas Stations in Navigator",
       year: 2018,
       type: "App",
-      image: data.file.childImageSharp.fixed,
+      field: "Driver Services",
+      inList: true,
+      image: filterImage(images, "gas-stations-main"),
+      device: "abstract-phone",
+      deviceMaxWidth: "184px",
       cols: 1,
     },
     {
-      key: "yandex-sports",
+      id: "yandex-sports",
       title: "Sports on Yandex",
       year: 2018,
       type: "Web",
-      image: data.file.childImageSharp.fixed,
+      field: "Entertaiment",
+      inList: true,
+      image: filterImage(images, "yandex-sports-wc18"),
+      device: "safari",
+      deviceMaxWidth: "590px",
       cols: 2,
-    },
-    {
-      key: "gas-stations",
-      title: "Gulfstream B2B",
-      year: 2018,
-      type: "Web",
-      image: data.file.childImageSharp.fixed,
-      cols: 1,
-    },
-    {
-      key: "gas-stations",
-      title: "Sports on Yandex",
-      year: 2018,
-      type: "Web",
-      image: data.file.childImageSharp.fixed,
-      cols: 1,
-    },
-    {
-      key: "gas-stations",
-      title: "Gulfstream B2B",
-      year: 2018,
-      type: "Web",
-      image: data.file.childImageSharp.fixed,
-      cols: 1,
     },
   ];
   return (
@@ -56,21 +40,32 @@ export default ({ data }) => {
           Moscow. Here’re some projects that I’ve done in recent time.
         </p>
       </Intro>
-      {/* <ProjectList items={projects} /> */}
+      <ProjectList items={projects} />
     </Layout>
   );
 };
 
+const filterImage = function (i, name) {
+  return i.filter((item) => item.node.name === name)[0].node.childImageSharp
+    .fluid;
+};
+
 export const query = graphql`
   query {
-    file(
-      relativePath: {
-        eq: "pages/projects/yandex-touch/yandex-touch-onboarding.png"
+    allFile(
+      filter: {
+        extension: {}
+        relativePath: { regex: "/pages/projects/.*.(png|jpg)$/" }
       }
     ) {
-      childImageSharp {
-        fixed(width: 256, height: 460) {
-          ...GatsbyImageSharpFixed
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid(maxHeight: 400, jpegQuality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }

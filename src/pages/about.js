@@ -6,18 +6,7 @@ export default () => {
   return (
     <Layout>
       <LayoutColumn>
-        <p>
-          Hi, I’m Nikita Zolotov, a product designer and developer based in
-          Moscow. Here’re some projects that I’ve done in recent time.Hi, I’m
-          Nikita Zolotov, a product designer and developer based in Moscow.
-          Here’re some projects that I’ve done in recent time.
-        </p>
-        <p>
-          Hi, I’m Nikita Zolotov, a product designer and developer based in
-          Moscow. Here’re some projects that I’ve done in recent time.Hi, I’m
-          Nikita Zolotov, a product designer and developer based in Moscow.
-          Here’re some projects that I’ve done in recent time.
-        </p>
+        <p>In progress...</p>
       </LayoutColumn>
     </Layout>
   );
