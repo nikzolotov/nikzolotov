@@ -1,8 +1,8 @@
 # Personal site of Nikita Zolotov
 
-Based on React, Gatsby, CSS-in-JS (Emotion.sh), 
+Based on React, Gatsby, CSS-in-JS (Emotion.sh)
 
-Plugins:
+Plugins used:
 ```shell
 gatsby-source-filesystem,
 gatsby-transformer-remark,
