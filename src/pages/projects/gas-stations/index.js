@@ -5,6 +5,7 @@ import LayoutColumn from "../../../components/LayoutColumn";
 import ArticleTitle from "../../../components/ArticleTitle";
 import Frame from "../../../components/Frame";
 import Device from "../../../components/Device";
+import Next from "../../../components/Next";
 
 export default ({ data }) => {
   const images = data.allFile.edges;
@@ -80,6 +81,7 @@ export default ({ data }) => {
           satisfied. It was one of the most interesting, fast-paced and
           challenging projects. Although it looks pretty simple.
         </p>
+        <Next type="project" id="yandex-sports" title="Yandex Sports" />
       </LayoutColumn>
     </Layout>
   );

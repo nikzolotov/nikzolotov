@@ -5,6 +5,7 @@ import LayoutColumn from "../../../components/LayoutColumn";
 import ArticleTitle from "../../../components/ArticleTitle";
 import Frame from "../../../components/Frame";
 import Device from "../../../components/Device";
+import Next from "../../../components/Next";
 
 export default ({ data }) => {
   const images = data.allFile.edges;
@@ -67,6 +68,13 @@ export default ({ data }) => {
           margin="0"
         />
       </Frame>
+      <LayoutColumn>
+        <Next
+          type="project"
+          id="yandex-touch"
+          title="The Mobile Version of Yandex"
+        />
+      </LayoutColumn>
     </Layout>
   );
 };
