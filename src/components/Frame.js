@@ -3,9 +3,19 @@
  */
 
 import React from "react";
+import Img from "gatsby-image";
+import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
 export default (props) => {
+  const padding = props.padding
+    ? props.padding
+    : "var(--spacing-xx-large) var(--spacing-x-large)";
+
+  const bgColor = props.bgColor
+    ? props.bgColor
+    : "rgba(var(--white-rgb), 0.05)";
+
   return (
     <div
       css={css`
@@ -14,14 +24,16 @@ export default (props) => {
     >
       <div
         css={css`
+          position: relative;
           display: flex;
           justify-content: space-evenly;
-          padding: var(--spacing-xx-large) var(--spacing-x-large);
-          background: rgba(var(--white-rgb), 0.05);
+          padding: ${padding};
+          background: ${bgColor};
         `}
       >
         {props.children}
       </div>
+      {props.afterImage && <Img fluid={props.afterImage} />}
       <p
         css={css`
           margin: var(--spacing-small) 0 0 0;

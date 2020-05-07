@@ -47,7 +47,12 @@ export default ({ data }) => {
           margin="0"
         />
       </Frame>
-      <Frame label="Occasionally I use Google SketchUp for illustration sketching or apartment planning. In this case, I moved some cubes for Minecraft skin for Yandex.">
+      <Frame
+        label="Occasionally I use Google SketchUp for illustration sketching or apartment planning. In this case, I moved some cubes for Minecraft skin for Yandex."
+        afterImage={filterImage(images, "minecraft-bg")}
+        bgColor="linear-gradient(to top, #79a7e9, #547dc0)"
+        padding="var(--spacing-xx-large) var(--spacing-x-large) var(--spacing-base) var(--spacing-x-large)"
+      >
         <Device
           image={filterImage(images, "yandex-14-minecraft")}
           model="safari"
