@@ -1,0 +1,298 @@
+{
+  "expenses": {
+    "categories": [
+      {
+        "title": "Housing",
+        "sum": 333374,
+        "main": true
+      },
+      {
+        "title": "Rent",
+        "sum": 0,
+        "main": false,
+        "comment": "We lived in our own appartment. So nothing here."
+      },
+      {
+        "title": "Mortgage",
+        "sum": 0,
+        "main": false,
+        "comment": "No mortgage. Yoo-hoo!"
+      },
+      {
+        "title": "Utilities",
+        "sum": 42454,
+        "main": false,
+        "comment": "We not really optimised anything here. Just 2-minute showers, I guess."
+      },
+      {
+        "title": "Tax",
+        "sum": 832,
+        "main": false,
+        "comment": "TODO: taxes"
+      },
+      {
+        "title": "Repairs",
+        "sum": 290088,
+        "main": false,
+        "comment": "After spending Р1,000,000 here in 2016, we started to make our own furniture and paint the walls ourself. Our finished appartment (2018) on the-village.ru"
+      },
+      {
+        "title": "Еда",
+        "sum": 198959,
+        "main": true
+      },
+      {
+        "title": "Магазины",
+        "sum": 145140,
+        "main": false,
+        "comment": "Really low here thanks to employer."
+      },
+      {
+        "title": "Кафе и рестораны",
+        "sum": 50137,
+        "main": false,
+        "comment": "Most of our eating out was sponsored by employer."
+      },
+      {
+        "title": "Алкоголь и безалкоголь",
+        "sum": 3682,
+        "main": false,
+        "comment": "Wow! Almost sober year."
+      },
+      {
+        "title": "Транспорт",
+        "sum": 127140,
+        "main": true
+      },
+      {
+        "title": "Бензин",
+        "sum": 12615,
+        "main": false,
+        "comment": "Most of our trips was to hardware stores. And highway driving almost all the time."
+      },
+      {
+        "title": "Содержание машины",
+        "sum": 19771,
+        "main": false,
+        "comment": "Opel Meriva is pretty durable car. 150 000 km and just a regular maintenance."
+      },
+      {
+        "title": "Налоги, пошлины",
+        "sum": 0,
+        "main": false,
+        "comment": "TODO: taxes"
+      },
+      {
+        "title": "Страховка",
+        "sum": 20601,
+        "main": false,
+        "comment": "Nastya got her licence. Huge up here."
+      },
+      {
+        "title": "Парковка",
+        "sum": 0,
+        "main": false,
+        "comment": "No driving to the city—no parking."
+      },
+      {
+        "title": "Общественный транспорт",
+        "sum": 66365,
+        "main": false,
+        "comment": "Metro and bus."
+      },
+      {
+        "title": "Аренда машины",
+        "sum": 0,
+        "main": false,
+        "comment": "No carsharing this year."
+      },
+      {
+        "title": "Такси",
+        "sum": 7788,
+        "main": false,
+        "comment": "Nastya’s afterwork drives and some of our late nights together."
+      },
+      {
+        "title": "Медицина",
+        "sum": 0,
+        "main": false,
+        "comment": "My insurance was paid by employer. Nastya hasn’t any."
+      },
+      {
+        "title": "Лечение",
+        "sum": 130550,
+        "main": false,
+        "comment": "All this was paid to Nastya’s orthodontist."
+      },
+      {
+        "title": "Лекарства",
+        "sum": 7371,
+        "main": false,
+        "comment": "Teeth supplants and medicine."
+      },
+      {
+        "title": "Жизнь",
+        "sum": 337477,
+        "main": true
+      },
+      {
+        "title": "Развлечения",
+        "sum": 12581,
+        "main": false,
+        "comment": "Tickets to In Flames, Bullet For My Valentine, Nogu Svelo. Show must go on!"
+      },
+      {
+        "title": "Образование",
+        "sum": 99216,
+        "main": false,
+        "comment": "Nastya took english, driving and haircutting classes. I took carpenter class and paid for english video sessions on italki."
+      },
+      {
+        "title": "Спорт",
+        "sum": 2071,
+        "main": false,
+        "comment": "Only pull-up bar in the office. So no spending here."
+      },
+      {
+        "title": "Хобби, творчество",
+        "sum": 4731,
+        "main": false,
+        "comment": "My folk singing classes"
+      },
+      {
+        "title": "Одежда и обувь",
+        "sum": 33590,
+        "main": false,
+        "comment": "Nastya’s dresses. Ha-ha! Don’t remember exactly what we bought here."
+      },
+      {
+        "title": "Техника",
+        "sum": 31773,
+        "main": false,
+        "comment": "This year we bought cheap amplifier instead of expensive one. And Moto G5 Plus after my phone was broke."
+      },
+      {
+        "title": "Для дома",
+        "sum": 22342,
+        "main": false,
+        "comment": "IKEA for our apartment."
+      },
+      {
+        "title": "Для работы",
+        "sum": 9800,
+        "main": false,
+        "comment": "This is Nastya’s hair trimmer."
+      },
+      {
+        "title": "Хозтовары",
+        "sum": 12719,
+        "main": false,
+        "comment": "Washing supplies etc."
+      },
+      {
+        "title": "Связь",
+        "sum": 11020,
+        "main": false,
+        "comment": "Regular expenses for the carrier two persons."
+      },
+      {
+        "title": "Cервисы",
+        "sum": 9613,
+        "main": false,
+        "comment": "Grammarly, Evernote, domain and site hosting."
+      },
+      {
+        "title": "Личное",
+        "sum": 48374,
+        "main": false,
+        "comment": "This is special category for Nastya’s spending :)"
+      },
+      {
+        "title": "Прочее",
+        "sum": 39647,
+        "main": false,
+        "comment": "Major part is my craiglist bycicle. Second major part is old debt percentages."
+      },
+      {
+        "title": "Путешествия",
+        "sum": 126053,
+        "main": true
+      },
+      {
+        "title": "Жильё",
+        "sum": 35200,
+        "main": false
+      },
+      {
+        "title": "Еда, остальное",
+        "sum": 30862,
+        "main": false
+      },
+      {
+        "title": "Другим",
+        "sum": 55460,
+        "main": true
+      },
+      {
+        "title": "Подарки",
+        "sum": 49073,
+        "main": false
+      },
+      {
+        "title": "Праздники, дни рождения",
+        "sum": 5337,
+        "main": false
+      },
+      {
+        "title": "Благотворительность",
+        "sum": 1050,
+        "main": false
+      },
+      {
+        "title": "Государству",
+        "sum": 7197,
+        "main": true
+      },
+      {
+        "title": "Другие налоги и пошлины",
+        "sum": 760,
+        "main": false
+      },
+      {
+        "title": "Штрафы",
+        "sum": 6437,
+        "main": false
+      }
+    ],
+    "total": 1323581
+  },
+  "income": {
+    "categories": [
+      {
+        "title": "Зарплата",
+        "sum": 2353332
+      },
+      {
+        "title": "Фриланс",
+        "sum": 376400
+      },
+      {
+        "title": "Проценты",
+        "sum": 58036
+      },
+      {
+        "title": "Продажа",
+        "sum": 175850
+      },
+      {
+        "title": "Подарки",
+        "sum": 76500
+      },
+      {
+        "title": "Другое",
+        "sum": 267100
+      }
+    ],
+    "total": 3307218
+  }
+}

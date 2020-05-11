@@ -6,6 +6,7 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
 import Menu from "../Menu";
+import Avatar from "../Avatar";
 import "./style.css";
 
 export default (props) => {
@@ -58,7 +59,9 @@ function Header(props) {
           width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
         `}
       >
-        <Avatar image={image.file.childImageSharp.fixed} />
+        <Link to={`/`}>
+          <Avatar image={image.file.childImageSharp.fixed} />
+        </Link>
       </div>
       <div
         css={css`
@@ -75,17 +78,6 @@ function Header(props) {
         {/* Langs go here */}
       </div>
     </nav>
-  );
-}
-
-function Avatar(props) {
-  const StyledImg = styled((props) => <Img {...props} />)`
-    border-radius: 40px;
-  `;
-  return (
-    <Link to={`/`}>
-      <StyledImg fixed={props.image} />
-    </Link>
   );
 }
 

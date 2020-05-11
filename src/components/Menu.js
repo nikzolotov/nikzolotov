@@ -45,7 +45,7 @@ function MenuItem(props) {
   `;
 
   const inlineStyle = props.inline
-    ? "display: inline-block; margin-right: var(--spacing-base)"
+    ? "display: inline-block; margin-right: var(--spacing-base);"
     : "";
 
   return (
