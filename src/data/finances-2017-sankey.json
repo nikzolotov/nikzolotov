@@ -1,22 +1,22 @@
 {
   "nodes": [
-    { "name": "Зарплата" },
-    { "name": "Доходы" },
-    { "name": "Фриланс" },
-    { "name": "Проценты" },
-    { "name": "Продажи" },
-    { "name": "Подарки" },
-    { "name": "Другое" },
-    { "name": "Жильё" },
-    { "name": "Еда" },
-    { "name": "Транспорт" },
-    { "name": "Медицина" },
-    { "name": "Жизнь" },
-    { "name": "Путешествия" },
-    { "name": "Другим" },
-    { "name": "Накопления" },
-    { "name": "ЖКХ" },
-    { "name": "ремонт" },
+    { "name": "Paycheck" },
+    { "name": "Income" },
+    { "name": "Side hustle" },
+    { "name": "Interest" },
+    { "name": "Stuff sales" },
+    { "name": "Presents" },
+    { "name": "Other" },
+    { "name": "Housing" },
+    { "name": "Food" },
+    { "name": "Transportation" },
+    { "name": "Medicine" },
+    { "name": "Life" },
+    { "name": "Travel" },
+    { "name": "Donations" },
+    { "name": "Savings" },
+    { "name": "Utilities" },
+    { "name": "Repairs" },
     { "name": "Groceries" },
     { "name": "Eating out" },
     { "name": "Alcohol" },
@@ -27,239 +27,244 @@
     { "name": "Taxi" },
     { "name": "Doctor visits" },
     { "name": "Pharmacy" },
-    { "name": "Развлечения" },
-    { "name": "Образование" },
-    { "name": "Спорт" },
-    { "name": "Хобби творчество" },
-    { "name": "Одежда и обувь" },
-    { "name": "Техника" },
-    { "name": "Для дома" },
-    { "name": "Для работы" },
-    { "name": "Хозтовары" },
-    { "name": "Связь" },
-    { "name": "Cервисы" },
-    { "name": "Личное" },
-    { "name": "Прочее" }
+    { "name": "Entertainment" },
+    { "name": "Education" },
+    { "name": "Sport" },
+    { "name": "Hobbies and arts" },
+    { "name": "Clothing" },
+    { "name": "Tech & Gadgets" },
+    { "name": "Home stuff" },
+    { "name": "Work supplies" },
+    { "name": "Household goods" },
+    { "name": "Cell phone" },
+    { "name": "Subscriptions" },
+    { "name": "Personal" },
+    { "name": "Misc" }
   ],
   "links": [
     {
-      "source": "Зарплата",
-      "target": "Доходы",
+      "source": "Paycheck",
+      "target": "Income",
       "value": 2353332,
       "color": "#566C56"
     },
     {
-      "source": "Фриланс",
-      "target": "Доходы",
+      "source": "Side hustle",
+      "target": "Income",
       "value": 376400,
       "color": "#566C56"
     },
     {
-      "source": "Проценты",
-      "target": "Доходы",
+      "source": "Interest",
+      "target": "Income",
       "value": 58036,
       "color": "#566C56"
     },
     {
-      "source": "Продажи",
-      "target": "Доходы",
+      "source": "Stuff sales",
+      "target": "Income",
       "value": 175850,
       "color": "#566C56"
     },
     {
-      "source": "Подарки",
-      "target": "Доходы",
+      "source": "Presents",
+      "target": "Income",
       "value": 76500,
       "color": "#566C56"
     },
     {
-      "source": "Другое",
-      "target": "Доходы",
+      "source": "Other",
+      "target": "Income",
       "value": 267100,
       "color": "#566C56"
     },
     {
-      "source": "Доходы",
-      "target": "Жильё",
+      "source": "Income",
+      "target": "Housing",
       "value": 333374,
       "color": "#865959"
     },
     {
-      "source": "Доходы",
-      "target": "Еда",
+      "source": "Income",
+      "target": "Food",
       "value": 198959,
       "color": "#4A6376"
     },
     {
-      "source": "Доходы",
-      "target": "Транспорт",
+      "source": "Income",
+      "target": "Transportation",
       "value": 127140,
       "color": "#566C56"
     },
     {
-      "source": "Доходы",
-      "target": "Медицина",
+      "source": "Income",
+      "target": "Medicine",
       "value": 137921,
       "color": "#566C56"
     },
     {
-      "source": "Доходы",
-      "target": "Жизнь",
+      "source": "Income",
+      "target": "Life",
       "value": 337477,
       "color": "#867B59"
     },
     {
-      "source": "Доходы",
-      "target": "Путешествия",
+      "source": "Income",
+      "target": "Travel",
       "value": 126053,
       "color": "#566C56"
     },
     {
-      "source": "Доходы",
-      "target": "Другим",
+      "source": "Income",
+      "target": "Donations",
       "value": 55460,
       "color": "#566C56"
     },
     {
-      "source": "Доходы",
-      "target": "Накопления",
+      "source": "Income",
+      "target": "Savings",
       "value": 1983637,
       "color": "#566C56"
     },
-    { "source": "Жильё", "target": "ЖКХ", "value": 42454, "color": "#865959" },
     {
-      "source": "Жильё",
-      "target": "ремонт",
+      "source": "Housing",
+      "target": "Utilities",
+      "value": 42454,
+      "color": "#865959"
+    },
+    {
+      "source": "Housing",
+      "target": "Repairs",
       "value": 290088,
       "color": "#865959"
     },
     {
-      "source": "Еда",
+      "source": "Food",
       "target": "Groceries",
       "value": 145140,
       "color": "#4A6376"
     },
     {
-      "source": "Еда",
+      "source": "Food",
       "target": "Eating out",
       "value": 50137,
       "color": "#4A6376"
     },
-    { "source": "Еда", "target": "Alcohol", "value": 3682, "color": "#4A6376" },
     {
-      "source": "Транспорт",
+      "source": "Food",
+      "target": "Alcohol",
+      "value": 3682,
+      "color": "#4A6376"
+    },
+    {
+      "source": "Transportation",
       "target": "Gas",
       "value": 12615,
       "color": "#566C56"
     },
     {
-      "source": "Транспорт",
+      "source": "Transportation",
       "target": "Maintenance",
       "value": 19771,
       "color": "#566C56"
     },
     {
-      "source": "Транспорт",
+      "source": "Transportation",
       "target": "Insurance",
       "value": 20601,
       "color": "#566C56"
     },
     {
-      "source": "Транспорт",
+      "source": "Transportation",
       "target": "Public transport",
       "value": 66365,
       "color": "#566C56"
     },
     {
-      "source": "Транспорт",
+      "source": "Transportation",
       "target": "Taxi",
       "value": 7788,
       "color": "#566C56"
     },
     {
-      "source": "Медицина",
+      "source": "Medicine",
       "target": "Doctor visits",
       "value": 130550,
       "color": "#566C56"
     },
     {
-      "source": "Медицина",
+      "source": "Medicine",
       "target": "Pharmacy",
       "value": 7371,
       "color": "#566C56"
     },
     {
-      "source": "Жизнь",
-      "target": "Развлечения",
+      "source": "Life",
+      "target": "Entertainment",
       "value": 12581,
       "color": "#867B59"
     },
     {
-      "source": "Жизнь",
-      "target": "Образование",
+      "source": "Life",
+      "target": "Education",
       "value": 99216,
       "color": "#867B59"
     },
-    { "source": "Жизнь", "target": "Спорт", "value": 2071, "color": "#867B59" },
+    { "source": "Life", "target": "Sport", "value": 2071, "color": "#867B59" },
     {
-      "source": "Жизнь",
-      "target": "Хобби творчество",
+      "source": "Life",
+      "target": "Hobbies and arts",
       "value": 4731,
       "color": "#867B59"
     },
     {
-      "source": "Жизнь",
-      "target": "Одежда и обувь",
+      "source": "Life",
+      "target": "Clothing",
       "value": 33590,
       "color": "#867B59"
     },
     {
-      "source": "Жизнь",
-      "target": "Техника",
+      "source": "Life",
+      "target": "Tech & Gadgets",
       "value": 31773,
       "color": "#867B59"
     },
     {
-      "source": "Жизнь",
-      "target": "Для дома",
+      "source": "Life",
+      "target": "Home stuff",
       "value": 22342,
       "color": "#867B59"
     },
     {
-      "source": "Жизнь",
-      "target": "Для работы",
+      "source": "Life",
+      "target": "Work supplies",
       "value": 9800,
       "color": "#867B59"
     },
     {
-      "source": "Жизнь",
-      "target": "Хозтовары",
+      "source": "Life",
+      "target": "Household goods",
       "value": 12719,
       "color": "#867B59"
     },
     {
-      "source": "Жизнь",
-      "target": "Связь",
+      "source": "Life",
+      "target": "Cell phone",
       "value": 11020,
       "color": "#867B59"
     },
     {
-      "source": "Жизнь",
-      "target": "Cервисы",
+      "source": "Life",
+      "target": "Subscriptions",
       "value": 9613,
       "color": "#867B59"
     },
     {
-      "source": "Жизнь",
-      "target": "Личное",
+      "source": "Life",
+      "target": "Personal",
       "value": 48374,
       "color": "#867B59"
     },
-    {
-      "source": "Жизнь",
-      "target": "Прочее",
-      "value": 39647,
-      "color": "#867B59"
-    }
+    { "source": "Life", "target": "Misc", "value": 39647, "color": "#867B59" }
   ]
 }

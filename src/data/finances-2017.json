@@ -16,13 +16,13 @@
         "title": "Mortgage",
         "sum": 0,
         "main": false,
-        "comment": "No mortgage. Yoo-hoo!"
+        "comment": "No mortgage. Woo-hoo!"
       },
       {
         "title": "Utilities",
         "sum": 42454,
         "main": false,
-        "comment": "We not really optimised anything here. Just 2-minute showers, I guess."
+        "comment": "We not really optimised anything here. But we love 2-minute showers."
       },
       {
         "title": "Tax",
@@ -34,7 +34,7 @@
         "title": "Repairs",
         "sum": 290088,
         "main": false,
-        "comment": "After spending Р1,000,000 here in 2016, we started to make our own furniture and paint the walls ourself. Our finished appartment (2018) on the-village.ru"
+        "comment": "After spending Р1,000,000 here in 2016, we started to make our own furniture and paint the walls ourself. Our finished appartment (2018) on <a href='?'>the-village.ru</a>"
       },
       {
         "title": "Еда",
@@ -270,7 +270,8 @@
     "categories": [
       {
         "title": "Зарплата",
-        "sum": 2353332
+        "sum": 2353332,
+        "comment": "We lived in our own appartment. So nothing here."
       },
       {
         "title": "Фриланс",

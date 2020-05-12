@@ -74,3 +74,9 @@ abbr {
     margin-right: -.06em;
     text-decoration: none;
     }
+table {
+    border-spacing: 0;
+    }
+td, th {
+    vertical-align: baseline;
+    }

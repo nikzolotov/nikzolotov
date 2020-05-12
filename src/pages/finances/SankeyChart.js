@@ -104,7 +104,8 @@ class SankeyChart extends React.Component {
       .text((d) => d.name)
       .append("tspan")
       .attr("fill-opacity", 0.5)
-      .text((d) => ` ${d.value.toLocaleString()}`);
+      .attr("xml:space", "preserve")
+      .text((d) => `  ${d.value.toLocaleString()}`);
   }
 
   render() {

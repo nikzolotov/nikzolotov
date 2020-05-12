@@ -12,11 +12,17 @@ export default (props) => {
     <div
       css={css`
         position: relative;
+        min-width: 1000px;
         margin: var(--spacing-base) var(--spacing-large);
       `}
     >
       <Header {...props} />
-      <p>
+      <p
+        css={css`
+          max-width: 660px;
+          margin: 0;
+        `}
+      >
         2017 was the first year we started tracking our finances. This was also
         the first year we started saving money. And we did it aggressively. Dual
         income, no kids and frugal lifestyle, so we nailed it! This was year of
@@ -26,33 +32,120 @@ export default (props) => {
       </p>
       <div
         css={css`
-          padding-right: 15%;
+          position: relative;
+          padding-right: 12%;
         `}
       >
+        <Totals />
         <SankeyChart data={financesSankey} />
       </div>
-      <Totals />
-      <h2>Income</h2>
-      <CategoriesTable data={finances.income.categories} />
-      <h2>Expences</h2>
-      <CategoriesTable data={finances.expenses.categories} />
+      <div
+        css={css`
+          width: 80%;
+        `}
+      >
+        <h2>Income</h2>
+        <CategoriesTable data={finances.income.categories} />
+        <h2>Expences</h2>
+        <CategoriesTable data={finances.expenses.categories} />
+      </div>
     </div>
   );
 };
 
 function Header(props) {
+  var menuItemStyle = css`
+    margin: 0 var(--spacing-base) 0 0;
+    &:last-child {
+      margin: 0;
+    }
+  `;
   return (
-    <>
-      <h1>Personal finances</h1>
-
-      <Avatar image={props.data.file.childImageSharp.fixed} />
-    </>
+    <div
+      css={css`
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+      `}
+    >
+      <div
+        css={css`
+          width: 30%;
+        `}
+      >
+        <h1
+          css={css`
+            margin: 0;
+          `}
+        >
+          Personal&nbsp;finances
+        </h1>
+      </div>
+      <div
+        css={css`
+          width: 40%;
+        `}
+      >
+        <ul
+          css={css`
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+          `}
+        >
+          <li css={menuItemStyle}>Overview</li>
+          <li css={menuItemStyle}>2019</li>
+          <li css={menuItemStyle}>2018</li>
+          <li
+            css={css`
+              color: #fff;
+              ${menuItemStyle}
+            `}
+          >
+            2017
+          </li>
+        </ul>
+      </div>
+      <div
+        css={css`
+          width: 30%;
+          text-align: right;
+        `}
+      >
+        <div
+          css={css`
+            display: inline-flex;
+            flex-direction: row-reverse;
+          `}
+        >
+          <Avatar
+            image={props.data.nastya.childImageSharp.fixed}
+            margin="0 0 0 -10px"
+          />
+          <Avatar image={props.data.nikita.childImageSharp.fixed} />
+        </div>
+      </div>
+    </div>
   );
 }
 
 function Totals(props) {
   return (
-    <ul>
+    <ul
+      css={css`
+        position: absolute;
+        top: var(--spacing-base);
+        left: 0;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      `}
+    >
       <Total title="Income" value={finances.income.total} />
       <Total title="Spending" value={finances.expenses.total} />
       <Total
@@ -61,26 +154,60 @@ function Totals(props) {
       />
       <Total
         title="Savings rate"
-        value={
-          (1 - finances.expenses.total / finances.income.total) * 100 + "%"
-        }
+        value={(1 - finances.expenses.total / finances.income.total) * 100}
+        percentage
       />
     </ul>
   );
 }
 function Total(props) {
   return (
-    <li>
-      <span>{props.title}</span>
-      <span>{props.value}</span>
-      <span>+100%</span>
+    <li
+      css={css`
+        margin: 0 var(--spacing-base) 0 0;
+      `}
+    >
+      <span
+        css={css`
+          display: block;
+        `}
+      >
+        {props.title}
+      </span>
+      <span
+        css={css`
+          display: block;
+          font-family: ApercuBold, Helvetica, Arial, sans-serif;
+        `}
+      >
+        {props.percentage ? (
+          <>{props.value.toFixed(2)}&thinsp;%</>
+        ) : (
+          props.value.toLocaleString()
+        )}
+      </span>
+      <span
+        css={css`
+          display: block;
+          font-size: 15px;
+          line-height: 20px;
+          color: #82be70;
+        `}
+      >
+        +100%
+      </span>
     </li>
   );
 }
 
 function CategoriesTable(props) {
   return (
-    <table>
+    <table
+      css={css`
+        width: 100%;
+        margin-bottom: var(--spacing-large);
+      `}
+    >
       <tbody>
         {props.data.map((props, i) => (
           <CategoriesTableItem {...props} />
@@ -90,20 +217,73 @@ function CategoriesTable(props) {
   );
 }
 function CategoriesTableItem(props) {
+  const thStyle = css`
+    padding: var(--spacing-large) 0 10px 0;
+    font-family: ApercuBold, Helvetica, Arial, sans-serif;
+    line-height: 24px;
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
+  `;
+  const tdStyle = css`
+    padding: 10px 0;
+    line-height: 24px;
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
+  `;
   return (
     <>
       <tr>
         {props.main ? (
           <>
-            <th>{props.title}</th>
-            <th>{props.sum}</th>
-            <th>{props.comment}</th>
+            <th
+              css={css`
+                text-align: left;
+                ${thStyle}
+              `}
+            >
+              {props.title}
+            </th>
+            <th
+              css={css`
+                text-align: right;
+                ${thStyle}
+              `}
+            >
+              {props.sum.toLocaleString()}
+            </th>
+            <th
+              css={css`
+                ${thStyle}
+              `}
+            >
+              {props.comment}
+            </th>
           </>
         ) : (
           <>
-            <td>{props.title}</td>
-            <td>{props.sum}</td>
-            <td>{props.comment}</td>
+            <td
+              css={css`
+                width: 280px;
+                ${tdStyle}
+              `}
+            >
+              {props.title}
+            </td>
+            <td
+              css={css`
+                width: 60px;
+                text-align: right;
+                ${tdStyle}
+              `}
+            >
+              {props.sum.toLocaleString()}
+            </td>
+            <td
+              css={css`
+                ${tdStyle};
+                padding-left: var(--spacing-large);
+                color: var(--text-color-2);
+              `}
+              dangerouslySetInnerHTML={{ __html: props.comment }}
+            />
           </>
         )}
       </tr>
@@ -113,7 +293,14 @@ function CategoriesTableItem(props) {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "components/Layout/avatar.jpg" }) {
+    nikita: file(relativePath: { eq: "components/Layout/avatar.jpg" }) {
+      childImageSharp {
+        fixed(width: 60, height: 60) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    nastya: file(relativePath: { eq: "pages/finances/nastya.jpg" }) {
       childImageSharp {
         fixed(width: 60, height: 60) {
           ...GatsbyImageSharpFixed
