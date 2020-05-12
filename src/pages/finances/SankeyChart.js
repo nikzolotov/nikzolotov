@@ -19,7 +19,7 @@ class SankeyChart extends React.Component {
   }
 
   draw() {
-    const { width, height, padding } = this.props,
+    const { width, height, padding, color } = this.props,
       svg = this.svg;
 
     var sankey = d3
@@ -49,18 +49,18 @@ class SankeyChart extends React.Component {
       .attr("height", (d) => d.y1 - d.y0)
       .attr("width", (d) => d.x1 - d.x0 - 2)
       .attr("fill", (d) => {
-        //   let c;
-        //   for (const link of d.sourceLinks) {
-        //     if (c === undefined) c = link.color;
-        //     else if (c !== link.color) c = null;
-        //   }
-        //   if (c === undefined)
-        //     for (const link of d.targetLinks) {
-        //       if (c === undefined) c = link.color;
-        //       else if (c !== link.color) c = null;
-        //     }
-        //   return (d3.color(c) || d3.color(color)).darker(0.5);
-        return "#485848";
+        let c;
+        for (const link of d.sourceLinks) {
+          if (c === undefined) c = link.color;
+          else if (c !== link.color) c = null;
+        }
+        if (c === undefined)
+          for (const link of d.targetLinks) {
+            if (c === undefined) c = link.color;
+            else if (c !== link.color) c = null;
+          }
+        return (d3.color(c) || d3.color(color)).darker(0.5);
+        // return "#485848";
       })
       .append("title")
       .text((d) => `${d.name}\n${d.value.toLocaleString()}`);
@@ -71,8 +71,8 @@ class SankeyChart extends React.Component {
       .selectAll("g")
       .data(links)
       .join("g")
-      //   .attr("stroke", (d) => d3.color(d.color) || color);
-      .attr("stroke", (d) => "#566C56");
+      .attr("stroke", (d) => d3.color(d.color) || color);
+    // .attr("stroke", (d) => "#566C56");
 
     link
       .append("path")
@@ -88,19 +88,19 @@ class SankeyChart extends React.Component {
 
     svg
       .append("g")
-      .style("font-size", "15px")
       .style("fill", "#fff")
       .selectAll("text")
       .data(nodes)
       .join("text")
       .attr("x", (d) =>
-        d.x0 < width / 2 || d.x0 > width - 100 ? d.x1 + 6 : d.x0 - 6
+        d.x0 < width / 2 || d.x0 > width - 100 ? d.x1 + 10 : d.x0 - 10
       )
       .attr("y", (d) => (d.y1 + d.y0) / 2)
       .attr("dy", "0.35em")
       .attr("text-anchor", (d) =>
         d.x0 < width / 2 || d.x0 > width - 100 ? "start" : "end"
       )
+      .style("font-size", (d) => (d.x0 < width - 100 ? "16px" : "14px"))
       .text((d) => d.name)
       .append("tspan")
       .attr("fill-opacity", 0.5)
@@ -122,8 +122,9 @@ class SankeyChart extends React.Component {
 
 SankeyChart.defaultProps = {
   width: 1200,
-  height: 620,
-  padding: 20,
+  height: 720,
+  padding: 24,
+  color: "#566C56",
 };
 
 SankeyChart.propTypes = {
@@ -131,6 +132,7 @@ SankeyChart.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
   padding: PropTypes.number,
+  color: PropTypes.string,
 };
 
 export default SankeyChart;
