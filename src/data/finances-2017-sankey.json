@@ -1,0 +1,265 @@
+{
+  "nodes": [
+    { "name": "Зарплата" },
+    { "name": "Доходы" },
+    { "name": "Фриланс" },
+    { "name": "Проценты" },
+    { "name": "Продажи" },
+    { "name": "Подарки" },
+    { "name": "Другое" },
+    { "name": "Жильё" },
+    { "name": "Еда" },
+    { "name": "Транспорт" },
+    { "name": "Медицина" },
+    { "name": "Жизнь" },
+    { "name": "Путешествия" },
+    { "name": "Другим" },
+    { "name": "Накопления" },
+    { "name": "ЖКХ" },
+    { "name": "ремонт" },
+    { "name": "Groceries" },
+    { "name": "Eating out" },
+    { "name": "Alcohol" },
+    { "name": "Gas" },
+    { "name": "Maintenance" },
+    { "name": "Insurance" },
+    { "name": "Public transport" },
+    { "name": "Taxi" },
+    { "name": "Doctor visits" },
+    { "name": "Pharmacy" },
+    { "name": "Развлечения" },
+    { "name": "Образование" },
+    { "name": "Спорт" },
+    { "name": "Хобби творчество" },
+    { "name": "Одежда и обувь" },
+    { "name": "Техника" },
+    { "name": "Для дома" },
+    { "name": "Для работы" },
+    { "name": "Хозтовары" },
+    { "name": "Связь" },
+    { "name": "Cервисы" },
+    { "name": "Личное" },
+    { "name": "Прочее" }
+  ],
+  "links": [
+    {
+      "source": "Зарплата",
+      "target": "Доходы",
+      "value": 2353332,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Фриланс",
+      "target": "Доходы",
+      "value": 376400,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Проценты",
+      "target": "Доходы",
+      "value": 58036,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Продажи",
+      "target": "Доходы",
+      "value": 175850,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Подарки",
+      "target": "Доходы",
+      "value": 76500,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Другое",
+      "target": "Доходы",
+      "value": 267100,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Доходы",
+      "target": "Жильё",
+      "value": 333374,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Доходы",
+      "target": "Еда",
+      "value": 198959,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Доходы",
+      "target": "Транспорт",
+      "value": 127140,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Доходы",
+      "target": "Медицина",
+      "value": 137921,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Доходы",
+      "target": "Жизнь",
+      "value": 337477,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Доходы",
+      "target": "Путешествия",
+      "value": 126053,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Доходы",
+      "target": "Другим",
+      "value": 55460,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Доходы",
+      "target": "Накопления",
+      "value": 1983637,
+      "color": "#cde9b5"
+    },
+    { "source": "Жильё", "target": "ЖКХ", "value": 42454, "color": "#cde9b5" },
+    {
+      "source": "Жильё",
+      "target": "ремонт",
+      "value": 290088,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Еда",
+      "target": "Groceries",
+      "value": 145140,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Еда",
+      "target": "Eating out",
+      "value": 50137,
+      "color": "#cde9b5"
+    },
+    { "source": "Еда", "target": "Alcohol", "value": 3682, "color": "#cde9b5" },
+    {
+      "source": "Транспорт",
+      "target": "Gas",
+      "value": 12615,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Транспорт",
+      "target": "Maintenance",
+      "value": 19771,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Транспорт",
+      "target": "Insurance",
+      "value": 20601,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Транспорт",
+      "target": "Public transport",
+      "value": 66365,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Транспорт",
+      "target": "Taxi",
+      "value": 7788,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Медицина",
+      "target": "Doctor visits",
+      "value": 130550,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Медицина",
+      "target": "Pharmacy",
+      "value": 7371,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Развлечения",
+      "value": 12581,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Образование",
+      "value": 99216,
+      "color": "#cde9b5"
+    },
+    { "source": "Жизнь", "target": "Спорт", "value": 2071, "color": "#cde9b5" },
+    {
+      "source": "Жизнь",
+      "target": "Хобби творчество",
+      "value": 4731,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Одежда и обувь",
+      "value": 33590,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Техника",
+      "value": 31773,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Для дома",
+      "value": 22342,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Для работы",
+      "value": 9800,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Хозтовары",
+      "value": 12719,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Связь",
+      "value": 11020,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Cервисы",
+      "value": 9613,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Личное",
+      "value": 48374,
+      "color": "#cde9b5"
+    },
+    {
+      "source": "Жизнь",
+      "target": "Прочее",
+      "value": 39647,
+      "color": "#cde9b5"
+    }
+  ]
+}
