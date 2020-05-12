@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
-import * as d3 from "d3";
 
 import Avatar from "../../components/Avatar";
 import SankeyChart from "./SankeyChart";
@@ -9,10 +8,6 @@ import finances from "../../data/finances-2017.json";
 import financesSankey from "../../data/finances-2017-sankey.json";
 
 export default (props) => {
-  // var chart = BarChart();
-  // d3.selectAll(".graph").datum(financesSankey).call(chart);
-  // d3.selectAll(".graph").text("dsafasdf");
-  // console.log(d3.selectAll(".graph"));
   return (
     <div
       css={css`
@@ -29,7 +24,13 @@ export default (props) => {
         episode 221 of Timm Ferriss podcast with Mr. Money Moustage. Total game
         changer for us.
       </p>
-      <SankeyChart data={financesSankey} />
+      <div
+        css={css`
+          padding-right: 15%;
+        `}
+      >
+        <SankeyChart data={financesSankey} />
+      </div>
       <Totals />
       <h2>Income</h2>
       <CategoriesTable data={finances.income.categories} />
