@@ -1,0 +1,266 @@
+{
+  "expenses": {
+    "categories": [
+      {
+        "title": "Housing",
+        "sum": 87582,
+        "main": true
+      },
+      {
+        "title": "Rent",
+        "sum": 2000,
+        "main": false
+      },
+      {
+        "title": "Mortgage",
+        "sum": 0,
+        "main": false
+      },
+      {
+        "title": "Utilities",
+        "sum": 55068,
+        "main": false
+      },
+      {
+        "title": "Tax",
+        "sum": 2842,
+        "main": false
+      },
+      {
+        "title": "Repairs",
+        "sum": 27672,
+        "main": false
+      },
+      {
+        "title": "Food",
+        "sum": 208921,
+        "main": true
+      },
+      {
+        "title": "Groceries",
+        "sum": 152945,
+        "main": false
+      },
+      {
+        "title": "Eating out",
+        "sum": 47182,
+        "main": false
+      },
+      {
+        "title": "Alcohol",
+        "sum": 8794,
+        "main": false
+      },
+      {
+        "title": "Transportation",
+        "sum": 160621,
+        "main": true
+      },
+      {
+        "title": "Gas",
+        "sum": 26829,
+        "main": false
+      },
+      {
+        "title": "Maintenance",
+        "sum": 17021,
+        "main": false
+      },
+      {
+        "title": "Insurance",
+        "sum": 0,
+        "main": false
+      },
+      {
+        "title": "Parking",
+        "sum": 0,
+        "main": false
+      },
+      {
+        "title": "Public transport",
+        "sum": 72758,
+        "main": false
+      },
+      {
+        "title": "Car rent",
+        "sum": 144,
+        "main": false
+      },
+      {
+        "title": "Taxi",
+        "sum": 5611,
+        "main": false
+      },
+      {
+        "title": "Medicine",
+        "sum": 10709,
+        "main": false
+      },
+      {
+        "title": "Doctor visits",
+        "sum": 11000,
+        "main": false
+      },
+      {
+        "title": "Pharmacy",
+        "sum": 14302,
+        "main": false
+      },
+      {
+        "title": "Life",
+        "sum": 350234,
+        "main": true
+      },
+      {
+        "title": "Entertainment",
+        "sum": 3916,
+        "main": false
+      },
+      {
+        "title": "Education",
+        "sum": 9102,
+        "main": false
+      },
+      {
+        "title": "Sport",
+        "sum": 129584,
+        "main": false
+      },
+      {
+        "title": "Hobbies and arts",
+        "sum": 2100,
+        "main": false
+      },
+      {
+        "title": "Clothing",
+        "sum": 33944,
+        "main": false
+      },
+      {
+        "title": "Tech & Gadgets",
+        "sum": 107439,
+        "main": false
+      },
+      {
+        "title": "Home stuff",
+        "sum": 0,
+        "main": false
+      },
+      {
+        "title": "Work supplies",
+        "sum": 400,
+        "main": false
+      },
+      {
+        "title": "Household goods",
+        "sum": 13557,
+        "main": false
+      },
+      {
+        "title": "Cell phone",
+        "sum": 9985,
+        "main": false
+      },
+      {
+        "title": "Subscriptions",
+        "sum": 1444,
+        "main": false
+      },
+      {
+        "title": "Personal",
+        "sum": 24750,
+        "main": false
+      },
+      {
+        "title": "Misc",
+        "sum": 14013,
+        "main": false
+      },
+      {
+        "title": "Travel",
+        "sum": 226197,
+        "main": true
+      },
+      {
+        "title": "Hotels",
+        "sum": 76200,
+        "main": false
+      },
+      {
+        "title": "Food and other",
+        "sum": 56401,
+        "main": false
+      },
+      {
+        "title": "Donations",
+        "sum": 87995,
+        "main": true
+      },
+      {
+        "title": "Presents",
+        "sum": 62527,
+        "main": false
+      },
+      {
+        "title": "Parties hosting",
+        "sum": 24868,
+        "main": false
+      },
+      {
+        "title": "Charity",
+        "sum": 600,
+        "main": false
+      },
+      {
+        "title": "Government",
+        "sum": 15142,
+        "main": true
+      },
+      {
+        "title": "Taxes and fees",
+        "sum": 12870,
+        "main": false
+      },
+      {
+        "title": "Fines",
+        "sum": 2272,
+        "main": false
+      }
+    ],
+    "total": 1172703
+  },
+  "income": {
+    "categories": [
+      {
+        "title": "Investments",
+        "sum": 0,
+        "comment": "in progress"
+      },
+      {
+        "title": "Paycheck",
+        "sum": 2369102
+      },
+      {
+        "title": "Side hustle",
+        "sum": 682450
+      },
+      {
+        "title": "Interest",
+        "sum": 19225
+      },
+      {
+        "title": "Stuff sales",
+        "sum": 153930
+      },
+      {
+        "title": "Presents",
+        "sum": 28500
+      },
+      {
+        "title": "Other",
+        "sum": 26350
+      }
+    ],
+    "total": 3279557
+  }
+}

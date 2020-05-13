@@ -29,7 +29,7 @@ export default (props) => {
           position: relative;
         `}
       >
-        <Totals />
+        <Totals data={finances} />
         <SankeyChart data={financesSankey} />
       </div>
       <div

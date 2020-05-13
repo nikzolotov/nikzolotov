@@ -4,8 +4,10 @@ import { css } from "@emotion/core";
 import Layout from "./components/Layout";
 import Totals from "./components/Totals";
 import SankeyChart from "./components/SankeyChart";
-import finances from "./data/finances-2017.json";
+import CategoriesTable from "./components/CategoriesTable";
+import finances from "./data/finances-2018.json";
 import financesSankey from "./data/finances-2018-sankey.json";
+import financesPrev from "./data/finances-2017.json";
 
 export default (props) => {
   return (
@@ -28,7 +30,7 @@ export default (props) => {
           position: relative;
         `}
       >
-        <Totals />
+        <Totals data={finances} prev={financesPrev} />
         <SankeyChart data={financesSankey} height={571} />
       </div>
       <div
@@ -36,11 +38,10 @@ export default (props) => {
           width: 80%;
         `}
       >
-        1
-        {/* <h2>Income</h2>
+        <h2>Income</h2>
         <CategoriesTable data={finances.income.categories} />
         <h2>Expences</h2>
-        <CategoriesTable data={finances.expenses.categories} /> */}
+        <CategoriesTable data={finances.expenses.categories} />
       </div>
     </Layout>
   );

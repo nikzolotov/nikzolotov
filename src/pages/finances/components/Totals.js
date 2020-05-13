@@ -12,12 +12,20 @@ export default (props) => {
         margin: 0;
         padding: 0;
         list-style: none;
+        ${props.static && "position: static; margin: var(--spacing-base) 0;"}
       `}
     >
-      <Total title="Income" value={0} />
-      <Total title="Spending" value={0} />
-      <Total title="Savings" value={1} />
-      <Total title="Savings rate" value={2} percentage />
+      <Total title="Income" value={props.data.income.total} />
+      <Total title="Spending" value={props.data.expenses.total} />
+      <Total
+        title="Savings"
+        value={props.data.income.total - props.data.expenses.total}
+      />
+      <Total
+        title="Savings rate"
+        value={(1 - props.data.expenses.total / props.data.income.total) * 100}
+        percentage
+      />
     </ul>
   );
 };
