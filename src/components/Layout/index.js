@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
-import { useStaticQuery } from "gatsby";
+import { Link, useStaticQuery } from "gatsby";
 import { css } from "@emotion/core";
 
 import Menu from "../Menu";
@@ -25,7 +24,7 @@ export default (props) => {
 function Header(props) {
   const menuItems = [
     { key: "projects", link: "/projects/", name: "Projects" },
-    { key: "datavis", link: "/datavis/", name: "Visualizations" },
+    { key: "dataviz", link: "/dataviz/", name: "Visualizations" },
     // { key: "blog", link: "/blog/", name: "Blog" },
     { key: "about", link: "/about/", name: "About" },
   ];

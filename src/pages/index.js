@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "gatsby";
+import Img from "gatsby-image";
+import { css } from "@emotion/core";
 
 import Layout from "../components/Layout";
 import Intro from "../components/Intro";
 import ProjectList from "../components/ProjectList";
 
 export default ({ data }) => {
-  const images = data.allFile.edges;
+  const images = data.projectsImgs.edges;
   const projects = [
     {
       id: "gas-stations",
@@ -32,6 +35,7 @@ export default ({ data }) => {
       cols: 2,
     },
   ];
+  console.log(data);
   return (
     <Layout index>
       <Intro>
@@ -40,6 +44,15 @@ export default ({ data }) => {
           Moscow. Here’re some projects that I’ve done in recent time.
         </p>
       </Intro>
+      <Link
+        to="/finances/2017/"
+        css={css`
+          display: block;
+          margin-bottom: 50px;
+        `}
+      >
+        <Img fluid={data.mainImg.childImageSharp.fluid} />
+      </Link>
       <ProjectList items={projects} />
     </Layout>
   );
@@ -52,11 +65,8 @@ const filterImage = function (i, name) {
 
 export const query = graphql`
   query {
-    allFile(
-      filter: {
-        extension: {}
-        relativePath: { regex: "/pages/projects/.*.(png|jpg)$/" }
-      }
+    projectsImgs: allFile(
+      filter: { relativePath: { regex: "/pages/projects/.*.(png|jpg)$/" } }
     ) {
       edges {
         node {
@@ -66,6 +76,13 @@ export const query = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+        }
+      }
+    }
+    mainImg: file(relativePath: { eq: "pages/dataviz/finances-sankey.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 720, quality: 80) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

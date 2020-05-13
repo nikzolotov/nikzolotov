@@ -4,8 +4,8 @@ import { css } from "@emotion/core";
 import Layout from "./components/Layout";
 import Totals from "./components/Totals";
 import SankeyChart from "./components/SankeyChart";
-import finances from "../../data/finances-2017.json";
-import financesSankey from "../../data/finances-2018-sankey.json";
+import finances from "./data/finances-2017.json";
+import financesSankey from "./data/finances-2018-sankey.json";
 
 export default (props) => {
   return (
