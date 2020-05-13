@@ -79,7 +79,7 @@ export const query = graphql`
         }
       }
     }
-    mainImg: file(relativePath: { eq: "pages/dataviz/finances-sankey.png" }) {
+    mainImg: file(relativePath: { eq: "pages/datavis/finances-sankey.png" }) {
       childImageSharp {
         fluid(maxHeight: 720, quality: 80) {
           ...GatsbyImageSharpFluid

@@ -24,7 +24,7 @@ export default (props) => {
 function Header(props) {
   const menuItems = [
     { key: "projects", link: "/projects/", name: "Projects" },
-    { key: "dataviz", link: "/dataviz/", name: "Visualizations" },
+    { key: "datavis", link: "/datavis/", name: "Visualizations" },
     // { key: "blog", link: "/blog/", name: "Blog" },
     { key: "about", link: "/about/", name: "About" },
   ];
@@ -56,9 +56,13 @@ function Header(props) {
           width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
         `}
       >
-        <Link to={`/`}>
+        {props.index ? (
           <Avatar image={image.file.childImageSharp.fixed} />
-        </Link>
+        ) : (
+          <Link to={`/`}>
+            <Avatar image={image.file.childImageSharp.fixed} />
+          </Link>
+        )}
       </div>
       <div
         css={css`
