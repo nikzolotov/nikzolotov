@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
-import styled from "@emotion/styled";
+import { useStaticQuery } from "gatsby";
 import { css } from "@emotion/core";
 
 import Menu from "../Menu";
@@ -68,7 +66,7 @@ function Header(props) {
           width: calc((100% * 1 / 6) - (var(--gap) * 5 / 6));
         `}
       >
-        <Menu items={menuItems} invert={props.index} />
+        <Menu items={menuItems} invert={props.index} partiallyActive />
       </div>
       <div
         css={css`

@@ -19,7 +19,7 @@ class SankeyChart extends React.Component {
   }
 
   draw() {
-    const { width, height, padding, color } = this.props,
+    const { width, height, nodePadding, rightPadding, color } = this.props,
       svg = this.svg;
 
     var sankey = d3
@@ -28,10 +28,10 @@ class SankeyChart extends React.Component {
       .nodeAlign(d3.sankeyLeft)
       .nodeSort(null)
       .nodeWidth(15)
-      .nodePadding(padding)
+      .nodePadding(nodePadding)
       .extent([
         [0, 5],
-        [width, height - 5],
+        [width - rightPadding, height - 5],
       ]);
 
     const { nodes, links } = sankey({
@@ -93,14 +93,18 @@ class SankeyChart extends React.Component {
       .data(nodes)
       .join("text")
       .attr("x", (d) =>
-        d.x0 < width / 2 || d.x0 > width - 100 ? d.x1 + 10 : d.x0 - 10
+        d.x0 < width / 2 || d.x0 > width - 50 - rightPadding
+          ? d.x1 + 10
+          : d.x0 - 10
       )
       .attr("y", (d) => (d.y1 + d.y0) / 2)
       .attr("dy", "0.35em")
       .attr("text-anchor", (d) =>
-        d.x0 < width / 2 || d.x0 > width - 100 ? "start" : "end"
+        d.x0 < width / 2 || d.x0 > width - 50 - rightPadding ? "start" : "end"
       )
-      .style("font-size", (d) => (d.x0 < width - 100 ? "16px" : "14px"))
+      .style("font-size", (d) =>
+        d.x0 < width - 50 - rightPadding ? "15px" : "13px"
+      )
       .text((d) => d.name)
       .append("tspan")
       .attr("fill-opacity", 0.5)
@@ -123,8 +127,9 @@ class SankeyChart extends React.Component {
 
 SankeyChart.defaultProps = {
   width: 1200,
-  height: 720,
-  padding: 24,
+  height: 600,
+  nodePadding: 20,
+  rightPadding: 150,
   color: "#566C56",
 };
 
@@ -132,7 +137,8 @@ SankeyChart.propTypes = {
   data: PropTypes.object.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
-  padding: PropTypes.number,
+  nodePadding: PropTypes.number,
+  rightPadding: PropTypes.number,
   color: PropTypes.string,
 };
 
