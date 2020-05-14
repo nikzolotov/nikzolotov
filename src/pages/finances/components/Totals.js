@@ -32,6 +32,7 @@ export default (props) => {
       <Total
         title="Income"
         value={income}
+        currency="₽"
         diff={(1 - prevIncome / income) * 100}
         nodata={props.nodata}
         prevYear={props.prev.year}
@@ -102,7 +103,20 @@ function Total(props) {
         {props.percentage ? (
           <>{props.value.toFixed(2)}&thinsp;%</>
         ) : (
-          props.value.toLocaleString()
+          <>
+            {props.currency && (
+              <span
+                css={css`
+                  margin-right: 0.2em;
+                  font-family: Helvetica, Arial, sans-serif;
+                  font-weight: bold;
+                `}
+              >
+                {props.currency}
+              </span>
+            )}
+            {props.value.toLocaleString()}
+          </>
         )}
       </span>
       <span

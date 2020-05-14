@@ -38,15 +38,17 @@ function MenuItem(props) {
     }
   `;
 
-  // const inlineStyle = props.inline
-  //   ? "display: inline-block; margin: 0 var(--spacing-base) 0 0;"
-  //   : "";
-
   return (
     <li
       css={css`
         margin-bottom: var(--spacing-tiny);
-        ${props.inline && "margin: 0 var(--spacing-base) 0 0"}
+        ${props.inline &&
+        css`
+          margin: 0 var(--spacing-base) 0 0;
+          &:last-child {
+            margin-right: 0;
+          }
+        `}
       `}
     >
       {!props.external ? (

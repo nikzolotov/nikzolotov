@@ -32,7 +32,13 @@ export default (props) => {
           width: 80%;
         `}
       >
-        <h2>Income</h2>
+        <h2
+          css={css`
+            margin-top: 0;
+          `}
+        >
+          Income
+        </h2>
         <CategoriesTable data={finances.income.categories} />
         <h2>Expences</h2>
         <CategoriesTable data={finances.expenses.categories} />

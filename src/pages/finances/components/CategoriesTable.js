@@ -11,7 +11,7 @@ export default (props) => {
     >
       <tbody>
         {props.data.map((props, i) => (
-          <CategoriesTableItem {...props} />
+          <CategoriesTableItem {...props} key={i} i={i} />
         ))}
       </tbody>
     </table>
@@ -23,6 +23,7 @@ function CategoriesTableItem(props) {
     font-family: ApercuBold, Helvetica, Arial, sans-serif;
     line-height: 24px;
     border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
+    ${props.i === 0 && "padding-top: 10px"}
   `;
   const tdStyle = css`
     padding: 10px 0;
@@ -30,64 +31,62 @@ function CategoriesTableItem(props) {
     border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
   `;
   return (
-    <>
-      <tr>
-        {props.main ? (
-          <>
-            <th
-              css={css`
-                text-align: left;
-                ${thStyle}
-              `}
-            >
-              {props.title}
-            </th>
-            <th
-              css={css`
-                text-align: right;
-                ${thStyle}
-              `}
-            >
-              {props.sum.toLocaleString()}
-            </th>
-            <th
-              css={css`
-                ${thStyle}
-              `}
-            >
-              {props.comment}
-            </th>
-          </>
-        ) : (
-          <>
-            <td
-              css={css`
-                width: 280px;
-                ${tdStyle}
-              `}
-            >
-              {props.title}
-            </td>
-            <td
-              css={css`
-                width: 60px;
-                text-align: right;
-                ${tdStyle}
-              `}
-            >
-              {props.sum.toLocaleString()}
-            </td>
-            <td
-              css={css`
-                ${tdStyle};
-                padding-left: var(--spacing-large);
-                color: var(--text-color-2);
-              `}
-              dangerouslySetInnerHTML={{ __html: props.comment }}
-            />
-          </>
-        )}
-      </tr>
-    </>
+    <tr>
+      {props.main ? (
+        <>
+          <th
+            css={css`
+              text-align: left;
+              ${thStyle}
+            `}
+          >
+            {props.title}
+          </th>
+          <th
+            css={css`
+              text-align: right;
+              ${thStyle}
+            `}
+          >
+            {props.sum.toLocaleString()}
+          </th>
+          <th
+            css={css`
+              ${thStyle}
+            `}
+          >
+            {props.comment}
+          </th>
+        </>
+      ) : (
+        <>
+          <td
+            css={css`
+              width: 280px;
+              ${tdStyle}
+            `}
+          >
+            {props.title}
+          </td>
+          <td
+            css={css`
+              width: 60px;
+              text-align: right;
+              ${tdStyle}
+            `}
+          >
+            {props.sum.toLocaleString()}
+          </td>
+          <td
+            css={css`
+              ${tdStyle};
+              padding-left: var(--spacing-large);
+              color: var(--text-color-2);
+            `}
+            dangerouslySetInnerHTML={{ __html: props.comment }}
+          />
+        </>
+      )}
+    </tr>
   );
 }

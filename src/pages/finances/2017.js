@@ -37,6 +37,7 @@ export default (props) => {
       <div
         css={css`
           position: relative;
+          margin-bottom: var(--spacing-x-large);
         `}
       >
         <Totals data={finances} prev={prev} nodata />
