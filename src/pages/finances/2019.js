@@ -25,14 +25,8 @@ export default (props) => {
         episode 221 of Timm Ferriss podcast with Mr. Money Moustage. Total game
         changer for us.
       </p>
-      <div
-        css={css`
-          // position: relative;
-        `}
-      >
-        <Totals data={finances} prev={financesPrev} static />
-        <SankeyChart data={financesSankey} height={550} />
-      </div>
+      <Totals data={finances} prev={financesPrev} static />
+      <SankeyChart data={financesSankey} height={555} />
       <div
         css={css`
           width: 80%;

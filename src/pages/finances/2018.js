@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Totals from "./components/Totals";
 import SankeyChart from "./components/SankeyChart";
 import CategoriesTable from "./components/CategoriesTable";
+
 import finances from "./data/finances-2018.json";
 import financesSankey from "./data/finances-2018-sankey.json";
 import financesPrev from "./data/finances-2017.json";

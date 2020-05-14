@@ -1,6 +1,8 @@
 :root {
     --green: #9FBE96;
     --red: #FF7E7E;
+    --green-bright: #82be70;
+    --red-bright: #FF4D4D;
     --white-rgb: 255, 255, 255;
     --text-color-1: rgba(var(--white-rgb), 0.9);
     --text-color-2: rgba(var(--white-rgb), 0.4);

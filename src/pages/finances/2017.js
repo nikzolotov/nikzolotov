@@ -9,6 +9,16 @@ import finances from "./data/finances-2017.json";
 import financesSankey from "./data/finances-2017-sankey.json";
 
 export default (props) => {
+  // Fake data for 2016. But we assume that there were no savings
+  const prev = {
+    year: 2016,
+    expenses: {
+      total: 3000000,
+    },
+    income: {
+      total: 3000000,
+    },
+  };
   return (
     <Layout>
       <p
@@ -29,7 +39,7 @@ export default (props) => {
           position: relative;
         `}
       >
-        <Totals data={finances} />
+        <Totals data={finances} prev={prev} nodata />
         <SankeyChart data={financesSankey} />
       </div>
       <div

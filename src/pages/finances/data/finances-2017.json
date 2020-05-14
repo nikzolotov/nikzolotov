@@ -1,4 +1,5 @@
 {
+  "year": 2017,
   "expenses": {
     "categories": [
       {
@@ -133,7 +134,7 @@
         "title": "Entertainment",
         "sum": 12581,
         "main": false,
-        "comment": "Tickets to In Flames, Bullet For My Valentine, Nogu Svelo. Whole lot of fun!"
+        "comment": "Tickets to In Flames, Bullet For My Valentine, Nogu Svelo. Whole lot of fun this year!"
       },
       {
         "title": "Education",
