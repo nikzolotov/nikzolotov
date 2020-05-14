@@ -1,6 +1,8 @@
 import React from "react";
 import { css } from "@emotion/core";
 
+import Diff from "./Diff";
+
 export default (props) => {
   const income = props.data.income.total,
     spending = props.data.expenses.total,
@@ -58,29 +60,8 @@ export default (props) => {
     </ul>
   );
 };
+
 function Total(props) {
-  var color, label;
-
-  if (props.nodata) {
-    color = "var(--text-color-2)";
-  } else if (props.diff > 0 || (props.diffInvert && props.diff < 0)) {
-    color = "var(--green-bright)";
-  } else {
-    color = "var(--red-bright)";
-  }
-
-  if (props.nodata) {
-    label = "No data";
-    label += props.prevYear ? " for " + props.prevYear : "";
-  } else {
-    label = props.diff > 0 ? "+" : "";
-    label +=
-      Math.abs(props.diff) > 100
-        ? props.diff.toFixed(0)
-        : props.diff.toFixed(2);
-    label += "&thinsp;%";
-  }
-
   return (
     <li
       css={css`
@@ -124,10 +105,15 @@ function Total(props) {
           display: block;
           font-size: 15px;
           line-height: 20px;
-          color: ${color};
         `}
-        dangerouslySetInnerHTML={{ __html: label }}
-      />
+      >
+        <Diff
+          value={props.diff}
+          invert={props.diffInvert}
+          nodata={props.nodata}
+          prevYear={props.prevYear}
+        />
+      </span>
     </li>
   );
 }

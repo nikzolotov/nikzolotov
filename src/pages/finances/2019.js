@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Totals from "./components/Totals";
 import SankeyChart from "./components/SankeyChart";
 import CategoriesTable from "./components/CategoriesTable";
+
 import finances from "./data/finances-2019.json";
 import financesSankey from "./data/finances-2019-sankey.json";
 import financesPrev from "./data/finances-2018.json";
@@ -39,9 +40,16 @@ export default (props) => {
         >
           Income
         </h2>
-        <CategoriesTable data={finances.income.categories} />
+        <CategoriesTable
+          data={finances.income.categories}
+          prev={financesPrev.income.categories}
+        />
         <h2>Expences</h2>
-        <CategoriesTable data={finances.expenses.categories} />
+        <CategoriesTable
+          data={finances.expenses.categories}
+          prev={financesPrev.expenses.categories}
+          diffInvert
+        />
       </div>
     </Layout>
   );

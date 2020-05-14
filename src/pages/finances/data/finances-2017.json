@@ -73,6 +73,12 @@
       },
       {
         "title": "Maintenance",
+        "sum": 19771,
+        "main": false,
+        "comment": "Opel Meriva is pretty durable car. 150 000 km and just a regular maintenance."
+      },
+      {
+        "title": "Car Tax",
         "sum": 0,
         "main": false,
         "comment": "TODO: taxes"
@@ -109,6 +115,11 @@
       },
       {
         "title": "Medicine",
+        "sum": 137921,
+        "main": true
+      },
+      {
+        "title": "Health Insurance",
         "sum": 0,
         "main": false,
         "comment": "My insurance was paid by employer. Nastya hasn’t any."

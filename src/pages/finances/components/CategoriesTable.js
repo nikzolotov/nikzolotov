@@ -1,7 +1,12 @@
 import React from "react";
 import { css } from "@emotion/core";
 
+import Diff from "./Diff";
+
 export default (props) => {
+  const prev = props.prev,
+    diffInvert = props.diffInvert;
+
   return (
     <table
       css={css`
@@ -11,13 +16,26 @@ export default (props) => {
     >
       <tbody>
         {props.data.map((props, i) => (
-          <CategoriesTableItem {...props} key={i} i={i} />
+          <CategoriesTableItem
+            {...props}
+            key={i}
+            i={i}
+            prev={prev}
+            diffInvert={diffInvert}
+          />
         ))}
       </tbody>
     </table>
   );
 };
 function CategoriesTableItem(props) {
+  var prevSum, diff;
+
+  if (props.prev) {
+    prevSum = props.prev.filter((item) => item.title === props.title)[0].sum;
+    diff = (1 - prevSum / props.sum) * 100;
+  }
+
   const thStyle = css`
     padding: var(--spacing-large) 0 10px 0;
     font-family: ApercuBold, Helvetica, Arial, sans-serif;
@@ -36,20 +54,32 @@ function CategoriesTableItem(props) {
         <>
           <th
             css={css`
-              text-align: left;
               ${thStyle}
+              text-align: left;
             `}
           >
             {props.title}
           </th>
           <th
             css={css`
-              text-align: right;
               ${thStyle}
+              text-align: right;
             `}
           >
             {props.sum.toLocaleString()}
           </th>
+          {props.prev && (
+            <th
+              css={css`
+                ${thStyle}
+                text-align: right;
+                font: 15px ApercuRegular, Helvetica, sans-serif;
+                display: none;
+              `}
+            >
+              <Diff value={diff} invert={props.diffInvert} />
+            </th>
+          )}
           <th
             css={css`
               ${thStyle}
@@ -62,21 +92,34 @@ function CategoriesTableItem(props) {
         <>
           <td
             css={css`
-              width: 280px;
               ${tdStyle}
+              width: 200px;
             `}
           >
             {props.title}
           </td>
           <td
             css={css`
-              width: 60px;
-              text-align: right;
               ${tdStyle}
+              width: 90px;
+              text-align: right;
             `}
           >
             {props.sum.toLocaleString()}
           </td>
+          {props.prev && (
+            <td
+              css={css`
+                ${tdStyle}
+                width: 90px;
+                text-align: right;
+                font-size: 15px;
+                display: none;
+              `}
+            >
+              <Diff value={diff} invert={props.diffInvert} />
+            </td>
+          )}
           <td
             css={css`
               ${tdStyle};

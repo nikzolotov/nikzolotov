@@ -15,13 +15,14 @@ export default (props) => {
         margin: var(--spacing-base) var(--spacing-large);
       `}
     >
-      <Header {...props} />
+      <Header />
       {props.children}
+      <Footer />
     </div>
   );
 };
 
-function Header(props) {
+function Header() {
   const menuItems = [
     { key: "finances-overview", link: "/finances/", name: "Overview" },
     { key: "finances-2017", link: "/finances/2017/", name: "2017" },
@@ -96,6 +97,32 @@ function Header(props) {
           <Avatar image={images.nikita.childImageSharp.fixed} />
         </Link>
       </div>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div
+      css={css`
+        width: 80%;
+        padding-top: var(--spacing-large);
+        font-size: 15px;
+        line-height: 20px;
+        color: var(--text-color-2);
+      `}
+    >
+      Technologies used: <a href="https://d3js.org">D3.js</a>,{" "}
+      <a href="https://www.gatsbyjs.org">GatsbyJS</a>. View source code on{" "}
+      <a href="https://github.com/nikzolotov/nikzolotov">Github</a>.
+      <br />
+      All data was meticulously gathered with a great help of Google Sheets.
+      <br />
+      JSON for the project was generated with{" "}
+      <a href="https://gsuite.google.com/marketplace/app/export_sheet_data/903838927001">
+        Export Sheet Data
+      </a>{" "}
+      Plugin.
     </div>
   );
 }

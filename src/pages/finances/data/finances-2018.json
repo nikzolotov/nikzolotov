@@ -64,6 +64,11 @@
       },
       {
         "title": "Maintenance",
+        "sum": 38258,
+        "main": false
+      },
+      {
+        "title": "Car Tax",
         "sum": 17021,
         "main": false
       },
@@ -94,6 +99,11 @@
       },
       {
         "title": "Medicine",
+        "sum": 36011,
+        "main": true
+      },
+      {
+        "title": "Health Insurance",
         "sum": 10709,
         "main": false
       },
@@ -184,6 +194,16 @@
       },
       {
         "title": "Hotels",
+        "sum": 44451,
+        "main": false
+      },
+      {
+        "title": "Travel Transportation",
+        "sum": 49145,
+        "main": false
+      },
+      {
+        "title": "Travel Entertainment",
         "sum": 76200,
         "main": false
       },

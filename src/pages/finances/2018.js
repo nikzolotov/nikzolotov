@@ -41,9 +41,16 @@ export default (props) => {
         `}
       >
         <h2>Income</h2>
-        <CategoriesTable data={finances.income.categories} />
+        <CategoriesTable
+          data={finances.income.categories}
+          prev={financesPrev.income.categories}
+        />
         <h2>Expences</h2>
-        <CategoriesTable data={finances.expenses.categories} />
+        <CategoriesTable
+          data={finances.expenses.categories}
+          prev={financesPrev.expenses.categories}
+          diffInvert
+        />
       </div>
     </Layout>
   );
