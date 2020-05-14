@@ -15,14 +15,14 @@ export default (props) => {
         margin: var(--spacing-base) var(--spacing-large);
       `}
     >
-      <Header />
+      <Header {...props} />
       {props.children}
       <Footer />
     </div>
   );
 };
 
-function Header() {
+function Header(props) {
   const menuItems = [
     { key: "finances-overview", link: "/finances/", name: "Overview" },
     { key: "finances-2017", link: "/finances/2017/", name: "2017" },
@@ -40,6 +40,13 @@ function Header() {
         }
       }
       nastya: file(relativePath: { eq: "pages/finances/nastya.jpg" }) {
+        childImageSharp {
+          fixed(width: 60, height: 60) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      levka: file(relativePath: { eq: "pages/finances/levka.jpg" }) {
         childImageSharp {
           fixed(width: 60, height: 60) {
             ...GatsbyImageSharpFixed
@@ -75,7 +82,7 @@ function Header() {
           width: 40%;
         `}
       >
-        <Menu items={menuItems} inline centered />
+        <Menu items={menuItems} inline centered marked />
       </div>
       <div
         css={css`
@@ -90,6 +97,12 @@ function Header() {
             flex-direction: row-reverse;
           `}
         >
+          {props.showLevka && (
+            <Avatar
+              image={images.levka.childImageSharp.fixed}
+              margin="0 0 0 -10px"
+            />
+          )}
           <Avatar
             image={images.nastya.childImageSharp.fixed}
             margin="0 0 0 -10px"

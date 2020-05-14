@@ -36,15 +36,18 @@ function MenuItem(props) {
     &:hover {
       color: ${hoverColor};
     }
-    &.active:after {
-      content: "";
-      position: absolute;
-      left: 20%;
-      bottom: -8px;
-      width: 60%;
-      height: 2px;
-      background: var(--green-bright);
-    }
+    ${props.marked &&
+    css`
+      &.active:after {
+        content: "";
+        position: absolute;
+        left: 20%;
+        bottom: -8px;
+        width: 60%;
+        height: 2px;
+        background: var(--green-bright);
+      }
+    `}
   `;
 
   return (

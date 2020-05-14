@@ -12,7 +12,7 @@ import financesPrev from "./data/finances-2018.json";
 
 export default (props) => {
   return (
-    <Layout>
+    <Layout showLevka>
       <p
         css={css`
           max-width: 660px;

@@ -4,9 +4,6 @@ import { css } from "@emotion/core";
 import Diff from "./Diff";
 
 export default (props) => {
-  const prev = props.prev,
-    diffInvert = props.diffInvert;
-
   return (
     <table
       css={css`
@@ -15,14 +12,8 @@ export default (props) => {
       `}
     >
       <tbody>
-        {props.data.map((props, i) => (
-          <CategoriesTableItem
-            {...props}
-            key={i}
-            i={i}
-            prev={prev}
-            diffInvert={diffInvert}
-          />
+        {props.data.map((item, i) => (
+          <CategoriesTableItem {...props} {...item} key={i} i={i} />
         ))}
       </tbody>
     </table>
