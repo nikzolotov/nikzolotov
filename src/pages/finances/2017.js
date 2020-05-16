@@ -51,7 +51,7 @@ export default (props) => {
       >
         <h2>Income</h2>
         <CategoriesTable data={finances.income.categories} />
-        <h2>Expences</h2>
+        <h2>Expenses</h2>
         <CategoriesTable data={finances.expenses.categories} />
       </div>
     </Layout>

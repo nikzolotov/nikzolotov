@@ -21,7 +21,7 @@ class SankeyChart extends React.Component {
     const { width, height, nodePadding, rightPadding, color } = this.props,
       svg = this.svg;
 
-    var chart = sankey()
+    var sankeyData = sankey()
       .nodeId((d) => d.name)
       .nodeAlign(sankeyLeft)
       .nodeSort(null)
@@ -32,7 +32,7 @@ class SankeyChart extends React.Component {
         [width - rightPadding, height - 5],
       ]);
 
-    const { nodes, links } = chart({
+    const { nodes, links } = sankeyData({
       nodes: this.state.nodes.map((d) => Object.assign({}, d)),
       links: this.state.links.map((d) => Object.assign({}, d)),
     });
@@ -58,7 +58,6 @@ class SankeyChart extends React.Component {
             else if (c !== link.color) c = null;
           }
         return (d3.color(c) || d3.color(color)).darker(0.5);
-        // return "#485848";
       })
       .append("title")
       .text((d) => `${d.name}\n${d.value.toLocaleString()}`);
@@ -70,7 +69,6 @@ class SankeyChart extends React.Component {
       .data(links)
       .join("g")
       .attr("stroke", (d) => d3.color(d.color) || color);
-    // .attr("stroke", (d) => "#566C56");
 
     link
       .append("path")

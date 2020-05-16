@@ -45,7 +45,7 @@ export default (props) => {
           data={finances.income.categories}
           prev={financesPrev.income.categories}
         />
-        <h2>Expences</h2>
+        <h2>Expenses</h2>
         <CategoriesTable
           data={finances.expenses.categories}
           prev={financesPrev.expenses.categories}
