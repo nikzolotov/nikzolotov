@@ -4,6 +4,7 @@ import { css } from "@emotion/core";
 
 import Avatar from "../Avatar";
 import Menu from "../Menu";
+import "../Layout/style.css";
 
 export default (props) => {
   return (

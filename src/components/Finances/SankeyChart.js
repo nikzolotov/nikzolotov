@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import * as d3 from "d3";
-// export * from "d3-sankey";
-// Addes this line to node_modules/d3/index.js
+import { sankey, sankeyLinkHorizontal, sankeyLeft } from "d3-sankey";
 
 class SankeyChart extends React.Component {
   constructor(props) {
@@ -22,10 +21,9 @@ class SankeyChart extends React.Component {
     const { width, height, nodePadding, rightPadding, color } = this.props,
       svg = this.svg;
 
-    var sankey = d3
-      .sankey()
+    var chart = sankey()
       .nodeId((d) => d.name)
-      .nodeAlign(d3.sankeyLeft)
+      .nodeAlign(sankeyLeft)
       .nodeSort(null)
       .nodeWidth(15)
       .nodePadding(nodePadding)
@@ -34,7 +32,7 @@ class SankeyChart extends React.Component {
         [width - rightPadding, height - 5],
       ]);
 
-    const { nodes, links } = sankey({
+    const { nodes, links } = chart({
       nodes: this.state.nodes.map((d) => Object.assign({}, d)),
       links: this.state.links.map((d) => Object.assign({}, d)),
     });
@@ -76,7 +74,7 @@ class SankeyChart extends React.Component {
 
     link
       .append("path")
-      .attr("d", d3.sankeyLinkHorizontal())
+      .attr("d", sankeyLinkHorizontal())
       .attr("stroke-width", (d) => Math.max(1, d.width));
 
     link
