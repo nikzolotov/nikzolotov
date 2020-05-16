@@ -35,7 +35,6 @@ export default ({ data }) => {
       cols: 2,
     },
   ];
-  console.log(data);
   return (
     <Layout index>
       <Intro>
@@ -44,19 +43,52 @@ export default ({ data }) => {
           Moscow. Here’re some projects that I’ve done in recent time.
         </p>
       </Intro>
-      <Link
-        to="/finances/2017/"
-        css={css`
-          display: block;
-          margin-bottom: 50px;
-        `}
-      >
-        <Img fluid={data.mainImg.childImageSharp.fluid} />
-      </Link>
+      <MainProject
+        title="Personal finances visualization"
+        year="2020"
+        type="Web · D3.js"
+        image={data.mainImg.childImageSharp.fluid}
+      />
       <ProjectList items={projects} />
     </Layout>
   );
 };
+
+function MainProject(props) {
+  return (
+    <Link
+      to="/finances/2017/"
+      css={css`
+        display: block;
+        margin-bottom: var(--spacing-x-large);
+        color: var(--text-color-1);
+        &:hover,
+        &:hover .meta {
+          color: var(--text-color-1);
+        }
+      `}
+    >
+      <Img fluid={props.image} />
+      <h1
+        css={css`
+          margin: var(--spacing-small) 0 var(--spacing-tiny) 0;
+        `}
+      >
+        {props.title}
+      </h1>
+      <p
+        className="meta"
+        css={css`
+          margin: 0;
+          color: var(--text-color-2);
+          transition: color 0.25s;
+        `}
+      >
+        {props.year} · {props.type}
+      </p>
+    </Link>
+  );
+}
 
 const filterImage = function (i, name) {
   return i.filter((item) => item.node.name === name)[0].node.childImageSharp

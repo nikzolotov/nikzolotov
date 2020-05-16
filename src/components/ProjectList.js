@@ -78,6 +78,7 @@ function ProjectListItem(props) {
           dangerouslySetInnerHTML={{ __html: props.title }}
         />
         <p
+          className="meta"
           css={css`
             margin: 0;
             color: var(--text-color-2);
