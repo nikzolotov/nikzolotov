@@ -2,8 +2,8 @@ import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import { css } from "@emotion/core";
 
-import Avatar from "../../../components/Avatar";
-import Menu from "../../../components/Menu";
+import Avatar from "../Avatar";
+import Menu from "../Menu";
 
 export default (props) => {
   return (

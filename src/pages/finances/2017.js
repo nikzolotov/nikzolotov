@@ -1,10 +1,10 @@
 import React from "react";
 import { css } from "@emotion/core";
 
-import Layout from "./components/Layout";
-import Totals from "./components/Totals";
-import SankeyChart from "./components/SankeyChart";
-import CategoriesTable from "./components/CategoriesTable";
+import Layout from "../../components/Finances/Layout";
+import Totals from "../../components/Finances/Totals";
+import SankeyChart from "../../components/Finances/SankeyChart";
+import CategoriesTable from "../../components/Finances/CategoriesTable";
 
 import finances from "./data/finances-2017.json";
 import financesSankey from "./data/finances-2017-sankey.json";
