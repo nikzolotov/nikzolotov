@@ -4,7 +4,6 @@
 
 import React from "react";
 import Img from "gatsby-image";
-import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
 export default (props) => {

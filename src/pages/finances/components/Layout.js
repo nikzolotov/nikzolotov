@@ -1,6 +1,5 @@
 import React from "react";
-import { useStaticQuery } from "gatsby";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import { css } from "@emotion/core";
 
 import Avatar from "../../../components/Avatar";
@@ -90,8 +89,7 @@ function Header(props) {
           text-align: right;
         `}
       >
-        <Link
-          to="/"
+        <div
           css={css`
             display: inline-flex;
             flex-direction: row-reverse;
@@ -107,8 +105,10 @@ function Header(props) {
             image={images.nastya.childImageSharp.fixed}
             margin="0 0 0 -10px"
           />
-          <Avatar image={images.nikita.childImageSharp.fixed} />
-        </Link>
+          <Link to="/">
+            <Avatar image={images.nikita.childImageSharp.fixed} />
+          </Link>
+        </div>
       </div>
     </div>
   );
@@ -119,7 +119,7 @@ function Footer() {
     <div
       css={css`
         width: 80%;
-        padding-top: var(--spacing-large);
+        padding-top: var(--spacing-x-large);
         font-size: 15px;
         line-height: 20px;
         color: var(--text-color-2);

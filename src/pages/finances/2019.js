@@ -19,12 +19,12 @@ export default (props) => {
           margin: 0;
         `}
       >
-        2017 was the first year we started tracking our finances. This was also
-        the first year we started saving money. And we did it aggressively. Dual
-        income, no kids and frugal lifestyle, so we nailed it! This was year of
-        getting rid of old habits and acquiring new ones. All of this thanks to
-        episode 221 of Timm Ferriss podcast with Mr. Money Moustage. Total game
-        changer for us.
+        We took a gap year. To think of what is really matters to us. We spent
+        the first three months is the mountains and that made a great impact on
+        our health. We&nbsp;finally made our first child after two years of
+        struggling. The rest of the year we spent working on investment
+        properties and visiting doctors. I was working part-time and we finished
+        the year on plus side!
       </p>
       <Totals data={finances} prev={financesPrev} static />
       <SankeyChart data={financesSankey} height={555} />

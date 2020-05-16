@@ -30,10 +30,10 @@ export default (props) => {
       >
         2017 was the first year we started tracking our finances. This was also
         the first year we started saving money. And we did it aggressively. Dual
-        income, no kids and frugal lifestyle, so we nailed it! This was year of
-        getting rid of old habits and acquiring new ones. All of this thanks to
-        episode 221 of Timm Ferriss podcast with Mr. Money Moustage. Total game
-        changer for us.
+        income, no kids, and a frugal lifestyle, so we nailed it! This was the
+        year of getting rid of old habits and acquiring new ones. All of this
+        thanks to episode 221 of Timm Ferriss podcast with Mr. Money Moustage.
+        Total game-changer for us.
       </p>
       <div
         css={css`

@@ -11,19 +11,19 @@
         "title": "Rent",
         "sum": 0,
         "main": false,
-        "comment": "We lived in our own appartment. So nothing here."
+        "comment": "We lived in our own apartment. So nothing here."
       },
       {
         "title": "Mortgage",
         "sum": 0,
         "main": false,
-        "comment": "No mortgage. Yoo-hoo!"
+        "comment": "No mortgage. Woo-hoo!"
       },
       {
         "title": "Utilities",
         "sum": 42454,
         "main": false,
-        "comment": "We not really optimised anything here. Just 2-minute showers, I guess."
+        "comment": "We not really optimized anything here. But we love 2-minute showers."
       },
       {
         "title": "Tax",
@@ -35,7 +35,7 @@
         "title": "Repairs",
         "sum": 290088,
         "main": false,
-        "comment": "After spending Р1,000,000 here in 2016, we started to make our own furniture and paint the walls ourself. Our finished appartment (2018) on the-village.ru"
+        "comment": "After spending ₽1,000,000 here in 2016, we started to make our own furniture and paint the walls ourself. Our finished appartment (2018) on <a href=\"https://www.the-village.ru/village/service-shopping/apartments/333093-kvartira-nedeli-dmitrieva\">the-village.ru</a>"
       },
       {
         "title": "Food",
@@ -46,19 +46,19 @@
         "title": "Groceries",
         "sum": 145140,
         "main": false,
-        "comment": "Really low here thanks to employer."
+        "comment": "Really low here thanks to the employer."
       },
       {
         "title": "Eating out",
         "sum": 50137,
         "main": false,
-        "comment": "Most of our eating out was sponsored by employer."
+        "comment": "Most of our eating out were sponsored by the employer."
       },
       {
         "title": "Alcohol",
         "sum": 3682,
         "main": false,
-        "comment": "Wow! Almost sober year."
+        "comment": "Wow! Almost a sober year."
       },
       {
         "title": "Transportation",
@@ -69,25 +69,25 @@
         "title": "Gas",
         "sum": 12615,
         "main": false,
-        "comment": "Most of our trips was to hardware stores. And highway driving almost all the time."
+        "comment": "Most of our trips were to hardware stores. And highway driving almost all the time."
       },
       {
         "title": "Maintenance",
         "sum": 19771,
         "main": false,
-        "comment": "Opel Meriva is pretty durable car. 150 000 km and just a regular maintenance."
+        "comment": "Opel Meriva is a pretty durable car. 150 000 km and just regular maintenance."
       },
       {
         "title": "Car Tax",
-        "sum": 0,
+        "sum": 3061,
         "main": false,
         "comment": "TODO: taxes"
       },
       {
         "title": "Insurance",
-        "sum": 20601,
+        "sum": 17540,
         "main": false,
-        "comment": "Nastya got her licence. Huge up here."
+        "comment": "Nastya got her license. Huge up here."
       },
       {
         "title": "Parking",
@@ -105,13 +105,13 @@
         "title": "Car rent",
         "sum": 0,
         "main": false,
-        "comment": "No carsharing this year."
+        "comment": "No car sharing this year."
       },
       {
         "title": "Taxi",
         "sum": 7788,
         "main": false,
-        "comment": "Nastya’s afterwork drives and some of our late nights together."
+        "comment": "Nastya’s after-work drives and some of our late nights together."
       },
       {
         "title": "Medicine",
@@ -122,19 +122,19 @@
         "title": "Health Insurance",
         "sum": 0,
         "main": false,
-        "comment": "My insurance was paid by employer. Nastya hasn’t any."
+        "comment": "My insurance was paid by the employer. Nastya had basic government insurance."
       },
       {
         "title": "Doctor visits",
         "sum": 130550,
         "main": false,
-        "comment": "All this was paid to Nastya’s orthodontist."
+        "comment": "Nastya’s orthodontist and some analyses."
       },
       {
         "title": "Pharmacy",
         "sum": 7371,
         "main": false,
-        "comment": "Teeth supplants and medicine."
+        "comment": "Dental supplies and medicine."
       },
       {
         "title": "Life",
@@ -145,25 +145,25 @@
         "title": "Entertainment",
         "sum": 12581,
         "main": false,
-        "comment": "Tickets to In Flames, Bullet For My Valentine, Nogu Svelo. Whole lot of fun this year!"
+        "comment": "Tickets to In Flames, Bullet For My Valentine, Nogu Svelo. A whole lot of fun this year!"
       },
       {
         "title": "Education",
         "sum": 99216,
         "main": false,
-        "comment": "Nastya took english, driving and haircutting classes. I took carpenter class and paid for english video sessions on italki."
+        "comment": "Nastya took English, driving, and haircutting classes. I took a carpenter class and paid for English video sessions on italki."
       },
       {
         "title": "Sport",
         "sum": 2071,
         "main": false,
-        "comment": "Only pull-up bar in the office. So no spending here."
+        "comment": "Only a pull-up bar in the office. So no spending here."
       },
       {
         "title": "Hobbies and arts",
         "sum": 4731,
         "main": false,
-        "comment": "My folk singing classes"
+        "comment": "My folk-singing classes."
       },
       {
         "title": "Clothing",
@@ -175,7 +175,7 @@
         "title": "Tech & Gadgets",
         "sum": 31773,
         "main": false,
-        "comment": "This year we bought cheap amplifier instead of expensive one. And Moto G5 Plus after my phone was broke."
+        "comment": "This year we bought a cheap amplifier instead of an expensive one. And Moto G5 Plus after my phone was broke."
       },
       {
         "title": "Home stuff",
@@ -199,25 +199,25 @@
         "title": "Cell phone",
         "sum": 11020,
         "main": false,
-        "comment": "Regular expenses for the carrier two persons."
+        "comment": "Regular expenses for the mobile operator."
       },
       {
         "title": "Subscriptions",
         "sum": 9613,
         "main": false,
-        "comment": "Grammarly, Evernote, domain and site hosting."
+        "comment": "Grammarly, Evernote, domain, and site hosting."
       },
       {
         "title": "Personal",
         "sum": 48374,
         "main": false,
-        "comment": "This is special category for Nastya’s spending :)"
+        "comment": "This is a special category for Nastya’s spending :)"
       },
       {
         "title": "Misc",
         "sum": 39647,
         "main": false,
-        "comment": "Major part is my craiglist bycicle. Second major part is old debt percentages."
+        "comment": "The major part is my Craiglist bicycle. The second major part is old debt repayment."
       },
       {
         "title": "Travel",
@@ -227,22 +227,26 @@
       {
         "title": "Hotels",
         "sum": 26432,
-        "main": false
+        "main": false,
+        "comment": "Trips to Greece and Hungary on Christmas."
       },
       {
         "title": "Travel Transportation",
         "sum": 33559,
-        "main": false
+        "main": false,
+        "comment": "I like to split up our travel expenses to see what's going on."
       },
       {
         "title": "Travel Entertainment",
         "sum": 35200,
-        "main": false
+        "main": false,
+        "comment": "Boat to Chrysi island. Ski-passes for snowboarding in Slovakia next year."
       },
       {
         "title": "Food and other",
         "sum": 30862,
-        "main": false
+        "main": false,
+        "comment": "Mostly eating out."
       },
       {
         "title": "Donations",
@@ -252,17 +256,20 @@
       {
         "title": "Presents",
         "sum": 49073,
-        "main": false
+        "main": false,
+        "comment": "We visited Nastya's family in Hungary. The major part is the gifts."
       },
       {
         "title": "Parties hosting",
         "sum": 5337,
-        "main": false
+        "main": false,
+        "comment": "Some rare parties."
       },
       {
         "title": "Charity",
         "sum": 1050,
-        "main": false
+        "main": false,
+        "comment": "To our shame almost nothing here."
       },
       {
         "title": "Government",
@@ -272,12 +279,14 @@
       {
         "title": "Taxes and fees",
         "sum": 760,
-        "main": false
+        "main": false,
+        "comment": "Our taxes were paid by the employer. We actually don't see how much we pay taxes in Russia. This is terrible. People don't ask for the service they paid for."
       },
       {
         "title": "Fines",
         "sum": 6437,
-        "main": false
+        "main": false,
+        "comment": "We left our car in an inappropriate place."
       }
     ],
     "total": 1323581
@@ -286,31 +295,37 @@
     "categories": [
       {
         "title": "Investments",
-        "comment": "Nothing yet",
+        "comment": "We had some dividend income. I'll add it later.",
         "sum": 0
       },
       {
         "title": "Paycheck",
+        "comment": "I worked as a designer at Yandex. Nastya is a hairdresser working with individual clients.",
         "sum": 2353332
       },
       {
         "title": "Side hustle",
+        "comment": "Some design work on weekends and commute trips.",
         "sum": 376400
       },
       {
         "title": "Interest",
+        "comment": "Interest on debit card funds and cashback.",
         "sum": 58036
       },
       {
         "title": "Stuff sales",
+        "comment": "We sold audio equipment and Nastya's bicycle this year.",
         "sum": 175850
       },
       {
         "title": "Presents",
+        "comment": "Thanks to the family for the generous gifts.",
         "sum": 76500
       },
       {
         "title": "Other",
+        "comment": "Tax refund and BlaBlaCar drives with strangers.",
         "sum": 267100
       }
     ],

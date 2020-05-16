@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
-import { css } from "@emotion/core";
+// import { Link } from "gatsby";
+// import { css } from "@emotion/core";
 
 import Layout from "../../components/Layout";
 import Intro from "../../components/Intro";

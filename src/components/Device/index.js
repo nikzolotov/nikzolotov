@@ -1,6 +1,5 @@
 import React from "react";
 import Img from "gatsby-image";
-import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 
 import imageHtc from "./htc.png";
@@ -13,13 +12,13 @@ export default (props) => {
     width = props.width ? props.width : "100%";
 
   let maxWidth = "900px";
-  if (props.model == "htc" || props.model == "abstract-phone")
+  if (props.model === "htc" || props.model === "abstract-phone")
     maxWidth = "276px";
   if (props.maxWidth) maxWidth = props.maxWidth;
 
   let device = "";
 
-  if (props.model == "safari") {
+  if (props.model === "safari") {
     device = (
       <div
         css={css`
@@ -32,7 +31,7 @@ export default (props) => {
         <Img fluid={props.image} />
       </div>
     );
-  } else if (props.model == "abstract-phone") {
+  } else if (props.model === "abstract-phone") {
     device = (
       <div
         css={css`

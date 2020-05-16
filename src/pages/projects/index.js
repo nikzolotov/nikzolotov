@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 
 import Layout from "../../components/Layout";
 import Intro from "../../components/Intro";
@@ -190,7 +191,7 @@ export default ({ data }) => {
           Volkswagen, Audi, Megafon. I&nbsp;did both web and app design.
         </p>
       </Intro>
-      <ProjectList items={projects.filter((item) => item.inList == true)} />
+      <ProjectList items={projects.filter((item) => item.inList === true)} />
       <h2>All projects</h2>
       <ProjectTable items={projects} />
     </Layout>

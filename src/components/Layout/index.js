@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useStaticQuery } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import { css } from "@emotion/core";
 
 import Menu from "../Menu";

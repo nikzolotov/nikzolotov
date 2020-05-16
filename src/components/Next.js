@@ -15,7 +15,7 @@ export default (props) => {
     }
   `;
   let link = "/";
-  if (props.type == "project") link += "projects/" + props.id + "/";
+  if (props.type === "project") link += "projects/" + props.id + "/";
 
   return (
     <StyledLink to={link}>
