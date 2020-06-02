@@ -1,29 +1,50 @@
 import React from "react";
-// import { Link } from "gatsby";
-// import { css } from "@emotion/core";
 
 import Layout from "../../components/Layout";
 import Intro from "../../components/Intro";
+import VizList from "../../components/VizList";
 
-export default () => {
+import projectsData from "./projects.json";
+
+export default ({ data }) => {
+  // Assign fancy images to projects
+  const projects = projectsData.items.map((p) => {
+    p = { ...p };
+    if (p.image)
+      p.image = data.allFile.edges.filter(
+        (d) => d.node.name === p.image
+      )[0].node.childImageSharp.fluid;
+    return p;
+  });
+
   return (
     <Layout>
       <Intro>
         <p>
-          Data visualization is one of my favorites.
-          Sometimes&nbsp;I&nbsp;design some bar charts and bring them to life
-          with D3.js
+          I started to learn d3.js and React. Here I store my projects on data
+          visualization.
         </p>
-        <p>In progress...</p>
       </Intro>
-      {/* <div
-        css={css`
-          height: 500px;
-          background: rgba(var(--white-rgb), 0.05);
-        `}
-      >
-        <Link to={`/datavis/clouds/`}>Облака</Link>
-      </div> */}
+      <VizList items={projects} />
     </Layout>
   );
 };
+
+export const query = graphql`
+  query {
+    allFile(
+      filter: { relativePath: { regex: "/pages/datavis/.*.(png|jpg)$/" } }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid(maxHeight: 400, quality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;

@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
-import styled from "@emotion/styled";
+import Img from "gatsby-image";
 import { css } from "@emotion/core";
 
 export default (props) => {
   return (
-    <div css={css``}>
+    <div
+      css={css`
+        width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
+      `}
+    >
       {props.items.map((props) => (
         <VizListItem key={props.id} {...props} />
       ))}
@@ -16,16 +20,18 @@ export default (props) => {
 function VizListItem(props) {
   return (
     <div key={props.id} css={css``}>
-      <Link to={`/datavis/${props.id}/`}>
-        {/* <Frame>
-          <Device
-            image={props.image}
-            model={props.device}
-            maxWidth={props.deviceMaxWidth}
-            width={props.deviceWidth}
-            margin="0"
-          />
-        </Frame> */}
+      <Link
+        // to={`/datavis/${props.id}/`}
+        to={props.link}
+        css={css`
+          color: var(--text-color-1);
+          &:hover,
+          &:hover .meta {
+            color: var(--text-color-1);
+          }
+        `}
+      >
+        <Img fluid={props.image} />
         <h3
           css={css`
             margin: var(--spacing-small) 0 0 0;

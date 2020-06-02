@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": "personal-finances",
+      "title": "Personal finances dashboard",
+      "year": 2020,
+      "type": "In progress...",
+      "image": "finances-dashboard",
+      "link": "/finances/"
+    },
+    {
+      "id": "personal-finances",
+      "title": "Personal finances annual reports",
+      "year": 2020,
+      "type": "Sankey diagram",
+      "image": "finances-sankey",
+      "link": "/finances/2017/"
+    }
+  ]
+}
