@@ -1,5 +1,6 @@
 import React from "react";
 
+import SEO from "../../components/SEO";
 import Layout from "../../components/Layout";
 import Intro from "../../components/Intro";
 import VizList from "../../components/VizList";
@@ -19,6 +20,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Visualizations" />
       <Intro>
         <p>
           I started to learn d3.js and React. Here I store my projects on data

@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
+import SEO from "../../../components/SEO";
 import Layout from "../../../components/Layout";
 import LayoutColumn from "../../../components/LayoutColumn";
 import ArticleTitle from "../../../components/ArticleTitle";
@@ -12,6 +13,7 @@ export default ({ data }) => {
   const images = data.allFile.edges;
   return (
     <Layout>
+      <SEO title="Sports on Yandex" />
       <LayoutColumn>
         <ArticleTitle title="Sports on Yandex" meta="2018 · Web" />
         <p>

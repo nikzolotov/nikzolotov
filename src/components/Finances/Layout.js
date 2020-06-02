@@ -39,14 +39,14 @@ function Header(props) {
           }
         }
       }
-      nastya: file(relativePath: { eq: "pages/finances/nastya.jpg" }) {
+      nastya: file(relativePath: { eq: "components/Finances/nastya.jpg" }) {
         childImageSharp {
           fixed(width: 60, height: 60) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      levka: file(relativePath: { eq: "pages/finances/levka.jpg" }) {
+      levka: file(relativePath: { eq: "components/Finances/levka.jpg" }) {
         childImageSharp {
           fixed(width: 60, height: 60) {
             ...GatsbyImageSharpFixed

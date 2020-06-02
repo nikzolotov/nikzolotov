@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 
+import SEO from "../../components/SEO";
 import Layout from "../../components/Finances/Layout";
 import SavingsChart from "../../components/Finances/SavingsChart";
 
@@ -10,6 +11,7 @@ import expenses from "./data/expenses.json";
 export default (props) => {
   return (
     <Layout showLevka>
+      <SEO title="Personal Finances Overview" />
       <h2>Savings rate, %</h2>
       <div
         css={css`

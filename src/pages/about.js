@@ -1,20 +1,22 @@
 import React from "react";
+import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import LayoutColumn from "../components/LayoutColumn";
 
 export default () => {
   return (
     <Layout>
+      <SEO title="About" />
       <LayoutColumn>
         <p>
           My professional journey began in 2007 when I entered a small web
-          developer laboratory at my university. I was studying computer science
-          as my primary degree, building compilators, and Matlab simulations.
-          Laboratory was optional and offered practice in web development and
-          server administration. I was instantly hooked by the beauty of the
-          Web. CSS Zen Garden and design studios were my infinite source of
-          inspiration. I graduated in 2008 and already had a job as a full-stack
-          web developer.
+          development laboratory at my university. I was studying computer
+          science as my primary degree, building compilators, and Matlab
+          simulations. Laboratory was optional and offered practice in web
+          development and server administration. I was instantly hooked by the
+          beauty of the Web. CSS Zen Garden and design studios were my infinite
+          source of inspiration. I graduated in 2008 and already had a job as a
+          full-stack web developer.
         </p>
         <p>
           Although, I rather quickly shifted from full-stack to front-end

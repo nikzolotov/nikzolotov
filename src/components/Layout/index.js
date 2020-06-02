@@ -2,6 +2,7 @@ import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import { css } from "@emotion/core";
 
+import SEO from "../SEO";
 import Menu from "../Menu";
 import Avatar from "../Avatar";
 import "./style.css";
@@ -14,6 +15,7 @@ export default (props) => {
         margin: var(--spacing-base) var(--spacing-large);
       `}
     >
+      <SEO />
       <Header index={props.index} />
       <main>{props.children}</main>
       <Footer />

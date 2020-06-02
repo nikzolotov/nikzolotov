@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
+import SEO from "../../components/SEO";
 import Layout from "../../components/Layout";
 import Intro from "../../components/Intro";
 import ProjectList from "../../components/ProjectList";
@@ -21,6 +22,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Projects" />
       <Intro>
         <p>
           I’ve designed and built product experiences for&nbsp;Yandex, Škoda,

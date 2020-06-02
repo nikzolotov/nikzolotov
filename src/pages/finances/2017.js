@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 
+import SEO from "../../components/SEO";
 import Layout from "../../components/Finances/Layout";
 import Totals from "../../components/Finances/Totals";
 import SankeyChart from "../../components/Finances/SankeyChart";
@@ -22,6 +23,7 @@ export default (props) => {
   };
   return (
     <Layout>
+      <SEO title="2017 Finances" />
       <p
         css={css`
           max-width: 660px;

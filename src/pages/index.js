@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import Img from "gatsby-image";
 import { css } from "@emotion/core";
 
+import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 import Intro from "../components/Intro";
 import ProjectList from "../components/ProjectList";
@@ -22,6 +23,7 @@ export default ({ data }) => {
 
   return (
     <Layout index>
+      <SEO />
       <Intro>
         <p>
           Hi, I’m Nikita Zolotov, a product designer and developer based in

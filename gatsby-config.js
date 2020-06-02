@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Nikita Zolotov`,
+    titleTemplate: `%s · Nikita Zolotov`,
+    description: `Product designer and developer based in Moscow`,
+    url: `https://nikzolotov.ru`,
+    image: `/favicon.ico`,
   },
   plugins: [
     {
@@ -14,5 +18,6 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
   ],
 };

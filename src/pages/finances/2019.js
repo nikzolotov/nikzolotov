@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 
+import SEO from "../../components/SEO";
 import Layout from "../../components/Finances/Layout";
 import Totals from "../../components/Finances/Totals";
 import SankeyChart from "../../components/Finances/SankeyChart";
@@ -13,6 +14,7 @@ import financesPrev from "./data/finances-2018.json";
 export default (props) => {
   return (
     <Layout showLevka>
+      <SEO title="2019 Finances" />
       <p
         css={css`
           max-width: 660px;
