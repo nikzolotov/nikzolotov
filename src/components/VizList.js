@@ -19,7 +19,12 @@ export default (props) => {
 
 function VizListItem(props) {
   return (
-    <div key={props.id} css={css``}>
+    <div
+      key={props.id}
+      css={css`
+        margin-bottom: var(--spacing-x-large);
+      `}
+    >
       <Link
         // to={`/datavis/${props.id}/`}
         to={props.link}

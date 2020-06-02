@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "id": "personal-finances",
+      "id": "finances-dashboard",
       "title": "Personal finances dashboard",
       "year": 2020,
       "type": "In progress...",
@@ -9,12 +9,20 @@
       "link": "/finances/"
     },
     {
-      "id": "personal-finances",
+      "id": "finances-reports",
       "title": "Personal finances annual reports",
       "year": 2020,
       "type": "Sankey diagram",
       "image": "finances-sankey",
       "link": "/finances/2017/"
+    },
+    {
+      "id": "sales-efficiency",
+      "title": "Sales Managers Efficiency",
+      "year": 2020,
+      "type": "In progress...",
+      "image": "sales-efficiency",
+      "link": ""
     }
   ]
 }
