@@ -14,7 +14,7 @@ export default (props) => {
       `}
     >
       {props.items.map((props) => (
-        <ProjectTableItem {...props} />
+        <ProjectTableItem key={props.id} {...props} />
       ))}
     </div>
   );
@@ -55,7 +55,7 @@ function ProjectTableItemData(props) {
     display: table-cell;
     padding: var(--spacing-small);
     border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
-    &:first-child {
+    &:first-of-type {
       padding-left: 0;
     }
     .nda & {

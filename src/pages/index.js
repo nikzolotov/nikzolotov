@@ -7,34 +7,19 @@ import Layout from "../components/Layout";
 import Intro from "../components/Intro";
 import ProjectList from "../components/ProjectList";
 
+import projectsData from "./projects/projects.json";
+
 export default ({ data }) => {
-  const images = data.projectsImgs.edges;
-  const projects = [
-    {
-      id: "gas-stations",
-      title: "Gas Stations in Navigator",
-      year: 2018,
-      type: "App",
-      field: "Driver Services",
-      inList: true,
-      image: filterImage(images, "gas-stations-main"),
-      device: "abstract-phone",
-      deviceMaxWidth: "184px",
-      cols: 1,
-    },
-    {
-      id: "yandex-sports",
-      title: "Sports on Yandex",
-      year: 2018,
-      type: "Web",
-      field: "Entertaiment",
-      inList: true,
-      image: filterImage(images, "yandex-sports-wc18"),
-      device: "safari",
-      deviceMaxWidth: "590px",
-      cols: 2,
-    },
-  ];
+  // Assign fancy images to projects
+  const projects = projectsData.items.map((project) => {
+    project = { ...project };
+    if (project.image)
+      project.image = data.projectsImgs.edges.filter(
+        (item) => item.node.name === project.image
+      )[0].node.childImageSharp.fluid;
+    return project;
+  });
+
   return (
     <Layout index>
       <Intro>
@@ -49,7 +34,7 @@ export default ({ data }) => {
         type="Web · D3.js"
         image={data.mainImg.childImageSharp.fluid}
       />
-      <ProjectList items={projects} />
+      <ProjectList items={projects.filter((p) => p.top)} />
     </Layout>
   );
 };
@@ -89,11 +74,6 @@ function MainProject(props) {
     </Link>
   );
 }
-
-const filterImage = function (i, name) {
-  return i.filter((item) => item.node.name === name)[0].node.childImageSharp
-    .fluid;
-};
 
 export const query = graphql`
   query {

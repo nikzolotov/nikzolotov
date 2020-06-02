@@ -19,7 +19,7 @@ export default (props) => {
       `}
     >
       {props.items.map((props) => (
-        <ProjectListItem {...props} />
+        <ProjectListItem key={props.id} {...props} />
       ))}
     </div>
   );
@@ -51,7 +51,6 @@ function ProjectListItem(props) {
 
   return (
     <div
-      key={props.id}
       css={css`
         width: calc(
           (100% * ${props.cols * 2} / 6) -
