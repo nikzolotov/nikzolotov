@@ -26,6 +26,7 @@ export default (props) => {
           position: relative;
           display: flex;
           justify-content: space-evenly;
+          flex-wrap: wrap;
           padding: ${padding};
           background: ${bgColor};
         `}

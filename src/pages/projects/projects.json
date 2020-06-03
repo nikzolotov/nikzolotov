@@ -9,7 +9,8 @@
       "image": "gas-stations-main",
       "device": "htc",
       "deviceMaxWidth": "184px",
-      "cols": 1
+      "cols": 1,
+      "nda": true
     },
     {
       "id": "toyota-dmm",
