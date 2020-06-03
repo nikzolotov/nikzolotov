@@ -13,8 +13,16 @@
       "nda": true
     },
     {
+      "id": "kia-dmm",
+      "title": "<abbr>KIA</abbr> <abbr title='Dealer Marketing Management'>DMM</abbr>",
+      "year": 2020,
+      "type": "Web App",
+      "field": "Marketing, Car dealers, <abbr>B2B</abbr>",
+      "nda": true
+    },
+    {
       "id": "toyota-dmm",
-      "title": "Toyota <abbr title='Dealer Marketing Management'>DMM</abbr>",
+      "title": "Toyota <abbr title='Dealer Marketing Management'>DMM</abbr> Analytics",
       "year": 2020,
       "type": "Web App",
       "field": "Marketing, Car dealers, <abbr>B2B</abbr>",
@@ -63,48 +71,43 @@
       "nda": true
     },
     {
-      "id": "gulfstream-b2b",
-      "title": "Gulfstream <abbr>B2B</abbr>",
-      "year": 2018,
-      "type": "Web App",
-      "field": "Home security, <abbr>B2B</abbr>",
-      "actual": true,
-      "image": "yandex-sports-wc18",
-      "device": "safari",
-      "deviceWidth": "590px",
-      "cols": 1
-    },
-    {
-      "id": "gulfstream",
-      "title": "Gulfstream",
-      "year": 2018,
-      "type": "iOS App",
-      "field": "Home security",
-      "actual": true,
-      "image": "yandex-touch-hockey",
-      "device": "abstract-phone",
-      "deviceMaxWidth": "184px",
-      "cols": 1
-    },
-    {
-      "id": "leader",
-      "title": "Leader Engineering",
-      "year": 2017,
-      "type": "Web",
-      "field": "Engineering",
-      "actual": true,
-      "image": "yandex-sports-wc18",
-      "device": "safari",
-      "deviceWidth": "590px",
-      "cols": 1
-    },
-    {
       "id": "vw-dmm",
       "title": "Volkswagen <abbr title='Dealer Marketing Management'>DMM</abbr>",
       "year": 2017,
       "type": "Web App",
       "field": "Marketing, Car dealers, <abbr>B2B</abbr>",
       "nda": true
+    },
+    {
+      "id": "gulfstream-b2b",
+      "title": "Gulfstream <abbr>B2B</abbr>",
+      "year": 2017,
+      "type": "Web App",
+      "field": "Home security, <abbr>B2B</abbr>"
+    },
+    {
+      "id": "leader",
+      "title": "Leader Engineering",
+      "year": 2016,
+      "type": "Web",
+      "field": "Engineering",
+      "actual": true,
+      "image": "leader-main-short",
+      "device": "safari",
+      "deviceMaxWidth": "590px",
+      "cols": 2
+    },
+    {
+      "id": "gulfstream",
+      "title": "Gulfstream",
+      "year": 2016,
+      "type": "iOS App",
+      "field": "Home security",
+      "actual": true,
+      "image": "gulfstream-dashboard",
+      "device": "abstract-phone",
+      "deviceMaxWidth": "184px",
+      "cols": 1
     },
     {
       "id": "yandex-14",
