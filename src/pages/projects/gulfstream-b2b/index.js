@@ -19,29 +19,37 @@ export default ({ data }) => {
           title="Gulfstream <abbr>B2B</abbr>"
           meta="2017 · Web App"
         />
+        <p>
+          I took part in the redesign of the Gulfstream B2B platform for
+          business owners who have objects under security protection. The main
+          users of the system are either business owners themselves, or, more
+          frequently, security managers. They monitor statutes of the objects,
+          manage actual users of the security system (employees, staff), manage
+          customer agreements, and so on.
+        </p>
       </LayoutColumn>
-      <Frame label="Main screen and outlet settings">
+      <Frame label="Main screen with objects statuses and last actions">
         <Device
           image={filterImage(images, "gulfstream-b2b-main")}
           model="safari"
           margin="0"
         />
       </Frame>
-      <Frame label="2">
+      <Frame label="List of all objects">
         <Device
           image={filterImage(images, "gulfstream-b2b-objects")}
           model="safari"
           margin="0"
         />
       </Frame>
-      <Frame label="Temperature sensor settings and list of all sensors">
+      <Frame label="Object settings and actions">
         <Device
           image={filterImage(images, "gulfstream-b2b-object")}
           model="safari"
           margin="0"
         />
       </Frame>
-      <Frame label="2">
+      <Frame label="Reports settings">
         <Device
           image={filterImage(images, "gulfstream-b2b-reports")}
           model="safari"

@@ -23,14 +23,6 @@ export default ({ data }) => {
           hired to add some smart home features, such as controllable outlets,
           temperature sensors and make the app look fresh and friendly.
         </p>
-        <p>
-          I started with a competitor analysis and requirement gathering. We
-          accepted industry standard of a dashboard so that user can choose
-          which devices he wants to see on the main screen. I wanted to create a
-          feeling that everything is under control. I offered simple and clean
-          visual style with a lot of micro-animations. I made prototypes with
-          Hype, to show how it looks and feels.
-        </p>
       </LayoutColumn>
       <Frame label="Main screen and outlet settings">
         <Device
