@@ -95,19 +95,14 @@
       "image": "leader-main-short",
       "device": "safari",
       "deviceMaxWidth": "590px",
-      "cols": 2
+      "cols": 3
     },
     {
       "id": "gulfstream",
       "title": "Gulfstream",
       "year": 2016,
       "type": "iOS App",
-      "field": "Home security",
-      "actual": true,
-      "image": "gulfstream-dashboard",
-      "device": "abstract-phone",
-      "deviceMaxWidth": "184px",
-      "cols": 1
+      "field": "Home security"
     },
     {
       "id": "yandex-14",
@@ -128,7 +123,7 @@
       "type": "Web",
       "field": "Internet Search & Entertaiment",
       "actual": true,
-      "image": "yandex-touch-hockey",
+      "image": "yandex-touch-main",
       "device": "htc",
       "deviceMaxWidth": "184px",
       "cols": 1

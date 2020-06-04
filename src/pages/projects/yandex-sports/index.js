@@ -18,11 +18,11 @@ export default ({ data }) => {
         <ArticleTitle title="Sports on Yandex" meta="2018 · Web" />
         <p>
           Yandex is an internet search in Russia. But unlike Google, its main
-          page offers users some services such as news, weather, traffic, and so
-          on. So it is a place where you can start your day with a cup of
-          coffee. In 2018 Russia hosted the World Cup. It was a time to make
-          something nice on Yandex celebrating this event. Usually, it was a
-          simple text string under the news.
+          page offers users other services such as news, weather, traffic, and
+          so on. So it is a place where you can start your day with a cup of
+          coffee. In 2018 Russia hosted the World Cup. It was a perfect time to
+          make something nice to celebrate this event instead of a formal
+          notification.
         </p>
         <p>
           At that time Yandex experimented with entertainment content to step

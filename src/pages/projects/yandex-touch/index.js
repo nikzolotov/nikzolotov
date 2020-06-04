@@ -25,14 +25,43 @@ export default ({ data }) => {
           and&nbsp;so&nbsp;on.
         </p>
       </LayoutColumn>
-      <Frame label="Sports widget and onboarding">
+      <Frame label="Main screen with notifications">
+        <Device
+          image={filterImage(images, "yandex-touch-main")}
+          model="htc"
+          margin="0 var(--spacing-base)"
+        />
+        <Device
+          image={filterImage(images, "yandex-touch-main-metro")}
+          model="htc"
+          margin="0 var(--spacing-base)"
+        />
+      </Frame>
+      <Frame label="Onboarding">
+        <Device
+          image={filterImage(images, "yandex-touch-onboarding-1")}
+          model="htc"
+          margin="0 var(--spacing-base)"
+        />
+        <Device
+          image={filterImage(images, "yandex-touch-onboarding-2")}
+          model="htc"
+          margin="0 var(--spacing-base)"
+        />
+        <Device
+          image={filterImage(images, "yandex-touch-onboarding-3")}
+          model="htc"
+          margin="0 var(--spacing-base)"
+        />
+      </Frame>
+      <Frame label="Sports and elections widgets">
         <Device
           image={filterImage(images, "yandex-touch-hockey")}
           model="htc"
           margin="0 var(--spacing-base)"
         />
         <Device
-          image={filterImage(images, "yandex-touch-onboarding")}
+          image={filterImage(images, "yandex-touch-election")}
           model="htc"
           margin="0 var(--spacing-base)"
         />
@@ -49,7 +78,36 @@ export default ({ data }) => {
           margin="0 var(--spacing-base)"
         />
       </Frame>
-      <Frame label="Other stuff">
+      <Frame label="Yandex reminds you of an upcoming flight">
+        <Device
+          image={filterImage(images, "yandex-touch-flight")}
+          model="htc"
+          margin="0 var(--spacing-base)"
+        />
+        <Device
+          image={filterImage(images, "yandex-touch-ticket")}
+          model="htc"
+          margin="0 var(--spacing-base)"
+        />
+      </Frame>
+      <Frame label="We rolled out the redesign gradually and tested every new stage">
+        <Device
+          image={filterImage(images, "yandex-touch-stage-0")}
+          model="htc"
+          margin="0 var(--spacing-base)"
+        />
+        <Device
+          image={filterImage(images, "yandex-touch-stage-1")}
+          model="htc"
+          margin="0 var(--spacing-base)"
+        />
+        <Device
+          image={filterImage(images, "yandex-touch-stage-2")}
+          model="htc"
+          margin="0 var(--spacing-base)"
+        />
+      </Frame>
+      <Frame label="Biathlon search snippet and web version of the metro app">
         <Device
           image={filterImage(images, "serp-biathlon")}
           model="htc"
@@ -57,11 +115,6 @@ export default ({ data }) => {
         />
         <Device
           image={filterImage(images, "yandex-touch-metro")}
-          model="htc"
-          margin="0 var(--spacing-base)"
-        />
-        <Device
-          image={filterImage(images, "yandex-touch-ticket")}
           model="htc"
           margin="0 var(--spacing-base)"
         />
