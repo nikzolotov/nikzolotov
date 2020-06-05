@@ -1,0 +1,84 @@
+:root {
+    --green: #9FBE96;
+    --red: #FF7E7E;
+    --green-bright: #82be70;
+    --red-bright: #FF4D4D;
+    --white-rgb: 255, 255, 255;
+    --text-color-1: rgba(var(--white-rgb), 0.9);
+    --text-color-2: rgba(var(--white-rgb), 0.4);
+    --text-color-3: rgba(var(--white-rgb), 0.2);
+
+    --gap: 30px;
+    --spacing-tiny: 5px;
+    --spacing-small: 15px;
+    --spacing-base: 30px;
+    --spacing-large: 50px;
+    --spacing-x-large: 80px;
+    --spacing-xx-large: 120px;
+    }
+
+@font-face {
+    font-family: ApercuRegular;
+    src: url(../../../static/fonts/apercupro/ApercuPro.eot);
+    src: url(../../../static/fonts/apercupro/ApercuPro.eot?#iefix) format("embedded-opentype"), url(../../../static/fonts/apercupro/ApercuPro.woff) format("woff"), url(../../../static/fonts/apercupro/ApercuPro.ttf) format("truetype"), url(../../../static/fonts/apercupro/ApercuPro.svg) format("svg")
+    }
+@font-face {
+    font-family: ApercuBold;
+    src: url(../../../static/fonts/apercupro/ApercuPro-Bold.eot);
+    src: url(../../../static/fonts/apercupro/ApercuPro-Bold.eot?#iefix) format("embedded-opentype"), url(../../../static/fonts/apercupro/ApercuPro-Bold.woff) format("woff"), url(../../../static/fonts/apercupro/ApercuPro-Bold.ttf) format("truetype"), url(../../../static/fonts/apercupro/ApercuPro-Bold.svg) format("svg")
+    }
+/* @font-face {
+    font-family: ApercuLight;
+    src: url(../../../static/fonts/apercupro/ApercuPro-Light.eot);
+    src: url(../../../static/fonts/apercupro/ApercuPro-Light.eot?#iefix) format("embedded-opentype"), url(../../../static/fonts/apercupro/ApercuPro-Light.woff) format("woff"), url(../../../static/fonts/apercupro/ApercuPro-Light.ttf) format("truetype"), url(../../../static/fonts/apercupro/ApercuPro-Light.svg) format("svg")
+    } */
+
+body {
+    min-width: 960px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+    background: #242526;
+    font: 18px/28px ApercuRegular, Helvetica, Arial, sans-serif;
+    color: var(--text-color-1);
+    }
+a {
+    text-decoration: none;
+    color: var(--green);
+    }
+a:hover {
+    color: var(--red);
+    transition: color .25s;
+    }
+h1 {
+    margin: 0 0 var(--spacing-base) 0;
+    font: 30px/40px ApercuBold, Helvetica, Arial, sans-serif;
+    }
+h2 {
+    margin: var(--spacing-base) 0 var(--spacing-small) 0;
+    font: 25px/35px ApercuBold, Helvetica, Arial, sans-serif;
+    }
+h3 {
+    margin: var(--spacing-base) 0 0 0;
+    font: 18px/28px ApercuBold, Helvetica, Arial, sans-serif;
+    }
+p {
+    margin: 0 0 var(--spacing-base) 0;
+    }
+ul {
+    margin: 0 0 var(--spacing-base) 0;
+    }
+    li {
+        margin: 0 0 var(--spacing-small) 0;
+        }
+abbr {
+    letter-spacing: .06em;
+    margin-right: -.06em;
+    text-decoration: none;
+    }
+table {
+    border-spacing: 0;
+    }
+td, th {
+    vertical-align: baseline;
+    }

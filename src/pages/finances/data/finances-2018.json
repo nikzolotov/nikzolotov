@@ -1,0 +1,334 @@
+{
+  "year": 2018,
+  "expenses": {
+    "categories": [
+      {
+        "title": "Housing",
+        "sum": 87582,
+        "main": true
+      },
+      {
+        "title": "Rent",
+        "sum": 2000,
+        "main": false,
+        "comment": "At the end of the year, we sold our apartment. So we became renters. For this year it was only one night."
+      },
+      {
+        "title": "Mortgage",
+        "sum": 0,
+        "main": false,
+        "comment": "We had a mortgage for the investment property. But none for the apartment we lived."
+      },
+      {
+        "title": "Utilities",
+        "sum": 55068,
+        "main": false,
+        "comment": "Electricity, water, apartment building service."
+      },
+      {
+        "title": "Tax",
+        "sum": 2842,
+        "main": false,
+        "comment": "Residence tax for the previous year."
+      },
+      {
+        "title": "Repairs",
+        "sum": 27672,
+        "main": false,
+        "comment": "This is where things shrank. Almost all the work to finish our apartment I made myself. We ended up selling this <a href=\"https://www.the-village.ru/village/service-shopping/apartments/333093-kvartira-nedeli-dmitrieva\">beauty</a>."
+      },
+      {
+        "title": "Food",
+        "sum": 208921,
+        "main": true
+      },
+      {
+        "title": "Groceries",
+        "sum": 152945,
+        "main": false,
+        "comment": "We cooked only breakfasts and dinners."
+      },
+      {
+        "title": "Eating out",
+        "sum": 47182,
+        "main": false,
+        "comment": "Most of our eating out were still sponsored by the employer."
+      },
+      {
+        "title": "Alcohol",
+        "sum": 8794,
+        "main": false,
+        "comment": "Beer for me, wine for missis."
+      },
+      {
+        "title": "Transportation",
+        "sum": 160621,
+        "main": true
+      },
+      {
+        "title": "Gas",
+        "sum": 26829,
+        "main": false,
+        "comment": "Driving to buy some materials for the home. Gas for our travels is in a different category."
+      },
+      {
+        "title": "Maintenance",
+        "sum": 38258,
+        "main": false,
+        "comment": "First major car repair. This time something went wrong with <abbr>ESP</abbr>."
+      },
+      {
+        "title": "Car Tax",
+        "sum": 2374,
+        "main": false,
+        "comment": "TODO: taxes"
+      },
+      {
+        "title": "Insurance",
+        "sum": 14647,
+        "main": false,
+        "comment": "Nastya's second year of driving. Premiums are still high."
+      },
+      {
+        "title": "Parking",
+        "sum": 0,
+        "main": false,
+        "comment": "No driving to the city—no parking."
+      },
+      {
+        "title": "Public transport",
+        "sum": 72758,
+        "main": false,
+        "comment": "Monday—Friday commute to the center of the city."
+      },
+      {
+        "title": "Car rent",
+        "sum": 144,
+        "main": false,
+        "comment": "One car-sharing trip for the year."
+      },
+      {
+        "title": "Taxi",
+        "sum": 5611,
+        "main": false,
+        "comment": "Nastya took fewer working hours. So, fewer taxi rides."
+      },
+      {
+        "title": "Medicine",
+        "sum": 36011,
+        "main": true
+      },
+      {
+        "title": "Health Insurance",
+        "sum": 10709,
+        "main": false,
+        "comment": "Got employer insurance for the family with 80% off."
+      },
+      {
+        "title": "Doctor visits",
+        "sum": 11000,
+        "main": false,
+        "comment": "Doctor visits that were not covered by insurance."
+      },
+      {
+        "title": "Pharmacy",
+        "sum": 14302,
+        "main": false,
+        "comment": "Vitamins and hormones."
+      },
+      {
+        "title": "Life",
+        "sum": 350234,
+        "main": true
+      },
+      {
+        "title": "Entertainment",
+        "sum": 3916,
+        "main": false,
+        "comment": "Renting movies on Google Play and iTunes."
+      },
+      {
+        "title": "Education",
+        "sum": 9102,
+        "main": false,
+        "comment": "English video sessions on italki."
+      },
+      {
+        "title": "Sport",
+        "sum": 129584,
+        "main": false,
+        "comment": "Hiking and snowboarding gear."
+      },
+      {
+        "title": "Hobbies and arts",
+        "sum": 2100,
+        "main": false,
+        "comment": "Few folk-singing classes."
+      },
+      {
+        "title": "Clothing",
+        "sum": 33944,
+        "main": false,
+        "comment": "More Nastya's dresses."
+      },
+      {
+        "title": "Tech & Gadgets",
+        "sum": 107439,
+        "main": false,
+        "comment": "Used Macbook Pro, Google Pixel 3 for great photos."
+      },
+      {
+        "title": "Home stuff",
+        "sum": 0,
+        "main": false,
+        "comment": "This was the year of getting rid of the home stuff."
+      },
+      {
+        "title": "Work supplies",
+        "sum": 400,
+        "main": false,
+        "comment": "My working equipment was sponsored by the employer."
+      },
+      {
+        "title": "Household goods",
+        "sum": 13557,
+        "main": false,
+        "comment": "Cleaning, washing, toiletries, etc."
+      },
+      {
+        "title": "Cell phone",
+        "sum": 9985,
+        "main": false,
+        "comment": "This year we switched to a limited discount plan thanks to our friend."
+      },
+      {
+        "title": "Subscriptions",
+        "sum": 1444,
+        "main": false,
+        "comment": "Evernote and domain name."
+      },
+      {
+        "title": "Personal",
+        "sum": 24750,
+        "main": false,
+        "comment": "Nastya made some progress here."
+      },
+      {
+        "title": "Misc",
+        "sum": 14013,
+        "main": false,
+        "comment": "Some repairs and other spending."
+      },
+      {
+        "title": "Travel",
+        "sum": 226197,
+        "main": true
+      },
+      {
+        "title": "Hotels",
+        "sum": 44451,
+        "main": false,
+        "comment": "Snowboarding in Slovakia and Saint-Petersburg. Summer trip to the mountains, Helsinki, and part of our next big trip."
+      },
+      {
+        "title": "Travel Transportation",
+        "sum": 49145,
+        "main": false,
+        "comment": "This was a year of car trips. We took only one flight to Helsinki."
+      },
+      {
+        "title": "Travel Entertainment",
+        "sum": 76200,
+        "main": false,
+        "comment": "Two season ski-passes for the next year."
+      },
+      {
+        "title": "Food and other",
+        "sum": 56401,
+        "main": false,
+        "comment": "Eating out and cooking in Airbnb rentals."
+      },
+      {
+        "title": "Donations",
+        "sum": 87995,
+        "main": true
+      },
+      {
+        "title": "Presents",
+        "sum": 62527,
+        "main": false,
+        "comment": "Birthday presents, help to Nastya's sister."
+      },
+      {
+        "title": "Parties hosting",
+        "sum": 24868,
+        "main": false,
+        "comment": "Birthday parties for both of us."
+      },
+      {
+        "title": "Charity",
+        "sum": 600,
+        "main": false,
+        "comment": "To our shame almost nothing here."
+      },
+      {
+        "title": "Government",
+        "sum": 15142,
+        "main": true
+      },
+      {
+        "title": "Taxes and fees",
+        "sum": 12870,
+        "main": false,
+        "comment": "Income taxes and fees for selling sister's property."
+      },
+      {
+        "title": "Fines",
+        "sum": 2272,
+        "main": false,
+        "comment": "Almost good citizens."
+      }
+    ],
+    "total": 1172703
+  },
+  "income": {
+    "categories": [
+      {
+        "title": "Investments",
+        "sum": 0,
+        "comment": "We had some dividend income. I'll add it later."
+      },
+      {
+        "title": "Paycheck",
+        "sum": 2369102,
+        "comment": "Almost identical to the previous year."
+      },
+      {
+        "title": "Side hustle",
+        "sum": 682450,
+        "comment": "Some more hustling before big changes."
+      },
+      {
+        "title": "Interest",
+        "sum": 19225,
+        "comment": "Interest on debit card funds and cashback."
+      },
+      {
+        "title": "Stuff sales",
+        "sum": 153930,
+        "comment": "This year we embraced minimalism and started getting rid of the stuff. We sold valuable books, gadgets, home stuff, etc."
+      },
+      {
+        "title": "Presents",
+        "sum": 28500,
+        "comment": "Thanks to all friends and family!"
+      },
+      {
+        "title": "Other",
+        "sum": 26350,
+        "comment": "Our second and last year with BlaBlaCar. Great time!"
+      }
+    ],
+    "total": 3279557
+  }
+}

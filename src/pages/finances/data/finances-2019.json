@@ -1,0 +1,334 @@
+{
+  "year": 2019,
+  "expenses": {
+    "categories": [
+      {
+        "title": "Housing",
+        "sum": 97770,
+        "main": true
+      },
+      {
+        "title": "Rent",
+        "sum": 49350,
+        "main": false,
+        "comment": "We rented only for two months this year. Travel rent is in a different category."
+      },
+      {
+        "title": "Mortgage",
+        "sum": 0,
+        "main": false,
+        "comment": "Still mortgage-free."
+      },
+      {
+        "title": "Utilities",
+        "sum": 41092,
+        "main": false,
+        "comment": "This includes utilities from our property while it was unoccupied."
+      },
+      {
+        "title": "Tax",
+        "sum": 780,
+        "main": false,
+        "comment": "Residence tax for the previous year."
+      },
+      {
+        "title": "Repairs",
+        "sum": 6548,
+        "main": false,
+        "comment": "I did some minor work before selling our apartment."
+      },
+      {
+        "title": "Food",
+        "sum": 324226,
+        "main": true
+      },
+      {
+        "title": "Groceries",
+        "sum": 139013,
+        "main": false,
+        "comment": "Almost the same level of spending on groceries. Although we din't eat lunches at work anymore."
+      },
+      {
+        "title": "Eating out",
+        "sum": 160291,
+        "main": false,
+        "comment": "This is because we hadn't kitchen for a few months and forced to eat out."
+      },
+      {
+        "title": "Alcohol",
+        "sum": 24922,
+        "main": false,
+        "comment": "Bars, parties, beer at home."
+      },
+      {
+        "title": "Transportation",
+        "sum": 120385,
+        "main": true
+      },
+      {
+        "title": "Gas",
+        "sum": 30254,
+        "main": false,
+        "comment": "This doesn't include traveling. Only errands around the city."
+      },
+      {
+        "title": "Maintenance",
+        "sum": 43440,
+        "main": false,
+        "comment": "New tires, suspension repairs after traveling around Russia."
+      },
+      {
+        "title": "Car Tax",
+        "sum": 3575,
+        "main": false,
+        "comment": "Tax for the previous year."
+      },
+      {
+        "title": "Insurance",
+        "sum": 6815,
+        "main": false,
+        "comment": "We got insurance with a huge discount due to residence issues."
+      },
+      {
+        "title": "Parking",
+        "sum": 0,
+        "main": false,
+        "comment": "All parking outside Moscow is almost free."
+      },
+      {
+        "title": "Public transport",
+        "sum": 20595,
+        "main": false,
+        "comment": "No regular commute. Train tickets to visit family."
+      },
+      {
+        "title": "Car rent",
+        "sum": 2372,
+        "main": false,
+        "comment": "We used car-sharing in Sochi and Moscow."
+      },
+      {
+        "title": "Taxi",
+        "sum": 13334,
+        "main": false,
+        "comment": "Huge up here due to wife's pregnancy."
+      },
+      {
+        "title": "Medicine",
+        "sum": 98269,
+        "main": true
+      },
+      {
+        "title": "Health Insurance",
+        "sum": 0,
+        "main": false,
+        "comment": "No paid insurance. Only basic from the government."
+      },
+      {
+        "title": "Doctor visits",
+        "sum": 73630,
+        "main": false,
+        "comment": "Pregnancy and minor dental issues."
+      },
+      {
+        "title": "Pharmacy",
+        "sum": 24639,
+        "main": false,
+        "comment": "Almost all of this is pregnancy medicines."
+      },
+      {
+        "title": "Life",
+        "sum": 74848,
+        "main": true
+      },
+      {
+        "title": "Entertainment",
+        "sum": 10566,
+        "main": false,
+        "comment": "Tickets to The Devil Wears Prada. And several SPAs in the mountains."
+      },
+      {
+        "title": "Education",
+        "sum": 0,
+        "main": false,
+        "comment": "This was the family and construction year. We took zero courses but read several clever books on time management, design, philosophy, and minimalism."
+      },
+      {
+        "title": "Sport",
+        "sum": 6918,
+        "main": false,
+        "comment": "Weights for home training."
+      },
+      {
+        "title": "Hobbies and arts",
+        "sum": 850,
+        "main": false,
+        "comment": "Nastya's oils for her new perfume hobby."
+      },
+      {
+        "title": "Clothing",
+        "sum": 420,
+        "main": false,
+        "comment": "This was the year of getting rid of the clothes."
+      },
+      {
+        "title": "Tech & Gadgets",
+        "sum": 10803,
+        "main": false,
+        "comment": "I switched from Pixel 3 to iPhone SE. I had issues with Android. And Pixel was too good to carry around on construction sites :)"
+      },
+      {
+        "title": "Home stuff",
+        "sum": 7693,
+        "main": false,
+        "comment": "Stuff for the baby who was born the 20th of December."
+      },
+      {
+        "title": "Work supplies",
+        "sum": 1081,
+        "main": false,
+        "comment": "Some of Nastya's stuff."
+      },
+      {
+        "title": "Household goods",
+        "sum": 5163,
+        "main": false,
+        "comment": "We went zero-waste this year. So we stopped buying plastic-packaged goods (almost). Baking soda and lime acid work like magic."
+      },
+      {
+        "title": "Cell phone",
+        "sum": 7530,
+        "main": false,
+        "comment": "The new cell phone plan is really cheap."
+      },
+      {
+        "title": "Subscriptions",
+        "sum": 890,
+        "main": false,
+        "comment": "Only the domain name. I have only two devices, so I switched to a free plan on Evernote."
+      },
+      {
+        "title": "Personal",
+        "sum": 15825,
+        "main": false,
+        "comment": "We started to use this category for Leo's diapers, etc."
+      },
+      {
+        "title": "Misc",
+        "sum": 7109,
+        "main": false,
+        "comment": "Some stuff for the baby."
+      },
+      {
+        "title": "Travel",
+        "sum": 109157,
+        "main": true
+      },
+      {
+        "title": "Hotels",
+        "sum": 101850,
+        "main": false,
+        "comment": "Our trip to the Sochi mountains for three months."
+      },
+      {
+        "title": "Travel Transportation",
+        "sum": 7307,
+        "main": false,
+        "comment": "Driving to the sea and back."
+      },
+      {
+        "title": "Travel Entertainment",
+        "sum": 0,
+        "main": false,
+        "comment": "Since it was our first long trip we treated entertainment as regular expenses."
+      },
+      {
+        "title": "Food and other",
+        "sum": 0,
+        "main": false,
+        "comment": "The same as with entertainment above."
+      },
+      {
+        "title": "Donations",
+        "sum": 27797,
+        "main": true
+      },
+      {
+        "title": "Presents",
+        "sum": 27297,
+        "main": false,
+        "comment": "Birthday presents and gratitude for the nurses work in a maternity home."
+      },
+      {
+        "title": "Parties hosting",
+        "sum": 0,
+        "main": false,
+        "comment": "No parties hosted this year."
+      },
+      {
+        "title": "Charity",
+        "sum": 500,
+        "main": false,
+        "comment": "To our shame almost nothing here."
+      },
+      {
+        "title": "Government",
+        "sum": 8811,
+        "main": true
+      },
+      {
+        "title": "Taxes and fees",
+        "sum": 4251,
+        "main": false,
+        "comment": "Income taxes."
+      },
+      {
+        "title": "Fines",
+        "sum": 4560,
+        "main": false,
+        "comment": "We left our car in an inappropriate place again. This time in Sochi."
+      }
+    ],
+    "total": 861263
+  },
+  "income": {
+    "categories": [
+      {
+        "title": "Investments",
+        "sum": 71076,
+        "comment": "We started earning income from our rental property."
+      },
+      {
+        "title": "Paycheck",
+        "sum": 0,
+        "comment": "Kinda scary at first. But we had cash stashed away."
+      },
+      {
+        "title": "Side hustle",
+        "sum": 519969,
+        "comment": "My part-time work covered a major part of our expenses."
+      },
+      {
+        "title": "Interest",
+        "sum": 51718,
+        "comment": "More interest from our cash accounts this year."
+      },
+      {
+        "title": "Stuff sales",
+        "sum": 199920,
+        "comment": "More income from our minimalistic lifestyle. We sold furniture and stuff from our previous apartment. And all the books. I left only Kindle."
+      },
+      {
+        "title": "Presents",
+        "sum": 18900,
+        "comment": "Thanks to the family!"
+      },
+      {
+        "title": "Other",
+        "sum": 1000,
+        "comment": "Bring Max to the airport! (Our family meme)"
+      }
+    ],
+    "total": 862583
+  }
+}

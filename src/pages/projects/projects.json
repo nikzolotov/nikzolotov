@@ -1,0 +1,177 @@
+{
+  "items": [
+    {
+      "id": "nm-selfcheckout",
+      "title": "<abbr title='Neft Magistral'>NM</abbr> Gas Stations Self-Checkout",
+      "year": 2020,
+      "type": "Kiosk",
+      "field": "Driver Services",
+      "image": "gas-stations-main",
+      "device": "htc",
+      "deviceMaxWidth": "184px",
+      "cols": 1,
+      "nda": true
+    },
+    {
+      "id": "kia-dmm",
+      "title": "<abbr>KIA</abbr> <abbr title='Dealer Marketing Management'>DMM</abbr>",
+      "year": 2020,
+      "type": "Web App",
+      "field": "Marketing, Car dealers, <abbr>B2B</abbr>",
+      "nda": true
+    },
+    {
+      "id": "toyota-dmm",
+      "title": "Toyota <abbr title='Dealer Marketing Management'>DMM</abbr> Analytics",
+      "year": 2020,
+      "type": "Web App",
+      "field": "Marketing, Car dealers, <abbr>B2B</abbr>",
+      "nda": true
+    },
+    {
+      "id": "gas-stations",
+      "title": "Gas Stations in Navigator",
+      "year": 2018,
+      "type": "App",
+      "field": "Driver Services",
+      "top": true,
+      "actual": true,
+      "image": "gas-stations-main",
+      "device": "abstract-phone",
+      "deviceMaxWidth": "184px",
+      "cols": 1
+    },
+    {
+      "id": "yandex-sports",
+      "title": "Sports on Yandex",
+      "year": 2018,
+      "type": "Web",
+      "field": "Entertaiment",
+      "top": true,
+      "actual": true,
+      "image": "yandex-sports-wc18",
+      "device": "safari",
+      "deviceMaxWidth": "590px",
+      "cols": 2
+    },
+    {
+      "id": "skoda-dmm",
+      "title": "Škoda <abbr title='Dealer Marketing Management'>DMM</abbr>",
+      "year": 2018,
+      "type": "Web App",
+      "field": "Marketing, Car dealers, <abbr>B2B</abbr>",
+      "nda": true
+    },
+    {
+      "id": "audi-dmm",
+      "title": "Audi <abbr title='Dealer Marketing Management'>DMM</abbr>",
+      "year": 2018,
+      "type": "Web App",
+      "field": "Marketing, Car dealers, <abbr>B2B</abbr>",
+      "nda": true
+    },
+    {
+      "id": "vw-dmm",
+      "title": "Volkswagen <abbr title='Dealer Marketing Management'>DMM</abbr>",
+      "year": 2017,
+      "type": "Web App",
+      "field": "Marketing, Car dealers, <abbr>B2B</abbr>",
+      "nda": true
+    },
+    {
+      "id": "gulfstream-b2b",
+      "title": "Gulfstream <abbr>B2B</abbr>",
+      "year": 2017,
+      "type": "Web App",
+      "field": "Home security, <abbr>B2B</abbr>"
+    },
+    {
+      "id": "leader",
+      "title": "Leader Engineering",
+      "year": 2016,
+      "type": "Web",
+      "field": "Engineering",
+      "actual": true,
+      "image": "leader-main-short",
+      "device": "safari",
+      "deviceMaxWidth": "590px",
+      "cols": 3
+    },
+    {
+      "id": "gulfstream",
+      "title": "Gulfstream",
+      "year": 2016,
+      "type": "iOS App",
+      "field": "Home security"
+    },
+    {
+      "id": "yandex-14",
+      "title": "Yandex v14",
+      "year": 2015,
+      "type": "Web",
+      "field": "Internet Search & Entertaiment",
+      "actual": true,
+      "image": "yandex-14-morda",
+      "device": "safari",
+      "deviceMaxWidth": "590px",
+      "cols": 2
+    },
+    {
+      "id": "yandex-touch",
+      "title": "The Mobile Version of Yandex",
+      "year": 2015,
+      "type": "Web",
+      "field": "Internet Search & Entertaiment",
+      "actual": true,
+      "image": "yandex-touch-main",
+      "device": "htc",
+      "deviceMaxWidth": "184px",
+      "cols": 1
+    },
+    {
+      "id": "yandex-tablet",
+      "title": "Yandex for tablets",
+      "year": 2015,
+      "type": "Web",
+      "field": "Internet Search & Entertaiment",
+      "actual": true,
+      "image": "yandex-tablet-morda",
+      "device": "ipad",
+      "deviceWidth": "620px",
+      "cols": 1
+    },
+    {
+      "id": "yandex-tv",
+      "title": "Yandex for Smart <abbr>TV</abbr>",
+      "year": 2015,
+      "type": "Web",
+      "field": "Internet Search & Entertaiment",
+      "actual": true,
+      "image": "yandex-tv-main",
+      "device": "tv",
+      "deviceMaxWidth": "590px",
+      "cols": 2
+    },
+    {
+      "id": "marytrufel",
+      "title": "Bridal Store Mary Trufel",
+      "year": 2014,
+      "type": "Web",
+      "field": "E-commerce"
+    },
+    {
+      "id": "av-selfcheckout",
+      "title": "Azbuka Vkusa Self-checkout",
+      "year": 2013,
+      "type": "Kiosk",
+      "field": "Retail"
+    },
+    {
+      "id": "megafon-lk",
+      "title": "Megafon Account Managment",
+      "year": 2013,
+      "type": "Web App",
+      "field": "Mobile Networking"
+    }
+  ]
+}
