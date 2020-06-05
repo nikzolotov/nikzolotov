@@ -25,17 +25,6 @@ module.exports = {
         trackingId: "UA-168670137-1",
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-yandex-metrica`,
-    //   options: {
-    //     trackingId: "46831923",
-    //     clickmap: true,
-    //     trackLinks: true,
-    //     accurateTrackBounce: true,
-    //     trackHash: true,
-    //     webvisor: false,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-yandex-metrika`,
       options: {
