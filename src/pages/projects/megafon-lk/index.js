@@ -25,32 +25,22 @@ export default ({ data }) => {
         </p>
       </LayoutColumn>
       <Frame label="Main screen">
-        <Device
-          image={filterImage(images, "megafon-lk-main")}
-          model="safari"
-          margin="0"
-        />
+        <Device image={filterImage(images, "megafon-lk-main")} model="safari" />
       </Frame>
       <Frame label="Service page">
         <Device
           image={filterImage(images, "megafon-lk-service")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <Frame label="Balance top-up">
         <Device
           image={filterImage(images, "megafon-lk-topup")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <Frame label="Mobile version">
-        <Device
-          image={filterImage(images, "megafon-lk-mobile")}
-          model="htc"
-          margin="0"
-        />
+        <Device image={filterImage(images, "megafon-lk-mobile")} model="htc" />
       </Frame>
     </Layout>
   );

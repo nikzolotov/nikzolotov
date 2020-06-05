@@ -8,8 +8,8 @@ import imageTV from "./tv.png";
 import imageKiosk from "./kiosk.png";
 
 export default (props) => {
-  const margin = props.margin ? props.margin : "0 0 var(--spacing-base) 0",
-    width = props.width ? props.width : "100%";
+  const margin = props.margin ? props.margin : "var(--spacing-base)";
+  const width = props.width ? props.width : "100%";
 
   let maxWidth = "900px";
   if (props.model === "htc" || props.model === "abstract-phone")
@@ -26,6 +26,9 @@ export default (props) => {
           box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3),
             0 0 0 1px rgba(0, 0, 0, 0.1);
           border-radius: 5px;
+          @media (max-width: 640px) {
+            border-radius: 2px;
+          }
         `}
       >
         <Img fluid={props.image} />
@@ -114,6 +117,10 @@ export default (props) => {
         max-width: ${maxWidth};
         margin: ${margin};
         ${width && "width: " + width + ";"}
+        @media (max-width: 640px) {
+          margin-left: 0;
+          margin-right: 0;
+        }
       `}
     >
       {device}

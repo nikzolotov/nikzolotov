@@ -16,6 +16,9 @@ export default (props) => {
           content: "";
           flex-basis: calc((100% * 2 / 6) - (var(--gap) * 4 / 6));
         }
+        @media (max-width: 1000px) {
+          display: block;
+        }
       `}
     >
       {props.items.map((props) => (
@@ -37,6 +40,9 @@ function ProjectListItem(props) {
     background: rgba(var(--white-rgb), 0.05);
     transition: background 0.5s;
     overflow: hidden;
+    @media (max-width: 1000px) {
+      height: auto;
+    }
   `;
 
   const StyledLink = styled((props) => <Link {...props} />)`
@@ -57,6 +63,9 @@ function ProjectListItem(props) {
             (var(--gap) * ${6 - props.cols * 2} / 6)
         );
         margin-bottom: var(--spacing-x-large);
+        @media (max-width: 1000px) {
+          width: auto;
+        }
       `}
     >
       <StyledLink to={`/projects/${props.id}/`}>

@@ -27,39 +27,19 @@ export default ({ data }) => {
         </p>
       </LayoutColumn>
       <Frame label="Yandex on Smart <abbr>TV</abbr>">
-        <Device
-          image={filterImage(images, "yandex-tv-main")}
-          model="tv"
-          margin="0"
-        />
+        <Device image={filterImage(images, "yandex-tv-main")} model="tv" />
       </Frame>
       <Frame label="The main page is scrolling to the right">
-        <Device
-          image={filterImage(images, "yandex-tv-right")}
-          model="tv"
-          margin="0"
-        />
+        <Device image={filterImage(images, "yandex-tv-right")} model="tv" />
       </Frame>
       <Frame label="The news details open without reloading">
-        <Device
-          image={filterImage(images, "yandex-tv-news")}
-          model="tv"
-          margin="0"
-        />
+        <Device image={filterImage(images, "yandex-tv-news")} model="tv" />
       </Frame>
       <Frame label="<abbr>TV</abbr> schedule">
-        <Device
-          image={filterImage(images, "yandex-tv-timetable")}
-          model="tv"
-          margin="0"
-        />
+        <Device image={filterImage(images, "yandex-tv-timetable")} model="tv" />
       </Frame>
       <Frame label="A classic version adapted to <abbr>TV</abbr> screens">
-        <Device
-          image={filterImage(images, "yandex-tv-classic")}
-          model="tv"
-          margin="0"
-        />
+        <Device image={filterImage(images, "yandex-tv-classic")} model="tv" />
       </Frame>
       <LayoutColumn>
         <Next type="project" id="marytrufel" title="Bridal Store Mary Trufel" />

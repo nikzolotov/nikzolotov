@@ -51,32 +51,28 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "gas-stations-invitation")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "gas-stations-main")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
       </Frame>
       <LayoutColumn>
         <p>
-          I made those huge fancy buttons with a gas type actually to show
-          special offers. I also made different types of banners depending on
-          context and saved payment information. And mockups for selling coffee
-          and stuff from the main screen.
+          I made those huge fancy buttons with a gas type to show special
+          offers. I also made different types of banners depending on context
+          and saved payment information. And mockups for selling coffee and
+          stuff from the main screen.
         </p>
       </LayoutColumn>
       <Frame label="After choosing the amount of gas user sees clear instructions of what to do next">
         <Device
           image={filterImage(images, "gas-stations-main-offer")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "gas-stations-main-store")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
       </Frame>
       <LayoutColumn>
@@ -95,12 +91,10 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "gas-stations-instruction")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "gas-stations-filling")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
       </Frame>
       <LayoutColumn>
@@ -116,12 +110,10 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "gas-stations-picker-sum")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "gas-stations-picker-liters")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
       </Frame>
       <LayoutColumn>
@@ -134,12 +126,10 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "gas-stations-main-white")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "gas-stations-instruction-white")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
       </Frame>
       <LayoutColumn>

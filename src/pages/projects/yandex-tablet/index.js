@@ -28,7 +28,6 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "yandex-tablet-morda")}
           model="ipad"
-          margin="0"
         />
       </Frame>
       <Frame label="Yandex for tablets">
@@ -36,7 +35,6 @@ export default ({ data }) => {
           image={filterImage(images, "yandex-tablet-full")}
           model="safari"
           maxWidth="750px"
-          margin="0"
         />
       </Frame>
       <LayoutColumn>

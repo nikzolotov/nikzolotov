@@ -33,28 +33,24 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "av-selfcheckout-welcome")}
           model="kiosk"
-          margin="0"
         />
       </Frame>
       <Frame label="The customer scans goods, weights fresh produce, pays for purchases, spends his bonuses, and scans the receipt, all by himself. The main goal was to create a feeling of constant control.">
         <Device
           image={filterImage(images, "av-selfcheckout-next")}
           model="kiosk"
-          margin="0"
         />
       </Frame>
       <Frame label="The device controls purchases using a scale. Therefore, it was important to clearly show that the purchase should be placed on the platform on the right.">
         <Device
           image={filterImage(images, "av-selfcheckout-put")}
           model="kiosk"
-          margin="0"
         />
       </Frame>
       <Frame label="Thanks for the purchase!">
         <Device
           image={filterImage(images, "av-selfcheckout-bye")}
           model="kiosk"
-          margin="0"
         />
       </Frame>
       <LayoutColumn>

@@ -33,18 +33,10 @@ export default ({ data }) => {
         </p>
       </LayoutColumn>
       <Frame label="Main page">
-        <Device
-          image={filterImage(images, "leader-main")}
-          model="safari"
-          margin="0"
-        />
+        <Device image={filterImage(images, "leader-main")} model="safari" />
       </Frame>
       <Frame label="Product page">
-        <Device
-          image={filterImage(images, "leader-product")}
-          model="safari"
-          margin="0"
-        />
+        <Device image={filterImage(images, "leader-product")} model="safari" />
       </Frame>
       <LayoutColumn>
         <p>
@@ -54,11 +46,7 @@ export default ({ data }) => {
         </p>
       </LayoutColumn>
       <Frame label="Project page">
-        <Device
-          image={filterImage(images, "leader-project")}
-          model="safari"
-          margin="0"
-        />
+        <Device image={filterImage(images, "leader-project")} model="safari" />
       </Frame>
       <LayoutColumn>
         <Next type="project" id="yandex-14" title="Yandex v14" />

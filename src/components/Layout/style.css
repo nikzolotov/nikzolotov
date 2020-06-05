@@ -27,14 +27,10 @@
     src: url(../../../static/fonts/apercupro/ApercuPro-Bold.eot);
     src: url(../../../static/fonts/apercupro/ApercuPro-Bold.eot?#iefix) format("embedded-opentype"), url(../../../static/fonts/apercupro/ApercuPro-Bold.woff) format("woff"), url(../../../static/fonts/apercupro/ApercuPro-Bold.ttf) format("truetype"), url(../../../static/fonts/apercupro/ApercuPro-Bold.svg) format("svg")
     }
-/* @font-face {
-    font-family: ApercuLight;
-    src: url(../../../static/fonts/apercupro/ApercuPro-Light.eot);
-    src: url(../../../static/fonts/apercupro/ApercuPro-Light.eot?#iefix) format("embedded-opentype"), url(../../../static/fonts/apercupro/ApercuPro-Light.woff) format("woff"), url(../../../static/fonts/apercupro/ApercuPro-Light.ttf) format("truetype"), url(../../../static/fonts/apercupro/ApercuPro-Light.svg) format("svg")
-    } */
-
+html{
+    -webkit-text-size-adjust: 100%;
+    }
 body {
-    min-width: 960px;
     max-width: 1600px;
     margin: 0 auto;
     padding: 0;

@@ -28,24 +28,20 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "gulfstream-dashboard")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "gulfstream-outlet")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
       </Frame>
       <Frame label="Temperature sensor settings and list of all sensors">
         <Device
           image={filterImage(images, "gulfstream-sensor")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
         <Device
           image={filterImage(images, "gulfstream-sensors")}
           model="abstract-phone"
-          margin="0 var(--spacing-base)"
         />
       </Frame>
       <LayoutColumn>

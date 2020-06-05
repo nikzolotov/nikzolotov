@@ -67,27 +67,38 @@ function ProjectTableItemData(props) {
       <div className="title" css={cellStyle}>
         <span dangerouslySetInnerHTML={{ __html: props.title }} />
         {props.nda && (
-          <abbr
-            css={css`
-              display: inline-block;
-              vertical-align: 40%;
-              margin-left: 10px;
-              padding: 1px 2px 2px 3px;
-              font-size: 9px;
-              line-height: 9px;
-              letter-spacing: 1px;
-              color: var(--red);
-              border: 1px solid var(--red);
-              border-radius: 3px;
-            `}
-            title="Non-Disclosure Agreement"
-          >
-            NDA
-          </abbr>
+          <>
+            &nbsp;
+            <abbr
+              css={css`
+                display: inline-block;
+                vertical-align: 40%;
+                margin-left: var(--spacing-tiny);
+                padding: 1px 2px 2px 3px;
+                font-size: 9px;
+                line-height: 9px;
+                letter-spacing: 1px;
+                color: var(--red);
+                border: 1px solid var(--red);
+                border-radius: 3px;
+              `}
+              title="Non-Disclosure Agreement"
+            >
+              NDA
+            </abbr>
+          </>
         )}
       </div>
       <div css={cellStyle}>{props.year}</div>
-      <div css={cellStyle} dangerouslySetInnerHTML={{ __html: props.field }} />
+      <div
+        css={css`
+          ${cellStyle}
+          @media (max-width: 640px) {
+            display: none;
+          }
+        `}
+        dangerouslySetInnerHTML={{ __html: props.field }}
+      />
       <div css={cellStyle}>{props.type}</div>
     </>
   );

@@ -32,28 +32,24 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "gulfstream-b2b-main")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <Frame label="List of all objects">
         <Device
           image={filterImage(images, "gulfstream-b2b-objects")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <Frame label="Object settings and actions">
         <Device
           image={filterImage(images, "gulfstream-b2b-object")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <Frame label="Reports settings">
         <Device
           image={filterImage(images, "gulfstream-b2b-reports")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <LayoutColumn>

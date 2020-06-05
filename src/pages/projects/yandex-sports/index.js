@@ -37,21 +37,18 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "yandex-sports-wc18-full")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <Frame label="Match overview">
         <Device
           image={filterImage(images, "yandex-sports-overview")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <Frame label="Team lineups">
         <Device
           image={filterImage(images, "yandex-sports-lineups")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <LayoutColumn>
@@ -68,14 +65,12 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "yandex-sports-olympics")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <Frame label="Next day on Winter Olympics">
         <Device
           image={filterImage(images, "yandex-sports-olympics-nextday")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <LayoutColumn>

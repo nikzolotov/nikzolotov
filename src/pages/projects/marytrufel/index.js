@@ -39,14 +39,12 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "marytrufel-catalog")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <Frame label="On the dress page, bridal sees full-size photographs immediately.<br/>Price tag contains color, availability, materials and so on.">
         <Device
           image={filterImage(images, "marytrufel-product")}
           model="safari"
-          margin="0"
         />
         <Img
           css={css`
@@ -60,7 +58,6 @@ export default ({ data }) => {
         <Device
           image={filterImage(images, "marytrufel-evening")}
           model="safari"
-          margin="0"
         />
       </Frame>
       <LayoutColumn>

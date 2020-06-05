@@ -8,6 +8,9 @@ export default (props) => {
     <div
       css={css`
         width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
+        @media (max-width: 1000px) {
+          width: auto;
+        }
       `}
     >
       {props.items.map((props) => (

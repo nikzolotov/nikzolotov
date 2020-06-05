@@ -7,9 +7,7 @@ import Img from "gatsby-image";
 import { css } from "@emotion/core";
 
 export default (props) => {
-  const padding = props.padding
-    ? props.padding
-    : "var(--spacing-xx-large) var(--spacing-x-large)";
+  const padding = props.padding ? props.padding : "var(--spacing-x-large)";
 
   const bgColor = props.bgColor
     ? props.bgColor
@@ -18,7 +16,7 @@ export default (props) => {
   return (
     <div
       css={css`
-        margin: var(--spacing-large) 0;
+        margin: var(--spacing-large) 0 var(--spacing-x-large) 0;
       `}
     >
       <div
@@ -29,6 +27,9 @@ export default (props) => {
           flex-wrap: wrap;
           padding: ${padding};
           background: ${bgColor};
+          @media (max-width: 640px) {
+            padding: var(--spacing-base);
+          }
         `}
       >
         {props.children}

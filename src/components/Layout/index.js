@@ -13,6 +13,12 @@ export default (props) => {
       css={css`
         position: relative;
         margin: var(--spacing-base) var(--spacing-large);
+        @media (max-width: 640px) {
+          margin: var(--spacing-base);
+        }
+        @media (max-width: 350px) {
+          margin: 20px;
+        }
       `}
     >
       <SEO />
@@ -51,11 +57,19 @@ function Header(props) {
         height: 0;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 1000px) {
+          position: static;
+          height: auto;
+          margin-bottom: var(--spacing-base);
+        }
       `}
     >
       <div
         css={css`
           width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
+          @media (max-width: 1000px) {
+            width: auto;
+          }
         `}
       >
         {props.index ? (
@@ -68,17 +82,13 @@ function Header(props) {
       </div>
       <div
         css={css`
-          width: calc((100% * 1 / 6) - (var(--gap) * 5 / 6));
+          width: calc((100% * 2 / 6) - (var(--gap) * 4 / 6));
+          @media (max-width: 1000px) {
+            width: auto;
+          }
         `}
       >
         <Menu items={menuItems} invert={props.index} partiallyActive />
-      </div>
-      <div
-        css={css`
-          width: calc((100% * 1 / 6) - (var(--gap) * 5 / 6));
-        `}
-      >
-        {/* Langs go here */}
       </div>
     </nav>
   );
@@ -113,6 +123,10 @@ function Footer() {
       css={css`
         margin-left: calc((100% * 1 / 6) - (var(--gap) * 5 / 6) + var(--gap));
         padding-top: var(--spacing-xx-large);
+        @media (max-width: 1000px) {
+          margin: 0;
+          padding-top: var(--spacing-large);
+        }
       `}
     >
       <Menu items={menuItems} inline external />

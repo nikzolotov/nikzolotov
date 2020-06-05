@@ -10,7 +10,7 @@ export default (props) => {
         margin: 0;
         padding: 0;
         list-style: none;
-        ${props.inline && "display: flex;"}
+        ${props.inline && "display: flex; flex-wrap: wrap;"}
         ${props.centered && "justify-content: center;"}
       `}
     >
