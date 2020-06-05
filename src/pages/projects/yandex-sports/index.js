@@ -21,23 +21,21 @@ export default ({ data }) => {
           page offers users other services such as news, weather, traffic, and
           so on. So it is a place where you can start your day with a cup of
           coffee. In 2018 Russia hosted the World Cup. It was a perfect time to
-          make something nice to celebrate this event instead of a formal
-          notification.
+          make something nice to celebrate this event.
         </p>
         <p>
-          At that time Yandex experimented with entertainment content to step
-          outside a single screen page. So it was a space and all the resources
-          to make something interesting within Yandex main page. We rolled out
-          the first version for the Confederation Cup. Then we made something
-          similar for the Winter Olympics. And, finally, for the World Cup. By
-          that time we had established contracts with data suppliers. The result
-          was a rich section on Yandex with live translations, highlights,
-          stats, and so on.
+          Our goals were to make good PR and bring people to the new Yandex
+          service with broadcasts. Yandex covered big sports events previously
+          but did it more formally with a text string near the news. This time I
+          made a huge (by Yandex standards) and colorful section and made an
+          accent on video broadcasts. To amuse people before the match, we added
+          stats such as squads, wins-losses, score tables. And after-match
+          stats: goals, best players, ball possession, and so on.
         </p>
       </LayoutColumn>
       <Frame label="FIFA World Cup 2018">
         <Device
-          image={filterImage(images, "yandex-sports-wc18")}
+          image={filterImage(images, "yandex-sports-wc18-full")}
           model="safari"
           margin="0"
         />
@@ -56,9 +54,26 @@ export default ({ data }) => {
           margin="0"
         />
       </Frame>
+      <LayoutColumn>
+        <p>
+          We tested this format on Winter Olympics a few months before the World
+          Cup. There's much more going on in the Olympics than in the World Cup.
+          I grouped events by day at the top of the section. Next, goes top
+          events with broadcasts and medals stats. The rest opens up if the
+          person shows her interest. The last row is a filter by the sports
+          type.
+        </p>
+      </LayoutColumn>
       <Frame label="Winter Olympics 2018">
         <Device
           image={filterImage(images, "yandex-sports-olympics")}
+          model="safari"
+          margin="0"
+        />
+      </Frame>
+      <Frame label="Next day on Winter Olympics">
+        <Device
+          image={filterImage(images, "yandex-sports-olympics-nextday")}
           model="safari"
           margin="0"
         />

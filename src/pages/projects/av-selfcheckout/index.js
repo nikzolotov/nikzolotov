@@ -16,30 +16,41 @@ export default ({ data }) => {
       <SEO title="Azbuka Vkusa Self-checkout" />
       <LayoutColumn>
         <ArticleTitle title="Azbuka Vkusa Self-checkout" meta="2013 · Kiosk" />
-        <p>Description</p>
+        <p>
+          Azbuka Vkusa, one of the top Moscow retailers, decided to test the
+          self-checkout process in their supermarkets. So they were planning to
+          replace cashiers in the future. I have designed a user interface for
+          self-checkout kiosks. Illustrations were outsourced according to my
+          sketches. Self-checkout kiosks are now successfully working in
+          Azbuka's supermarkets.
+        </p>
+        <p>
+          UPD 2019: Azbuka rolled down self-checkout due to high maintenance
+          fees.
+        </p>
       </LayoutColumn>
-      <Frame label="1">
+      <Frame label="Welcome screen">
         <Device
           image={filterImage(images, "av-selfcheckout-welcome")}
           model="kiosk"
           margin="0"
         />
       </Frame>
-      <Frame label="2">
+      <Frame label="The customer scans goods, weights fresh produce, pays for purchases, spends his bonuses, and scans the receipt, all by himself. The main goal was to create a feeling of constant control.">
         <Device
           image={filterImage(images, "av-selfcheckout-next")}
           model="kiosk"
           margin="0"
         />
       </Frame>
-      <Frame label="3">
+      <Frame label="The device controls purchases using a scale. Therefore, it was important to clearly show that the purchase should be placed on the platform on the right.">
         <Device
           image={filterImage(images, "av-selfcheckout-put")}
           model="kiosk"
           margin="0"
         />
       </Frame>
-      <Frame label="4">
+      <Frame label="Thanks for the purchase!">
         <Device
           image={filterImage(images, "av-selfcheckout-bye")}
           model="kiosk"
