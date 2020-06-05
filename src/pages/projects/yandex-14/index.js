@@ -19,7 +19,7 @@ export default ({ data }) => {
         <p>
           Yandex constantly working to make its products better. In 2015
           I&nbsp;took part in the 14th redesign of the main page. It became
-          clearer, simpler and more compact.
+          clearer, simpler, and more compact.
         </p>
       </LayoutColumn>
       <Frame label="The 14th version of Yandex">

@@ -21,8 +21,8 @@ export default ({ data }) => {
         />
         <p>
           I took part in the redesign of the Gulfstream B2B platform for
-          business owners who have objects under security protection. The main
-          users of the system are either business owners themselves, or, more
+          business owners who have objects under security protection. The users
+          of the system are either business owners themselves, or, more
           frequently, security managers. They monitor statutes of the objects,
           manage actual users of the security system (employees, staff), manage
           customer agreements, and so on.

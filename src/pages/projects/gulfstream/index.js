@@ -21,7 +21,7 @@ export default ({ data }) => {
           first, they had a single-button application to switch your home alarm
           on and off with some payment and user management functions. I was
           hired to add some smart home features, such as controllable outlets,
-          temperature sensors and make the app look fresh and friendly.
+          temperature sensors, and make the app look fresh and friendly.
         </p>
       </LayoutColumn>
       <Frame label="Main screen and outlet settings">

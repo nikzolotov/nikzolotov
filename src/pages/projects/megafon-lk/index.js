@@ -16,13 +16,12 @@ export default ({ data }) => {
       <LayoutColumn>
         <ArticleTitle title="Megafon account managment" meta="2013 · Web App" />
         <p>
-          To replace outdated USSD-based interface Megafon hired Usethics
-          to&nbsp;make a complete redesign of it's account managment tool.
-          I&nbsp;worked on&nbsp;designing billing, service activation, top-up
-          balance and many others of&nbsp;it's features. This was UX-prototype,
-          but I&nbsp;offered some visual solutions which was accepted by
-          Megafon. Now this tool is working and evolving by&nbsp;Megafon's
-          designers.
+          To replace outdated USSD-based interface Megafon hired Usethics to
+          make a complete redesign of its account management tool. I&nbsp;worked
+          on designing billing, service activation, top-up balance, and many
+          others of its features. This was UX-prototype, but I&nbsp;offered some
+          visual solutions which were accepted by Megafon. Now, this tool is
+          working and evolving by Megafon's designers.
         </p>
       </LayoutColumn>
       <Frame label="Main screen">

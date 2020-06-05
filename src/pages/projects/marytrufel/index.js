@@ -22,17 +22,17 @@ export default ({ data }) => {
           Working with Artem Gorbunov design agency, we created the second
           version of a bridal store called Mary Trufel. We wanted to show the
           variety of dresses and persuade girls to come and try them on. To do
-          that we decided that catalog shouldn't be the boring matrix. Mixing
-          big and small photos, controlling eye attention, we engage bridal to
-          take a close look and choose the dress of her life.
+          that we decided that the catalog shouldn't be the boring matrix.
+          Mixing big and small photos, controlling eye attention, we engage
+          bridal to take a close look and choose the dress of her life.
         </p>
         <p>
           I worked with an art director of the agency, doing the bunch of a
-          designers work: trying different layouts, designing algorithms to show
-          different amount of dresses, drawing simple graphics and sketching
-          illustrations for outsourcers. A month after launch: visits increased
-          by 32%, views increased by 512%, average time on the site increased
-          from 1:25 to 4:25.
+          designer's work: trying different layouts, designing algorithms to
+          show different amounts of dresses, drawing simple graphics, and
+          sketching illustrations for outsourcers. A month after launch visits
+          increased by 32%, views increased by 512%, average time on the site
+          increased from 1:25 to 4:25.
         </p>
       </LayoutColumn>
       <Frame label="Photos attracts attention to each dress">
