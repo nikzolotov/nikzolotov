@@ -7,6 +7,11 @@ module.exports = {
     image: `/favicon.ico`,
   },
   plugins: [
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,10 +25,16 @@ module.exports = {
         trackingId: "UA-168670137-1",
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-emotion`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-yandex-metrica`,
+      options: {
+        trackingId: "46831923",
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        trackHash: true,
+        webvisor: false,
+      },
+    },
   ],
 };
