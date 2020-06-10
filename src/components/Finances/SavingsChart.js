@@ -50,6 +50,7 @@ class SavingsChart extends React.Component {
       .append("g")
       .attr("transform", "translate(" + margin.left + ",0)");
 
+    const gAxisLabels = svg.append("g");
     const gLine = svg.append("g");
     const gIncome = svg.append("g").attr("fill", "#292E32");
     const gExpenses = svg.append("g").attr("fill", "#292E32");
@@ -68,7 +69,7 @@ class SavingsChart extends React.Component {
         )
     ).call(function (g) {
       g.attr("font-size", 13)
-        .attr("font-family", "")
+        .attr("font-family", null)
         .attr("opacity", 0.5)
         .select(".domain")
         .remove();
@@ -82,7 +83,7 @@ class SavingsChart extends React.Component {
         .tickFormat((d) => `${d / 1000}${d !== 0 ? " k" : ""}`)
     ).call(function (g) {
       g.attr("font-size", 13)
-        .attr("font-family", "")
+        .attr("font-family", null)
         .selectAll("text")
         .attr("opacity", 0.5);
       g.selectAll("line").attr("opacity", 0.2);
@@ -94,12 +95,31 @@ class SavingsChart extends React.Component {
         .remove();
     });
 
+    // Axes labels
+    gAxisLabels
+      .append("text")
+      .attr("x", 0)
+      .attr("y", 13)
+      .attr("font-size", 13)
+      .attr("fill", "currentColor")
+      .attr("opacity", 0.5)
+      .text("Income, ₽");
+
+    gAxisLabels
+      .append("text")
+      .attr("x", 0)
+      .attr("y", height - 8)
+      .attr("font-size", 13)
+      .attr("fill", "currentColor")
+      .attr("opacity", 0.5)
+      .text("Expenses");
+
     // Ground line
     gLine
       .append("line")
       .attr("x1", margin.left - 10)
       .attr("y1", y(0))
-      .attr("x2", width - margin.right + 10)
+      .attr("x2", width - margin.right)
       .attr("y2", y(0))
       .style("stroke", "white")
       .attr("stroke-opacity", 0.1);
@@ -196,8 +216,8 @@ class SavingsChart extends React.Component {
   render() {
     return (
       <svg
-        width="100%"
-        height="100%"
+        // width="100%"
+        // height="100%"
         viewBox={"0 0 " + this.props.width + " " + this.props.height}
         ref={(element) => (this.svg = d3.select(element))}
         style={{ overflow: "visible" }}
