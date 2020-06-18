@@ -9,6 +9,7 @@ export default (props) => {
       css={css`
         width: 100%;
         margin-bottom: var(--spacing-large);
+        border-top: 1px solid rgba(var(--white-rgb), 0.1);
       `}
     >
       <tbody>
@@ -65,7 +66,7 @@ function CategoriesTableItem(props) {
                 ${thStyle}
                 text-align: right;
                 font: 15px ApercuRegular, Helvetica, sans-serif;
-                display: none;
+                //display: none;
               `}
             >
               <Diff value={diff} invert={props.diffInvert} />
@@ -105,7 +106,7 @@ function CategoriesTableItem(props) {
                 width: 90px;
                 text-align: right;
                 font-size: 15px;
-                display: none;
+                //display: none;
               `}
             >
               <Diff value={diff} invert={props.diffInvert} />
