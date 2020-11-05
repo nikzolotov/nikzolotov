@@ -40,6 +40,9 @@ function CategoriesTableItem(props) {
     line-height: 24px;
     border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
   `;
+
+  const currency = props.currency || 1;
+
   return (
     <tr>
       {props.main ? (
@@ -58,7 +61,7 @@ function CategoriesTableItem(props) {
               text-align: right;
             `}
           >
-            {props.sum.toLocaleString()}
+            {(props.sum / currency).toLocaleString()}
           </th>
           {props.prev && (
             <th
@@ -97,7 +100,7 @@ function CategoriesTableItem(props) {
               text-align: right;
             `}
           >
-            {props.sum.toLocaleString()}
+            {(props.sum / currency).toLocaleString()}
           </td>
           {props.prev && (
             <td

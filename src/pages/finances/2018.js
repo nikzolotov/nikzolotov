@@ -10,6 +10,7 @@ import CategoriesTable from "../../components/Finances/CategoriesTable";
 import finances from "./data/finances-2018.json";
 import financesSankey from "./data/finances-2018-sankey.json";
 import financesPrev from "./data/finances-2017.json";
+import currency from "./data/currency.json";
 
 export default (props) => {
   return (
@@ -34,8 +35,16 @@ export default (props) => {
           margin-bottom: var(--spacing-x-large);
         `}
       >
-        <Totals data={finances} prev={financesPrev} />
-        <SankeyChart data={financesSankey} height={571} />
+        <Totals
+          data={finances}
+          currency={currency.year18.usd}
+          prev={financesPrev}
+        />
+        <SankeyChart
+          data={financesSankey}
+          currency={currency.year18.usd}
+          height={571}
+        />
       </div>
       <div
         css={css`
@@ -46,11 +55,13 @@ export default (props) => {
         <CategoriesTable
           data={finances.income.categories}
           prev={financesPrev.income.categories}
+          currency={currency.year18.usd}
         />
         <h2>Expenses</h2>
         <CategoriesTable
           data={finances.expenses.categories}
           prev={financesPrev.expenses.categories}
+          currency={currency.year18.usd}
           diffInvert
         />
       </div>

@@ -10,6 +10,7 @@ class SankeyChart extends React.Component {
     this.state = {
       nodes: props.data.nodes,
       links: props.data.links,
+      currency: props.currency || 1,
     };
   }
 
@@ -36,7 +37,9 @@ class SankeyChart extends React.Component {
       nodes: this.state.nodes.map((d) => Object.assign({}, d)),
       links: this.state.links.map((d) => Object.assign({}, d)),
     });
+    const currency = this.state.currency;
 
+    // Bars
     svg
       .append("g")
       .selectAll("rect")
@@ -60,8 +63,9 @@ class SankeyChart extends React.Component {
         return (d3.color(c) || d3.color(color)).darker(0.5);
       })
       .append("title")
-      .text((d) => `${d.name}\n${d.value.toLocaleString()}`);
+      .text((d) => `${d.name}\n${(d.value / currency).toLocaleString()}`);
 
+    // Links
     const link = svg
       .append("g")
       .attr("fill", "none")
@@ -79,9 +83,12 @@ class SankeyChart extends React.Component {
       .append("title")
       .text(
         (d) =>
-          `${d.source.name} → ${d.target.name}\n${d.value.toLocaleString()}`
+          `${d.source.name} → ${d.target.name}\n${(
+            d.value / currency
+          ).toLocaleString()}`
       );
 
+    // Labels
     svg
       .append("g")
       .style("fill", "#fff")
@@ -105,7 +112,7 @@ class SankeyChart extends React.Component {
       .append("tspan")
       .attr("fill-opacity", 0.5)
       .attr("xml:space", "preserve")
-      .text((d) => `  ${d.value.toLocaleString()}`);
+      .text((d) => `  ${(d.value / currency).toLocaleString()}`);
   }
 
   render() {

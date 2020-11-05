@@ -9,6 +9,7 @@ import CategoriesTable from "../../components/Finances/CategoriesTable";
 
 import finances from "./data/finances-2017.json";
 import financesSankey from "./data/finances-2017-sankey.json";
+import currency from "./data/currency.json";
 
 export default (props) => {
   // Fake data for 2016. But we assume that there were no savings
@@ -21,6 +22,7 @@ export default (props) => {
       total: 3000000,
     },
   };
+  console.log(currency);
   return (
     <Layout>
       <SEO title="2017 Finances" />
@@ -43,8 +45,13 @@ export default (props) => {
           margin-bottom: var(--spacing-x-large);
         `}
       >
-        <Totals data={finances} prev={prev} nodata />
-        <SankeyChart data={financesSankey} />
+        <Totals
+          data={finances}
+          currency={currency.year17.usd}
+          prev={prev}
+          nodata
+        />
+        <SankeyChart data={financesSankey} currency={currency.year17.usd} />
       </div>
       <div
         css={css`
@@ -52,9 +59,15 @@ export default (props) => {
         `}
       >
         <h2>Income</h2>
-        <CategoriesTable data={finances.income.categories} />
+        <CategoriesTable
+          data={finances.income.categories}
+          currency={currency.year17.usd}
+        />
         <h2>Expenses</h2>
-        <CategoriesTable data={finances.expenses.categories} />
+        <CategoriesTable
+          data={finances.expenses.categories}
+          currency={currency.year17.usd}
+        />
       </div>
     </Layout>
   );

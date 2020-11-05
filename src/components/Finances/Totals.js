@@ -4,13 +4,15 @@ import { css } from "@emotion/core";
 import Diff from "./Diff";
 
 export default (props) => {
-  const income = props.data.income.total,
-    spending = props.data.expenses.total,
+  const currency = props.currency || 1;
+
+  const income = props.data.income.total / currency,
+    spending = props.data.expenses.total / currency,
     savings = income - spending,
     savingsRate = (1 - spending / income) * 100;
 
-  const prevIncome = props.prev.income.total,
-    prevSpending = props.prev.expenses.total,
+  const prevIncome = props.prev.income.total / currency,
+    prevSpending = props.prev.expenses.total / currency,
     prevSavings = prevIncome - prevSpending,
     prevSavingsRate = (1 - prevSpending / prevIncome) * 100;
 
