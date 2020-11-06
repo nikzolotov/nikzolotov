@@ -1,0 +1,298 @@
+{
+  "categories": [
+    {
+      "title": "Housing",
+      "id": 1,
+      "parent": null,
+      "color": "#1C4869"
+    },
+    {
+      "title": "Rent",
+      "id": 2,
+      "parent": 1,
+      "color": null
+    },
+    {
+      "title": "Mortgage",
+      "id": 3,
+      "parent": 1,
+      "color": null
+    },
+    {
+      "title": "Utilities",
+      "id": 4,
+      "parent": 1,
+      "color": null
+    },
+    {
+      "title": "Tax",
+      "id": 5,
+      "parent": 1,
+      "color": null
+    },
+    {
+      "title": "Repairs",
+      "id": 6,
+      "parent": 1,
+      "color": null
+    },
+    {
+      "title": "Food",
+      "id": 7,
+      "parent": null,
+      "color": "#32648A"
+    },
+    {
+      "title": "Groceries",
+      "id": 8,
+      "parent": 7,
+      "color": null
+    },
+    {
+      "title": "Eating out",
+      "id": 9,
+      "parent": 7,
+      "color": null
+    },
+    {
+      "title": "Alcohol",
+      "id": 10,
+      "parent": 7,
+      "color": null
+    },
+    {
+      "title": "Transportation",
+      "id": 11,
+      "parent": null,
+      "color": "#656667"
+    },
+    {
+      "title": "Gas",
+      "id": 12,
+      "parent": 11,
+      "color": null
+    },
+    {
+      "title": "Maintenance",
+      "id": 13,
+      "parent": 11,
+      "color": null
+    },
+    {
+      "title": "Car Tax",
+      "id": 14,
+      "parent": 11,
+      "color": null
+    },
+    {
+      "title": "Insurance",
+      "id": 15,
+      "parent": 11,
+      "color": null
+    },
+    {
+      "title": "Parking",
+      "id": 16,
+      "parent": 11,
+      "color": null
+    },
+    {
+      "title": "Public transport",
+      "id": 17,
+      "parent": 11,
+      "color": null
+    },
+    {
+      "title": "Car rent",
+      "id": 18,
+      "parent": 11,
+      "color": null
+    },
+    {
+      "title": "Taxi",
+      "id": 19,
+      "parent": 11,
+      "color": null
+    },
+    {
+      "title": "Medicine",
+      "id": 20,
+      "parent": null,
+      "color": "#C35252"
+    },
+    {
+      "title": "Health Insurance",
+      "id": 21,
+      "parent": 20,
+      "color": null
+    },
+    {
+      "title": "Doctor visits",
+      "id": 22,
+      "parent": 20,
+      "color": null
+    },
+    {
+      "title": "Pharmacy",
+      "id": 23,
+      "parent": 20,
+      "color": null
+    },
+    {
+      "title": "Life",
+      "id": 24,
+      "parent": null,
+      "color": "#C2A241"
+    },
+    {
+      "title": "Entertainment",
+      "id": 25,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Education",
+      "id": 26,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Sport",
+      "id": 27,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Hobbies and arts",
+      "id": 28,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Clothing",
+      "id": 29,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Tech & Gadgets",
+      "id": 30,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Home stuff",
+      "id": 31,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Work supplies",
+      "id": 32,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Household goods",
+      "id": 33,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Cell phone",
+      "id": 34,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Subscriptions",
+      "id": 35,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Personal",
+      "id": 36,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Misc",
+      "id": 37,
+      "parent": 24,
+      "color": null
+    },
+    {
+      "title": "Travel",
+      "id": 38,
+      "parent": null,
+      "color": "#B26A47"
+    },
+    {
+      "title": "Hotels",
+      "id": 39,
+      "parent": 38,
+      "color": null
+    },
+    {
+      "title": "Travel Transportation",
+      "id": 40,
+      "parent": 38,
+      "color": null
+    },
+    {
+      "title": "Travel Entertainment",
+      "id": 41,
+      "parent": 38,
+      "color": null
+    },
+    {
+      "title": "Food and other",
+      "id": 42,
+      "parent": 38,
+      "color": null
+    },
+    {
+      "title": "Donations",
+      "id": 43,
+      "parent": null,
+      "color": "#4F7E4F"
+    },
+    {
+      "title": "Presents",
+      "id": 44,
+      "parent": 43,
+      "color": null
+    },
+    {
+      "title": "Parties hosting",
+      "id": 45,
+      "parent": 43,
+      "color": null
+    },
+    {
+      "title": "Charity",
+      "id": 46,
+      "parent": 43,
+      "color": null
+    },
+    {
+      "title": "Government",
+      "id": 47,
+      "parent": null,
+      "color": "#305330"
+    },
+    {
+      "title": "Taxes and fees",
+      "id": 48,
+      "parent": 47,
+      "color": null
+    },
+    {
+      "title": "Fines",
+      "id": 49,
+      "parent": 47,
+      "color": null
+    }
+  ]
+}

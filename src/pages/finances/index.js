@@ -4,9 +4,14 @@ import { css } from "@emotion/core";
 import SEO from "../../components/SEO";
 import Layout from "../../components/Finances/Layout";
 import SavingsChart from "../../components/Finances/SavingsChart";
+import CategoriesChart from "../../components/Finances/CategoriesChart";
+import NetWorthChart from "../../components/Finances/NetWorthChart";
 
 import income from "./data/income.json";
 import expenses from "./data/expenses.json";
+import incomeCategories from "./data/income-categories.json";
+import expensesCategories from "./data/expenses-categories.json";
+import netWorth from "./data/net-worth.json";
 
 export default (props) => {
   return (
@@ -45,47 +50,24 @@ export default (props) => {
           >
             Net worth
           </h2>
-          <div
-            css={css`
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              height: 300px;
-              background: rgba(var(--white-rgb), 0.05);
-              color: var(--text-color-2);
-            `}
-          >
-            Coming soon
-          </div>
+          <NetWorthChart data={netWorth} />
         </div>
       </div>
-      <h2>Income</h2>
+      <h2>Income, ₽</h2>
       <div
         css={css`
-          display: flex;
-          align-items: center;
-          justify-content: center;
           width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
-          height: 480px;
-          background: rgba(var(--white-rgb), 0.05);
-          color: var(--text-color-2);
         `}
       >
-        Coming soon
+        <CategoriesChart data={income} series={incomeCategories} />
       </div>
-      <h2>Expenses</h2>
+      <h2>Expenses, ₽</h2>
       <div
         css={css`
-          display: flex;
-          align-items: center;
-          justify-content: center;
           width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
-          height: 480px;
-          background: rgba(var(--white-rgb), 0.05);
-          color: var(--text-color-2);
         `}
       >
-        Coming soon
+        <CategoriesChart data={expenses} series={expensesCategories} />
       </div>
     </Layout>
   );

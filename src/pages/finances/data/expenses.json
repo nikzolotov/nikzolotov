@@ -1,3522 +1,1146 @@
 {
-  "Housing": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 600
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 15000
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 18800
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 23540
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4287
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1500
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1875
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1293
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 27795
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3080
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 9209
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2281
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3294
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2772
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3089
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4051
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4070
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5565
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3600
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3993
-    }
+  "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Housing": 600,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 600,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 23368,
+    "Groceries": 14442,
+    "Eating out": 7728,
+    "Alcohol": 1198,
+    "Transportation": 1579,
+    "Gas": null,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 1479,
+    "Car rent": null,
+    "Taxi": 100,
+    "Medicine": 2735,
+    "Health Insurance": null,
+    "Doctor visits": null,
+    "Pharmacy": 2735,
+    "Life": 4994,
+    "Entertainment": 76,
+    "Education": null,
+    "Sport": 489,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": null,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 1859,
+    "Cell phone": 500,
+    "Subscriptions": null,
+    "Personal": 2010,
+    "Misc": 60,
+    "Travel": 32423,
+    "Hotels": 30775,
+    "Travel Transportation": 1648,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 100,
+    "Presents": 100,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 65799
   },
-  "Rent": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 15000
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 15000
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 16300,
-      "comment": "Комната во Владимире 1300"
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1200,
-      "comment": "Айрбнб в Твери"
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1850,
-      "comment": "Гришкино"
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Housing": 0,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": null,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 16431,
+    "Groceries": 13672,
+    "Eating out": 1722,
+    "Alcohol": 1037,
+    "Transportation": 280,
+    "Gas": null,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 280,
+    "Car rent": null,
+    "Taxi": null,
+    "Medicine": 155,
+    "Health Insurance": null,
+    "Doctor visits": null,
+    "Pharmacy": 155,
+    "Life": 5820,
+    "Entertainment": 3700,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": null,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": null,
+    "Cell phone": 600,
+    "Subscriptions": null,
+    "Personal": 1520,
+    "Misc": null,
+    "Travel": 35000,
+    "Hotels": 35000,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 0,
+    "Presents": null,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 57686
   },
-  "Mortgage": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Housing": 0,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": null,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 19715,
+    "Groceries": 14643,
+    "Eating out": 4329,
+    "Alcohol": 743,
+    "Transportation": 2370,
+    "Gas": null,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 750,
+    "Car rent": null,
+    "Taxi": 1620,
+    "Medicine": 0,
+    "Health Insurance": null,
+    "Doctor visits": null,
+    "Pharmacy": null,
+    "Life": 4249,
+    "Entertainment": 2720,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": 850,
+    "Clothing": null,
+    "Tech & Gadgets": null,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 89,
+    "Cell phone": 460,
+    "Subscriptions": null,
+    "Personal": 130,
+    "Misc": null,
+    "Travel": 37030,
+    "Hotels": 35075,
+    "Travel Transportation": 1955,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 600,
+    "Presents": 600,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 4560,
+    "Taxes and fees": null,
+    "Fines": 4560,
+    "Total": 68524
   },
-  "Utilities": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 600
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3800
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4300
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4287
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1000,
-      "comment": "Интернет"
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 450
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 26255
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 400
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 9209,
-      "comment": "За два месяца"
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2281
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3294
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2772
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3089
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4051
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4070
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5565,
-      "comment": "+ Домофон за год"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3600
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3993
-    }
+  "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 15000,
+    "Rent": 15000,
+    "Mortgage": null,
+    "Utilities": null,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 24105,
+    "Groceries": 7321,
+    "Eating out": 14488,
+    "Alcohol": 2296,
+    "Transportation": 12933,
+    "Gas": 2544,
+    "Maintenance": 1080,
+    "Car Tax": null,
+    "Insurance": 5815,
+    "Parking": null,
+    "Public transport": 2500,
+    "Car rent": 143,
+    "Taxi": 851,
+    "Medicine": 13120,
+    "Health Insurance": null,
+    "Doctor visits": 12100,
+    "Pharmacy": 1020,
+    "Life": 4294,
+    "Entertainment": 1500,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": 1444,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 250,
+    "Cell phone": 700,
+    "Subscriptions": null,
+    "Personal": 400,
+    "Misc": null,
+    "Travel": 4704,
+    "Hotels": 1000,
+    "Travel Transportation": 3704,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 1336,
+    "Presents": 1336,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 75492
   },
-  "Tax": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 780
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 18800,
+    "Rent": 15000,
+    "Mortgage": null,
+    "Utilities": 3800,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 26440,
+    "Groceries": 16378,
+    "Eating out": 7990,
+    "Alcohol": 2072,
+    "Transportation": 17981,
+    "Gas": 2744,
+    "Maintenance": 9240,
+    "Car Tax": null,
+    "Insurance": 1000,
+    "Parking": null,
+    "Public transport": 4096,
+    "Car rent": 641,
+    "Taxi": 260,
+    "Medicine": 4010,
+    "Health Insurance": null,
+    "Doctor visits": 2440,
+    "Pharmacy": 1570,
+    "Life": 10675,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": 420,
+    "Tech & Gadgets": 8000,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 915,
+    "Cell phone": 800,
+    "Subscriptions": null,
+    "Personal": null,
+    "Misc": 540,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 3845,
+    "Presents": 3845,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 81751
   },
-  "Repairs": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2940,
-      "comment": "Ящик Стенли и мелочи"
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1500,
-      "comment": "Шаблон черон"
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 875
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 843
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 340
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 50
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 23540,
+    "Rent": 16300,
+    "Mortgage": null,
+    "Utilities": 4300,
+    "Tax": null,
+    "Repairs": 2940,
+    "Food": 21974,
+    "Groceries": 11916,
+    "Eating out": 9032,
+    "Alcohol": 1026,
+    "Transportation": 6476,
+    "Gas": 3586,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 1600,
+    "Car rent": null,
+    "Taxi": 1290,
+    "Medicine": 3875,
+    "Health Insurance": null,
+    "Doctor visits": 970,
+    "Pharmacy": 2905,
+    "Life": 4046,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": 359,
+    "Home stuff": 796,
+    "Work supplies": 1081,
+    "Household goods": null,
+    "Cell phone": 920,
+    "Subscriptions": 890,
+    "Personal": null,
+    "Misc": null,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 2190,
+    "Presents": 2190,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 62101
   },
-  "Food": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 23368
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 16431
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 19715
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 24105
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 26440
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 21974
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 34863
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 37739
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 37922
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 31410
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 25922
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 24337
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 24319
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 24388
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 21901
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 18902
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 20340
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 17716
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 19255
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 20194
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 28306
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 38980
-    }
+  "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 4287,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 4287,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 34863,
+    "Groceries": 10854,
+    "Eating out": 21782,
+    "Alcohol": 2227,
+    "Transportation": 4858,
+    "Gas": 3592,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 576,
+    "Car rent": 96,
+    "Taxi": 594,
+    "Medicine": 11244,
+    "Health Insurance": null,
+    "Doctor visits": 7660,
+    "Pharmacy": 3584,
+    "Life": 2490,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": null,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 640,
+    "Cell phone": 700,
+    "Subscriptions": null,
+    "Personal": 800,
+    "Misc": 350,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 1082,
+    "Presents": 1082,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 58824
   },
-  "Groceries": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 14442
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 13672
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 14643
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 7321
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 16378
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 11916
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 10854
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5055
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 9155
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 10564
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 11721
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 13292
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 20315,
-      "comment": "Детское питание началось"
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 20327
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 14922
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 18902
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 19046
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 16436
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 18465
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 20054
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 21601
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 28992
-    }
+  "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 1500,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": null,
+    "Tax": null,
+    "Repairs": 1500,
+    "Food": 37739,
+    "Groceries": 5055,
+    "Eating out": 30637,
+    "Alcohol": 2047,
+    "Transportation": 10371,
+    "Gas": 7097,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 3274,
+    "Car rent": null,
+    "Taxi": null,
+    "Medicine": 13300,
+    "Health Insurance": null,
+    "Doctor visits": 11200,
+    "Pharmacy": 2100,
+    "Life": 2216,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": null,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 36,
+    "Cell phone": 1300,
+    "Subscriptions": null,
+    "Personal": 880,
+    "Misc": null,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 1380,
+    "Presents": 1380,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 66506
   },
-  "Eating out": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 7728
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1722
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4329
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 14488
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 7990
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 9032
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 21782,
-      "comment": "5000 юбилей + не готовили дома"
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 30637,
-      "comment": "не готовили"
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 26798
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 18651
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 8141
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 8993
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1750
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3263
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 5185
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1294
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1280
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 790
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 140
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 6705
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 9988
-    }
+  "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 1875,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 1000,
+    "Tax": null,
+    "Repairs": 875,
+    "Food": 37922,
+    "Groceries": 9155,
+    "Eating out": 26798,
+    "Alcohol": 1969,
+    "Transportation": 34935,
+    "Gas": 2001,
+    "Maintenance": 28470,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 2540,
+    "Car rent": 104,
+    "Taxi": 1820,
+    "Medicine": 5700,
+    "Health Insurance": null,
+    "Doctor visits": 4200,
+    "Pharmacy": 1500,
+    "Life": 2760,
+    "Entertainment": 1260,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": null,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 350,
+    "Cell phone": 750,
+    "Subscriptions": null,
+    "Personal": 400,
+    "Misc": null,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 3615,
+    "Presents": 3615,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 86807
   },
-  "Alcohol": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1198
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1037
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 743
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2296
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2072
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1026
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2227
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2047
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1969
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2195
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 6060,
-      "comment": "Бары с Саньком, NRV, Гулянка у Арефьевых"
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2052
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2254
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 798
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1794
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 1293,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 450,
+    "Tax": null,
+    "Repairs": 843,
+    "Food": 31410,
+    "Groceries": 10564,
+    "Eating out": 18651,
+    "Alcohol": 2195,
+    "Transportation": 4965,
+    "Gas": 3569,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 122,
+    "Car rent": null,
+    "Taxi": 1274,
+    "Medicine": 3560,
+    "Health Insurance": null,
+    "Doctor visits": 1500,
+    "Pharmacy": 2060,
+    "Life": 10931,
+    "Entertainment": 800,
+    "Education": null,
+    "Sport": 250,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": null,
+    "Home stuff": 5000,
+    "Work supplies": null,
+    "Household goods": 81,
+    "Cell phone": 300,
+    "Subscriptions": null,
+    "Personal": 1500,
+    "Misc": 3000,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 2477,
+    "Presents": 2477,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 54636
   },
-  "Transportation": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1579
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 280
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2370
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 12933
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 17981
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 6476
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4858
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 10371
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 34935
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4965
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 12314
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 11323
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 11676
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 867
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 16989
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 11773
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 7185
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2181
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5087
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 6933
-    }
+  "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 27795,
+    "Rent": 1200,
+    "Mortgage": null,
+    "Utilities": 26255,
+    "Tax": null,
+    "Repairs": 340,
+    "Food": 25922,
+    "Groceries": 11721,
+    "Eating out": 8141,
+    "Alcohol": 6060,
+    "Transportation": 12314,
+    "Gas": 3615,
+    "Maintenance": 4450,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 1142,
+    "Car rent": 1142,
+    "Taxi": 1965,
+    "Medicine": 8148,
+    "Health Insurance": null,
+    "Doctor visits": 3260,
+    "Pharmacy": 4888,
+    "Life": 7959,
+    "Entertainment": 360,
+    "Education": null,
+    "Sport": 900,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": 1000,
+    "Home stuff": 1299,
+    "Work supplies": null,
+    "Household goods": null,
+    "Cell phone": 200,
+    "Subscriptions": null,
+    "Personal": 2900,
+    "Misc": 1300,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 2994,
+    "Presents": 2994,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 3753,
+    "Taxes and fees": 3753,
+    "Fines": null,
+    "Total": 88885
   },
-  "Gas": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2544
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2744
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3586
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3592
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 7097
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2001
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3569
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3615
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1506
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3083
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1713
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2927
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 6638,
-      "comment": "Воронеж 2 раза"
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2094,
-      "comment": "Воронеж"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1991,
-      "comment": "Воронеж"
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Housing": 3080,
+    "Rent": 1850,
+    "Mortgage": null,
+    "Utilities": 400,
+    "Tax": 780,
+    "Repairs": 50,
+    "Food": 24337,
+    "Groceries": 13292,
+    "Eating out": 8993,
+    "Alcohol": 2052,
+    "Transportation": 11323,
+    "Gas": 1506,
+    "Maintenance": 200,
+    "Car Tax": 3575,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 2236,
+    "Car rent": 246,
+    "Taxi": 3560,
+    "Medicine": 32422,
+    "Health Insurance": null,
+    "Doctor visits": 30300,
+    "Pharmacy": 2122,
+    "Life": 14414,
+    "Entertainment": 150,
+    "Education": null,
+    "Sport": 5279,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": null,
+    "Home stuff": 598,
+    "Work supplies": null,
+    "Household goods": 943,
+    "Cell phone": 300,
+    "Subscriptions": null,
+    "Personal": 5285,
+    "Misc": 1859,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 8178,
+    "Presents": 7678,
+    "Parties hosting": null,
+    "Charity": 500,
+    "Government": 498,
+    "Taxes and fees": 498,
+    "Fines": null,
+    "Total": 94252
   },
-  "Maintenance": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1080
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 9240,
-      "comment": "Тормозные диски, колодки, масло"
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 28470,
-      "comment": "Замена сайлентблоков перед, зад, ремень приводной, стойки. Сход-развал. Зимняя резина и шиномонтаж"
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4450
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 200
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 7220,
-      "comment": "ТО и бампер"
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 14236,
-      "comment": "Летняя резина и шиномонтаж"
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 70
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Housing": 9209,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 9209,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 24319,
+    "Groceries": 20315,
+    "Eating out": 1750,
+    "Alcohol": 2254,
+    "Transportation": 11676,
+    "Gas": 3083,
+    "Maintenance": 7220,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": null,
+    "Car rent": 257,
+    "Taxi": 1116,
+    "Medicine": 19668,
+    "Health Insurance": null,
+    "Doctor visits": 14084,
+    "Pharmacy": 5584,
+    "Life": 37064,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": 3250,
+    "Tech & Gadgets": null,
+    "Home stuff": 270,
+    "Work supplies": null,
+    "Household goods": 2699,
+    "Cell phone": 500,
+    "Subscriptions": null,
+    "Personal": 14286,
+    "Misc": 16059,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 787,
+    "Presents": 787,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 4379,
+    "Taxes and fees": 4379,
+    "Fines": null,
+    "Total": 107102
   },
-  "Car Tax": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3575,
-      "comment": "Транспортный налог"
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Housing": 2281,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 2281,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 24388,
+    "Groceries": 20327,
+    "Eating out": 3263,
+    "Alcohol": 798,
+    "Transportation": 867,
+    "Gas": null,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": null,
+    "Car rent": null,
+    "Taxi": 867,
+    "Medicine": 8525,
+    "Health Insurance": null,
+    "Doctor visits": 3850,
+    "Pharmacy": 4675,
+    "Life": 13042,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": 2800,
+    "Tech & Gadgets": null,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 683,
+    "Cell phone": 400,
+    "Subscriptions": null,
+    "Personal": 4100,
+    "Misc": 5059,
+    "Travel": 42030,
+    "Hotels": 21077,
+    "Travel Transportation": 9663,
+    "Travel Entertainment": 11290,
+    "Food and other": null,
+    "Donations": 699,
+    "Presents": 699,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 404,
+    "Taxes and fees": null,
+    "Fines": 404,
+    "Total": 92236
   },
-  "Insurance": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5815
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1000,
-      "comment": "Диагностическая карта"
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 7855,
-      "comment": "Страховка на одного"
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Housing": 3294,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 3294,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 21901,
+    "Groceries": 14922,
+    "Eating out": 5185,
+    "Alcohol": 1794,
+    "Transportation": 16989,
+    "Gas": 1713,
+    "Maintenance": 14236,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": null,
+    "Car rent": null,
+    "Taxi": 1040,
+    "Medicine": 5288,
+    "Health Insurance": null,
+    "Doctor visits": 4489,
+    "Pharmacy": 799,
+    "Life": 7473,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": 3520,
+    "Tech & Gadgets": null,
+    "Home stuff": 2646,
+    "Work supplies": null,
+    "Household goods": 458,
+    "Cell phone": 700,
+    "Subscriptions": null,
+    "Personal": null,
+    "Misc": 149,
+    "Travel": 22368,
+    "Hotels": 15142,
+    "Travel Transportation": 4376,
+    "Travel Entertainment": 2850,
+    "Food and other": null,
+    "Donations": 470,
+    "Presents": 470,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 1686,
+    "Taxes and fees": 1686,
+    "Fines": null,
+    "Total": 79469
   },
-  "Parking": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 2772,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 2772,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 18902,
+    "Groceries": 18902,
+    "Eating out": null,
+    "Alcohol": null,
+    "Transportation": 0,
+    "Gas": null,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": null,
+    "Car rent": null,
+    "Taxi": null,
+    "Medicine": 459,
+    "Health Insurance": null,
+    "Doctor visits": null,
+    "Pharmacy": 459,
+    "Life": 6344,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": 3117,
+    "Tech & Gadgets": null,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 902,
+    "Cell phone": 400,
+    "Subscriptions": null,
+    "Personal": null,
+    "Misc": 1925,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 0,
+    "Presents": null,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 1072,
+    "Taxes and fees": 1072,
+    "Fines": null,
+    "Total": 29549
   },
-  "Public transport": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1479
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 280
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 750
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2500
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4096
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1600
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 576
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3274,
-      "comment": "Тверь"
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2540,
-      "comment": "Тверь, Владимир"
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 122
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1142
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2236,
-      "comment": "Ласточки"
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 400
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 319
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 87
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1374
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2325,
-      "comment": "Ласточки в Тверь"
-    }
+  "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 3089,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 3089,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 20340,
+    "Groceries": 19046,
+    "Eating out": 1294,
+    "Alcohol": null,
+    "Transportation": 0,
+    "Gas": null,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": null,
+    "Car rent": null,
+    "Taxi": null,
+    "Medicine": 2530,
+    "Health Insurance": null,
+    "Doctor visits": null,
+    "Pharmacy": 2530,
+    "Life": 7842,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": 4135,
+    "Tech & Gadgets": null,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 604,
+    "Cell phone": 400,
+    "Subscriptions": 338,
+    "Personal": 1916,
+    "Misc": 449,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 0,
+    "Presents": null,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 2864,
+    "Taxes and fees": 2864,
+    "Fines": null,
+    "Total": 36665
   },
-  "Car rent": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 143
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 641
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 96
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 104
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1142
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 246
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 257
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1633
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1233
-    }
+  "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 4051,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 4051,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 17716,
+    "Groceries": 16436,
+    "Eating out": 1280,
+    "Alcohol": null,
+    "Transportation": 11773,
+    "Gas": 2927,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": 7855,
+    "Parking": null,
+    "Public transport": 400,
+    "Car rent": null,
+    "Taxi": 591,
+    "Medicine": 8417,
+    "Health Insurance": null,
+    "Doctor visits": 5559,
+    "Pharmacy": 2858,
+    "Life": 48984,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": 1161,
+    "Tech & Gadgets": 41925,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 2398,
+    "Cell phone": 400,
+    "Subscriptions": 926,
+    "Personal": 1065,
+    "Misc": 1109,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 450,
+    "Presents": 450,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 91391
   },
-  "Taxi": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 100
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1620
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 851
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 260
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1290
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 594
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1820
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1274
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1965
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3560,
-      "comment": "В перинатальный центр много раз"
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1116
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 867
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1040
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 591
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 158
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 89
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3375
-    }
+  "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 4070,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 4070,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 19255,
+    "Groceries": 18465,
+    "Eating out": 790,
+    "Alcohol": null,
+    "Transportation": 7185,
+    "Gas": 6638,
+    "Maintenance": 70,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 319,
+    "Car rent": null,
+    "Taxi": 158,
+    "Medicine": 6625,
+    "Health Insurance": null,
+    "Doctor visits": 6375,
+    "Pharmacy": 250,
+    "Life": 29221,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": 1900,
+    "Hobbies and arts": null,
+    "Clothing": 300,
+    "Tech & Gadgets": 10390,
+    "Home stuff": 3040,
+    "Work supplies": 1225,
+    "Household goods": null,
+    "Cell phone": 700,
+    "Subscriptions": null,
+    "Personal": 3217,
+    "Misc": 8449,
+    "Travel": 1460,
+    "Hotels": null,
+    "Travel Transportation": 1460,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 5163,
+    "Presents": 5163,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 72979
   },
-  "Medicine": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2735
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 155
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 13120
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4010
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3875
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 11244
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 13300
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5700
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3560
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 8148
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 32422
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 19668
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 8525
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 5288
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 459
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2530
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 8417
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 6625
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2664
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 36297
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 11471
-    }
+  "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 5565,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 5565,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 20194,
+    "Groceries": 20054,
+    "Eating out": 140,
+    "Alcohol": null,
+    "Transportation": 2181,
+    "Gas": 2094,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 87,
+    "Car rent": null,
+    "Taxi": null,
+    "Medicine": 2664,
+    "Health Insurance": null,
+    "Doctor visits": 1400,
+    "Pharmacy": 1264,
+    "Life": 9608,
+    "Entertainment": 2046,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": null,
+    "Tech & Gadgets": null,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 165,
+    "Cell phone": 500,
+    "Subscriptions": null,
+    "Personal": 3259,
+    "Misc": 3638,
+    "Travel": 40949,
+    "Hotels": 14000,
+    "Travel Transportation": 20474,
+    "Travel Entertainment": 280,
+    "Food and other": 6195,
+    "Donations": 22966,
+    "Presents": 11466,
+    "Parties hosting": 10500,
+    "Charity": 1000,
+    "Government": 0,
+    "Taxes and fees": null,
+    "Fines": null,
+    "Total": 104127
   },
-  "Health Insurance": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
+  "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 3600,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 3600,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 28306,
+    "Groceries": 21601,
+    "Eating out": 6705,
+    "Alcohol": null,
+    "Transportation": 5087,
+    "Gas": 1991,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 1374,
+    "Car rent": 1633,
+    "Taxi": 89,
+    "Medicine": 36297,
+    "Health Insurance": null,
+    "Doctor visits": 29757,
+    "Pharmacy": 6540,
+    "Life": 36458,
+    "Entertainment": 95,
+    "Education": 249,
+    "Sport": 1150,
+    "Hobbies and arts": null,
+    "Clothing": 384,
+    "Tech & Gadgets": 27490,
+    "Home stuff": 1829,
+    "Work supplies": null,
+    "Household goods": 430,
+    "Cell phone": 250,
+    "Subscriptions": 219,
+    "Personal": 4293,
+    "Misc": 69,
+    "Travel": 650,
+    "Hotels": null,
+    "Travel Transportation": 650,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 140,
+    "Presents": 140,
+    "Parties hosting": null,
+    "Charity": null,
+    "Government": 5362,
+    "Taxes and fees": 5362,
+    "Fines": null,
+    "Total": 115900
   },
-  "Doctor visits": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 12100,
-      "comment": "Зубы, беременность"
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2440,
-      "comment": "Сохранение"
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 970
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 7660,
-      "comment": "Зуб, анализы"
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 11200,
-      "comment": "Зуб, УЗИ, беременность"
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4200
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1500
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3260
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 30300,
-      "comment": "Роды, Узи и прочее"
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 14084,
-      "comment": "Обследование ребёнка и Насти"
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3850
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4489
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5559,
-      "comment": "УЗИ Насти, Анализы Лёвки"
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 6375,
-      "comment": "Невролог, УЗИ, пломба Никита"
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1400
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 29757,
-      "comment": "Зубы Насте, обследования живота, Лёвкины УЗИ и пр."
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 9096,
-      "comment": "Настины зубы, сердце"
-    }
-  },
-  "Pharmacy": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2735
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 155
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1020
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1570
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2905,
-      "comment": "Лекарства при беременности"
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3584,
-      "comment": "Лекарства при беременности"
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2100
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1500
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2060
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4888
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2122
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 5584
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4675
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 799
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 459
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2530,
-      "comment": "Крема для швов"
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2858
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 250
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1264
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 6540,
-      "comment": "Витамины, БАД"
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2375
-    }
-  },
-  "Life": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4994
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 5820
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4249
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4294
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 10675
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4046
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2490
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2216
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2760
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 10931
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 7959
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 14414
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 37064
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 13042
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 7473
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 6344
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 7842
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 48984
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 29221
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 9608
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 36458
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 37703
-    }
-  },
-  "Entertainment": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 76
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3700,
-      "comment": "Катерина альпик, прогулка"
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2720,
-      "comment": "Катерина альпик, театр"
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1500
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1260,
-      "comment": "Devil Wears Prada"
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 800,
-      "comment": "Ваби-Саби премьера"
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 360,
-      "comment": "Терминатор 6"
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 150
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2046,
-      "comment": "Song of Ice and Fire, 5 books"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 95
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Education": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 249,
-      "comment": "Книга про долголетие"
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Sport": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 489
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 250
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 900,
-      "comment": "Бассейн, Футбол"
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 5279,
-      "comment": "Гантели, платформы для контактов"
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1900,
-      "comment": "Скамья для фитнеса"
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1150,
-      "comment": "Цепь для велика"
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Hobbies and arts": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 850,
-      "comment": "Масла"
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Clothing": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 420
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3250,
-      "comment": "Детская одежда"
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2800,
-      "comment": "Настя костюм и платье"
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 3520,
-      "comment": "Лёвкины пелёнки, майки"
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3117,
-      "comment": "Одежда Лёвке"
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4135,
-      "comment": "Одежда Лёвке"
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1161,
-      "comment": "Одежда Лёвке"
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 300
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 384
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4798,
-      "comment": "Лёвушке, свитер, перчатки"
-    }
-  },
-  "Tech & Gadgets": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1444,
-      "comment": "Измельчитель"
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 8000,
-      "comment": "iPhone SE"
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 359
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1000,
-      "comment": "Стерилизатор"
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 41925,
-      "comment": "iPhone Насте, кухонные весы"
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 10390,
-      "comment": "Наушники"
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 27490,
-      "comment": "Apple Watch SE"
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 25640,
-      "comment": "Часы и аккумулятор"
-    }
-  },
-  "Home stuff": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 796,
-      "comment": "Банки Икея"
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5000,
-      "comment": "Детская кроватка, Коврик, Кокон детский, "
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1299,
-      "comment": "Детское постельное бельё"
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 598
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 270
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2646,
-      "comment": "Простынь, тарелки"
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3040,
-      "comment": "Сковорода, баночки"
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1829,
-      "comment": "Одеяло, контейнеры"
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Work supplies": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0,
-      "comment": "2800 краска"
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0,
-      "comment": "2530 краска"
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1081
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1225,
-      "comment": "Кисти, краски"
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Household goods": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1859
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 89
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 250
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 915
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 640
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 36
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 350
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 81
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 943
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2699,
-      "comment": "Стиральные и зубные порошки Зеро Вэйст и т.д."
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 683
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 458
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 902
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 604
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2398,
-      "comment": "Средства для стирки"
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 165
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 430
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1541
-    }
-  },
-  "Cell phone": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 500
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 600
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 460
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 700
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 800
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 920
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 700
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1300
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 750
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 300
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 200
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 300
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 500
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 400
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 700
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 400
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 400
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 400
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 700
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 500
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 250
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 800
-    }
-  },
-  "Subscriptions": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 890,
-      "comment": "Домен"
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 338,
-      "comment": "Яндекс.Музыка"
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 926,
-      "comment": "Яндекс.Музыка, домен"
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 219,
-      "comment": "Спотифай"
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 219
-    }
-  },
-  "Personal": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2010,
-      "comment": "Духи, крема"
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1520
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 130
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 400
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 800
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 880
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 400
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1500
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2900,
-      "comment": "Молокоотсос, Масла, "
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 5285,
-      "comment": "Для роддома, подгуза"
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 14286,
-      "comment": "Многоразовые подгузники, соски, пелёнки"
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4100,
-      "comment": "Соски, бутылочки, прокладки"
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1916
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1065
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3217,
-      "comment": "Памперсы, шампуни"
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3259,
-      "comment": "Подгуза, краска для бровей"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4293,
-      "comment": "Поильник, подгуза, "
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4587,
-      "comment": "Уход за лицом, подгузники"
-    }
-  },
-  "Misc": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 60
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 540
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 350
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3000,
-      "comment": "Комиссия рокета"
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1300,
-      "comment": "Автолюлька"
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1859,
-      "comment": "Букет, тиньк уведомления"
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 16059,
-      "comment": "Автобокс и бахилы"
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 5059,
-      "comment": "Автолюлька"
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 149
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1925,
-      "comment": "Соски и тарелки Лёвке, Обслуживание рокета 390, Тиньк 69"
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 449
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1109,
-      "comment": "Обслуживание рокета, тиньк"
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 8449,
-      "comment": "Коляска и матрас к ней"
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3638,
-      "comment": "Крещение"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 69
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 118
-    }
-  },
-  "Travel": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 32423
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 35000
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 37030
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 4704
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 42030
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 22368
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1460
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 40949
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 650
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Hotels": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 30775,
-      "comment": "Квартира в Поляне, гостишка в Адлере, +35000 вперёд"
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 35000
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 35075
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1000
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 21077,
-      "comment": "Солнечная Долина"
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 15142
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 14000,
-      "comment": "Пицунда"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Travel Transportation": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1648
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1955
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3704
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 9663,
-      "comment": "3121 Бензин по Миассу, 1160 парковка"
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4376,
-      "comment": "360 парковка"
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1460,
-      "comment": "Платные дороги Воронеж"
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 20474,
-      "comment": "Самолёт 16000 + такси и каршеринг"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 650,
-      "comment": "Платные дороги Воронеж"
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Travel Entertainment": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 11290
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 2850
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 280,
-      "comment": "Платный пляж"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Food and other": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 6195
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Donations": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 100
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 600
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1336
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3845
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2190
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1082
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1380
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3615
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2477
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2994
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 8178
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 787
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 699
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 470
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 450
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5163
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 22966
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 140
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 23770
-    }
-  },
-  "Presents": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 100
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 600
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1336
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3845,
-      "comment": "В гости и доставка еды"
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2190
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1082
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1380
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3615,
-      "comment": "ДР сестры, вкусности врачу"
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2477
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2994
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 7678,
-      "comment": "Пакет в роддом, продукты Кате, проставы за ребёнка"
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 787
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 699
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 470
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 450
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5163,
-      "comment": "Воронеж, ДР Эми"
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 11466,
-      "comment": "ДР Ани, тортики, сестре"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 140
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 8770,
-      "comment": "Или, Макс"
-    }
-  },
-  "Parties hosting": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 10500,
-      "comment": "Крестины"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 15000,
-      "comment": "ДР Насти"
-    }
-  },
-  "Charity": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 500,
-      "comment": "Собиратор"
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1000,
-      "comment": "Собиратор"
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Government": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4560
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3753
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 498
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4379
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 404
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1686
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1072
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2864
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5362
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5199
-    }
-  },
-  "Taxes and fees": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 3753
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 498
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4379
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 1686
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 1072
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 2864
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5362
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 5199
-    }
-  },
-  "Fines": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 4560,
-      "comment": "Эвакуатор в Адлере"
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 404
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 0
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 0
-    }
-  },
-  "Total": {
-    "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 65799
-    },
-    "Thu Jan 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 57686
-    },
-    "Thu Feb 28 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 68524
-    },
-    "Sun Mar 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 75492
-    },
-    "Tue Apr 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 81751
-    },
-    "Fri May 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 62101
-    },
-    "Sun Jun 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 58824
-    },
-    "Wed Jul 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 66506
-    },
-    "Sat Aug 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 86807
-    },
-    "Mon Sep 30 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 54636
-    },
-    "Thu Oct 31 2019 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 88885
-    },
-    "Sat Nov 30 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 94252
-    },
-    "Tue Dec 31 2019 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 107102
-    },
-    "Fri Jan 31 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 92236
-    },
-    "Sat Feb 29 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
-      "sum": 79469
-    },
-    "Tue Mar 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 29549
-    },
-    "Thu Apr 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 36665
-    },
-    "Sun May 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 91391
-    },
-    "Tue Jun 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 72979
-    },
-    "Fri Jul 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 104127
-    },
-    "Mon Aug 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 115900
-    },
-    "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
-      "sum": 128049
-    }
+  "Wed Sep 30 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Housing": 3993,
+    "Rent": null,
+    "Mortgage": null,
+    "Utilities": 3993,
+    "Tax": null,
+    "Repairs": null,
+    "Food": 38980,
+    "Groceries": 28992,
+    "Eating out": 9988,
+    "Alcohol": null,
+    "Transportation": 6933,
+    "Gas": null,
+    "Maintenance": null,
+    "Car Tax": null,
+    "Insurance": null,
+    "Parking": null,
+    "Public transport": 2325,
+    "Car rent": 1233,
+    "Taxi": 3375,
+    "Medicine": 11471,
+    "Health Insurance": null,
+    "Doctor visits": 9096,
+    "Pharmacy": 2375,
+    "Life": 37703,
+    "Entertainment": null,
+    "Education": null,
+    "Sport": null,
+    "Hobbies and arts": null,
+    "Clothing": 4798,
+    "Tech & Gadgets": 25640,
+    "Home stuff": null,
+    "Work supplies": null,
+    "Household goods": 1541,
+    "Cell phone": 800,
+    "Subscriptions": 219,
+    "Personal": 4587,
+    "Misc": 118,
+    "Travel": 0,
+    "Hotels": null,
+    "Travel Transportation": null,
+    "Travel Entertainment": null,
+    "Food and other": null,
+    "Donations": 23770,
+    "Presents": 8770,
+    "Parties hosting": 15000,
+    "Charity": null,
+    "Government": 5199,
+    "Taxes and fees": 5199,
+    "Fines": null,
+    "Total": 128049
   }
 }

@@ -6,12 +6,9 @@ class SavingsChart extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      income: this.parseData(props.income.Total),
-      expenses: this.parseData(props.expenses.Total),
-    };
-
-    this.state.diff = this.calcDiff();
+    this.income = this.parseData(props.income);
+    this.expenses = this.parseData(props.expenses);
+    this.diff = this.calcDiff(this.income, this.expenses);
 
     this.formatDate = {
       short: d3.timeFormat("%b"),
@@ -30,15 +27,15 @@ class SavingsChart extends React.Component {
 
     const x = d3
       .scaleBand()
-      .domain(this.state.expenses.map((d) => d.date))
+      .domain(this.expenses.map((d) => d.date))
       .range([margin.left, width - margin.right])
       .padding(0.6);
 
     const y = d3
       .scaleLinear()
       .domain([
-        -1 * d3.max(this.state.expenses, (d) => d.sum),
-        d3.max(this.state.income, (d) => d.sum),
+        -1 * d3.max(this.expenses, (d) => d.sum),
+        d3.max(this.income, (d) => d.sum),
       ])
       .range([height - margin.bottom, margin.top]);
 
@@ -78,6 +75,7 @@ class SavingsChart extends React.Component {
     gY.call(
       d3
         .axisLeft(y)
+        .ticks(10)
         .tickSize(10, 0)
         .tickPadding(10)
         .tickFormat((d) => `${d / 1000}${d !== 0 ? " k" : ""}`)
@@ -127,7 +125,7 @@ class SavingsChart extends React.Component {
     // Income bars
     gIncome
       .selectAll("rect")
-      .data(this.state.income)
+      .data(this.income)
       .join("rect")
       .attr("height", (d) => y(0) - y(d.sum))
       .attr("width", x.bandwidth())
@@ -143,7 +141,7 @@ class SavingsChart extends React.Component {
     // Expenses bars
     gExpenses
       .selectAll("rect")
-      .data(this.state.expenses)
+      .data(this.expenses)
       .join("rect")
       .attr("height", (d) => Math.abs(y(0) - y(d.sum * -1)))
       .attr("width", x.bandwidth())
@@ -159,7 +157,7 @@ class SavingsChart extends React.Component {
     // Savings and overspending bars
     gDiff
       .selectAll("rect")
-      .data(this.state.diff)
+      .data(this.diff)
       .join("rect")
       .attr("height", (d) => Math.abs(y(0) - y(d.sum * -1)))
       .attr("width", x.bandwidth())
@@ -178,7 +176,7 @@ class SavingsChart extends React.Component {
     // Savings and overspending labels
     gDiff
       .selectAll("text")
-      .data(this.state.diff)
+      .data(this.diff)
       .join("text")
       .attr("x", (d) => x(d.date) + x.bandwidth() / 2)
       .attr("y", (d) => (d.sum < 0 ? y(d.sum) + 24 : y(d.sum)) - 7)
@@ -194,14 +192,12 @@ class SavingsChart extends React.Component {
   parseData(data) {
     return d3.entries(data).map((d) => ({
       date: new Date(d.key),
-      sum: +d.value.sum,
+      sum: +d.value.Total,
     }));
   }
 
-  calcDiff() {
-    let expenses = this.state.expenses;
-
-    return this.state.income.map(function (d) {
+  calcDiff(income, expenses) {
+    return income.map(function (d) {
       let e = expenses.filter((dd) => dd.date.getTime() === d.date.getTime())[0]
         .sum;
 

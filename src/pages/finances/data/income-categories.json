@@ -1,0 +1,46 @@
+{
+  "categories": [
+    {
+      "title": "Investments",
+      "id": 1,
+      "parent": null,
+      "color": "#4F5389"
+    },
+    {
+      "title": "Paycheck",
+      "id": 2,
+      "parent": null,
+      "color": "#1C4869"
+    },
+    {
+      "title": "Side hustle",
+      "id": 3,
+      "parent": null,
+      "color": "#A84A64"
+    },
+    {
+      "title": "Interest",
+      "id": 4,
+      "parent": null,
+      "color": "#656667"
+    },
+    {
+      "title": "Stuff sales",
+      "id": 5,
+      "parent": null,
+      "color": "#389295"
+    },
+    {
+      "title": "Presents",
+      "id": 6,
+      "parent": null,
+      "color": "#B26A47"
+    },
+    {
+      "title": "Other",
+      "id": 7,
+      "parent": null,
+      "color": "#0F7A57"
+    }
+  ]
+}
