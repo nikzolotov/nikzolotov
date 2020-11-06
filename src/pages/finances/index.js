@@ -5,13 +5,14 @@ import SEO from "../../components/SEO";
 import Layout from "../../components/Finances/Layout";
 import SavingsChart from "../../components/Finances/SavingsChart";
 import CategoriesChart from "../../components/Finances/CategoriesChart";
-import NetWorthChart from "../../components/Finances/NetWorthChart";
+import NetWorth from "../../components/Finances/NetWorth";
 
 import income from "./data/income.json";
 import expenses from "./data/expenses.json";
+import assets from "./data/assets.json";
 import incomeCategories from "./data/income-categories.json";
 import expensesCategories from "./data/expenses-categories.json";
-import netWorth from "./data/net-worth.json";
+import assetsCategories from "./data/assets-categories.json";
 
 export default (props) => {
   return (
@@ -43,14 +44,7 @@ export default (props) => {
             width: calc((100% * 1.75 / 6) - (var(--gap) * 4 / 6));
           `}
         >
-          <h2
-            css={css`
-              margin-top: 0;
-            `}
-          >
-            Net worth
-          </h2>
-          <NetWorthChart data={netWorth} />
+          <NetWorth data={assets.assets} series={assetsCategories.categories} />
         </div>
       </div>
       <h2>Income, ₽</h2>

@@ -1,0 +1,22 @@
+{
+  "categories": [
+    {
+      "title": "Real estate",
+      "id": "estate",
+      "parent": null,
+      "color": "#1C4869"
+    },
+    {
+      "title": "Stocks, bonds",
+      "id": "stocks",
+      "parent": null,
+      "color": "#AB4040"
+    },
+    {
+      "title": "Cash",
+      "id": "cash",
+      "parent": null,
+      "color": "#C2A241"
+    }
+  ]
+}

@@ -54,9 +54,11 @@ class NetWorthChart extends React.Component {
   }
 
   parseData(data) {
-    return d3.entries(data).map((d) => ({
-      date: new Date(d.key),
-      ...d.value,
+    return data.map((d) => ({
+      date: new Date(d.date),
+      estate: +d.estate,
+      stocks: +d.stocks,
+      cash: +d.cash,
     }));
   }
 
@@ -67,7 +69,7 @@ class NetWorthChart extends React.Component {
         // height="100%"
         viewBox={"0 0 " + this.props.width + " " + this.props.height}
         ref={(element) => (this.svg = d3.select(element))}
-        style={{ overflow: "visible" }}
+        style={{ display: "block", overflow: "visible" }}
       ></svg>
     );
   }
