@@ -22,7 +22,6 @@ export default (props) => {
       total: 3000000,
     },
   };
-  console.log(currency);
   return (
     <Layout>
       <SEO title="2017 Finances" />
@@ -47,11 +46,12 @@ export default (props) => {
       >
         <Totals
           data={finances}
-          currency={currency.year17.usd}
+          //currency={currency.year17.usd}
           prev={prev}
           nodata
         />
-        <SankeyChart data={financesSankey} currency={currency.year17.usd} />
+        {/* <SankeyChart data={financesSankey} currency={currency.year17.usd} /> */}
+        <SankeyChart data={financesSankey} />
       </div>
       <div
         css={css`
@@ -61,12 +61,12 @@ export default (props) => {
         <h2>Income</h2>
         <CategoriesTable
           data={finances.income.categories}
-          currency={currency.year17.usd}
+          // currency={currency.year17.usd}
         />
         <h2>Expenses</h2>
         <CategoriesTable
           data={finances.expenses.categories}
-          currency={currency.year17.usd}
+          // currency={currency.year17.usd}
         />
       </div>
     </Layout>

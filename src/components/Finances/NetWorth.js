@@ -65,6 +65,7 @@ function Change(props) {
           color: var(--text-color-2);
         `}
       >
+        January 2017 –{" "}
         {date.toLocaleString("default", {
           month: "long",
         }) +
