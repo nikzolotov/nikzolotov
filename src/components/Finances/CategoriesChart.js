@@ -7,8 +7,8 @@ class CategoriesChart extends React.Component {
     super(props);
 
     this.data = this.parseData(props.data);
-    this.series = this.parseSeries(props.series.categories);
-    this.colors = this.parseColors(props.series.categories);
+    this.series = this.parseSeries(props.series);
+    this.colors = this.parseColors(props.series);
 
     this.stackedData = d3
       .stack()

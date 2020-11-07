@@ -4,7 +4,7 @@ import { css } from "@emotion/core";
 import SEO from "../../components/SEO";
 import Layout from "../../components/Finances/Layout";
 import SavingsChart from "../../components/Finances/SavingsChart";
-import CategoriesChart from "../../components/Finances/CategoriesChart";
+import Categories from "../../components/Finances/Categories";
 import NetWorth from "../../components/Finances/NetWorth";
 
 import income from "./data/income.json";
@@ -47,22 +47,16 @@ export default (props) => {
           <NetWorth data={assets.assets} series={assetsCategories.categories} />
         </div>
       </div>
-      <h2>Income, ₽</h2>
-      <div
-        css={css`
-          width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
-        `}
-      >
-        <CategoriesChart data={income} series={incomeCategories} />
-      </div>
-      <h2>Expenses, ₽</h2>
-      <div
-        css={css`
-          width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
-        `}
-      >
-        <CategoriesChart data={expenses} series={expensesCategories} />
-      </div>
+      <Categories
+        title="Income"
+        data={income}
+        series={incomeCategories.categories}
+      />
+      <Categories
+        title="Expenses"
+        data={expenses}
+        series={expensesCategories.categories.filter((d) => d.parent === null)}
+      />
     </Layout>
   );
 };
