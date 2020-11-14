@@ -4,13 +4,18 @@ import * as d3 from "d3";
 
 import "./style.css";
 
-class SavingsChart extends React.Component {
+class CategoriesChart extends React.Component {
   constructor(props) {
     super(props);
 
-    this.income = this.parseData(props.income);
-    this.expenses = this.parseData(props.expenses);
-    this.diff = this.calcDiff(this.income, this.expenses);
+    this.data = this.parseData(props.data);
+    this.series = this.parseSeries(props.series);
+    this.colors = this.parseColors(props.series);
+
+    this.stackedData = d3
+      .stack()
+      .keys(this.series)(this.data)
+      .map((d) => (d.forEach((v) => (v.key = d.key)), d));
   }
 
   componentDidMount() {
@@ -20,9 +25,10 @@ class SavingsChart extends React.Component {
   draw() {
     const { width, height, margin, marginBrush, duration } = this.props,
       svg = this.svg,
-      income = this.income,
-      expenses = this.expenses,
-      diff = this.diff;
+      data = this.data,
+      series = this.series,
+      colors = this.colors,
+      stackedData = this.stackedData;
 
     const formatDate = {
       short: d3.timeFormat("%b"),
@@ -34,16 +40,13 @@ class SavingsChart extends React.Component {
     // d3 scales
     const x = d3
       .scaleBand()
-      .domain(expenses.map((d) => d.date))
+      .domain(data.map((d) => d.date))
       .range([margin.left, width - margin.right])
       .padding(0.6);
 
     const y = d3
       .scaleLinear()
-      .domain([
-        -1 * d3.max(expenses, (d) => d.sum),
-        d3.max(income, (d) => d.sum),
-      ])
+      .domain([0, d3.max(data, (d) => d.Total)])
       .range([height - margin.bottom, margin.top]);
 
     const xBrush = d3
@@ -54,19 +57,21 @@ class SavingsChart extends React.Component {
 
     const xtBrush = d3
       .scaleTime()
-      .domain(d3.extent(expenses, (d) => d.date))
+      .domain(d3.extent(data, (d) => d.date))
       .range([0, width - marginBrush.right - marginBrush.left]);
 
     const yBrush = d3
       .scaleLinear()
-      .domain([d3.min(diff, (d) => d.sum), d3.max(diff, (d) => d.sum)])
+      .domain(y.domain())
       .range([height - marginBrush.top - marginBrush.bottom, 0]);
+
+    const color = d3.scaleOrdinal().domain(series).range(colors);
 
     // Mask for the graph and x-axis
     svg
       .append("defs")
       .append("clipPath")
-      .attr("id", "sc-graph-mask")
+      .attr("id", "cc-graph-mask")
       .append("rect")
       .attr("width", width - margin.left - margin.right)
       .attr("height", height - margin.bottom)
@@ -76,7 +81,7 @@ class SavingsChart extends React.Component {
     svg
       .append("defs")
       .append("clipPath")
-      .attr("id", "sc-axis-mask")
+      .attr("id", "cc-axis-mask")
       .append("rect")
       .attr("width", width - margin.left - margin.right)
       .attr("height", 40)
@@ -86,7 +91,7 @@ class SavingsChart extends React.Component {
     const gX = svg
       .append("g")
       .attr("transform", "translate(0," + (height - margin.bottom) + ")")
-      .attr("clip-path", "url(#sc-axis-mask)");
+      .attr("clip-path", "url(#cc-axis-mask)");
 
     const gY = svg
       .append("g")
@@ -96,23 +101,8 @@ class SavingsChart extends React.Component {
       .append("g")
       .attr("transform", "translate(0," + (height - marginBrush.bottom) + ")");
 
-    const gAxisLabels = svg.append("g");
     const gLine = svg.append("g");
-
-    const gIncome = svg
-      .append("g")
-      .attr("fill", "#292E32")
-      .attr("clip-path", "url(#sc-graph-mask)");
-
-    const gExpenses = svg
-      .append("g")
-      .attr("fill", "#292E32")
-      .attr("clip-path", "url(#sc-graph-mask)");
-
-    const gDiff = svg
-      .append("g")
-      .attr("class", "bars")
-      .attr("clip-path", "url(#sc-graph-mask)");
+    const gBars = svg.append("g").attr("clip-path", "url(#cc-graph-mask)");
 
     const gBrush = svg
       .append("g")
@@ -165,21 +155,6 @@ class SavingsChart extends React.Component {
         )
     );
 
-    // Axes labels
-    gAxisLabels
-      .append("text")
-      .attr("class", "axis-label")
-      .attr("x", 0)
-      .attr("y", 13)
-      .text("Income, ₽");
-
-    gAxisLabels
-      .append("text")
-      .attr("class", "axis-label")
-      .attr("x", 0)
-      .attr("y", height - margin.bottom + 24)
-      .text("Expenses");
-
     // Ground line
     gLine
       .append("line")
@@ -190,72 +165,42 @@ class SavingsChart extends React.Component {
       .style("stroke", "white")
       .attr("stroke-opacity", 0.1);
 
-    // Income bars
-    gIncome
+    // Bars
+    gBars
+      .selectAll("g")
+      .data(stackedData)
+      .join("g")
+      .attr("fill", (d) => color(d.key))
+      .attr("stroke", "#242526")
       .selectAll("rect")
-      .data(income)
+      .data((d) => d)
       .join("rect")
-      .attr("height", (d) => y(0) - y(d.sum))
+      .attr("x", (d) => x(d.data.date))
+      .attr("y", (d) => y(d[1]))
+      .attr("height", (d) => y(d[0]) - y(d[1]))
       .attr("width", x.bandwidth())
-      .attr("x", (d) => x(d.date))
-      .attr("y", (d) => y(d.sum))
-      .attr("rx", 4)
-      .append("title")
-      .text(
-        (d) => formatDate.month(d.date) + " income: " + d.sum.toLocaleString()
-      );
-
-    // Expenses bars
-    gExpenses
-      .selectAll("rect")
-      .data(expenses)
-      .join("rect")
-      .attr("height", (d) => Math.abs(y(0) - y(d.sum * -1)))
-      .attr("width", x.bandwidth())
-      .attr("x", (d) => x(d.date))
-      .attr("y", y(0))
-      .attr("rx", 4)
-      .append("title")
-      .text(
-        (d) => formatDate.month(d.date) + " expenses: " + d.sum.toLocaleString()
-      );
-
-    // Savings and overspending bars
-    gDiff
-      .selectAll("rect")
-      .data(diff)
-      .join("rect")
-      .attr("height", (d) => Math.abs(y(0) - y(d.sum * -1)))
-      .attr("width", x.bandwidth())
-      .attr("x", (d) => x(d.date))
-      .attr("y", (d) => (y(0) > y(d.sum) ? y(d.sum) : y(0)))
-      .attr("fill", (d) => (d.sum > 0 ? "#4F7E4F" : "#AB4040"))
-      .attr("rx", (d) => (Math.abs(y(0) - y(d.sum * -1)) > 4 ? "4" : "2"))
       .append("title")
       .text(
         (d) =>
-          `${formatDate.month(d.date)} ${
-            d.sum > 0 ? "savings" : "overspending"
-          }: ${Math.abs(d.sum).toLocaleString()}`
+          `${formatDate.month(d.data.date)} ${d.key}: ${Math.abs(
+            d.data[d.key]
+          ).toLocaleString()}`
       );
 
-    // Savings and overspending labels
-    gDiff
+    // Bar labels
+    gBars
       .selectAll("text")
-      .data(diff)
+      .data(data)
       .join("text")
       .attr("x", (d) => x(d.date) + x.bandwidth() / 2)
-      .attr("y", (d) => (d.sum < 0 ? y(d.sum) + 24 : y(d.sum)) - 7)
+      .attr("y", (d) => y(d.Total) - 7)
       .style("font-size", 13)
-      .style("fill", (d) =>
-        d.sum < 0 ? "var(--red-bright)" : "var(--green-bright)"
-      )
+      .style("fill", "#e9e9e9")
       .attr("text-anchor", "middle")
-      .attr("dx", (d) => (d.sum < 0 ? "-.2em" : 0))
-      .text((d) => d.rate.toFixed(0));
+      .text((d) => (d.Total / 1000).toFixed(0));
 
     // Brushable area with mini graph
-    const xBrushStep = xBrush.range()[1] / diff.length;
+    const xBrushStep = xBrush.range()[1] / data.length;
 
     const brush = d3
       .brushX()
@@ -270,19 +215,35 @@ class SavingsChart extends React.Component {
       .on("brush", brushing)
       .on("end", brushed);
 
+    // gBrush
+    //   .selectAll("rect")
+    //   .data(diff)
+    //   .join("rect")
+    //   .attr("class", "bar")
+    //   .attr("height", (d) => Math.abs(yBrush(0) - yBrush(d.sum * -1)))
+    //   .attr("width", xBrush.bandwidth())
+    //   .attr("x", (d) => xBrush(d.date))
+    //   .attr("y", (d) => (yBrush(0) > yBrush(d.sum) ? yBrush(d.sum) : yBrush(0)))
+    //   .attr("fill", (d) => (d.sum > 0 ? "#4F7E4F" : "#AB4040"))
+    //   .attr("rx", (d) =>
+    //     Math.abs(yBrush(0) - yBrush(d.sum * -1)) > 2 ? "2" : "0"
+    //   );
+
     gBrush
+      .selectAll("g")
+      .data(stackedData)
+      .join("g")
+      .attr("fill", (d) => color(d.key))
+      .attr("stroke", "#242526")
+      .attr("stroke-width", "0.5")
       .selectAll("rect")
-      .data(diff)
+      .data((d) => d)
       .join("rect")
       .attr("class", "bar")
-      .attr("height", (d) => Math.abs(yBrush(0) - yBrush(d.sum * -1)))
-      .attr("width", xBrush.bandwidth())
-      .attr("x", (d) => xBrush(d.date))
-      .attr("y", (d) => (yBrush(0) > yBrush(d.sum) ? yBrush(d.sum) : yBrush(0)))
-      .attr("fill", (d) => (d.sum > 0 ? "#4F7E4F" : "#AB4040"))
-      .attr("rx", (d) =>
-        Math.abs(yBrush(0) - yBrush(d.sum * -1)) > 2 ? "2" : "0"
-      );
+      .attr("x", (d) => xBrush(d.data.date))
+      .attr("y", (d) => yBrush(d[1]))
+      .attr("height", (d) => yBrush(d[0]) - yBrush(d[1]))
+      .attr("width", xBrush.bandwidth());
 
     gBrush
       .append("g")
@@ -305,22 +266,12 @@ class SavingsChart extends React.Component {
         width - margin.right + (xBrush.range()[1] - selection[1]) * brushScaleF,
       ]);
 
-      gIncome
+      gBars
         .selectAll("rect")
-        .attr("x", (d) => x(d.date))
+        .attr("x", (d) => x(d.data.date))
         .attr("width", x.bandwidth());
 
-      gExpenses
-        .selectAll("rect")
-        .attr("x", (d) => x(d.date))
-        .attr("width", x.bandwidth());
-
-      gDiff
-        .selectAll("rect")
-        .attr("x", (d) => x(d.date))
-        .attr("width", x.bandwidth());
-
-      gDiff.selectAll("text").attr("x", (d) => x(d.date) + x.bandwidth() / 2);
+      gBars.selectAll("text").attr("x", (d) => x(d.date) + x.bandwidth() / 2);
 
       gX.call(xAxis);
 
@@ -329,7 +280,7 @@ class SavingsChart extends React.Component {
 
       gBrush
         .selectAll(".bar")
-        .attr("opacity", (d) => (fd.includes(d.date) ? 1 : 0.2));
+        .attr("opacity", (d) => (fd.includes(d.data.date) ? 1 : 0.2));
     }
 
     function brushed() {
@@ -340,51 +291,24 @@ class SavingsChart extends React.Component {
       // Update heights and y of the bars
       const dateRange = selection.map((d) => xtBrush.invert(d));
 
-      const filteredIncome = income.filter(
-        (d) => d.date >= dateRange[0] && d.date <= dateRange[1]
-      );
-      const filteredExpenses = expenses.filter(
+      const filteredData = data.filter(
         (d) => d.date >= dateRange[0] && d.date <= dateRange[1]
       );
 
-      y.domain([
-        -1 * d3.max(filteredExpenses, (d) => d.sum),
-        d3.max(filteredIncome, (d) => d.sum),
-      ]);
+      y.domain([0, d3.max(filteredData, (d) => d.Total)]);
 
-      gIncome
+      gBars
         .selectAll("rect")
         .transition()
         .duration(duration)
-        .attr("height", (d) => y(0) - y(d.sum))
-        .attr("y", (d) => y(d.sum));
+        .attr("height", (d) => y(d[0]) - y(d[1]))
+        .attr("y", (d) => y(d[1]));
 
-      gExpenses
-        .selectAll("rect")
-        .transition()
-        .duration(duration)
-        .attr("height", (d) => Math.abs(y(0) - y(d.sum * -1)))
-        .attr("y", y(0));
-
-      gDiff
-        .selectAll("rect")
-        .transition()
-        .duration(duration)
-        .attr("height", (d) => Math.abs(y(0) - y(d.sum * -1)))
-        .attr("y", (d) => (y(0) > y(d.sum) ? y(d.sum) : y(0)));
-
-      gDiff
+      gBars
         .selectAll("text")
         .transition()
         .duration(duration)
-        .attr("y", (d) => (d.sum < 0 ? y(d.sum) + 24 : y(d.sum)) - 7);
-
-      gLine
-        .selectAll("line")
-        .transition()
-        .duration(duration)
-        .attr("y1", y(0))
-        .attr("y2", y(0));
+        .attr("y", (d) => y(d.Total) - 7);
 
       gY.transition().duration(duration).call(yAxis);
 
@@ -412,20 +336,22 @@ class SavingsChart extends React.Component {
   parseData(data) {
     return d3.entries(data).map((d) => ({
       date: new Date(d.key),
-      sum: +d.value.Total,
+      ...d.value,
     }));
   }
 
-  calcDiff(income, expenses) {
-    return expenses.map(function (d) {
-      let inc = income.filter((dd) => dd.date.getTime() === d.date.getTime())[0]
-        .sum;
-      return {
-        date: d.date,
-        sum: inc - d.sum,
-        rate: (1 - d.sum / inc) * 100,
-      };
-    });
+  parseSeries(data) {
+    return d3
+      .entries(data)
+      .filter((d) => d.value.parent === null)
+      .map((d) => [d.value.title]);
+  }
+
+  parseColors(data) {
+    return d3
+      .entries(data)
+      .filter((d) => d.value.parent === null)
+      .map((d) => [d.value.color]);
   }
 
   render() {
@@ -441,9 +367,9 @@ class SavingsChart extends React.Component {
   }
 }
 
-SavingsChart.defaultProps = {
+CategoriesChart.defaultProps = {
   width: 768,
-  height: 610,
+  height: 490,
   margin: {
     top: 28,
     right: 0,
@@ -451,7 +377,7 @@ SavingsChart.defaultProps = {
     left: 70,
   },
   marginBrush: {
-    top: 500,
+    top: 380,
     right: 0,
     bottom: 30,
     left: 70,
@@ -459,13 +385,13 @@ SavingsChart.defaultProps = {
   duration: 200,
 };
 
-SavingsChart.propTypes = {
-  income: PropTypes.object.isRequired,
-  expenses: PropTypes.object.isRequired,
+CategoriesChart.propTypes = {
+  data: PropTypes.object.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
   margin: PropTypes.object,
+  marginBrush: PropTypes.object,
   duration: PropTypes.number,
 };
 
-export default SavingsChart;
+export default CategoriesChart;
