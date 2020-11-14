@@ -1,4 +1,224 @@
 {
+  "Tue Feb 28 2017 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Investments": null,
+    "Paycheck": 213730,
+    "Side hustle": null,
+    "Interest": 3409,
+    "Stuff sales": 56500,
+    "Presents": null,
+    "Other": null,
+    "Total": 273639
+  },
+  "Fri Mar 31 2017 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 176470,
+    "Side hustle": 72500,
+    "Interest": 6819,
+    "Stuff sales": 1000,
+    "Presents": null,
+    "Other": null,
+    "Total": 256789
+  },
+  "Sun Apr 30 2017 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 363040,
+    "Side hustle": 13000,
+    "Interest": 9706,
+    "Stuff sales": 115000,
+    "Presents": 15000,
+    "Other": 260600,
+    "Total": 776346
+  },
+  "Wed May 31 2017 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 195777,
+    "Side hustle": 62500,
+    "Interest": 8356,
+    "Stuff sales": 1500,
+    "Presents": null,
+    "Other": 1500,
+    "Total": 269633
+  },
+  "Fri Jun 30 2017 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 228703,
+    "Side hustle": 36000,
+    "Interest": 8402,
+    "Stuff sales": null,
+    "Presents": null,
+    "Other": null,
+    "Total": 273105
+  },
+  "Mon Jul 31 2017 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 290468,
+    "Side hustle": 35000,
+    "Interest": 7823,
+    "Stuff sales": 1850,
+    "Presents": 7500,
+    "Other": 600,
+    "Total": 343241
+  },
+  "Thu Aug 31 2017 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 126314,
+    "Side hustle": 22500,
+    "Interest": 4709,
+    "Stuff sales": null,
+    "Presents": 50000,
+    "Other": 2700,
+    "Total": 206223
+  },
+  "Sat Sep 30 2017 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 212167,
+    "Side hustle": 40400,
+    "Interest": 615,
+    "Stuff sales": null,
+    "Presents": 4000,
+    "Other": 850,
+    "Total": 258032
+  },
+  "Tue Oct 31 2017 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 312015,
+    "Side hustle": 43500,
+    "Interest": 7481,
+    "Stuff sales": null,
+    "Presents": null,
+    "Other": 500,
+    "Total": 363496
+  },
+  "Thu Nov 30 2017 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Investments": null,
+    "Paycheck": 234648,
+    "Side hustle": 51000,
+    "Interest": 716,
+    "Stuff sales": null,
+    "Presents": null,
+    "Other": 350,
+    "Total": 286714
+  },
+  "Sun Dec 31 2017 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Investments": null,
+    "Paycheck": 148621,
+    "Side hustle": 22000,
+    "Interest": null,
+    "Stuff sales": null,
+    "Presents": 4500,
+    "Other": 2500,
+    "Total": 177621
+  },
+  "Wed Jan 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Investments": null,
+    "Paycheck": 237174,
+    "Side hustle": 30000,
+    "Interest": 1280,
+    "Stuff sales": null,
+    "Presents": null,
+    "Other": 2700,
+    "Total": 271154
+  },
+  "Wed Feb 28 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Investments": null,
+    "Paycheck": 136468,
+    "Side hustle": 42200,
+    "Interest": 4325,
+    "Stuff sales": 15000,
+    "Presents": null,
+    "Other": 6500,
+    "Total": 204493
+  },
+  "Sat Mar 31 2018 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 139725,
+    "Side hustle": 76000,
+    "Interest": 1741,
+    "Stuff sales": 36350,
+    "Presents": null,
+    "Other": 5900,
+    "Total": 259716
+  },
+  "Mon Apr 30 2018 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 202772,
+    "Side hustle": 25000,
+    "Interest": 1817,
+    "Stuff sales": 10930,
+    "Presents": 1000,
+    "Other": 1200,
+    "Total": 242719
+  },
+  "Thu May 31 2018 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 160917,
+    "Side hustle": 69000,
+    "Interest": 2261,
+    "Stuff sales": 3100,
+    "Presents": null,
+    "Other": 1200,
+    "Total": 236478
+  },
+  "Sat Jun 30 2018 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 242697,
+    "Side hustle": 175250,
+    "Interest": 2064,
+    "Stuff sales": 1800,
+    "Presents": null,
+    "Other": 2200,
+    "Total": 424011
+  },
+  "Tue Jul 31 2018 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 108223,
+    "Side hustle": 26000,
+    "Interest": 459,
+    "Stuff sales": 80000,
+    "Presents": 5000,
+    "Other": 3200,
+    "Total": 222882
+  },
+  "Fri Aug 31 2018 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 189029,
+    "Side hustle": 83000,
+    "Interest": 3426,
+    "Stuff sales": null,
+    "Presents": null,
+    "Other": null,
+    "Total": 275455
+  },
+  "Sun Sep 30 2018 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 216104,
+    "Side hustle": 48750,
+    "Interest": 935,
+    "Stuff sales": 2500,
+    "Presents": 8000,
+    "Other": null,
+    "Total": 276289
+  },
+  "Wed Oct 31 2018 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": null,
+    "Paycheck": 254513,
+    "Side hustle": 51750,
+    "Interest": 540,
+    "Stuff sales": 250,
+    "Presents": 10000,
+    "Other": 950,
+    "Total": 318003
+  },
+  "Fri Nov 30 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Investments": null,
+    "Paycheck": 332859,
+    "Side hustle": 33500,
+    "Interest": 377,
+    "Stuff sales": 4000,
+    "Presents": null,
+    "Other": null,
+    "Total": 370736
+  },
   "Mon Dec 31 2018 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
     "Investments": null,
     "Paycheck": null,
