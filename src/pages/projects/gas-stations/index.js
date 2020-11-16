@@ -36,7 +36,7 @@ export default ({ data }) => {
           process. Second for testing and final refinements.
         </p>
         <p>
-          I split interaction into several steps. First, when the driver is
+          I've split interaction into several steps. First, when the driver is
           close to the gas station, Navigator shows a pop-up offer to use the
           service and immediately choose the pump number. The gas station itself
           is marked with a special acid circle which is a part of the brand.
@@ -102,8 +102,7 @@ export default ({ data }) => {
           To speed up choosing the amount of gas I offered picker controls with
           predefined steps, that cover most of the scenarios. The table of
           contents in the right part is for not spinning picker for too long.
-          Tests showed that drivers haven't any troubles with them so they
-          remained.
+          Tests showed that drivers hadn't any troubles with them.
         </p>
       </LayoutColumn>
       <Frame label="Daylight theme">
