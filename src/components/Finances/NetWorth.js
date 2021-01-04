@@ -72,7 +72,7 @@ function Change(props) {
           " " +
           date.getFullYear()}
       </span>
-      <Diff value={(1 - props.prevTotal / props.total) * 100} />
+      <Diff value={(props.total / props.prevTotal - 1) * 100} />
     </div>
   );
 }

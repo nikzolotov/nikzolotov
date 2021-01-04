@@ -37,21 +37,21 @@ export default (props) => {
         title="Income"
         value={income}
         currency="₽"
-        diff={(1 - prevIncome / income) * 100}
+        diff={(income / prevIncome - 1) * 100}
         nodata={props.nodata}
         prevYear={props.prev.year}
       />
       <Total
         title="Spending"
         value={spending}
-        diff={(1 - prevSpending / spending) * 100}
+        diff={(spending / prevSpending - 1) * 100}
         diffInvert
         nodata={props.nodata}
       />
       <Total
         title="Savings"
         value={savings}
-        diff={(1 - prevSavings / savings) * 100}
+        diff={(savings / prevSavings - 1) * 100}
       />
       <Total
         title="Savings rate"

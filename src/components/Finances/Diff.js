@@ -6,7 +6,7 @@ export default (props) => {
   var value = props.value;
 
   if (isNaN(value)) value = 0;
-  else if (!isFinite(value)) value = -100;
+  else if (!isFinite(value)) value = 100;
 
   if (Math.abs(value) > 10000) value = Math.trunc(value / 1000) + "k";
   else if (Math.abs(value) >= 100 || value === 0)

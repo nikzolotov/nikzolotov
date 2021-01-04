@@ -1,0 +1,334 @@
+{
+  "year": 2020,
+  "expenses": {
+    "categories": [
+      {
+        "title": "Housing",
+        "sum": 52128,
+        "main": true
+      },
+      {
+        "title": "Rent",
+        "sum": 0,
+        "main": false,
+        "comment": "We lived in our second investment apartment."
+      },
+      {
+        "title": "Mortgage",
+        "sum": 0,
+        "main": false,
+        "comment": "Debt-free for two years. Including mortgage."
+      },
+      {
+        "title": "Utilities",
+        "sum": 50844,
+        "main": false,
+        "comment": "Utilities for a one-bedroom apartment for a year."
+      },
+      {
+        "title": "Tax",
+        "sum": 1284,
+        "main": false,
+        "comment": "Residence tax for the previous year."
+      },
+      {
+        "title": "Repairs",
+        "sum": 0,
+        "main": false,
+        "comment": "All repairs were considered as an investment in assets."
+      },
+      {
+        "title": "Food",
+        "sum": 307511,
+        "main": true
+      },
+      {
+        "title": "Groceries",
+        "sum": 262924,
+        "main": false,
+        "comment": "Wow! Almost twice on groceries in 2020. Three reasons. First, our family has grown. Second, we started to buy more healthy and organic food. Third, inflation on groceries in Russia was much more than the official 4.9%."
+      },
+      {
+        "title": "Eating out",
+        "sum": 39661,
+        "main": false,
+        "comment": "It was hard to go to the restaurant with a small baby, and, yeah, pandemic."
+      },
+      {
+        "title": "Alcohol",
+        "sum": 4926,
+        "main": false,
+        "comment": "I quit alcohol entirely in March. No benefits and a lot of downsides. If you're interested, read This Naked Mind by Annie Grace."
+      },
+      {
+        "title": "Transportation",
+        "sum": 67376,
+        "main": true
+      },
+      {
+        "title": "Gas",
+        "sum": 18446,
+        "main": false,
+        "comment": "We've sold our car in September. Gas till this time."
+      },
+      {
+        "title": "Maintenance",
+        "sum": 21526,
+        "main": false,
+        "comment": "Oil change and new tires."
+      },
+      {
+        "title": "Car Tax",
+        "sum": 2767,
+        "main": false,
+        "comment": "Tax for the previous year."
+      },
+      {
+        "title": "Insurance",
+        "sum": 7855,
+        "main": false,
+        "comment": "Insurance for me. Missis hadn't time to drive."
+      },
+      {
+        "title": "Parking",
+        "sum": 0,
+        "main": false,
+        "comment": "I prefer public transportation when going to paid parking zones."
+      },
+      {
+        "title": "Public transport",
+        "sum": 5809,
+        "main": false,
+        "comment": "Train tickets to visit family. All my work was remote."
+      },
+      {
+        "title": "Car rent",
+        "sum": 3426,
+        "main": false,
+        "comment": "We started using a car-sharing service in Moscow instead of our car."
+      },
+      {
+        "title": "Taxi",
+        "sum": 7547,
+        "main": false,
+        "comment": "Another fleet of cars when we really need them."
+      },
+      {
+        "title": "Medicine",
+        "sum": 131411,
+        "main": true
+      },
+      {
+        "title": "Health Insurance",
+        "sum": 0,
+        "main": false,
+        "comment": "All private doctor visits were paid from our own pockets."
+      },
+      {
+        "title": "Doctor visits",
+        "sum": 94036,
+        "main": false,
+        "comment": "Minor issues and regular check-ups for the baby. Missis's rehabilitation after pregnancy. My issues with new food plan."
+      },
+      {
+        "title": "Pharmacy",
+        "sum": 37375,
+        "main": false,
+        "comment": "This includes vitamins, which we bought in bulk."
+      },
+      {
+        "title": "Life",
+        "sum": 324708,
+        "main": true
+      },
+      {
+        "title": "Entertainment",
+        "sum": 4373,
+        "main": false,
+        "comment": "The main sources of entertainment in 2020 were books."
+      },
+      {
+        "title": "Education",
+        "sum": 639,
+        "main": false,
+        "comment": "Almost no paid education, only self-driven learning from books and free resources."
+      },
+      {
+        "title": "Sport",
+        "sum": 11389,
+        "main": false,
+        "comment": "Set of dumbbells for the Happy Body Programm."
+      },
+      {
+        "title": "Hobbies and arts",
+        "sum": 626,
+        "main": false,
+        "comment": "Nastya's oils for her new perfume hobby."
+      },
+      {
+        "title": "Clothing",
+        "sum": 27185,
+        "main": false,
+        "comment": "Our friends and family provided us with clothes for the baby. We only needed to buy a few things. Thanks, all!"
+      },
+      {
+        "title": "Tech & Gadgets",
+        "sum": 141035,
+        "main": false,
+        "comment": "Two pairs of Apple Watch and AirPods. New iPhone Xr for Missis. And nice noise-canceling Sony headphones for productive work. All tech we bought new because it was a tricky business to find really good deals on those ones."
+      },
+      {
+        "title": "Home stuff",
+        "sum": 7785,
+        "main": false,
+        "comment": "Kitchen stuff."
+      },
+      {
+        "title": "Work supplies",
+        "sum": 18359,
+        "main": false,
+        "comment": "Apple keyboard and trackpad for the proper back position for full-time work."
+      },
+      {
+        "title": "Household goods",
+        "sum": 14675,
+        "main": false,
+        "comment": "Little kid is a big pile of laundry."
+      },
+      {
+        "title": "Cell phone",
+        "sum": 7950,
+        "main": false,
+        "comment": "Same plan as in 2019."
+      },
+      {
+        "title": "Subscriptions",
+        "sum": 2470,
+        "main": false,
+        "comment": "Spotify, Yazio."
+      },
+      {
+        "title": "Personal",
+        "sum": 50823,
+        "main": false,
+        "comment": "Leo's diapers and beauty products for Nastya."
+      },
+      {
+        "title": "Misc",
+        "sum": 37399,
+        "main": false,
+        "comment": "Stroller, child car seats, etc."
+      },
+      {
+        "title": "Travel",
+        "sum": 107457,
+        "main": true
+      },
+      {
+        "title": "Hotels",
+        "sum": 50219,
+        "main": false,
+        "comment": "Trip to the Ural Mountains in winter and Abkhazia in summer."
+      },
+      {
+        "title": "Travel Transportation",
+        "sum": 36623,
+        "main": false,
+        "comment": "Gas for the first trip and airplane tickets for the second."
+      },
+      {
+        "title": "Travel Entertainment",
+        "sum": 14420,
+        "main": false,
+        "comment": "Ski-pass for two weeks."
+      },
+      {
+        "title": "Food and other",
+        "sum": 6195,
+        "main": false,
+        "comment": "Food for the second trip. Mainly cooked at the apartment."
+      },
+      {
+        "title": "Donations",
+        "sum": 68143,
+        "main": true
+      },
+      {
+        "title": "Presents",
+        "sum": 40145,
+        "main": false,
+        "comment": "Birthday and holiday presents."
+      },
+      {
+        "title": "Parties hosting",
+        "sum": 25500,
+        "main": false,
+        "comment": "Nastya's and Leo's birthday parties."
+      },
+      {
+        "title": "Charity",
+        "sum": 2498,
+        "main": false,
+        "comment": "Donations to volunteer organization in recycling business and some charity."
+      },
+      {
+        "title": "Government",
+        "sum": 27159,
+        "main": true
+      },
+      {
+        "title": "Taxes and fees",
+        "sum": 26755,
+        "main": false,
+        "comment": "Self-employment tax."
+      },
+      {
+        "title": "Fines",
+        "sum": 404,
+        "main": false,
+        "comment": "Wow! Almost no fines."
+      }
+    ],
+    "total": 1085893
+  },
+  "income": {
+    "categories": [
+      {
+        "title": "Investments",
+        "sum": 340831,
+        "comment": "Income from our investment property could've been higher this year. But for the first two months of the lockdown, the apartment was unoccupied."
+      },
+      {
+        "title": "Paycheck",
+        "sum": 318434,
+        "comment": "I joined my previous team to help build products for small businesses."
+      },
+      {
+        "title": "Side hustle",
+        "sum": 788795,
+        "comment": "I did more part-time design work than the previous year."
+      },
+      {
+        "title": "Interest",
+        "sum": 20879,
+        "comment": "Cashback and interest on bank accounts."
+      },
+      {
+        "title": "Stuff sales",
+        "sum": 122800,
+        "comment": "Less stuff to sell as you became minimalist."
+      },
+      {
+        "title": "Presents",
+        "sum": 70000,
+        "comment": "This is very generous of you, friends and family!"
+      },
+      {
+        "title": "Other",
+        "sum": 282177,
+        "comment": "Child benefit and government aid for families."
+      }
+    ],
+    "total": 1943916
+  }
+}

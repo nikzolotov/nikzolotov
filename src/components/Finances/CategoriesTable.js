@@ -25,7 +25,7 @@ function CategoriesTableItem(props) {
 
   if (props.prev) {
     prevSum = props.prev.filter((item) => item.title === props.title)[0].sum;
-    diff = (1 - prevSum / props.sum) * 100;
+    diff = (props.sum / prevSum - 1) * 100;
   }
 
   const thStyle = css`

@@ -438,5 +438,25 @@
     "Presents": 20000,
     "Other": 24752,
     "Total": 98838
+  },
+  "Sat Oct 31 2020 17:00:00 GMT-0400 (Восточная Америка, летнее время)": {
+    "Investments": 29639,
+    "Paycheck": null,
+    "Side hustle": 80908,
+    "Interest": 986,
+    "Stuff sales": 11900,
+    "Presents": null,
+    "Other": 20440,
+    "Total": 143873
+  },
+  "Mon Nov 30 2020 16:00:00 GMT-0500 (Восточная Америка, стандартное время)": {
+    "Investments": 42046,
+    "Paycheck": 318434,
+    "Side hustle": 112027,
+    "Interest": 1692,
+    "Stuff sales": 500,
+    "Presents": 5000,
+    "Other": 25440,
+    "Total": 505139
   }
 }

@@ -28,6 +28,7 @@ function Header(props) {
     { key: "finances-2017", link: "/finances/2017/", name: "2017" },
     { key: "finances-2018", link: "/finances/2018/", name: "2018" },
     { key: "finances-2019", link: "/finances/2019/", name: "2019" },
+    { key: "finances-2020", link: "/finances/2020/", name: "2020" },
   ];
 
   const images = useStaticQuery(graphql`
