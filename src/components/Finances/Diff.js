@@ -5,15 +5,21 @@ export default (props) => {
   var color, label;
   var value = props.value;
 
-  if (isNaN(value)) value = 0;
-  else if (!isFinite(value)) value = 100;
+  if (isNaN(value)) {
+    value = 0;
+  }
 
-  if (Math.abs(value) > 10000) value = Math.trunc(value / 1000) + "k";
-  else if (Math.abs(value) >= 100 || value === 0)
-    value = Math.trunc(value).toLocaleString();
-  else value = value.toFixed(2);
+  if (Math.abs(value) >= 100 || value === 0) {
+    value = Math.round(value);
+  } else {
+    if (props.integer) {
+      value = value.toFixed(0);
+    } else {
+      value = value.toFixed(2);
+    }
+  }
 
-  if (props.nodata) {
+  if (props.nodata || !isFinite(value)) {
     color = "var(--text-color-2)";
   } else if (value > 0) {
     color = !props.invert ? "var(--green-bright)" : "var(--red-bright)";
@@ -25,9 +31,13 @@ export default (props) => {
     label = "No data";
     label += props.prevYear ? " for " + props.prevYear : "";
   } else {
-    label = value > 0 ? "+" : "";
-    label += value;
-    label += "&thinsp;%";
+    if (isFinite(value)) {
+      label = value > 0 ? "+" : "";
+      label += value.toLocaleString();
+      label += "&thinsp;%";
+    } else {
+      label = "—";
+    }
   }
 
   return (

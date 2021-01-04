@@ -72,7 +72,7 @@ function CategoriesTableItem(props) {
                 //display: none;
               `}
             >
-              <Diff value={diff} invert={props.diffInvert} />
+              <Diff value={diff} invert={props.diffInvert} integer />
             </th>
           )}
           <th
@@ -112,7 +112,7 @@ function CategoriesTableItem(props) {
                 //display: none;
               `}
             >
-              <Diff value={diff} invert={props.diffInvert} />
+              <Diff value={diff} invert={props.diffInvert} integer />
             </td>
           )}
           <td
