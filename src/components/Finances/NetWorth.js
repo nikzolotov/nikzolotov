@@ -66,7 +66,7 @@ function Change(props) {
         `}
       >
         March 2017 –{" "}
-        {date.toLocaleString("default", {
+        {date.toLocaleString("en-US", {
           month: "long",
         }) +
           " " +
