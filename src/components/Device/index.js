@@ -6,19 +6,24 @@ import imageHtc from "./htc.png";
 import imageIpad from "./ipad.png";
 import imageTV from "./tv.png";
 import imageKiosk from "./kiosk.png";
+import { max } from "d3";
 
-export default (props) => {
-  const margin = props.margin ? props.margin : "var(--spacing-base)";
-  const width = props.width ? props.width : "100%";
-
-  let maxWidth = "900px";
-  if (props.model === "htc" || props.model === "abstract-phone")
-    maxWidth = "276px";
-  if (props.maxWidth) maxWidth = props.maxWidth;
+export default ({
+  model,
+  image,
+  width = "100%",
+  maxWidth,
+  margin = "var(--spacing-base)",
+}) => {
+  // Set two defaults for maximum width
+  if (maxWidth === undefined) {
+    maxWidth =
+      model === "htc" || model === "abstract-phone" ? "276px" : "900px";
+  }
 
   let device = "";
 
-  if (props.model === "safari") {
+  if (model === "safari") {
     device = (
       <div
         css={css`
@@ -31,10 +36,10 @@ export default (props) => {
           }
         `}
       >
-        <Img fluid={props.image} />
+        <Img fluid={image} />
       </div>
     );
-  } else if (props.model === "abstract-phone") {
+  } else if (model === "abstract-phone") {
     device = (
       <div
         css={css`
@@ -45,7 +50,7 @@ export default (props) => {
             0 18px 36px rgba(0, 0, 0, 0.15);
         `}
       >
-        <Img fluid={props.image} />
+        <Img fluid={image} />
       </div>
     );
   } else {
@@ -56,34 +61,40 @@ export default (props) => {
             position: absolute;
             overflow: hidden;
 
-            .htc & {
-              top: 9.87%;
+            ${
+              model === "htc" &&
+              `top: 9.87%;
               left: 3.38%;
               width: 92.7%;
-              height: 79%;
+              height: 79%;`
             }
 
-            .ipad & {
-              top: 6.36%;
+            ${
+              model === "ipad" &&
+              `top: 6.36%;
               left: 8.8%;
               width: 82.4%;
-              height: 87.55%;
+              height: 87.55%;`
             }
-            .tv & {
-              top: 1.44%;
+
+            ${
+              model === "tv" &&
+              `top: 1.44%;
               left: 0.8%;
               width: 98.2%;
-              height: 88.78%;
+              height: 88.78%;`
             }
-            .kiosk & {
-              top: 5.98%;
+
+            ${
+              model === "kiosk" &&
+              `top: 5.98%;
               left: 4.44%;
               width: 91%;
-              height: 88.17%;
+              height: 88.17%;`
             }
           `}
         >
-          <Img fluid={props.image} />
+          <Img fluid={image} />
         </div>
         <img
           css={css`
@@ -92,7 +103,7 @@ export default (props) => {
             width: 100%;
           `}
           src={(() => {
-            switch (props.model) {
+            switch (model) {
               case "ipad":
                 return imageIpad;
               case "tv":
@@ -111,12 +122,11 @@ export default (props) => {
 
   return (
     <div
-      className={props.model}
       css={css`
         position: relative;
         max-width: ${maxWidth};
         margin: ${margin};
-        ${width && "width: " + width + ";"}
+        width: ${width};
         @media (max-width: 640px) {
           margin-left: 0;
           margin-right: 0;

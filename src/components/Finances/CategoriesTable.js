@@ -3,7 +3,7 @@ import { css } from "@emotion/core";
 
 import Diff from "./Diff";
 
-export default (props) => {
+export default ({ data, prev, currency, diffInvert }) => {
   return (
     <table
       css={css`
@@ -13,19 +13,39 @@ export default (props) => {
       `}
     >
       <tbody>
-        {props.data.map((item, i) => (
-          <CategoriesTableItem {...props} {...item} key={i} i={i} />
+        {data.map((item, i) => (
+          <CategoriesTableItem
+            i={i}
+            key={i}
+            prev={prev}
+            currency={currency}
+            diffInvert={diffInvert}
+            title={item.title}
+            sum={item.sum}
+            main={item.main}
+            comment={item.comment}
+          />
         ))}
       </tbody>
     </table>
   );
 };
-function CategoriesTableItem(props) {
-  var prevSum, diff;
+function CategoriesTableItem({
+  i,
+  prev,
+  currency = 1,
+  diffInvert,
+  title,
+  sum,
+  main,
+  comment,
+}) {
+  let prevSum, diff;
 
-  if (props.prev) {
-    prevSum = props.prev.filter((item) => item.title === props.title)[0].sum;
-    diff = (props.sum / prevSum - 1) * 100;
+  if (prev) {
+    const prevItem = prev.filter((item) => item.title === title)[0];
+    prevSum = prevItem && prevItem.sum ? prevItem.sum : 0;
+    diff = (sum / prevSum - 1) * 100;
   }
 
   const thStyle = css`
@@ -33,7 +53,7 @@ function CategoriesTableItem(props) {
     font-weight: bold;
     line-height: 24px;
     border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
-    ${props.i === 0 && "padding-top: 10px"}
+    ${i === 0 && "padding-top: 10px"}
   `;
   const tdStyle = css`
     padding: 10px 0;
@@ -41,11 +61,9 @@ function CategoriesTableItem(props) {
     border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
   `;
 
-  const currency = props.currency || 1;
-
   return (
     <tr>
-      {props.main ? (
+      {main ? (
         <>
           <th
             css={css`
@@ -53,7 +71,7 @@ function CategoriesTableItem(props) {
               text-align: left;
             `}
           >
-            {props.title}
+            {title}
           </th>
           <th
             css={css`
@@ -61,18 +79,18 @@ function CategoriesTableItem(props) {
               text-align: right;
             `}
           >
-            {(props.sum / currency).toLocaleString()}
+            {(sum / currency).toLocaleString()}
           </th>
-          {props.prev && (
+          {prev && (
             <th
               css={css`
                 ${thStyle}
                 text-align: right;
-                font: 15px Apercu, Helvetica, sans-serif;
-                //display: none;
+                font-size: 15px;
+                font-weight: normal;
               `}
             >
-              <Diff value={diff} invert={props.diffInvert} integer />
+              <Diff value={diff} invert={diffInvert} integer />
             </th>
           )}
           <th
@@ -80,7 +98,7 @@ function CategoriesTableItem(props) {
               ${thStyle}
             `}
           >
-            {props.comment}
+            {comment}
           </th>
         </>
       ) : (
@@ -91,7 +109,7 @@ function CategoriesTableItem(props) {
               width: 200px;
             `}
           >
-            {props.title}
+            {title}
           </td>
           <td
             css={css`
@@ -100,19 +118,18 @@ function CategoriesTableItem(props) {
               text-align: right;
             `}
           >
-            {(props.sum / currency).toLocaleString()}
+            {(sum / currency).toLocaleString()}
           </td>
-          {props.prev && (
+          {prev && (
             <td
               css={css`
                 ${tdStyle}
                 width: 90px;
                 text-align: right;
                 font-size: 15px;
-                //display: none;
               `}
             >
-              <Diff value={diff} invert={props.diffInvert} integer />
+              <Diff value={diff} invert={diffInvert} integer />
             </td>
           )}
           <td
@@ -121,7 +138,7 @@ function CategoriesTableItem(props) {
               padding-left: var(--spacing-large);
               color: var(--text-color-2);
             `}
-            dangerouslySetInnerHTML={{ __html: props.comment }}
+            dangerouslySetInnerHTML={{ __html: comment }}
           />
         </>
       )}

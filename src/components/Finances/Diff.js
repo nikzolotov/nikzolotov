@@ -1,35 +1,39 @@
 import React from "react";
 import { css } from "@emotion/core";
 
-export default (props) => {
-  var color, label;
-  var value = props.value;
+export default ({ value, integer, invert, nodata, prevYear }) => {
+  let color, label;
 
   if (isNaN(value)) {
     value = 0;
   }
 
-  if (Math.abs(value) >= 100 || value === 0) {
+  // Round value
+  if (Math.abs(value) >= 100) {
     value = Math.round(value);
   } else {
-    if (props.integer) {
+    if (integer) {
       value = value.toFixed(0);
     } else {
       value = value.toFixed(2);
     }
   }
 
-  if (props.nodata || !isFinite(value)) {
+  // Set color
+  if (nodata || !isFinite(value)) {
     color = "var(--text-color-2)";
-  } else if (value > 0) {
-    color = !props.invert ? "var(--green-bright)" : "var(--red-bright)";
   } else {
-    color = !props.invert ? "var(--red-bright)" : "var(--green-bright)";
+    if (value > 0) {
+      color = !invert ? "var(--green-bright)" : "var(--red-bright)";
+    } else {
+      color = !invert ? "var(--red-bright)" : "var(--green-bright)";
+    }
   }
 
-  if (props.nodata) {
+  // Set label html
+  if (nodata) {
     label = "No data";
-    label += props.prevYear ? " for " + props.prevYear : "";
+    label += prevYear ? " for " + prevYear : "";
   } else {
     if (isFinite(value)) {
       label = value > 0 ? "+" : "";
