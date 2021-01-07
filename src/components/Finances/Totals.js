@@ -36,7 +36,7 @@ export default (props) => {
       <Total
         title="Income"
         value={income}
-        currency="₽"
+        currency="&#8381;"
         diff={(income / prevIncome - 1) * 100}
         nodata={props.nodata}
         prevYear={props.prev.year}
@@ -91,7 +91,7 @@ function Total(props) {
               <span
                 css={css`
                   margin-right: 0.2em;
-                  font-family: Helvetica, Arial, sans-serif;
+                  font-family: "Helvetica Neue", Arial, sans-serif;
                   font-weight: bold;
                 `}
               >

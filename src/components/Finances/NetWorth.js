@@ -36,11 +36,11 @@ function Header(props) {
         <span
           css={css`
             margin-right: 0.2em;
-            font-family: Helvetica, Arial, sans-serif;
+            font-family: "Helvetica Neue", Arial, sans-serif;
             font-weight: bold;
           `}
         >
-          ₽
+          &#8381;
         </span>
         {props.total.toLocaleString()}
       </span>

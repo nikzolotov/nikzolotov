@@ -6,7 +6,16 @@ import CategoriesChart from "./CategoriesChart";
 export default (props) => {
   return (
     <>
-      <h2>{props.title}, ₽</h2>
+      <h2>
+        {props.title},{" "}
+        <span
+          css={css`
+            font-family: "Helvetica Neue", Arial, sans-serif;
+          `}
+        >
+          &#8381;
+        </span>
+      </h2>
       <div
         css={css`
           display: flex;
