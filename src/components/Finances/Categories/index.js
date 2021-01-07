@@ -44,6 +44,7 @@ function Legend(props) {
     >
       {props.series.map((item, i) => (
         <li
+          key={i}
           css={css`
             margin-bottom: var(--spacing-tiny);
           `}

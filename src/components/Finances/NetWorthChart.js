@@ -87,7 +87,7 @@ NetWorthChart.defaultProps = {
 };
 
 NetWorthChart.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.array.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
   margin: PropTypes.object,

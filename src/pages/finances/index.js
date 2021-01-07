@@ -37,7 +37,7 @@ export default (props) => {
           >
             Savings rate, %
           </h2>
-          <SavingsChart income={income} expenses={expenses} />
+          <SavingsChart income={income.income} expenses={expenses.expenses} />
         </div>
         <div
           css={css`
@@ -49,12 +49,12 @@ export default (props) => {
       </div>
       <Categories
         title="Income"
-        data={income}
+        data={income.income}
         series={incomeCategories.categories}
       />
       <Categories
         title="Expenses"
-        data={expenses}
+        data={expenses.expenses}
         series={expensesCategories.categories.filter((d) => d.parent === null)}
       />
     </Layout>

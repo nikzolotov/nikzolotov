@@ -89,6 +89,7 @@ function Legend(props) {
     >
       {props.series.map((item, i) => (
         <li
+          key={i}
           css={css`
             display: flex;
             justify-content: space-between;

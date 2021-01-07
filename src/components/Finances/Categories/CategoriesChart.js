@@ -334,24 +334,18 @@ class CategoriesChart extends React.Component {
   }
 
   parseData(data) {
-    return d3.entries(data).map((d) => ({
-      date: new Date(d.key),
-      ...d.value,
+    return data.map((d) => ({
+      ...d,
+      date: new Date(d.date),
     }));
   }
 
   parseSeries(data) {
-    return d3
-      .entries(data)
-      .filter((d) => d.value.parent === null)
-      .map((d) => [d.value.title]);
+    return data.filter((d) => d.parent === null).map((d) => [d.title]);
   }
 
   parseColors(data) {
-    return d3
-      .entries(data)
-      .filter((d) => d.value.parent === null)
-      .map((d) => [d.value.color]);
+    return data.filter((d) => d.parent === null).map((d) => [d.color]);
   }
 
   render() {
@@ -386,7 +380,7 @@ CategoriesChart.defaultProps = {
 };
 
 CategoriesChart.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.array.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
   margin: PropTypes.object,

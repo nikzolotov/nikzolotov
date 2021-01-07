@@ -410,9 +410,9 @@ class SavingsChart extends React.Component {
   }
 
   parseData(data) {
-    return d3.entries(data).map((d) => ({
-      date: new Date(d.key),
-      sum: +d.value.Total,
+    return data.map((d) => ({
+      date: new Date(d.date),
+      sum: +d.Total,
     }));
   }
 
@@ -460,8 +460,8 @@ SavingsChart.defaultProps = {
 };
 
 SavingsChart.propTypes = {
-  income: PropTypes.object.isRequired,
-  expenses: PropTypes.object.isRequired,
+  income: PropTypes.array.isRequired,
+  expenses: PropTypes.array.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
   margin: PropTypes.object,
