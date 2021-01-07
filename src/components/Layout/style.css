@@ -18,14 +18,13 @@
     }
 
 @font-face {
-    font-family: ApercuRegular;
-    src: url(../../../static/fonts/apercupro/ApercuPro.eot);
-    src: url(../../../static/fonts/apercupro/ApercuPro.eot?#iefix) format("embedded-opentype"), url(../../../static/fonts/apercupro/ApercuPro.woff) format("woff"), url(../../../static/fonts/apercupro/ApercuPro.ttf) format("truetype"), url(../../../static/fonts/apercupro/ApercuPro.svg) format("svg")
+    font-family: Apercu;
+    src: url(../../../static/fonts/apercupro/ApercuPro.woff2) format("woff2"), url(../../../static/fonts/apercupro/ApercuPro.woff) format("woff");
     }
 @font-face {
-    font-family: ApercuBold;
-    src: url(../../../static/fonts/apercupro/ApercuPro-Bold.eot);
-    src: url(../../../static/fonts/apercupro/ApercuPro-Bold.eot?#iefix) format("embedded-opentype"), url(../../../static/fonts/apercupro/ApercuPro-Bold.woff) format("woff"), url(../../../static/fonts/apercupro/ApercuPro-Bold.ttf) format("truetype"), url(../../../static/fonts/apercupro/ApercuPro-Bold.svg) format("svg")
+    font-family: Apercu;
+    font-weight: bold;
+    src: url(../../../static/fonts/apercupro/ApercuPro-Bold.woff2) format("woff2"), url(../../../static/fonts/apercupro/ApercuPro-Bold.woff) format("woff");
     }
 html{
     -webkit-text-size-adjust: 100%;
@@ -35,7 +34,7 @@ body {
     margin: 0 auto;
     padding: 0;
     background: #242526;
-    font: 18px/28px ApercuRegular, Helvetica, Arial, sans-serif;
+    font: 18px/28px Apercu, Helvetica, Arial, sans-serif;
     color: var(--text-color-1);
     }
 a {
@@ -48,15 +47,21 @@ a:hover {
     }
 h1 {
     margin: 0 0 var(--spacing-base) 0;
-    font: 30px/40px ApercuBold, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
     }
 h2 {
     margin: var(--spacing-base) 0 var(--spacing-small) 0;
-    font: 25px/35px ApercuBold, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: bold;
     }
 h3 {
     margin: var(--spacing-base) 0 0 0;
-    font: 18px/28px ApercuBold, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
     }
 p {
     margin: 0 0 var(--spacing-base) 0;

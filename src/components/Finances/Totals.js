@@ -80,7 +80,7 @@ function Total(props) {
       <span
         css={css`
           display: block;
-          font-family: ApercuBold, Helvetica, Arial, sans-serif;
+          font-weight: bold;
         `}
       >
         {props.percentage ? (

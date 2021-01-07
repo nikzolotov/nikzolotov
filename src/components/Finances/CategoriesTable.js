@@ -30,7 +30,7 @@ function CategoriesTableItem(props) {
 
   const thStyle = css`
     padding: var(--spacing-large) 0 10px 0;
-    font-family: ApercuBold, Helvetica, Arial, sans-serif;
+    font-weight: bold;
     line-height: 24px;
     border-bottom: 1px solid rgba(var(--white-rgb), 0.1);
     ${props.i === 0 && "padding-top: 10px"}
@@ -68,7 +68,7 @@ function CategoriesTableItem(props) {
               css={css`
                 ${thStyle}
                 text-align: right;
-                font: 15px ApercuRegular, Helvetica, sans-serif;
+                font: 15px Apercu, Helvetica, sans-serif;
                 //display: none;
               `}
             >

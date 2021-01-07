@@ -9,7 +9,7 @@
 .tick text,
 .axis-label {
     fill: currentColor;
-    font: 13px/16px ApercuRegular, Helvetica, Arial, sans-serif;
+    font: 13px/16px Apercu, Helvetica, Arial, sans-serif;
     opacity: .5;
     }
 .selection {
