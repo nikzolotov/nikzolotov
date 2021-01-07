@@ -15,7 +15,9 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Azbuka Vkusa Self-checkout" />
       <LayoutColumn>
-        <ArticleTitle title="Azbuka Vkusa Self-checkout" meta="2013 · Kiosk" />
+        <ArticleTitle meta="2013 · Kiosk">
+          Azbuka Vkusa Self-checkout
+        </ArticleTitle>
         <p>
           Azbuka Vkusa, one of the top Moscow retailers, decided to test the
           self-checkout process in their supermarkets. So they were planning to

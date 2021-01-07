@@ -15,7 +15,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Gulfstream" />
       <LayoutColumn>
-        <ArticleTitle title="Gulfstream" meta="2016 · iOS App" />
+        <ArticleTitle meta="2016 · iOS App">Gulfstream</ArticleTitle>
         <p>
           Gulfstream offers people security systems for homes and offices. At
           first, they had a single-button application to switch your home alarm

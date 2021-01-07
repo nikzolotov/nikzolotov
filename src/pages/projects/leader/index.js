@@ -15,7 +15,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Leader Engineering" />
       <LayoutColumn>
-        <ArticleTitle title="Leader Engineering" meta="2016 · Web" />
+        <ArticleTitle meta="2016 · Web">Leader Engineering</ArticleTitle>
         <p>
           Leader is a Moscow based engineering company. They offer their clients
           services in civil, electrical, mechanical, piping, and structural

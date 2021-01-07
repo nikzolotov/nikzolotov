@@ -15,10 +15,9 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Gulfstream B2B" />
       <LayoutColumn>
-        <ArticleTitle
-          title="Gulfstream <abbr>B2B</abbr>"
-          meta="2017 · Web App"
-        />
+        <ArticleTitle meta="2017 · Web App">
+          Gulfstream <abbr>B2B</abbr>
+        </ArticleTitle>
         <p>
           I took part in the redesign of the Gulfstream B2B platform for
           business owners who have objects under security protection. The users

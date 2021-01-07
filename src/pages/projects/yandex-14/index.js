@@ -15,7 +15,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Yandex v14" />
       <LayoutColumn>
-        <ArticleTitle title="Yandex v14" meta="2015 · Web" />
+        <ArticleTitle meta="2015 · Web">Yandex v14</ArticleTitle>
         <p>
           Yandex constantly working to make its products better. In 2015
           I&nbsp;took part in the 14th redesign of the main page. It became

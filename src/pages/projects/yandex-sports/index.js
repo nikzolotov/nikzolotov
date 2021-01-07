@@ -15,7 +15,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Sports on Yandex" />
       <LayoutColumn>
-        <ArticleTitle title="Sports on Yandex" meta="2018 · Web" />
+        <ArticleTitle meta="2018 · Web">Sports on Yandex</ArticleTitle>
         <p>
           Yandex is an internet search in Russia. But unlike Google, its main
           page offers users other services such as news, weather, traffic, and

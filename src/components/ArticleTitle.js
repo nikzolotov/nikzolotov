@@ -5,15 +5,16 @@
 import React from "react";
 import { css } from "@emotion/core";
 
-export default ({ title, meta }) => {
+export default ({ children, meta }) => {
   return (
     <>
       <h1
         css={css`
           margin-bottom: var(--spacing-tiny);
         `}
-        dangerouslySetInnerHTML={{ __html: title }}
-      />
+      >
+        {children}
+      </h1>
       {meta && (
         <div
           css={css`

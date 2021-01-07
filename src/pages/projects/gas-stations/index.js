@@ -15,10 +15,9 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Gas Stations in Navigator" />
       <LayoutColumn>
-        <ArticleTitle
-          title="Gas Stations in&nbsp;Navigator"
-          meta="2018 · App"
-        />
+        <ArticleTitle meta="2018 · App">
+          Gas Stations in&nbsp;Navigator
+        </ArticleTitle>
         <p>
           Yandex Navigator helps drivers drive. The app makes the fastest route,
           shows alternatives, and helps driver turn by turn. In 2018 the team

@@ -17,7 +17,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Bridal Store Mary Trufel" />
       <LayoutColumn>
-        <ArticleTitle title="Bridal Store Mary Trufel" meta="2014 · Web" />
+        <ArticleTitle meta="2014 · Web">Bridal Store Mary Trufel</ArticleTitle>
         <p>
           Working with Artem Gorbunov design agency, we created the second
           version of a bridal store called Mary Trufel. We wanted to show the

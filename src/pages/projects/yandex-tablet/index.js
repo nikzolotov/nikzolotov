@@ -15,7 +15,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Yandex for tablets" />
       <LayoutColumn>
-        <ArticleTitle title="Yandex for tablets" meta="2015 · Web" />
+        <ArticleTitle meta="2015 · Web">Yandex for tablets</ArticleTitle>
         <p>
           Here in Yandex, we designed the main page for tablets with media
           informers. Our main goal was to increase the time that people spend on

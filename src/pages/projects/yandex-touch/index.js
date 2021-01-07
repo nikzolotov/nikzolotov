@@ -15,10 +15,9 @@ export default ({ data }) => {
     <Layout>
       <SEO title="The Mobile Version of Yandex" />
       <LayoutColumn>
-        <ArticleTitle
-          title="The Mobile Version of&nbsp;Yandex"
-          meta="2015 · Web"
-        />
+        <ArticleTitle meta="2015 · Web">
+          The Mobile Version of&nbsp;Yandex
+        </ArticleTitle>
         <p>
           The Mobile version was redesigned after desktop Yandex. Here
           I've&nbsp;designed widgets, onboarding, settings, additional services,

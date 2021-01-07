@@ -14,7 +14,9 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Megafon account managment" />
       <LayoutColumn>
-        <ArticleTitle title="Megafon account managment" meta="2013 · Web App" />
+        <ArticleTitle meta="2013 · Web App">
+          Megafon account managment
+        </ArticleTitle>
         <p>
           To replace outdated USSD-based interface Megafon hired Usethics to
           make a complete redesign of its account management tool. I&nbsp;worked

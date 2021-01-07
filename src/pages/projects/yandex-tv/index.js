@@ -15,10 +15,9 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Yandex for Smart TV" />
       <LayoutColumn>
-        <ArticleTitle
-          title="Yandex for Smart <abbr>TV</abbr>"
-          meta="2015 · Web"
-        />
+        <ArticleTitle meta="2015 · Web">
+          Yandex for Smart <abbr>TV</abbr>
+        </ArticleTitle>
         <p>
           The audience of the Yandex main page on TV is more than a million
           people a day. I've designed a special version for those people with
