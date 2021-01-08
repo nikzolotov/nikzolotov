@@ -14,9 +14,9 @@ import incomeCategories from "./data/income-categories.json";
 import expensesCategories from "./data/expenses-categories.json";
 import assetsCategories from "./data/assets-categories.json";
 
-export default (props) => {
+export default ({ location }) => {
   return (
-    <Layout showLevka>
+    <Layout location={location} showLevka noCurrency>
       <SEO title="Personal Finances Overview" />
       <div
         css={css`

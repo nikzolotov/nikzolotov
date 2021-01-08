@@ -4,9 +4,10 @@ import { css } from "@emotion/core";
 
 import Avatar from "../Avatar";
 import Menu from "../Menu";
+import CurrencySwitcher from "./CurrencySwitcher";
 import "../Layout/style.css";
 
-export default (props) => {
+export default ({ children, showLevka, noCurrency }) => {
   return (
     <div
       css={css`
@@ -15,20 +16,40 @@ export default (props) => {
         margin: var(--spacing-base) var(--spacing-large);
       `}
     >
-      <Header {...props} />
-      {props.children}
+      <Header showLevka={showLevka} noCurrency={noCurrency} />
+      {children}
       <Footer />
     </div>
   );
 };
 
-function Header(props) {
+function Header({ showLevka, noCurrency }) {
   const menuItems = [
-    { key: "finances-overview", link: "/finances/", name: "Overview" },
-    { key: "finances-2017", link: "/finances/2017/", name: "2017" },
-    { key: "finances-2018", link: "/finances/2018/", name: "2018" },
-    { key: "finances-2019", link: "/finances/2019/", name: "2019" },
-    { key: "finances-2020", link: "/finances/2020/", name: "2020" },
+    {
+      key: "finances-overview",
+      link: "/finances/",
+      name: "Overview",
+    },
+    {
+      key: "finances-2017",
+      link: "/finances/2017/",
+      name: "2017",
+    },
+    {
+      key: "finances-2018",
+      link: "/finances/2018/",
+      name: "2018",
+    },
+    {
+      key: "finances-2019",
+      link: "/finances/2019/",
+      name: "2019",
+    },
+    {
+      key: "finances-2020",
+      link: "/finances/2020/",
+      name: "2020",
+    },
   ];
 
   const images = useStaticQuery(graphql`
@@ -93,11 +114,12 @@ function Header(props) {
       >
         <div
           css={css`
-            display: inline-flex;
+            display: flex;
+            align-items: center;
             flex-direction: row-reverse;
           `}
         >
-          {props.showLevka && (
+          {showLevka && (
             <Avatar
               image={images.levka.childImageSharp.fixed}
               margin="0 0 0 -10px"
@@ -107,9 +129,15 @@ function Header(props) {
             image={images.nastya.childImageSharp.fixed}
             margin="0 0 0 -10px"
           />
-          <Link to="/">
+          <Link
+            to="/"
+            css={css`
+              display: flex;
+            `}
+          >
             <Avatar image={images.nikita.childImageSharp.fixed} />
           </Link>
+          {!noCurrency && <CurrencySwitcher />}
         </div>
       </div>
     </div>

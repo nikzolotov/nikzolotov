@@ -7,15 +7,22 @@ class SankeyChart extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      nodes: props.data.nodes,
-      links: props.data.links,
-      currency: props.currency || 1,
-    };
+    this.nodes = props.data.nodes;
+    this.links = props.data.links;
+
+    // Rewrite this shit
+    this.nodesComputed = undefined;
+    this.gBars = undefined;
+    this.gLinks = undefined;
+    this.gLabels = undefined;
   }
 
   componentDidMount() {
     this.draw();
+  }
+
+  componentDidUpdate() {
+    this.update();
   }
 
   draw() {
@@ -34,14 +41,17 @@ class SankeyChart extends React.Component {
       ]);
 
     const { nodes, links } = sankeyData({
-      nodes: this.state.nodes.map((d) => Object.assign({}, d)),
-      links: this.state.links.map((d) => Object.assign({}, d)),
+      nodes: this.nodes.map((d) => Object.assign({}, d)),
+      links: this.links.map((d) => Object.assign({}, d)),
     });
-    const currency = this.state.currency;
+
+    this.nodesComputed = nodes;
+    const currencyRate = this.props.currencyRate;
 
     // Bars
-    svg
-      .append("g")
+    this.gBars = svg.append("g");
+
+    this.gBars
       .selectAll("rect")
       .data(nodes)
       .join("rect")
@@ -63,12 +73,17 @@ class SankeyChart extends React.Component {
         return (d3.color(c) || d3.color(color)).darker(0.5);
       })
       .append("title")
-      .text((d) => `${d.name}\n${(d.value / currency).toLocaleString()}`);
+      .text(
+        (d) =>
+          `${d.name}\n${(d.value / currencyRate).toLocaleString("en-US", {
+            maximumFractionDigits: 0,
+          })}`
+      );
 
     // Links
-    const link = svg
-      .append("g")
-      .attr("fill", "none")
+    this.gLinks = svg.append("g").attr("fill", "none");
+
+    const link = this.gLinks
       .selectAll("g")
       .data(links)
       .join("g")
@@ -84,14 +99,14 @@ class SankeyChart extends React.Component {
       .text(
         (d) =>
           `${d.source.name} → ${d.target.name}\n${(
-            d.value / currency
-          ).toLocaleString()}`
+            d.value / currencyRate
+          ).toLocaleString("en-US", { maximumFractionDigits: 0 })}`
       );
 
     // Labels
-    svg
-      .append("g")
-      .style("fill", "#fff")
+    this.gLabels = svg.append("g").style("fill", "#fff");
+
+    this.gLabels
       .selectAll("text")
       .data(nodes)
       .join("text")
@@ -112,7 +127,26 @@ class SankeyChart extends React.Component {
       .append("tspan")
       .attr("fill-opacity", 0.5)
       .attr("xml:space", "preserve")
-      .text((d) => `  ${(d.value / currency).toLocaleString()}`);
+      .text(
+        (d) =>
+          `  ${(d.value / currencyRate).toLocaleString("en-US", {
+            maximumFractionDigits: 0,
+          })}`
+      );
+  }
+
+  update() {
+    this.gLabels
+      .selectAll("text")
+      .data(this.nodesComputed)
+      .join("text")
+      .select("tspan")
+      .text(
+        (d) =>
+          `  ${(d.value / this.props.currencyRate).toLocaleString("en-US", {
+            maximumFractionDigits: 0,
+          })}`
+      );
   }
 
   render() {

@@ -3,7 +3,7 @@ import { css } from "@emotion/core";
 
 import Diff from "./Diff";
 
-export default ({ data, prev, currency, diffInvert }) => {
+export default ({ data, prev, currencyRate, diffInvert }) => {
   return (
     <table
       css={css`
@@ -18,7 +18,7 @@ export default ({ data, prev, currency, diffInvert }) => {
             i={i}
             key={i}
             prev={prev}
-            currency={currency}
+            currencyRate={currencyRate}
             diffInvert={diffInvert}
             title={item.title}
             sum={item.sum}
@@ -33,7 +33,7 @@ export default ({ data, prev, currency, diffInvert }) => {
 function CategoriesTableItem({
   i,
   prev,
-  currency = 1,
+  currencyRate = 1,
   diffInvert,
   title,
   sum,
@@ -79,7 +79,9 @@ function CategoriesTableItem({
               text-align: right;
             `}
           >
-            {(sum / currency).toLocaleString()}
+            {(sum / currencyRate).toLocaleString("en-US", {
+              maximumFractionDigits: 0,
+            })}
           </th>
           {prev && (
             <th
@@ -118,7 +120,9 @@ function CategoriesTableItem({
               text-align: right;
             `}
           >
-            {(sum / currency).toLocaleString()}
+            {(sum / currencyRate).toLocaleString("en-US", {
+              maximumFractionDigits: 0,
+            })}
           </td>
           {prev && (
             <td

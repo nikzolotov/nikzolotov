@@ -3,16 +3,21 @@ import { css } from "@emotion/core";
 
 import Diff from "./Diff";
 
-export default (props) => {
-  const currency = props.currency || 1;
-
-  const income = props.data.income.total / currency,
-    spending = props.data.expenses.total / currency,
+export default ({
+  data,
+  prev,
+  currencyRate = 1,
+  currencySign,
+  positionStatic,
+  nodata,
+}) => {
+  const income = data.income.total / currencyRate,
+    spending = data.expenses.total / currencyRate,
     savings = income - spending,
     savingsRate = (1 - spending / income) * 100;
 
-  const prevIncome = props.prev.income.total / currency,
-    prevSpending = props.prev.expenses.total / currency,
+  const prevIncome = prev.income.total / currencyRate,
+    prevSpending = prev.expenses.total / currencyRate,
     prevSavings = prevIncome - prevSpending,
     prevSavingsRate = (1 - prevSpending / prevIncome) * 100;
 
@@ -26,7 +31,7 @@ export default (props) => {
         margin: 0;
         padding: 0;
         list-style: none;
-        ${props.static &&
+        ${positionStatic &&
         css`
           position: static;
           margin: var(--spacing-base) 0 var(--spacing-large) 0;
@@ -36,17 +41,17 @@ export default (props) => {
       <Total
         title="Income"
         value={income}
-        currency="&#8381;"
+        currencySign={currencySign}
         diff={(income / prevIncome - 1) * 100}
-        nodata={props.nodata}
-        prevYear={props.prev.year}
+        nodata={nodata}
+        prevYear={prev.year}
       />
       <Total
         title="Spending"
         value={spending}
         diff={(spending / prevSpending - 1) * 100}
         diffInvert
-        nodata={props.nodata}
+        nodata={nodata}
       />
       <Total
         title="Savings"
@@ -63,7 +68,16 @@ export default (props) => {
   );
 };
 
-function Total(props) {
+function Total({
+  title,
+  value,
+  currencySign,
+  diff,
+  diffInvert,
+  nodata,
+  prevYear,
+  percentage,
+}) {
   return (
     <li
       css={css`
@@ -75,7 +89,7 @@ function Total(props) {
           display: block;
         `}
       >
-        {props.title}
+        {title}
       </span>
       <span
         css={css`
@@ -83,22 +97,27 @@ function Total(props) {
           font-weight: bold;
         `}
       >
-        {props.percentage ? (
-          <>{props.value.toFixed(2)}&thinsp;%</>
+        {percentage ? (
+          <>{value.toFixed(2)}&thinsp;%</>
         ) : (
           <>
-            {props.currency && (
+            {currencySign && (
               <span
                 css={css`
                   margin-right: 0.2em;
-                  font-family: "Helvetica Neue", Arial, sans-serif;
-                  font-weight: bold;
+                  ${currencySign === "&#8381;" &&
+                  css`
+                    font-family: "Helvetica Neue", Arial, sans-serif;
+                  `}
                 `}
-              >
-                {props.currency}
-              </span>
+                dangerouslySetInnerHTML={{
+                  __html: currencySign,
+                }}
+              />
             )}
-            {props.value.toLocaleString()}
+            {value.toLocaleString("en-US", {
+              maximumFractionDigits: 0,
+            })}
           </>
         )}
       </span>
@@ -110,10 +129,10 @@ function Total(props) {
         `}
       >
         <Diff
-          value={props.diff}
-          invert={props.diffInvert}
-          nodata={props.nodata}
-          prevYear={props.prevYear}
+          value={diff}
+          invert={diffInvert}
+          nodata={nodata}
+          prevYear={prevYear}
         />
       </span>
     </li>

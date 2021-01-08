@@ -1,19 +1,14 @@
 import React from "react";
-import { css } from "@emotion/core";
 
-import SEO from "../../components/SEO";
-import Layout from "../../components/Finances/Layout";
-import Totals from "../../components/Finances/Totals";
-import SankeyChart from "../../components/Finances/SankeyChart";
-import CategoriesTable from "../../components/Finances/CategoriesTable";
+import AnnualReport from "../../components/Finances/AnnualReport";
 
 import finances from "./data/finances-2017.json";
 import financesSankey from "./data/finances-2017-sankey.json";
-import currency from "./data/currency.json";
+import currencies from "./data/currencies.json";
 
-export default (props) => {
+export default ({ location }) => {
   // Fake data for 2016. But we assume that there were no savings
-  const prev = {
+  const financesPrev = {
     year: 2016,
     expenses: {
       total: 3000000,
@@ -22,53 +17,23 @@ export default (props) => {
       total: 3000000,
     },
   };
+
   return (
-    <Layout>
-      <SEO title="2017 Finances" />
-      <p
-        css={css`
-          max-width: 660px;
-          margin: 0;
-        `}
-      >
-        2017 was the first year we started tracking our finances. This was also
-        the first year we started saving money. And we did it aggressively. Dual
-        income, no kids, and a frugal lifestyle, so we nailed it! This was the
-        year of getting rid of old habits and acquiring new ones. All of this
-        thanks to episode 221 of Timm Ferriss podcast with Mr. Money Moustage.
-        Total game-changer for us.
-      </p>
-      <div
-        css={css`
-          position: relative;
-          margin-bottom: var(--spacing-x-large);
-        `}
-      >
-        <Totals
-          data={finances}
-          //currency={currency.year17.usd}
-          prev={prev}
-          nodata
-        />
-        {/* <SankeyChart data={financesSankey} currency={currency.year17.usd} /> */}
-        <SankeyChart data={financesSankey} />
-      </div>
-      <div
-        css={css`
-          width: 80%;
-        `}
-      >
-        <h2>Income</h2>
-        <CategoriesTable
-          data={finances.income.categories}
-          // currency={currency.year17.usd}
-        />
-        <h2>Expenses</h2>
-        <CategoriesTable
-          data={finances.expenses.categories}
-          // currency={currency.year17.usd}
-        />
-      </div>
-    </Layout>
+    <AnnualReport
+      year={2017}
+      data={finances}
+      dataPrev={financesPrev}
+      dataSankey={financesSankey}
+      currencies={currencies}
+      location={location}
+      noPrevdata
+    >
+      2017 was the first year we started tracking our finances. This was also
+      the first year we started saving money. And we did it aggressively. Dual
+      income, no kids, and a frugal lifestyle, so we nailed it! This was the
+      year of getting rid of old habits and acquiring new ones. All of this
+      thanks to episode 221 of Timm Ferriss podcast with Mr. Money Moustage.
+      Total game-changer for us.
+    </AnnualReport>
   );
 };

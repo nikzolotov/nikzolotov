@@ -41,10 +41,11 @@ function MenuItem(props) {
       &.active:after {
         content: "";
         position: absolute;
-        left: 20%;
+        left: 50%;
         bottom: -8px;
-        width: 60%;
+        width: 24px;
         height: 2px;
+        margin-left: -12px;
         background: var(--green-bright);
       }
     `}
