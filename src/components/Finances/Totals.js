@@ -103,17 +103,17 @@ function Total({
           <>
             {currencySign && (
               <span
+                key={Math.random()} // this is for rerender css when page first loaded
                 css={css`
                   margin-right: 0.2em;
-                  ${currencySign === "&#8381;" &&
+                  ${currencySign === "₽" &&
                   css`
                     font-family: "Helvetica Neue", Arial, sans-serif;
                   `}
                 `}
-                dangerouslySetInnerHTML={{
-                  __html: currencySign,
-                }}
-              />
+              >
+                {currencySign}
+              </span>
             )}
             {value.toLocaleString("en-US", {
               maximumFractionDigits: 0,

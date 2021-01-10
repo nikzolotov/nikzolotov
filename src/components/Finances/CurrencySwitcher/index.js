@@ -6,6 +6,13 @@ import down from "./down.svg";
 
 const CurrencySwitcher = () => {
   const { state, dispatch } = useCurrency();
+
+  // This is dirty hack to force rerender of select when page first loaded
+  // Gatsby add selected property to option, which React struggle with or something
+  React.useEffect((_) => {
+    setTimeout(() => dispatch({ type: "put", value: state.currency }), 1);
+  }, []);
+
   return (
     <div
       css={css`

@@ -6,7 +6,6 @@ import imageHtc from "./htc.png";
 import imageIpad from "./ipad.png";
 import imageTV from "./tv.png";
 import imageKiosk from "./kiosk.png";
-import { max } from "d3";
 
 export default ({
   model,
