@@ -27,7 +27,11 @@ export default ({
   const { state } = useCurrency();
 
   // Define currency rate and sign
-  if (state.currency !== undefined && state.currency !== "rub") {
+  if (
+    state !== undefined &&
+    state.currency !== undefined &&
+    state.currency !== "rub"
+  ) {
     const currenciesItem = currencies.rates.filter((d) => d.year === year);
 
     currencyRate = currenciesItem[0][state.currency];

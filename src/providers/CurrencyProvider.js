@@ -1,11 +1,7 @@
 import React, { useContext } from "react";
 import queryString from "query-string";
 
-let defaultState = {
-  state: { currency: "" },
-};
-
-const CurrencyContext = React.createContext(defaultState);
+const CurrencyContext = React.createContext();
 
 const currencyReducer = (state, action) => {
   switch (action.type) {
