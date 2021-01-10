@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import queryString from "query-string";
 
-const defaultState = {
-  state: { currency: "rub" },
+let defaultState = {
+  state: { currency: "" },
 };
 
 const CurrencyContext = React.createContext(defaultState);
