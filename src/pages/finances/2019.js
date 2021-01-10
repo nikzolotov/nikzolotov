@@ -17,6 +17,7 @@ export default () => {
       sankeyHeight={555}
       currencies={currencies}
       totalsPositionStatic
+      showLevka
     >
       We took a gap year. To think of what is really matters to us. We spent the
       first three months is the mountains and that made a great impact on our

@@ -16,6 +16,7 @@ export default () => {
       dataSankey={financesSankey}
       sankeyHeight={556}
       currencies={currencies}
+      showLevka
     >
       Although 2020 was difficult for the world, we did pretty fine. Spending
       time with family on lockdown was fun and productive. The income from our

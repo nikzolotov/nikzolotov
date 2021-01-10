@@ -17,6 +17,7 @@ export default ({
   sankeyHeight,
   currencies,
   totalsPositionStatic,
+  showLevka,
   children,
 }) => {
   // Default currency is Rouble
@@ -39,7 +40,7 @@ export default ({
   }
 
   return (
-    <Layout>
+    <Layout showLevka={showLevka}>
       <SEO title={year + " Finances"} />
       <p
         css={css`
