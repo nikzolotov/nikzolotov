@@ -7,7 +7,7 @@ import financesSankey from "./data/finances-2019-sankey.json";
 import financesPrev from "./data/finances-2018.json";
 import currencies from "./data/currencies.json";
 
-export default ({ location }) => {
+export default () => {
   return (
     <AnnualReport
       year={2019}
@@ -16,7 +16,6 @@ export default ({ location }) => {
       dataSankey={financesSankey}
       sankeyHeight={555}
       currencies={currencies}
-      location={location}
       totalsPositionStatic
     >
       We took a gap year. To think of what is really matters to us. We spent the

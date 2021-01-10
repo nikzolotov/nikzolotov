@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
-import { StateContext } from "../../providers/StateProvider";
+import React from "react";
 import { css } from "@emotion/core";
 
+import { useCurrency } from "../../../providers/CurrencyProvider";
+import down from "./down.svg";
+
 const CurrencySwitcher = () => {
-  const { currency, setCurrency } = useContext(StateContext);
+  const { state, dispatch } = useCurrency();
   return (
     <div
       css={css`
@@ -11,15 +13,19 @@ const CurrencySwitcher = () => {
       `}
     >
       <select
-        onChange={(event) => setCurrency(event.target.value)}
-        value={currency}
+        onChange={(event) =>
+          dispatch({ type: "put", value: event.target.value })
+        }
+        value={state.currency}
         css={css`
           height: 30px;
-          padding: 0 var(--spacing-tiny);
+          margin: 0;
+          padding: 0 25px 0 var(--spacing-tiny);
           font: 18px/28px Apercu, Helvetica, Arial, sans-serif;
           text-transform: uppercase;
           letter-spacing: 0.06em;
-          background: none;
+          background: url(${down}) no-repeat;
+          background-position: right 5px top 50%;
           border: none;
           color: var(--text-color-2);
           appearance: none;

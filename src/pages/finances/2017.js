@@ -6,7 +6,7 @@ import finances from "./data/finances-2017.json";
 import financesSankey from "./data/finances-2017-sankey.json";
 import currencies from "./data/currencies.json";
 
-export default ({ location }) => {
+export default () => {
   // Fake data for 2016. But we assume that there were no savings
   const financesPrev = {
     year: 2016,
@@ -25,7 +25,6 @@ export default ({ location }) => {
       dataPrev={financesPrev}
       dataSankey={financesSankey}
       currencies={currencies}
-      location={location}
       noPrevdata
     >
       2017 was the first year we started tracking our finances. This was also

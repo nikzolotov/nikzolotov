@@ -1,6 +1,5 @@
-import React, { useContext, useEffect } from "react";
-import { StateContext } from "../../providers/StateProvider";
-import queryString from "query-string";
+import React from "react";
+import { useCurrency } from "../../providers/CurrencyProvider";
 import { css } from "@emotion/core";
 
 import SEO from "../SEO";
@@ -18,7 +17,6 @@ export default ({
   sankeyHeight,
   currencies,
   totalsPositionStatic,
-  location,
   children,
 }) => {
   // Default currency is Rouble
@@ -26,25 +24,14 @@ export default ({
   let currencySign = currencies.signs.rub;
 
   // Get currency from state
-  const { currency, setCurrency } = useContext(StateContext);
-
-  // Check if there's currency in URL. If so, put it in state
-  if (location !== undefined) {
-    const query = queryString.parse(location.search);
-
-    if (query.currency !== undefined && query.currency !== "") {
-      useEffect(() => {
-        setCurrency(query.currency);
-      });
-    }
-  }
+  const { state } = useCurrency();
 
   // Define currency rate and sign
-  if (currency !== undefined && currency !== "rub") {
+  if (state.currency !== undefined && state.currency !== "rub") {
     const currenciesItem = currencies.rates.filter((d) => d.year === year);
 
-    currencyRate = currenciesItem[0][currency];
-    currencySign = currencies.signs[currency];
+    currencyRate = currenciesItem[0][state.currency];
+    currencySign = currencies.signs[state.currency];
   }
 
   return (

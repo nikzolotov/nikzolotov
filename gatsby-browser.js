@@ -1,6 +1,6 @@
 import React from "react";
-import { StateProvider } from "./src/providers/StateProvider";
+import { CurrencyProvider } from "./src/providers/CurrencyProvider";
 
 export const wrapRootElement = ({ element }) => {
-  return <StateProvider>{element}</StateProvider>;
+  return <CurrencyProvider>{element}</CurrencyProvider>;
 };

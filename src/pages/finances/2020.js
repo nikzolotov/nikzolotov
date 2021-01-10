@@ -7,7 +7,7 @@ import financesSankey from "./data/finances-2020-sankey.json";
 import financesPrev from "./data/finances-2019.json";
 import currencies from "./data/currencies.json";
 
-export default ({ location }) => {
+export default () => {
   return (
     <AnnualReport
       year={2020}
@@ -16,7 +16,6 @@ export default ({ location }) => {
       dataSankey={financesSankey}
       sankeyHeight={556}
       currencies={currencies}
-      location={location}
     >
       Although 2020 was difficult for the world, we did pretty fine. Spending
       time with family on lockdown was fun and productive. The income from our

@@ -7,7 +7,7 @@ import financesSankey from "./data/finances-2018-sankey.json";
 import financesPrev from "./data/finances-2017.json";
 import currencies from "./data/currencies.json";
 
-export default ({ location }) => {
+export default () => {
   return (
     <AnnualReport
       year={2018}
@@ -16,7 +16,6 @@ export default ({ location }) => {
       dataSankey={financesSankey}
       sankeyHeight={571}
       currencies={currencies}
-      location={location}
     >
       2017 was the first year we started tracking our finances. This was also
       the first year we started saving money. And we did it aggressively. Dual
