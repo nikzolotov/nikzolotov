@@ -12,6 +12,7 @@ class SankeyChart extends React.Component {
 
     // Rewrite this shit
     this.nodesComputed = undefined;
+    this.linksComputed = undefined;
     this.gBars = undefined;
     this.gLinks = undefined;
     this.gLabels = undefined;
@@ -46,6 +47,8 @@ class SankeyChart extends React.Component {
     });
 
     this.nodesComputed = nodes;
+    this.linksComputed = links;
+
     const currencyRate = this.props.currencyRate;
 
     // Bars
@@ -136,6 +139,33 @@ class SankeyChart extends React.Component {
   }
 
   update() {
+    this.gBars
+      .selectAll("rect")
+      .data(this.nodesComputed)
+      .join("rect")
+      .select("title")
+      .text(
+        (d) =>
+          `${d.name}\n${(d.value / this.props.currencyRate).toLocaleString(
+            "en-US",
+            {
+              maximumFractionDigits: 0,
+            }
+          )}`
+      );
+
+    this.gLinks
+      .selectAll("g")
+      .data(this.linksComputed)
+      .join("g")
+      .select("title")
+      .text(
+        (d) =>
+          `${d.source.name} → ${d.target.name}\n${(
+            d.value / this.props.currencyRate
+          ).toLocaleString("en-US", { maximumFractionDigits: 0 })}`
+      );
+
     this.gLabels
       .selectAll("text")
       .data(this.nodesComputed)
