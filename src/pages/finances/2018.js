@@ -17,12 +17,11 @@ export default () => {
       sankeyHeight={571}
       currencies={currencies}
     >
-      2017 was the first year we started tracking our finances. This was also
-      the first year we started saving money. And we did it aggressively. Dual
-      income, no kids, and a frugal lifestyle, so we nailed it! This was the
-      year of getting rid of old habits and acquiring new ones. All of this
-      thanks to episode 221 of Timm Ferriss podcast with Mr. Money Moustage.
-      Total game-changer for us.
+      In 2018 we did pretty much the same as what we did in 2017. Working,
+      side-hustling, and saving as much as we can. Although we didn't compromise
+      on our happiness. This year we traveled to Europe and Caucasus mountains.
+      We made some expensive purchases. We bought our first investment property.
+      And we did some drastic changes at the end of the year!
     </AnnualReport>
   );
 };
