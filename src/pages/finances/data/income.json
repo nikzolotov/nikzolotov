@@ -505,6 +505,39 @@
       "Presents": 5000,
       "Other": 25440,
       "Total": 505139
+    },
+    {
+      "date": "2020-12-31T21:00:00.000Z",
+      "Investments": 27500,
+      "Paycheck": 84800,
+      "Side hustle": null,
+      "Interest": 4114,
+      "Stuff sales": 2900,
+      "Presents": null,
+      "Other": 19440,
+      "Total": 138754
+    },
+    {
+      "date": "2021-01-31T21:00:00.000Z",
+      "Investments": 2110,
+      "Paycheck": 183545,
+      "Side hustle": 20700,
+      "Interest": 2008,
+      "Stuff sales": 500,
+      "Presents": null,
+      "Other": 20971,
+      "Total": 229834
+    },
+    {
+      "date": "2021-02-28T21:00:00.000Z",
+      "Investments": 12662,
+      "Paycheck": 183760,
+      "Side hustle": null,
+      "Interest": 3878,
+      "Stuff sales": 37500,
+      "Presents": null,
+      "Other": 20371,
+      "Total": 258171
     }
   ]
 }
