@@ -2,18 +2,21 @@ import React from "react";
 import { css } from "@emotion/core";
 
 import Diff from "./Diff";
-import NetWorthChart from "./NetWorthChart";
+import TargetChart from "./TargetChart";
 
 export default (props) => {
   const total = +props.data[props.data.length - 1].total;
-  const prevTotal = +props.data[props.data.length - 2].total;
 
   return (
     <>
-      <Header data={props.data} total={total} />
-      <SubHeader data={props.data} total={total} prevTotal={prevTotal} />
-      <NetWorthChart data={props.data} />
-      <Legend data={props.data} series={props.series} />
+      <Header
+        data={props.data}
+        total={total}
+        targetTotal={props.target.total}
+      />
+      <SubHeader data={props.data} target={props.target.total} />
+      <TargetChart data={props.data} target={props.target} />
+      {/* <Legend data={props.data} series={props.series} /> */}
     </>
   );
 };
@@ -27,7 +30,7 @@ function Header(props) {
         margin: 0;
       `}
     >
-      <span>Net worth</span>
+      <span>Target</span>
       <span
         css={css`
           font-size: 18px;
@@ -42,7 +45,7 @@ function Header(props) {
         >
           &#8381;
         </span>
-        {props.total.toLocaleString()}
+        {props.targetTotal.toLocaleString()}
       </span>
     </h2>
   );
@@ -58,19 +61,13 @@ function SubHeader(props) {
         margin-bottom: var(--spacing-small);
         font-size: 15px;
         line-height: 20px;
+        color: var(--text-color-2);
       `}
     >
-      <span
-        css={css`
-          color: var(--text-color-2);
-        `}
-      >
-        {date.toLocaleString("en-US", {
-          month: "long",
-        })}
-        &nbsp;cnange
+      <span>
+        To <abbr title="Financial Independence Retire Early">FIRE</abbr>&nbsp;
       </span>
-      <Diff value={(props.total / props.prevTotal - 1) * 100} />
+      <span>5 years 1 month</span>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Layout from "../../components/Finances/Layout";
 import SavingsChart from "../../components/Finances/SavingsChart";
 import Categories from "../../components/Finances/Categories";
 import NetWorth from "../../components/Finances/NetWorth";
+import Target from "../../components/Finances/Target";
 
 import income from "./data/income.json";
 import expenses from "./data/expenses.json";
@@ -41,10 +42,28 @@ export default ({ location }) => {
         </div>
         <div
           css={css`
-            width: calc((100% * 1.75 / 6) - (var(--gap) * 4 / 6));
+            width: calc((100% * 1.5 / 6) - (var(--gap) * 4 / 6));
           `}
         >
-          <NetWorth data={assets.assets} series={assetsCategories.categories} />
+          <div
+            css={css`
+              margin-bottom: var(--spacing-x-large);
+            `}
+          >
+            <NetWorth
+              data={assets.assets}
+              series={assetsCategories.categories}
+            />
+          </div>
+          <div>
+            <Target
+              data={assets.assets}
+              target={{
+                date: "2027-12-01",
+                total: 30000000,
+              }}
+            />
+          </div>
         </div>
       </div>
       <Categories
