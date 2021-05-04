@@ -22,6 +22,7 @@ class TargetChart extends React.Component {
       target = this.target,
       dataToTarget = this.dataToTarget;
 
+    // d3 scales
     const x = d3
       .scaleTime()
       .domain([d3.min(data, (d) => d.date), target.date])
@@ -32,9 +33,30 @@ class TargetChart extends React.Component {
       .domain([0, target.total])
       .range([height - margin.bottom, margin.top]);
 
+    // svg groups for elements
+    const gX = svg
+      .append("g")
+      .attr("transform", "translate(0," + (height - margin.bottom) + ")");
+
     const gArea = svg.append("g");
     const gLine = svg.append("g");
 
+    // Axes
+    const xAxis = (g) =>
+      g.call(
+        d3
+          .axisBottom(x)
+          .tickSize(0, 0)
+          .tickPadding(10)
+          .tickFormat((d) => d3.timeFormat("%Y")(d))
+          .tickValues([x.domain()[0], x.domain()[1]])
+      );
+
+    gX.call(xAxis)
+      .selectAll("text")
+      .style("text-anchor", (d, i) => (i === 0 ? "start" : "end"));
+
+    // Net worth graph and projected line
     const area = d3
       .area()
       .x((d) => x(d.date))
@@ -105,11 +127,11 @@ class TargetChart extends React.Component {
 
 TargetChart.defaultProps = {
   width: 274,
-  height: 120,
+  height: 145,
   margin: {
     top: 0,
     right: 0,
-    bottom: 0,
+    bottom: 25,
     left: 0,
   },
 };
