@@ -1,22 +1,14 @@
 import React from "react";
 import { css } from "@emotion/core";
 
-import Diff from "./Diff";
 import TargetChart from "./TargetChart";
 
 export default (props) => {
-  const total = +props.data[props.data.length - 1].total;
-
   return (
     <>
-      <Header
-        data={props.data}
-        total={total}
-        targetTotal={props.target.total}
-      />
-      <SubHeader data={props.data} target={props.target.total} />
+      <Header targetTotal={props.target.total} />
+      <SubHeader targetDate={props.target.date} />
       <TargetChart data={props.data} target={props.target} />
-      {/* <Legend data={props.data} series={props.series} /> */}
     </>
   );
 };
@@ -52,7 +44,7 @@ function Header(props) {
 }
 
 function SubHeader(props) {
-  const date = new Date(props.data[props.data.length - 1].date);
+  const timeLeft = dateDiff(new Date(Date.now()), new Date(props.targetDate));
   return (
     <div
       css={css`
@@ -67,52 +59,25 @@ function SubHeader(props) {
       <span>
         To <abbr title="Financial Independence Retire Early">FIRE</abbr>&nbsp;
       </span>
-      <span>5 years 1 month</span>
+      <span>{formatDateDiff(timeLeft)}</span>
     </div>
   );
 }
 
-function Legend(props) {
-  const data = props.data[props.data.length - 1];
-  return (
-    <ul
-      css={css`
-        margin: var(--spacing-base) 0 0 0;
-        padding: 0;
-        list-style: none;
-      `}
-    >
-      {props.series.map((item, i) => (
-        <li
-          key={i}
-          css={css`
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: var(--spacing-tiny);
-          `}
-        >
-          <span>
-            <i
-              css={css`
-                display: inline-block;
-                width: 12px;
-                height: 12px;
-                margin-right: 12px;
-                border-radius: 6px;
-                background: ${item.color};
-              `}
-            ></i>
-            {item.title}
-          </span>
-          <span
-            css={css`
-              color: var(--text-color-2);
-            `}
-          >
-            {data[item.id].toLocaleString()}
-          </span>
-        </li>
-      ))}
-    </ul>
-  );
+function dateDiff(d1, d2) {
+  return {
+    years: d2.getFullYear() - d1.getFullYear(),
+    months: d2.getMonth() - d1.getMonth(),
+  };
+}
+
+function formatDateDiff(diff) {
+  let s = "";
+
+  if (diff.years > 0) s += diff.years > 1 ? diff.years + " years" : "1 year";
+
+  if (diff.months > 0)
+    s += diff.months > 1 ? " " + diff.months + " months" : " 1 month";
+
+  return s;
 }
