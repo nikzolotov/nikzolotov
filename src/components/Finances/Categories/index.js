@@ -7,10 +7,12 @@ export default (props) => {
   return (
     <>
       <h2>
-        {props.title},{" "}
+        {props.title}
         <span
           css={css`
-            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin-left: 10px;
+            font: normal 18px "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-color-2);
           `}
         >
           &#8381;

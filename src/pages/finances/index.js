@@ -3,7 +3,7 @@ import { css } from "@emotion/core";
 
 import SEO from "../../components/SEO";
 import Layout from "../../components/Finances/Layout";
-import SavingsChart from "../../components/Finances/SavingsChart";
+import Savings from "../../components/Finances/Savings";
 import Categories from "../../components/Finances/Categories";
 import NetWorth from "../../components/Finances/NetWorth";
 import Target from "../../components/Finances/Target";
@@ -31,14 +31,7 @@ export default ({ location }) => {
             width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
           `}
         >
-          <h2
-            css={css`
-              margin-top: 0;
-            `}
-          >
-            Savings rate, %
-          </h2>
-          <SavingsChart income={income.income} expenses={expenses.expenses} />
+          <Savings income={income.income} expenses={expenses.expenses} />
         </div>
         <div
           css={css`
