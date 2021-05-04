@@ -68,7 +68,7 @@ function SubHeader(props) {
         {date.toLocaleString("en-US", {
           month: "long",
         })}
-        &nbsp;cnange
+        &nbsp;change
       </span>
       <Diff value={(props.total / props.prevTotal - 1) * 100} />
     </div>
@@ -80,7 +80,7 @@ function Legend(props) {
   return (
     <ul
       css={css`
-        margin: var(--spacing-base) 0 0 0;
+        margin: var(--spacing-small) 0 0 0;
         padding: 0;
         list-style: none;
       `}

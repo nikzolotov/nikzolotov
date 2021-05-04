@@ -21,6 +21,7 @@ class NetWorthChart extends React.Component {
     const { width, height, margin } = this.props,
       svg = this.svg;
 
+    // d3 scales
     const x = d3
       .scaleTime()
       .domain([this.data[0].date, this.data[this.data.length - 1].date])
@@ -36,8 +37,29 @@ class NetWorthChart extends React.Component {
 
     const color = d3.scaleOrdinal().domain(this.series).range(this.colors);
 
+    // svg groups for elements
+    const gX = svg
+      .append("g")
+      .attr("transform", "translate(0," + (height - margin.bottom) + ")");
+
     const gAreas = svg.append("g");
 
+    // Axes
+    const xAxis = (g) =>
+      g.call(
+        d3
+          .axisBottom(x)
+          .tickSize(0, 0)
+          .tickPadding(10)
+          .tickFormat((d) => d3.timeFormat("%b %Y")(d))
+          .tickValues([x.domain()[0], x.domain()[1]])
+      );
+
+    gX.call(xAxis)
+      .selectAll("text")
+      .style("text-anchor", (d, i) => (i === 0 ? "start" : "end"));
+
+    // assets areas
     const areaGenerator = d3
       .area()
       .x((d) => x(d.data.date))
@@ -77,11 +99,11 @@ class NetWorthChart extends React.Component {
 
 NetWorthChart.defaultProps = {
   width: 274,
-  height: 120,
+  height: 145,
   margin: {
     top: 0,
     right: 0,
-    bottom: 0,
+    bottom: 25,
     left: 0,
   },
 };
