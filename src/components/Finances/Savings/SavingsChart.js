@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import * as d3 from "d3";
 
 import "./style.css";
+import { color } from "d3";
 
 class SavingsChart extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class SavingsChart extends React.Component {
   }
 
   draw() {
-    const { width, height, margin, marginBrush, duration } = this.props,
+    const { width, height, margin, marginBrush, duration, colors } = this.props,
       svg = this.svg,
       income = this.income,
       expenses = this.expenses,
@@ -29,6 +30,15 @@ class SavingsChart extends React.Component {
       long: d3.timeFormat("%b %y"),
       month: d3.timeFormat("%B"),
       year: d3.timeFormat("%Y"),
+    };
+
+    const formatDigits = {
+      long: function (d) {
+        return Math.round(d).toLocaleString();
+      },
+      rate: function (d) {
+        return d.toFixed(2);
+      },
     };
 
     // d3 scales
@@ -101,12 +111,12 @@ class SavingsChart extends React.Component {
 
     const gIncome = svg
       .append("g")
-      .attr("fill", "#292E32")
+      .attr("fill", colors.darkBars)
       .attr("clip-path", "url(#sc-graph-mask)");
 
     const gExpenses = svg
       .append("g")
-      .attr("fill", "#292E32")
+      .attr("fill", colors.darkBars)
       .attr("clip-path", "url(#sc-graph-mask)");
 
     const gDiff = svg
@@ -120,6 +130,8 @@ class SavingsChart extends React.Component {
         "transform",
         "translate(" + marginBrush.left + "," + marginBrush.top + ")"
       );
+
+    const gMean = svg.append("g");
 
     // Axes
     const xAxis = (g) =>
@@ -229,13 +241,13 @@ class SavingsChart extends React.Component {
       .attr("width", x.bandwidth())
       .attr("x", (d) => x(d.date))
       .attr("y", (d) => (y(0) > y(d.sum) ? y(d.sum) : y(0)))
-      .attr("fill", (d) => (d.sum > 0 ? "#4F7E4F" : "#AB4040"))
+      .attr("fill", (d) => (d.sum >= 0 ? colors.greenBars : colors.redBars))
       .attr("rx", (d) => (Math.abs(y(0) - y(d.sum * -1)) > 4 ? "4" : "2"))
       .append("title")
       .text(
         (d) =>
           `${formatDate.month(d.date)} ${
-            d.sum > 0 ? "savings" : "overspending"
+            d.sum >= 0 ? "savings" : "overspending"
           }: ${Math.abs(d.sum).toLocaleString()}`
       );
 
@@ -247,9 +259,7 @@ class SavingsChart extends React.Component {
       .attr("x", (d) => x(d.date) + x.bandwidth() / 2)
       .attr("y", (d) => (d.sum < 0 ? y(d.sum) + 24 : y(d.sum)) - 7)
       .style("font-size", 13)
-      .style("fill", (d) =>
-        d.sum < 0 ? "var(--red-bright)" : "var(--green-bright)"
-      )
+      .style("fill", (d) => (d.sum >= 0 ? colors.greenText : colors.redText))
       .attr("text-anchor", "middle")
       .attr("dx", (d) => (d.sum < 0 ? "-.2em" : 0))
       .text((d) => d.rate.toFixed(0));
@@ -279,7 +289,7 @@ class SavingsChart extends React.Component {
       .attr("width", xBrush.bandwidth())
       .attr("x", (d) => xBrush(d.date))
       .attr("y", (d) => (yBrush(0) > yBrush(d.sum) ? yBrush(d.sum) : yBrush(0)))
-      .attr("fill", (d) => (d.sum > 0 ? "#4F7E4F" : "#AB4040"))
+      .attr("fill", (d) => (d.sum > 0 ? colors.greenBars : colors.redBars))
       .attr("rx", (d) =>
         Math.abs(yBrush(0) - yBrush(d.sum * -1)) > 2 ? "2" : "0"
       );
@@ -346,6 +356,9 @@ class SavingsChart extends React.Component {
       const filteredExpenses = expenses.filter(
         (d) => d.date >= dateRange[0] && d.date <= dateRange[1]
       );
+      const filteredDiff = diff.filter(
+        (d) => d.date >= dateRange[0] && d.date <= dateRange[1]
+      );
 
       y.domain([
         -1 * d3.max(filteredExpenses, (d) => d.sum),
@@ -387,6 +400,75 @@ class SavingsChart extends React.Component {
         .attr("y2", y(0));
 
       gY.transition().duration(duration).call(yAxis);
+
+      // Calculate mean savings
+      const meanSum = d3.mean(filteredDiff, (d) => d.sum);
+
+      // Calculate mean savings rate
+      const totalIncome = d3.sum(filteredIncome, (d) => d.sum);
+      const totalExpenses = d3.sum(filteredExpenses, (d) => d.sum);
+      const meanRate = (1 - totalExpenses / totalIncome) * 100;
+
+      // Mean line
+      const mean = gMean.selectAll("g").data([meanSum]);
+
+      mean
+        .enter()
+        .append("g")
+        .attr("transform", (d) => `translate(${margin.left}, ${y(d)})`)
+        .call((g) =>
+          g
+            .append("line")
+            .attr("x1", 0)
+            .attr("y1", 0)
+            .attr("x2", width - margin.left - margin.right)
+            .attr("y2", 0)
+            .attr("stroke", (d) => (d >= 0 ? colors.greenText : colors.redText))
+            .attr("stroke-dasharray", "1 4")
+            .attr("opacity", 0.5)
+        )
+        .call((g) =>
+          g
+            .append("text")
+            .attr("class", "axis-label")
+            .attr("x", width - margin.left - margin.right + 5)
+            .attr("y", 4)
+            .attr(
+              "style",
+              (d) => "fill: " + (d >= 0 ? colors.greenText : colors.redText)
+            )
+            .text(formatDigits.rate(meanRate) + " %")
+        )
+        .call((g) =>
+          g
+            .append("title")
+            .text("Average savings: " + formatDigits.long(meanSum))
+        )
+        .merge(mean)
+        .transition()
+        .duration(duration)
+        .attr("transform", (d) => `translate(${margin.left}, ${y(d)})`)
+        .call((g) =>
+          g
+            .select("line")
+            .delay(duration)
+            .attr("stroke", (d) => (d >= 0 ? colors.greenText : colors.redText))
+        )
+        .call((g) =>
+          g
+            .select("text")
+            .delay(duration)
+            .attr(
+              "style",
+              (d) => "fill: " + (d >= 0 ? colors.greenText : colors.redText)
+            )
+            .text(formatDigits.rate(meanRate) + " %")
+        )
+        .call((g) =>
+          g
+            .select("title")
+            .text("Average savings: " + formatDigits.long(meanSum))
+        );
 
       // Snapping
       if (!d3.event.sourceEvent) return;
@@ -457,6 +539,13 @@ SavingsChart.defaultProps = {
     left: 70,
   },
   duration: 200,
+  colors: {
+    greenText: "var(--green-bright)",
+    greenBars: "#4F7E4F",
+    redText: "var(--red-bright)",
+    redBars: "#AB4040",
+    darkBars: "#292E32",
+  },
 };
 
 SavingsChart.propTypes = {
@@ -466,6 +555,7 @@ SavingsChart.propTypes = {
   height: PropTypes.number,
   margin: PropTypes.object,
   duration: PropTypes.number,
+  colors: PropTypes.object,
 };
 
 export default SavingsChart;

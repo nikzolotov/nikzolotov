@@ -23,7 +23,7 @@ class CategoriesChart extends React.Component {
   }
 
   draw() {
-    const { width, height, margin, marginBrush, duration } = this.props,
+    const { width, height, margin, marginBrush, duration, title } = this.props,
       svg = this.svg,
       data = this.data,
       series = this.series,
@@ -306,8 +306,10 @@ class CategoriesChart extends React.Component {
 
       gY.transition().duration(duration).call(yAxis);
 
-      // Mean line
+      // Calculate mean value
       const meanValue = d3.mean(filteredData, (d) => d.Total);
+
+      // Mean line
       const mean = gMean.selectAll("g").data([meanValue]);
 
       mean
@@ -333,6 +335,7 @@ class CategoriesChart extends React.Component {
             .attr("y", 4)
             .text((d) => formatDigits.short(d) + " k")
         )
+        .call((g) => g.append("title").text("Average " + title.toLowerCase()))
         .merge(mean)
         .transition()
         .duration(duration)
@@ -406,6 +409,7 @@ CategoriesChart.defaultProps = {
     left: 70,
   },
   duration: 200,
+  title: "",
 };
 
 CategoriesChart.propTypes = {
@@ -415,6 +419,7 @@ CategoriesChart.propTypes = {
   margin: PropTypes.object,
   marginBrush: PropTypes.object,
   duration: PropTypes.number,
+  title: PropTypes.string,
 };
 
 export default CategoriesChart;

@@ -30,7 +30,11 @@ export default (props) => {
             width: calc((100% * 4 / 6) - (var(--gap) * 2 / 6));
           `}
         >
-          <CategoriesChart data={props.data} series={props.series} />
+          <CategoriesChart
+            data={props.data}
+            series={props.series}
+            title={props.title}
+          />
         </div>
         <div
           css={css`
