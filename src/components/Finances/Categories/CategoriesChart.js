@@ -37,6 +37,12 @@ class CategoriesChart extends React.Component {
       year: d3.timeFormat("%Y"),
     };
 
+    const formatDigits = {
+      short: function (d) {
+        return (d / 1000).toFixed(0);
+      },
+    };
+
     // d3 scales
     const x = d3
       .scaleBand()
@@ -111,6 +117,8 @@ class CategoriesChart extends React.Component {
         "translate(" + marginBrush.left + "," + marginBrush.top + ")"
       );
 
+    const gMean = svg.append("g");
+
     // Axes
     const xAxis = (g) =>
       g.call(
@@ -133,7 +141,7 @@ class CategoriesChart extends React.Component {
             .ticks(5)
             .tickSize(10, 0)
             .tickPadding(10)
-            .tickFormat((d) => `${d / 1000}${d !== 0 ? " k" : ""}`)
+            .tickFormat((d) => `${formatDigits.short(d)}${d !== 0 ? " k" : ""}`)
         )
         .call(function (g) {
           g.selectAll(".tick")
@@ -197,7 +205,7 @@ class CategoriesChart extends React.Component {
       .style("font-size", 13)
       .style("fill", "#e9e9e9")
       .attr("text-anchor", "middle")
-      .text((d) => (d.Total / 1000).toFixed(0));
+      .text((d) => formatDigits.short(d.Total));
 
     // Brushable area with mini graph
     const xBrushStep = xBrush.range()[1] / data.length;
@@ -214,20 +222,6 @@ class CategoriesChart extends React.Component {
       ])
       .on("brush", brushing)
       .on("end", brushed);
-
-    // gBrush
-    //   .selectAll("rect")
-    //   .data(diff)
-    //   .join("rect")
-    //   .attr("class", "bar")
-    //   .attr("height", (d) => Math.abs(yBrush(0) - yBrush(d.sum * -1)))
-    //   .attr("width", xBrush.bandwidth())
-    //   .attr("x", (d) => xBrush(d.date))
-    //   .attr("y", (d) => (yBrush(0) > yBrush(d.sum) ? yBrush(d.sum) : yBrush(0)))
-    //   .attr("fill", (d) => (d.sum > 0 ? "#4F7E4F" : "#AB4040"))
-    //   .attr("rx", (d) =>
-    //     Math.abs(yBrush(0) - yBrush(d.sum * -1)) > 2 ? "2" : "0"
-    //   );
 
     gBrush
       .selectAll("g")
@@ -311,6 +305,41 @@ class CategoriesChart extends React.Component {
         .attr("y", (d) => y(d.Total) - 7);
 
       gY.transition().duration(duration).call(yAxis);
+
+      // Mean line
+      const meanValue = d3.mean(filteredData, (d) => d.Total);
+      const mean = gMean.selectAll("g").data([meanValue]);
+
+      mean
+        .enter()
+        .append("g")
+        .attr("transform", (d) => `translate(${margin.left}, ${y(d)})`)
+        .call((g) =>
+          g
+            .append("line")
+            .attr("x1", 0)
+            .attr("y1", 0)
+            .attr("x2", width - margin.left - margin.right)
+            .attr("y2", 0)
+            .attr("stroke", "#FFF")
+            .attr("stroke-dasharray", "1 4")
+            .attr("opacity", 0.4)
+        )
+        .call((g) =>
+          g
+            .append("text")
+            .attr("class", "axis-label")
+            .attr("x", width - margin.left - margin.right + 5)
+            .attr("y", 4)
+            .text((d) => formatDigits.short(d) + " k")
+        )
+        .merge(mean)
+        .transition()
+        .duration(duration)
+        .attr("transform", (d) => `translate(${margin.left}, ${y(d)})`)
+        .select("text")
+        .delay(duration)
+        .text((d) => formatDigits.short(d) + " k");
 
       // Snapping
       if (!d3.event.sourceEvent) return;
