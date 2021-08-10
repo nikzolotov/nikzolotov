@@ -520,35 +520,68 @@
     {
       "date": "2021-01-31T21:00:00.000Z",
       "Investments": 2110,
-      "Paycheck": 183545,
+      "Paycheck": 184441,
       "Side hustle": 20700,
       "Interest": 2008,
       "Stuff sales": 500,
       "Presents": null,
       "Other": 20971,
-      "Total": 229834
+      "Total": 230730
     },
     {
       "date": "2021-02-28T21:00:00.000Z",
       "Investments": 12662,
-      "Paycheck": 183760,
+      "Paycheck": 184441,
       "Side hustle": null,
       "Interest": 3878,
       "Stuff sales": 37500,
       "Presents": null,
       "Other": 20371,
-      "Total": 258171
+      "Total": 258852
     },
     {
       "date": "2021-03-31T21:00:00.000Z",
       "Investments": 2968,
-      "Paycheck": 271339,
+      "Paycheck": 273526,
       "Side hustle": 32000,
       "Interest": 24747,
       "Stuff sales": 52500,
       "Presents": null,
       "Other": 20371,
-      "Total": 403925
+      "Total": 406112
+    },
+    {
+      "date": "2021-04-30T21:00:00.000Z",
+      "Investments": 1960,
+      "Paycheck": 173331,
+      "Side hustle": null,
+      "Interest": 19029,
+      "Stuff sales": 17000,
+      "Presents": null,
+      "Other": 20871,
+      "Total": 232191
+    },
+    {
+      "date": "2021-05-31T21:00:00.000Z",
+      "Investments": 12365,
+      "Paycheck": 184441,
+      "Side hustle": null,
+      "Interest": 1927,
+      "Stuff sales": 500,
+      "Presents": null,
+      "Other": 18010,
+      "Total": 217243
+    },
+    {
+      "date": "2021-06-30T21:00:00.000Z",
+      "Investments": 1981,
+      "Paycheck": 184439,
+      "Side hustle": null,
+      "Interest": 4246,
+      "Stuff sales": null,
+      "Presents": null,
+      "Other": 15515,
+      "Total": 206181
     }
   ]
 }
