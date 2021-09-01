@@ -582,6 +582,17 @@
       "Presents": null,
       "Other": 15515,
       "Total": 206181
+    },
+    {
+      "date": "2021-07-31T21:00:00.000Z",
+      "Investments": 2044,
+      "Paycheck": 229695,
+      "Side hustle": null,
+      "Interest": 3053,
+      "Stuff sales": 24000,
+      "Presents": 15000,
+      "Other": 2063,
+      "Total": 275855
     }
   ]
 }
