@@ -593,6 +593,17 @@
       "Presents": 15000,
       "Other": 2063,
       "Total": 275855
+    },
+    {
+      "date": "2021-08-31T21:00:00.000Z",
+      "Investments": 13080,
+      "Paycheck": 142522,
+      "Side hustle": 56000,
+      "Interest": 3523,
+      "Stuff sales": null,
+      "Presents": null,
+      "Other": 600,
+      "Total": 215725
     }
   ]
 }
