@@ -405,62 +405,6 @@
       "stocks": 4756199,
       "cash": 1227000,
       "total": 17025199
-    },
-    {
-      "date": null,
-      "estate": null,
-      "stocks": null,
-      "cash": null,
-      "total": null
-    },
-    {
-      "date": null,
-      "estate": null,
-      "stocks": null,
-      "cash": 717,
-      "total": null
-    },
-    {
-      "date": null,
-      "estate": null,
-      "stocks": null,
-      "cash": 13,
-      "total": null
-    },
-    {
-      "date": null,
-      "estate": null,
-      "stocks": null,
-      "cash": 122,
-      "total": null
-    },
-    {
-      "date": null,
-      "estate": null,
-      "stocks": null,
-      "cash": -23,
-      "total": null
-    },
-    {
-      "date": null,
-      "estate": null,
-      "stocks": null,
-      "cash": 3,
-      "total": null
-    },
-    {
-      "date": null,
-      "estate": null,
-      "stocks": null,
-      "cash": 35,
-      "total": null
-    },
-    {
-      "date": null,
-      "estate": null,
-      "stocks": null,
-      "cash": 360,
-      "total": null
     }
   ]
 }
