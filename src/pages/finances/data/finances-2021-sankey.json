@@ -1,0 +1,378 @@
+{
+  "nodes": [
+    {
+      "name": "Investments"
+    },
+    {
+      "name": "Income"
+    },
+    {
+      "name": "Paycheck"
+    },
+    {
+      "name": "Side hustle"
+    },
+    {
+      "name": "Interest"
+    },
+    {
+      "name": "Stuff sales"
+    },
+    {
+      "name": "Presents"
+    },
+    {
+      "name": "Other"
+    },
+    {
+      "name": "Housing"
+    },
+    {
+      "name": "Food"
+    },
+    {
+      "name": "Transportation"
+    },
+    {
+      "name": "Medicine"
+    },
+    {
+      "name": "Life"
+    },
+    {
+      "name": "Travel"
+    },
+    {
+      "name": "Donations"
+    },
+    {
+      "name": "Government"
+    },
+    {
+      "name": "Savings"
+    },
+    {
+      "name": "Rent"
+    },
+    {
+      "name": "Utilities"
+    },
+    {
+      "name": "Tax"
+    },
+    {
+      "name": "Groceries"
+    },
+    {
+      "name": "Eating out"
+    },
+    {
+      "name": "Gas"
+    },
+    {
+      "name": "Maintenance"
+    },
+    {
+      "name": "Public transport"
+    },
+    {
+      "name": "Car rent"
+    },
+    {
+      "name": "Taxi"
+    },
+    {
+      "name": "Health Insurance"
+    },
+    {
+      "name": "Doctor visits"
+    },
+    {
+      "name": "Pharmacy"
+    },
+    {
+      "name": "Entertainment"
+    },
+    {
+      "name": "Education"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Clothing"
+    },
+    {
+      "name": "Tech & Gadgets"
+    },
+    {
+      "name": "Home stuff"
+    },
+    {
+      "name": "Work supplies"
+    },
+    {
+      "name": "Household goods"
+    },
+    {
+      "name": "Cell phone"
+    },
+    {
+      "name": "Subscriptions"
+    },
+    {
+      "name": "Personal"
+    },
+    {
+      "name": "Misc"
+    }
+  ],
+  "links": [
+    {
+      "source": "Investments",
+      "target": "Income",
+      "value": 99929,
+      "color": "#566C56"
+    },
+    {
+      "source": "Paycheck",
+      "target": "Income",
+      "value": 2545893,
+      "color": "#566C56"
+    },
+    {
+      "source": "Side hustle",
+      "target": "Income",
+      "value": 180500,
+      "color": "#566C56"
+    },
+    {
+      "source": "Interest",
+      "target": "Income",
+      "value": 77889,
+      "color": "#566C56"
+    },
+    {
+      "source": "Stuff sales",
+      "target": "Income",
+      "value": 134900,
+      "color": "#566C56"
+    },
+    {
+      "source": "Presents",
+      "target": "Income",
+      "value": 45000,
+      "color": "#566C56"
+    },
+    {
+      "source": "Other",
+      "target": "Income",
+      "value": 164465,
+      "color": "#566C56"
+    },
+    {
+      "source": "Income",
+      "target": "Housing",
+      "value": 126709,
+      "color": "#31495C"
+    },
+    {
+      "source": "Income",
+      "target": "Food",
+      "value": 390009,
+      "color": "#4A6376"
+    },
+    {
+      "source": "Income",
+      "target": "Transportation",
+      "value": 162769,
+      "color": "#565759"
+    },
+    {
+      "source": "Income",
+      "target": "Medicine",
+      "value": 71365,
+      "color": "#865959"
+    },
+    {
+      "source": "Income",
+      "target": "Life",
+      "value": 425047,
+      "color": "#867B59"
+    },
+    {
+      "source": "Income",
+      "target": "Travel",
+      "value": 169152,
+      "color": "#566C56"
+    },
+    {
+      "source": "Income",
+      "target": "Donations",
+      "value": 96172,
+      "color": "#566C56"
+    },
+    {
+      "source": "Income",
+      "target": "Government",
+      "value": 27083,
+      "color": "#566C56"
+    },
+    {
+      "source": "Income",
+      "target": "Savings",
+      "value": 1781256,
+      "color": "#566C56"
+    },
+    {
+      "source": "Housing",
+      "target": "Rent",
+      "value": 99144,
+      "color": "#31495C"
+    },
+    {
+      "source": "Housing",
+      "target": "Utilities",
+      "value": 26579,
+      "color": "#31495C"
+    },
+    {
+      "source": "Housing",
+      "target": "Tax",
+      "value": 986,
+      "color": "#31495C"
+    },
+    {
+      "source": "Food",
+      "target": "Groceries",
+      "value": 314836,
+      "color": "#4A6376"
+    },
+    {
+      "source": "Food",
+      "target": "Eating out",
+      "value": 74893,
+      "color": "#4A6376"
+    },
+    {
+      "source": "Transportation",
+      "target": "Gas",
+      "value": 2531,
+      "color": "#565759"
+    },
+    {
+      "source": "Transportation",
+      "target": "Maintenance",
+      "value": 28861,
+      "color": "#565759"
+    },
+    {
+      "source": "Transportation",
+      "target": "Public transport",
+      "value": 41485,
+      "color": "#565759"
+    },
+    {
+      "source": "Transportation",
+      "target": "Car rent",
+      "value": 26190,
+      "color": "#565759"
+    },
+    {
+      "source": "Transportation",
+      "target": "Taxi",
+      "value": 55125,
+      "color": "#565759"
+    },
+    {
+      "source": "Medicine",
+      "target": "Health Insurance",
+      "value": 23261,
+      "color": "#865959"
+    },
+    {
+      "source": "Medicine",
+      "target": "Doctor visits",
+      "value": 14207,
+      "color": "#865959"
+    },
+    {
+      "source": "Medicine",
+      "target": "Pharmacy",
+      "value": 33897,
+      "color": "#865959"
+    },
+    {
+      "source": "Life",
+      "target": "Entertainment",
+      "value": 22214,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Education",
+      "value": 17119,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Sport",
+      "value": 24183,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Clothing",
+      "value": 76874,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Tech & Gadgets",
+      "value": 99923,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Home stuff",
+      "value": 8703,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Work supplies",
+      "value": 50819,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Household goods",
+      "value": 11870,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Cell phone",
+      "value": 6800,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Subscriptions",
+      "value": 856,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Personal",
+      "value": 61008,
+      "color": "#867B59"
+    },
+    {
+      "source": "Life",
+      "target": "Misc",
+      "value": 44678,
+      "color": "#867B59"
+    }
+  ]
+}

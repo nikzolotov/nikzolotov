@@ -50,6 +50,11 @@ function Header({ showLevka, noCurrency }) {
       link: "/finances/2020/",
       name: "2020",
     },
+    {
+      key: "finances-2021",
+      link: "/finances/2021/",
+      name: "2021",
+    },
   ];
 
   const images = useStaticQuery(graphql`
