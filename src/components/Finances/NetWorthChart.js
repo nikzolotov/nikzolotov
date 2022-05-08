@@ -6,8 +6,8 @@ class NetWorthChart extends React.Component {
   constructor(props) {
     super(props);
 
-    this.series = ["estate", "stocks", "cash"];
-    this.colors = ["#1C4869", "#AB4040", "#C2A241"];
+    this.series = props.series.map((item) => item.id);
+    this.colors = props.series.map((item) => item.color);
 
     this.data = this.parseData(props.data);
     this.stackedData = d3.stack().keys(this.series)(this.data);

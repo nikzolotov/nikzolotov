@@ -13,7 +13,7 @@ export default (props) => {
     <>
       <Header data={props.data} total={total} />
       <SubHeader data={props.data} total={total} prevTotal={prevTotal} />
-      <NetWorthChart data={props.data} />
+      <NetWorthChart data={props.data} series={props.series} />
       <Legend data={props.data} series={props.series} />
     </>
   );
