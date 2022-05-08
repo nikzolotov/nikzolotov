@@ -2,8 +2,9 @@ import React from "react";
 import { css } from "@emotion/core";
 
 import Diff from "./Diff";
+import CurrencyValue from "./CurrencyValue";
 
-export default ({ data, prev, currencyRate, diffInvert }) => {
+export default ({ data, prev, currencyRate, currencySign, diffInvert }) => {
   return (
     <table
       css={css`
@@ -19,6 +20,7 @@ export default ({ data, prev, currencyRate, diffInvert }) => {
             key={i}
             prev={prev}
             currencyRate={currencyRate}
+            currencySign={currencySign}
             diffInvert={diffInvert}
             title={item.title}
             sum={item.sum}
@@ -34,6 +36,7 @@ function CategoriesTableItem({
   i,
   prev,
   currencyRate = 1,
+  currencySign,
   diffInvert,
   title,
   sum,
@@ -79,9 +82,7 @@ function CategoriesTableItem({
               text-align: right;
             `}
           >
-            {(sum / currencyRate).toLocaleString("en-US", {
-              maximumFractionDigits: 0,
-            })}
+            <CurrencyValue sign={currencySign} value={sum / currencyRate} />
           </th>
           {prev && (
             <th

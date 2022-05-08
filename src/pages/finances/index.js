@@ -17,7 +17,7 @@ import assetsCategories from "./data/assets-categories.json";
 
 export default ({ location }) => {
   return (
-    <Layout location={location} showLevka noCurrency>
+    <Layout location={location} showLevka>
       <SEO title="Personal Finances Overview" />
       <div
         css={css`

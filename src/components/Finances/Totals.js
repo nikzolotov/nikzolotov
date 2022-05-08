@@ -2,6 +2,7 @@ import React from "react";
 import { css } from "@emotion/core";
 
 import Diff from "./Diff";
+import CurrencyValue from "./CurrencyValue";
 
 export default ({
   data,
@@ -100,25 +101,7 @@ function Total({
         {percentage ? (
           <>{value.toFixed(2)}&thinsp;%</>
         ) : (
-          <>
-            {currencySign && (
-              <span
-                key={Math.random()} // this is for rerender css when page first loaded
-                css={css`
-                  margin-right: 0.2em;
-                  ${currencySign === "₽" &&
-                  css`
-                    font-family: "Helvetica Neue", Arial, sans-serif;
-                  `}
-                `}
-              >
-                {currencySign}
-              </span>
-            )}
-            {value.toLocaleString("en-US", {
-              maximumFractionDigits: 0,
-            })}
-          </>
+          <CurrencyValue sign={currencySign} value={value}/>
         )}
       </span>
       <span

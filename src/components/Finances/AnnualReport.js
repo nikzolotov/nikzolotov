@@ -80,12 +80,14 @@ export default ({
           data={data.income.categories}
           prev={dataPrev.income.categories}
           currencyRate={currencyRate}
+          currencySign={currencySign}
         />
         <h2>Expenses</h2>
         <CategoriesTable
           data={data.expenses.categories}
           prev={dataPrev.expenses.categories}
           currencyRate={currencyRate}
+          currencySign={currencySign}
           diffInvert
         />
       </div>
