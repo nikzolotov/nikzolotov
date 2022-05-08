@@ -2,6 +2,7 @@ import React from "react";
 import { css } from "@emotion/core";
 
 import Diff from "./Diff";
+import CurrencyValue from "./CurrencyValue";
 import NetWorthChart from "./NetWorthChart";
 
 export default (props) => {
@@ -33,16 +34,7 @@ function Header(props) {
           font-size: 18px;
         `}
       >
-        <span
-          css={css`
-            margin-right: 0.2em;
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            font-weight: bold;
-          `}
-        >
-          &#8381;
-        </span>
-        {props.total.toLocaleString()}
+        <CurrencyValue sign={"₽"} value={props.total} />
       </span>
     </h2>
   );

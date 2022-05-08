@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 
+import CurrencyValue from "./CurrencyValue";
 import TargetChart from "./TargetChart";
 
 export default (props) => {
@@ -28,16 +29,7 @@ function Header(props) {
           font-size: 18px;
         `}
       >
-        <span
-          css={css`
-            margin-right: 0.2em;
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            font-weight: bold;
-          `}
-        >
-          &#8381;
-        </span>
-        {props.targetTotal.toLocaleString()}
+        <CurrencyValue sign={"₽"} value={props.targetTotal} />
       </span>
     </h2>
   );
