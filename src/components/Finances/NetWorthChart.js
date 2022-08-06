@@ -9,12 +9,23 @@ class NetWorthChart extends React.Component {
     this.series = props.series.map((item) => item.id);
     this.colors = props.series.map((item) => item.color);
 
-    this.data = this.parseData(props.data);
+    this.data = this.parseData(props.data, props.currencies, props.currency);
     this.stackedData = d3.stack().keys(this.series)(this.data);
+
+    // Vars for update method
+    this.y = undefined;
+    this.gAreas = undefined;
+    this.areaGenerator = undefined;
   }
 
   componentDidMount() {
     this.draw();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.currency !== prevProps.currency) {
+      this.update();
+    }
   }
 
   draw() {
@@ -27,7 +38,7 @@ class NetWorthChart extends React.Component {
       .domain([this.data[0].date, this.data[this.data.length - 1].date])
       .range([margin.left, width - margin.right]);
 
-    const y = d3
+    this.y = d3
       .scaleLinear()
       .domain([
         0,
@@ -42,7 +53,7 @@ class NetWorthChart extends React.Component {
       .append("g")
       .attr("transform", "translate(0," + (height - margin.bottom) + ")");
 
-    const gAreas = svg.append("g");
+    this.gAreas = svg.append("g");
 
     // Axes
     const xAxis = (g) =>
@@ -60,28 +71,58 @@ class NetWorthChart extends React.Component {
       .style("text-anchor", (d, i) => (i === 0 ? "start" : "end"));
 
     // assets areas
-    const areaGenerator = d3
+    this.areaGenerator = d3
       .area()
       .x((d) => x(d.data.date))
-      .y0((d) => y(d[0]))
-      .y1((d) => y(d[1]))
+      .y0((d) => this.y(d[0]))
+      .y1((d) => this.y(d[1]))
       .curve(d3.curveBasis);
 
-    gAreas
+    this.gAreas
       .selectAll("path")
       .data(this.stackedData)
       .join("path")
-      .attr("d", areaGenerator)
+      .attr("d", this.areaGenerator)
       .attr("fill", (d) => color(d.key));
   }
 
-  parseData(data) {
-    return data.map((d) => ({
-      date: new Date(d.date),
-      estate: +d.estate,
-      stocks: +d.stocks,
-      cash: +d.cash,
-    }));
+  update() {
+    // Redraw graph with new currency
+    this.data = this.parseData(
+      this.props.data,
+      this.props.currencies,
+      this.props.currency
+    );
+    this.stackedData = d3.stack().keys(this.series)(this.data);
+
+    this.y.domain([
+      0,
+      d3.max(this.stackedData[this.stackedData.length - 1], (d) => d[1]),
+    ]);
+
+    this.gAreas
+      .selectAll("path")
+      .data(this.stackedData)
+      .join("path")
+      .transition()
+      .duration(200)
+      .attr("d", this.areaGenerator);
+  }
+
+  parseData(data, currencies, currency) {
+    return data.map(function (d) {
+      let rate = 1;
+      if (currency !== undefined && currency !== "rub") {
+        rate = currencies.filter((dd) => dd.date === d.date)[0][currency];
+      }
+
+      return {
+        date: new Date(d.date),
+        estate: +d.estate / rate,
+        stocks: +d.stocks / rate,
+        cash: +d.cash / rate,
+      };
+    });
   }
 
   render() {
@@ -106,6 +147,7 @@ NetWorthChart.defaultProps = {
     bottom: 25,
     left: 0,
   },
+  duration: 200,
 };
 
 NetWorthChart.propTypes = {
@@ -113,6 +155,7 @@ NetWorthChart.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
   margin: PropTypes.object,
+  duration: PropTypes.number,
 };
 
 export default NetWorthChart;

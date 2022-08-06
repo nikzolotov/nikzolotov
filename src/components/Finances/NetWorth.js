@@ -5,21 +5,42 @@ import Diff from "./Diff";
 import CurrencyValue from "./CurrencyValue";
 import NetWorthChart from "./NetWorthChart";
 
-export default (props) => {
-  const total = +props.data[props.data.length - 1].total;
-  const prevTotal = +props.data[props.data.length - 2].total;
+export default ({
+  data,
+  series,
+  currencies,
+  currency,
+  currencyRate,
+  currencySign,
+}) => {
+  const total = +data[data.length - 1].total;
+  const prevTotal = +data[data.length - 2].total;
 
   return (
     <>
-      <Header data={props.data} total={total} />
-      <SubHeader data={props.data} total={total} prevTotal={prevTotal} />
-      <NetWorthChart data={props.data} series={props.series} />
-      <Legend data={props.data} series={props.series} />
+      <Header
+        total={total}
+        currencyRate={currencyRate}
+        currencySign={currencySign}
+      />
+      <SubHeader
+        data={data}
+        total={total}
+        prevTotal={prevTotal}
+        currencyRate={currencyRate}
+      />
+      <NetWorthChart
+        data={data}
+        currencies={currencies}
+        currency={currency}
+        series={series}
+      />
+      <Legend data={data} series={series} currencyRate={currencyRate} />
     </>
   );
 };
 
-function Header(props) {
+function Header({ total, currencyRate, currencySign }) {
   return (
     <h2
       css={css`
@@ -34,14 +55,14 @@ function Header(props) {
           font-size: 18px;
         `}
       >
-        <CurrencyValue sign={"₽"} value={props.total} />
+        <CurrencyValue sign={currencySign} value={total / currencyRate} />
       </span>
     </h2>
   );
 }
 
-function SubHeader(props) {
-  const date = new Date(props.data[props.data.length - 1].date);
+function SubHeader({ data, total, prevTotal, currencyRate }) {
+  const date = new Date(data[data.length - 1].date);
   return (
     <div
       css={css`
@@ -62,13 +83,13 @@ function SubHeader(props) {
         })}
         &nbsp;change
       </span>
-      <Diff value={(props.total / props.prevTotal - 1) * 100} />
+      <Diff value={(total / prevTotal - 1) * 100} />
     </div>
   );
 }
 
-function Legend(props) {
-  const data = props.data[props.data.length - 1];
+function Legend({ data, series, currencyRate }) {
+  const lastData = data[data.length - 1];
   return (
     <ul
       css={css`
@@ -77,7 +98,7 @@ function Legend(props) {
         list-style: none;
       `}
     >
-      {props.series.map((item, i) => (
+      {series.map((item, i) => (
         <li
           key={i}
           css={css`
@@ -104,7 +125,9 @@ function Legend(props) {
               color: var(--text-color-2);
             `}
           >
-            {data[item.id].toLocaleString()}
+            {(lastData[item.id] / currencyRate).toLocaleString("en-US", {
+              maximumFractionDigits: 0,
+            })}
           </span>
         </li>
       ))}

@@ -530,10 +530,36 @@
       "date": "2022-03-31T21:00:00.000Z",
       "Investments": 2605,
       "Paycheck": 266531,
-      "Interest": 9130,
-      "Stuff sales": 145200,
+      "Interest": 9810,
+      "Stuff sales": 148200,
       "Other": 600,
-      "Total": 424066
+      "Total": 427746
+    },
+    {
+      "date": "2022-04-30T21:00:00.000Z",
+      "Investments": 1703,
+      "Paycheck": 319332,
+      "Interest": 3942,
+      "Other": 52642,
+      "Total": 377619
+    },
+    {
+      "date": "2022-05-31T21:00:00.000Z",
+      "Investments": 13336,
+      "Paycheck": 215206,
+      "Interest": 3584,
+      "Stuff sales": 30000,
+      "Other": 3262,
+      "Total": 265388
+    },
+    {
+      "date": "2022-06-30T21:00:00.000Z",
+      "Investments": 1602,
+      "Paycheck": 314666,
+      "Side hustle": 365638,
+      "Interest": 7847,
+      "Other": 600,
+      "Total": 690353
     }
   ]
 }
