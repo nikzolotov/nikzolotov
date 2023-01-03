@@ -1,0 +1,325 @@
+{
+  "year": 2022,
+  "expenses": {
+    "categories": [
+      {
+        "title": "Housing",
+        "sum": 742538,
+        "main": true
+      },
+      {
+        "title": "Rent",
+        "sum": 719941,
+        "main": false,
+        "comment": "Most of the year, we lived in a brother's apartment. He didn't take rent from us, but we bought some furniture instead. In December, we rented a spacious apartment closer to our new home."
+      },
+      {
+        "title": "Mortgage",
+        "sum": 0,
+        "main": false,
+        "comment": "We're going to close on our new home with cash. So, no mortgage again. Yey!"
+      },
+      {
+        "title": "Utilities",
+        "sum": 19253,
+        "main": false,
+        "comment": "We paid for utilities for four months only."
+      },
+      {
+        "title": "Tax",
+        "sum": 3344,
+        "main": false,
+        "comment": "Residence tax for two small properties."
+      },
+      {
+        "title": "Repairs",
+        "sum": 0,
+        "main": false,
+        "comment": "No repairs for a year."
+      },
+      {
+        "title": "Food",
+        "sum": 457412,
+        "main": true
+      },
+      {
+        "title": "Groceries",
+        "sum": 320861,
+        "main": false
+      },
+      {
+        "title": "Eating out",
+        "sum": 133194,
+        "main": false
+      },
+      {
+        "title": "Alcohol",
+        "sum": 3356,
+        "main": false,
+        "comment": "Fully sober year for me. And one sider for the missis for a whole year."
+      },
+      {
+        "title": "Transportation",
+        "sum": 164924,
+        "main": true
+      },
+      {
+        "title": "Gas",
+        "sum": 7347,
+        "main": false,
+        "comment": "We bought used Opel Meriva B with 80,000 miles on it at the end of the year."
+      },
+      {
+        "title": "Maintenance",
+        "sum": 16265,
+        "main": false,
+        "comment": "New tires, oil change and some maintenance for a used car."
+      },
+      {
+        "title": "Car Tax",
+        "sum": 3910,
+        "main": false,
+        "comment": "Tax for our previous car."
+      },
+      {
+        "title": "Insurance",
+        "sum": 6419,
+        "main": false,
+        "comment": "It went to the next year."
+      },
+      {
+        "title": "Parking",
+        "sum": 6673,
+        "main": false,
+        "comment": "We rented apartment with underground parking lot."
+      },
+      {
+        "title": "Public transport",
+        "sum": 34005,
+        "main": false,
+        "comment": "Commute to the center of Moscow. Metro and a bus."
+      },
+      {
+        "title": "Car rent",
+        "sum": 32441,
+        "main": false,
+        "comment": "We were car-free for the whole year. So we used car-sharing."
+      },
+      {
+        "title": "Taxi",
+        "sum": 57865,
+        "main": false,
+        "comment": "And a taxi when we couldn't use car-sharing."
+      },
+      {
+        "title": "Medicine",
+        "sum": 71633,
+        "main": true
+      },
+      {
+        "title": "Health Insurance",
+        "sum": 18373,
+        "main": false,
+        "comment": "Employer-sponsored super fancy insurance."
+      },
+      {
+        "title": "Doctor visits",
+        "sum": 18361,
+        "main": false,
+        "comment": "We visited doctors a lot this year. And sometimes it wasn't covered by the insurance."
+      },
+      {
+        "title": "Pharmacy",
+        "sum": 34899,
+        "main": false,
+        "comment": "COVID rehabilitation, vitamins, and kid medicine."
+      },
+      {
+        "title": "Life",
+        "sum": 1211991,
+        "main": true
+      },
+      {
+        "title": "Entertainment",
+        "sum": 51562,
+        "main": false,
+        "comment": "This year we entertained our kid only. No concerts, no movies for ourselves. Children took most of your free time."
+      },
+      {
+        "title": "Education",
+        "sum": 31164,
+        "main": false,
+        "comment": "Again, this was pre-kindergarten for the kiddo."
+      },
+      {
+        "title": "Sport",
+        "sum": 265651,
+        "main": false,
+        "comment": "Snowboarding in Moscow and some new dumbbells."
+      },
+      {
+        "title": "Hobbies and arts",
+        "sum": 0,
+        "main": false,
+        "comment": "No time for that too."
+      },
+      {
+        "title": "Clothing",
+        "sum": 51670,
+        "main": false,
+        "comment": "New clothes for the family."
+      },
+      {
+        "title": "Tech & Gadgets",
+        "sum": 106200,
+        "main": false,
+        "comment": "New Yandex Station smart speaker to fill our house with nice music. AirPods Pro and new iPhone 12 for me."
+      },
+      {
+        "title": "Home stuff",
+        "sum": 315776,
+        "main": false,
+        "comment": "Some kitchen and baby stuff."
+      },
+      {
+        "title": "Work supplies",
+        "sum": 231056,
+        "main": false,
+        "comment": "LG Ultrafine 4k monitor. I tried to work from home for the first month. But it was hard to do in one bedroom apartment with the kid. So I sold the monitor and started to commute to work almost every workday."
+      },
+      {
+        "title": "Household goods",
+        "sum": 5527,
+        "main": false,
+        "comment": "More laundry as a kid grows up."
+      },
+      {
+        "title": "Cell phone",
+        "sum": 17599,
+        "main": false,
+        "comment": "Same plan as before."
+      },
+      {
+        "title": "Subscriptions",
+        "sum": 1839,
+        "main": false,
+        "comment": "I canceled my Spotify subscription this year. Instead, I used Yandex Music, which I got for free from my employer. So, this minor expense is the domain for this site."
+      },
+      {
+        "title": "Personal",
+        "sum": 20489,
+        "main": false,
+        "comment": "Expenses on diapers went down, but on beauty products went up."
+      },
+      {
+        "title": "Misc",
+        "sum": 113459,
+        "main": false,
+        "comment": "Expenses for finding a good car, new car seat."
+      },
+      {
+        "title": "Travel",
+        "sum": 650203,
+        "main": true
+      },
+      {
+        "title": "Hotels",
+        "sum": 174856,
+        "main": false,
+        "comment": "Snowboarding trip to Sochi and local travel."
+      },
+      {
+        "title": "Travel Transportation",
+        "sum": 320687,
+        "main": false,
+        "comment": "Airplane tickets to Sochi and train tickets."
+      },
+      {
+        "title": "Travel Entertainment",
+        "sum": 81055,
+        "main": false,
+        "comment": "Ski-pass for one week."
+      },
+      {
+        "title": "Food and other",
+        "sum": 73605,
+        "main": false,
+        "comment": "Food for Sochi trip."
+      },
+      {
+        "title": "Donations",
+        "sum": 100250,
+        "main": true
+      },
+      {
+        "title": "Presents",
+        "sum": 97940,
+        "main": false,
+        "comment": "Giving away is fun and fulfilling."
+      },
+      {
+        "title": "Parties hosting",
+        "sum": 0,
+        "main": false,
+        "comment": "Nastya's birthday party. And first real Leo's party with guests, presents and playground."
+      },
+      {
+        "title": "Charity",
+        "sum": 2310,
+        "main": false,
+        "comment": "Gotta improve in this category."
+      },
+      {
+        "title": "Government",
+        "sum": 5546,
+        "main": true
+      },
+      {
+        "title": "Taxes and fees",
+        "sum": 3779,
+        "main": false,
+        "comment": "This is mainly a tax on free food from an employer, which is not entirely free."
+      },
+      {
+        "title": "Fines",
+        "sum": 1767,
+        "main": false,
+        "comment": "One single mistake while driving in the city."
+      }
+    ],
+    "total": 3404498
+  },
+  "income": {
+    "categories": [
+      {
+        "title": "Investments",
+        "sum": 108058
+      },
+      {
+        "title": "Paycheck",
+        "sum": 3669204
+      },
+      {
+        "title": "Side hustle",
+        "sum": 768521
+      },
+      {
+        "title": "Interest",
+        "sum": 101223
+      },
+      {
+        "title": "Stuff sales",
+        "sum": 182600
+      },
+      {
+        "title": "Presents",
+        "sum": 10500
+      },
+      {
+        "title": "Other",
+        "sum": 257617
+      }
+    ],
+    "total": 5097722
+  }
+}

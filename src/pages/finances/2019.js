@@ -16,7 +16,7 @@ export default () => {
       dataSankey={financesSankey}
       sankeyHeight={555}
       currencies={currencies}
-      totalsPositionStatic
+      graphMarginTop={0}
       showLevka
     >
       We took a gap year. To think of what is really matters to us. We spent the

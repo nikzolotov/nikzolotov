@@ -16,7 +16,7 @@ export default ({
   noPrevdata,
   sankeyHeight,
   currencies,
-  totalsPositionStatic,
+  graphMarginTop = -156,
   showLevka,
   children,
 }) => {
@@ -62,13 +62,18 @@ export default ({
           currencySign={currencySign}
           prev={dataPrev}
           nodata={noPrevdata}
-          positionStatic={totalsPositionStatic}
         />
-        <SankeyChart
-          data={dataSankey}
-          currencyRate={currencyRate}
-          height={sankeyHeight}
-        />
+        <div
+          css={css`
+            margin-top: ${graphMarginTop}px;
+          `}
+        >
+          <SankeyChart
+            data={dataSankey}
+            currencyRate={currencyRate}
+            height={sankeyHeight}
+          />
+        </div>
       </div>
       <div
         css={css`

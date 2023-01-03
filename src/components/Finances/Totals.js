@@ -4,14 +4,7 @@ import { css } from "@emotion/core";
 import Diff from "./Diff";
 import CurrencyValue from "./CurrencyValue";
 
-export default ({
-  data,
-  prev,
-  currencyRate = 1,
-  currencySign,
-  positionStatic,
-  nodata,
-}) => {
+export default ({ data, prev, currencyRate = 1, currencySign, nodata }) => {
   const income = data.income.total / currencyRate,
     spending = data.expenses.total / currencyRate,
     savings = income - spending,
@@ -25,18 +18,10 @@ export default ({
   return (
     <ul
       css={css`
-        position: absolute;
-        top: var(--spacing-base);
-        left: 0;
         display: flex;
-        margin: 0;
+        margin: var(--spacing-base) 0 var(--spacing-large) 0;
         padding: 0;
         list-style: none;
-        ${positionStatic &&
-        css`
-          position: static;
-          margin: var(--spacing-base) 0 var(--spacing-large) 0;
-        `}
       `}
     >
       <Total
@@ -101,7 +86,7 @@ function Total({
         {percentage ? (
           <>{value.toFixed(2)}&thinsp;%</>
         ) : (
-          <CurrencyValue sign={currencySign} value={value}/>
+          <CurrencyValue sign={currencySign} value={value} />
         )}
       </span>
       <span
