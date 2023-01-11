@@ -19,11 +19,11 @@ export default () => {
       graphMarginTop={-106}
       showLevka
     >
-      2021 felt pretty normal. I went back to my job, and missis stayed at home
-      with the kid. We did some house flipping and finally found a nice house
-      where we want our child to grow. We planned to spend on the house way less
-      than it cost, and it will move our FI date forward a few years. But we
-      think it will bring us happiness and peace. So that's the plan.
+      In 2022 shit hit the fan. Putin's war in Ukraine turned down all our
+      plans. This year we spent almost all our time and resources trying to find
+      a new place to live. The place where we would be less worried about the
+      future. We ended up in Finland, and we hope it will be a long-lasting
+      relationship.
     </AnnualReport>
   );
 };

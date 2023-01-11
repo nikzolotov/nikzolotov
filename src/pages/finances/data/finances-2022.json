@@ -11,25 +11,25 @@
         "title": "Rent",
         "sum": 719941,
         "main": false,
-        "comment": "Most of the year, we lived in a brother's apartment. He didn't take rent from us, but we bought some furniture instead. In December, we rented a spacious apartment closer to our new home."
+        "comment": "We spent a few months renting apartments and hotels in Turkey and Serbia. Now we pay €1,330 a month for the two-bedroom apartment in Helsinki."
       },
       {
         "title": "Mortgage",
         "sum": 0,
         "main": false,
-        "comment": "We're going to close on our new home with cash. So, no mortgage again. Yey!"
+        "comment": "No mortgage, no cry."
       },
       {
         "title": "Utilities",
         "sum": 19253,
         "main": false,
-        "comment": "We paid for utilities for four months only."
+        "comment": "We pay about €150/month for water, electricity and home internet here in Helsinki."
       },
       {
         "title": "Tax",
         "sum": 3344,
         "main": false,
-        "comment": "Residence tax for two small properties."
+        "comment": "Residence tax for three properties, which we sold last year."
       },
       {
         "title": "Repairs",
@@ -45,18 +45,20 @@
       {
         "title": "Groceries",
         "sum": 320861,
-        "main": false
+        "main": false,
+        "comment": "Groceries were balanced by the cheap food in Turkey, Serbia and pretty expensive here in Finland. We'll see the real cost next year."
       },
       {
         "title": "Eating out",
         "sum": 133194,
-        "main": false
+        "main": false,
+        "comment": "More eating out, since we often lived in hotels."
       },
       {
         "title": "Alcohol",
         "sum": 3356,
         "main": false,
-        "comment": "Fully sober year for me. And one sider for the missis for a whole year."
+        "comment": "I blame Turkey's all-inclusive hotels for this :) I should go back on the sober track."
       },
       {
         "title": "Transportation",
@@ -67,49 +69,49 @@
         "title": "Gas",
         "sum": 7347,
         "main": false,
-        "comment": "We bought used Opel Meriva B with 80,000 miles on it at the end of the year."
+        "comment": "We sold the Opel at the beginning of the year. Then became car-free."
       },
       {
         "title": "Maintenance",
         "sum": 16265,
         "main": false,
-        "comment": "New tires, oil change and some maintenance for a used car."
+        "comment": "Oil change and some maintenance."
       },
       {
         "title": "Car Tax",
         "sum": 3910,
         "main": false,
-        "comment": "Tax for our previous car."
+        "comment": "Registration fees."
       },
       {
         "title": "Insurance",
         "sum": 6419,
         "main": false,
-        "comment": "It went to the next year."
+        "comment": "Basic insurance for a year."
       },
       {
         "title": "Parking",
         "sum": 6673,
         "main": false,
-        "comment": "We rented apartment with underground parking lot."
+        "comment": "Underground parking lot for two months."
       },
       {
         "title": "Public transport",
         "sum": 34005,
         "main": false,
-        "comment": "Commute to the center of Moscow. Metro and a bus."
+        "comment": "Public transportation in Helsinki is awesome but costs us about €100 a month."
       },
       {
         "title": "Car rent",
         "sum": 32441,
         "main": false,
-        "comment": "We were car-free for the whole year. So we used car-sharing."
+        "comment": "Short car rents in Turkey and Serbia and regular rents in Helsinki to get to the local ski resorts."
       },
       {
         "title": "Taxi",
         "sum": 57865,
         "main": false,
-        "comment": "And a taxi when we couldn't use car-sharing."
+        "comment": "Taxis to airports, around Istanbul, Antalya, Izmir, Belgrade, and Novi Sad. We almost don't use it in Helsinki."
       },
       {
         "title": "Medicine",
@@ -120,19 +122,19 @@
         "title": "Health Insurance",
         "sum": 18373,
         "main": false,
-        "comment": "Employer-sponsored super fancy insurance."
+        "comment": "Employer-sponsored super fancy insurance until August."
       },
       {
         "title": "Doctor visits",
         "sum": 18361,
         "main": false,
-        "comment": "We visited doctors a lot this year. And sometimes it wasn't covered by the insurance."
+        "comment": "Mostly dentists."
       },
       {
         "title": "Pharmacy",
         "sum": 34899,
         "main": false,
-        "comment": "COVID rehabilitation, vitamins, and kid medicine."
+        "comment": "Vitamins, ocassional and permanent medications."
       },
       {
         "title": "Life",
@@ -143,79 +145,79 @@
         "title": "Entertainment",
         "sum": 51562,
         "main": false,
-        "comment": "This year we entertained our kid only. No concerts, no movies for ourselves. Children took most of your free time."
+        "comment": "Toys, zoos and other entertainment for the kid. And tickets to Blink 182 next year!"
       },
       {
         "title": "Education",
         "sum": 31164,
         "main": false,
-        "comment": "Again, this was pre-kindergarten for the kiddo."
+        "comment": "Books, pre-daycare for the kid, yoga class for Missis."
       },
       {
         "title": "Sport",
         "sum": 265651,
         "main": false,
-        "comment": "Snowboarding in Moscow and some new dumbbells."
+        "comment": "Wow! A lot of stuff here: new electric bike, new snowboard and boots, kid's snowboard and boots, skipasses to local resorts, gym membership, new dumbbells, kid's bikes, etc."
       },
       {
         "title": "Hobbies and arts",
         "sum": 0,
         "main": false,
-        "comment": "No time for that too."
+        "comment": "All hobbies this year were sport-related."
       },
       {
         "title": "Clothing",
         "sum": 51670,
         "main": false,
-        "comment": "New clothes for the family."
+        "comment": "We bought a lot of clothes this year, and a large part was from thrift shops."
       },
       {
         "title": "Tech & Gadgets",
         "sum": 106200,
         "main": false,
-        "comment": "New Yandex Station smart speaker to fill our house with nice music. AirPods Pro and new iPhone 12 for me."
+        "comment": "Home appliances for the new apartment."
       },
       {
         "title": "Home stuff",
         "sum": 315776,
         "main": false,
-        "comment": "Some kitchen and baby stuff."
+        "comment": "This year we had to fill the apartment with furniture and stuff from scratch."
       },
       {
         "title": "Work supplies",
         "sum": 231056,
         "main": false,
-        "comment": "LG Ultrafine 4k monitor. I tried to work from home for the first month. But it was hard to do in one bedroom apartment with the kid. So I sold the monitor and started to commute to work almost every workday."
+        "comment": "The table and the monitor for the home office, temporary Macbook Air, and visa-related expenses."
       },
       {
         "title": "Household goods",
         "sum": 5527,
         "main": false,
-        "comment": "More laundry as a kid grows up."
+        "comment": "We spent half of the year in Airbnb and hotels, so not that much in this category."
       },
       {
         "title": "Cell phone",
         "sum": 17599,
         "main": false,
-        "comment": "Same plan as before."
+        "comment": "My phone plan is now €30/month, and it includes unlimited data and calls. No other options, though."
       },
       {
         "title": "Subscriptions",
         "sum": 1839,
         "main": false,
-        "comment": "I canceled my Spotify subscription this year. Instead, I used Yandex Music, which I got for free from my employer. So, this minor expense is the domain for this site."
+        "comment": "Domain for this site."
       },
       {
         "title": "Personal",
         "sum": 20489,
         "main": false,
-        "comment": "Expenses on diapers went down, but on beauty products went up."
+        "comment": "Beauty products mostly."
       },
       {
         "title": "Misc",
         "sum": 113459,
         "main": false,
-        "comment": "Expenses for finding a good car, new car seat."
+        "comment": "Here go bureaucracy expenses (passports, apostilles, IDs, COVID tests), some stupid spending (missed flights, for example), etc. One interesting purchase here is the missis's study of her Jewish heritage. No heritage found at the moment :)"
       },
       {
         "title": "Travel",
@@ -226,25 +228,25 @@
         "title": "Hotels",
         "sum": 174856,
         "main": false,
-        "comment": "Snowboarding trip to Sochi and local travel."
+        "comment": "Pretty messy picture here in travel section. Here I counted only vacation-related hotels: Sochi mountains, Turkey two-week vacation, trips to Vladimir."
       },
       {
         "title": "Travel Transportation",
         "sum": 320687,
         "main": false,
-        "comment": "Airplane tickets to Sochi and train tickets."
+        "comment": "But in this section, I counted all our long-distance transportation for this year, which I doubt my wife counts as travel."
       },
       {
         "title": "Travel Entertainment",
         "sum": 81055,
         "main": false,
-        "comment": "Ski-pass for one week."
+        "comment": "Season ski-pass in Sochi mountains and snowboard lessons with the group."
       },
       {
         "title": "Food and other",
         "sum": 73605,
         "main": false,
-        "comment": "Food for Sochi trip."
+        "comment": "Food for Sochi trips."
       },
       {
         "title": "Donations",
@@ -255,19 +257,19 @@
         "title": "Presents",
         "sum": 97940,
         "main": false,
-        "comment": "Giving away is fun and fulfilling."
+        "comment": "Presents to friends and family."
       },
       {
         "title": "Parties hosting",
         "sum": 0,
         "main": false,
-        "comment": "Nastya's birthday party. And first real Leo's party with guests, presents and playground."
+        "comment": "All our birthdays were away from our loved ones. So, no parties this year."
       },
       {
         "title": "Charity",
         "sum": 2310,
         "main": false,
-        "comment": "Gotta improve in this category."
+        "comment": "Nothing special here still."
       },
       {
         "title": "Government",
@@ -278,13 +280,13 @@
         "title": "Taxes and fees",
         "sum": 3779,
         "main": false,
-        "comment": "This is mainly a tax on free food from an employer, which is not entirely free."
+        "comment": "After moving to Finland, our taxes raised to almost 50%. But historically, I count here only after-tax income and spending."
       },
       {
         "title": "Fines",
         "sum": 1767,
         "main": false,
-        "comment": "One single mistake while driving in the city."
+        "comment": "We've got a fine for the lack of a child seat in car-sharing."
       }
     ],
     "total": 3404498
@@ -293,31 +295,38 @@
     "categories": [
       {
         "title": "Investments",
-        "sum": 108058
+        "sum": 108058,
+        "comment": "Dividend income from our portfolio."
       },
       {
         "title": "Paycheck",
-        "sum": 3669204
+        "sum": 3669204,
+        "comment": "I joined Mapbox at the end of the year and received sweet sign-up bonus."
       },
       {
         "title": "Side hustle",
-        "sum": 768521
+        "sum": 768521,
+        "comment": "Long-term relationships with an old client brought me new exciting opportunity."
       },
       {
         "title": "Interest",
-        "sum": 101223
+        "sum": 101223,
+        "comment": "Miles and interest on the cash account"
       },
       {
         "title": "Stuff sales",
-        "sum": 182600
+        "sum": 182600,
+        "comment": "I sold all my woodwork stuff, since it didn't make sense to move it to the new place."
       },
       {
         "title": "Presents",
-        "sum": 10500
+        "sum": 10500,
+        "comment": "Thanks to the family!"
       },
       {
         "title": "Other",
-        "sum": 257617
+        "sum": 257617,
+        "comment": "Stock options income from Yandex (though, it's only on paper, since it was blocked by EU), and my new employer's compensations for transportation and home office."
       }
     ],
     "total": 5097722

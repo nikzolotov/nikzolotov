@@ -21,10 +21,10 @@ export default () => {
     >
       We took a gap year. To think of what is really matters to us. We spent the
       first three months is the mountains and that made a great impact on our
-      health. We&nbsp;finally made our first child after two years of
-      struggling. The rest of the year we spent working on investment properties
-      and visiting doctors. I was working part-time and we finished the year on
-      plus side!
+      health. We&nbsp;finally were able to have our first child after two years
+      of struggling. The rest of the year we spent working on investment
+      properties and visiting doctors. I was working part-time and we finished
+      the year on plus side!
     </AnnualReport>
   );
 };
