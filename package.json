@@ -29,7 +29,7 @@
     "gatsby-plugin-sharp": "^2.5.7",
     "gatsby-plugin-yandex-metrika": "^2.4.0",
     "gatsby-source-filesystem": "^2.2.4",
-    "gatsby-transformer-remark": "^2.7.3",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.4.7",
     "query-string": "^6.13.8",
     "react": "^16.12.0",
