@@ -611,6 +611,28 @@
       "Presents": 0,
       "Other": 41080,
       "Total": 548523
+    },
+    {
+      "date": "2022-12-31T21:00:00.000Z",
+      "Investments": 0,
+      "Paycheck": 345322,
+      "Side hustle": 0,
+      "Interest": 11685,
+      "Stuff sales": 0,
+      "Presents": 0,
+      "Other": 9906,
+      "Total": 366913
+    },
+    {
+      "date": "2023-01-31T21:00:00.000Z",
+      "Investments": 2409,
+      "Paycheck": 361716,
+      "Side hustle": 0,
+      "Interest": 10521,
+      "Stuff sales": 0,
+      "Presents": 0,
+      "Other": 48931,
+      "Total": 423577
     }
   ]
 }
